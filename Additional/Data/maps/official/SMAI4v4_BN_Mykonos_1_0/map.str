@@ -2,12 +2,12 @@ Title Creds*
 "Map made by AUX./Do not modify this map without my permission./Good luck have fun."
 End
 
-MAP:[SMAI4v4_BN]Hidden_Fortress_1_0
-"[SMAI4v4_BN]Hidden_Fortress(1.0)"
+MAP:SMAI4v4_BN_Mykonos_1_0
+"[SMAI4v4_BN]Mykonos(1.0)"
 End
 
-MAP:[SMAI4v4_BN]Hidden_Fortress_1_0?chinese
-"[SMAI4v4_BN]隐秘要塞(1.0)"
+MAP:SMAI4v4_BN_Mykonos_1_0?chinese
+"[SMAI4v4_BN]米克诺斯(1.0)"
 End
 
 MISSIONOBJ:A00_Destroy or Capture the Soviet Advance Base
@@ -39,7 +39,7 @@ MISSIONOBJ:A00_Destroy the FortressPowerCore
 End
 
 MISSIONOBJ:A00_Destroy the FortressPowerCore?chinese
-"摧毁要塞能源核心"
+"摧毁要塞能量核心"
 End
 
 MISSIONOBJ:A00_Protect the ScienceLab
@@ -82,12 +82,12 @@ SCRIPT:A00_Requires two players to start the game?chinese
 "需要两名玩家才能开始游戏"
 End
 
-SCRIPT:A00_Imperial Feinforcing Fleet Arrived
-"Imperial Feinforcing Fleet Arrived:"
+SCRIPT:A00_Warning: Chronosphere detected
+"Warning: Chronosphere detected."
 End
 
-SCRIPT:A00_Imperial Feinforcing Fleet Arrived?chinese
-"帝国增援舰队到达："
+SCRIPT:A00_Warning: Chronosphere detected?chinese
+"警告：发现超时空传送仪。"
 End
 
 SCRIPT:A00_Map Start
