@@ -1,0 +1,107 @@
+Title Creds*
+"Map made by AUX./Do not modify this map without my permission./Good luck have fun."
+End
+
+MAP:[SMAI4v4_BN]Mykonos_1_0
+"[SMAI4v4_BN]Mykonos(1.0)"
+End
+
+MAP:[SMAI4v4_BN]Mykonos_1_0?chinese
+"[SMAI4v4_BN]米克诺斯(1.0)"
+End
+
+MISSIONOBJ:A00_Destroy or Capture the Soviet Advance Base
+"Destroy or Capture the Soviet Advance Base"
+End
+
+MISSIONOBJ:A00_Destroy or Capture the Soviet Advance Base?chinese
+"摧毁或占领苏联高级基地"
+End
+
+MISSIONOBJ:A00_Destroy the Nanoswarm Hive
+"Destroy the Nanoswarm Hive"
+End
+
+MISSIONOBJ:A00_Destroy the Nanoswarm Hive?chinese
+"摧毁纳米虫群巢穴"
+End
+
+MISSIONOBJ:A00_Destroy the Psionic Decimator
+"Destroy the Psionic Decimator"
+End
+
+MISSIONOBJ:A00_Destroy the Psionic Decimator?chinese
+"摧毁超能波毁灭装置"
+End
+
+MISSIONOBJ:A00_Destroy the FortressPowerCore
+"Destroy the FortressPowerCore"
+End
+
+MISSIONOBJ:A00_Destroy the FortressPowerCore?chinese
+"摧毁要塞能量核心"
+End
+
+MISSIONOBJ:A00_Protect the ScienceLab
+"Protect the ScienceLab"
+End
+
+MISSIONOBJ:A00_Protect the ScienceLab?chinese
+"保护科学实验室"
+End
+
+MISSIONOBJ:A00_Destroy the Japan Advance Base
+"Destroy the Japan Advance Base"
+End
+
+MISSIONOBJ:A00_Destroy the Japan Advance Base?chinese
+"摧毁日本高级基地"
+End
+
+MISSIONOBJ:A00_Capture the Observation Post
+"Capture the Observation Post"
+End
+
+MISSIONOBJ:A00_Capture the Observation Post?chinese
+"占领观察站"
+End
+
+MISSIONOBJ:A00_Destroy the JapanVipBunStructure
+"Destroy the JapanVipBunStructure"
+End
+
+MISSIONOBJ:A00_Destroy the JapanVipBunStructure?chinese
+"摧毁帝国 VIP 要塞"
+End
+
+SCRIPT:A00_Requires two players to start the game
+"Requires two players to start the game"
+End
+
+SCRIPT:A00_Requires two players to start the game?chinese
+"需要两名玩家才能开始游戏"
+End
+
+SCRIPT:A00_Warning: Chronosphere detected
+"Warning: Chronosphere detected."
+End
+
+SCRIPT:A00_Warning: Chronosphere detected?chinese
+"警告：发现超时空传送仪。"
+End
+
+SCRIPT:A00_Map Start
+"Map made by AUX.Good luck have fun."
+End
+
+SCRIPT:A00_Map Start?chinese
+"地图制作：AUX。祝你好运。"
+End
+
+SCRIPT:A00_Game Start
+"Game Start:"
+End
+
+SCRIPT:A00_Game Start?chinese
+"游戏开始："
+End
