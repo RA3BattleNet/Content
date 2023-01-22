@@ -188,8 +188,8 @@
 			DisplayName="Bang_Guandu_1_6"
 			FileName="data\maps\official\bang_guandu_1_6\bang_guandu_1_6.map"
 			Height="601"
-			IsMultiplayer="false"
-			IsOfficial="false"
+			IsMultiplayer="true"
+			IsOfficial="true"
 			NumPlayers="5"
 			Width="601">
 			<StartPosition
@@ -240,10 +240,10 @@
 			CRC="0"
 			Description="Map:Bang_Red_Cliffs_1_2/Desc"
 			DisplayName="Bang_Red_Cliffs_1_2"
-			FileName="data\maps\bang_red_cliffs_1_2\bang_red_cliffs_1_2.map"
+			FileName="data\maps\official\bang_red_cliffs_1_2\bang_red_cliffs_1_2.map"
 			Height="610"
-			IsMultiplayer="false"
-			IsOfficial="false"
+			IsMultiplayer="true"
+			IsOfficial="true"
 			NumPlayers="5"
 			Width="610">
 			<StartPosition
