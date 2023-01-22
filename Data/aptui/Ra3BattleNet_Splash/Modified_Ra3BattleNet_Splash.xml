@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AptAptData id="Ra3BattleNet_Splash_apt" File="Ra3BattleNet_Splash.apt" />
+	<AptConstData id="Ra3BattleNet_Splash_const" File="Ra3BattleNet_Splash.const" />
+	<AptDatData id="Ra3BattleNet_Splash_dat" File="Ra3BattleNet_Splash.dat" />
+	<AptGeometryData id="Ra3BattleNet_Splash_2" File="Ra3BattleNet_Splash_geometry\2.ru" AptID="2"/>
+	<!-- Use DXT1 insteado of A8R8G8B8 to save memory -->
+	<Texture id="apt_Ra3BattleNet_Splash_1" File="Ra3BattleNet_Splash_art\apt_Ra3BattleNet_Splash_1.tga" OutputFormat="DXT1" GenerateMipMaps="false" AllowAutomaticResize="false"/>
+</AssetDeclaration>
