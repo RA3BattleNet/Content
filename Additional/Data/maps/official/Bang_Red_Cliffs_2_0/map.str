@@ -1,9 +1,9 @@
-Map:Bang_Red_Cliffs_1_2
-"Bang_RedCliffs[1.2]"
+Map:Bang_Red_Cliffs_2_0
+"Bang_Red Cliffs[2.0]"
 END
 
 SCRIPT:link
-"https://github.com/qingchen239/Red-Alert-3-Bang-Game"
+"github.com/qingchen239/Red-Alert-3-Bang-Gamemode"
 END
 
 SCRIPT:sheriffEliminated
@@ -43,7 +43,7 @@ SCRIPT:debugCode
 END
 
 SCRIPT:tutorial__1
-"Welcome to "Red Alert 3" Bang game method. "
+"Welcome to Red Alert 3 "Bang!" gamemode. "
 END
 
 SCRIPT:tutorial__2
@@ -75,7 +75,7 @@ SCRIPT:tutorial__8
 END
 
 SCRIPT:tutorial__9
-"Learn more on https://github.com/qingchen239/Red-Alert-3-Bang-Game . "
+"Learn more on github.com/qingchen239/Red-Alert-3-Bang-Gamemode . "
 END
 
 SCRIPT:tutorial__10
@@ -90,12 +90,12 @@ SCRIPT:warning2
 "Stop attacking the power core! "
 END
 
-Map:Bang_Red_Cliffs_1_2?chinese_t
-"三國殺之赤壁之戰[1.2]"
+Map:Bang_Red_Cliffs_2_0?chinese_t
+"三國殺之赤壁之戰[2.0]"
 END
 
 SCRIPT:link?chinese_t
-"https://github.com/qingchen239/Red-Alert-3-Bang-Game"
+"github.com/qingchen239/Red-Alert-3-Bang-Gamemode"
 END
 
 SCRIPT:sheriffEliminated?chinese_t
@@ -167,7 +167,7 @@ SCRIPT:tutorial__8?chinese_t
 END
 
 SCRIPT:tutorial__9?chinese_t
-"訪問 https://github.com/qingchen239/Red-Alert-3-Bang-Game 網址以瞭解更多。"
+"訪問 github.com/qingchen239/Red-Alert-3-Bang-Gamemode 網址以瞭解更多。"
 END
 
 SCRIPT:tutorial__10?chinese_t
@@ -183,12 +183,12 @@ SCRIPT:warning2?chinese_t
 END
 
 
-Map:Bang_Red_Cliffs_1_2?chinese_s
-"三国杀之赤壁之战[1.2]"
+Map:Bang_Red_Cliffs_2_0?chinese_s
+"三国杀之赤壁之战[2.0]"
 END
 
 SCRIPT:link?chinese_s
-"https://github.com/qingchen239/Red-Alert-3-Bang-Game"
+"github.com/qingchen239/Red-Alert-3-Bang-Gamemode"
 END
 
 SCRIPT:sheriffEliminated?chinese_s
@@ -260,7 +260,7 @@ SCRIPT:tutorial__8?chinese_s
 END
 
 SCRIPT:tutorial__9?chinese_s
-"访问 https://github.com/qingchen239/Red-Alert-3-Bang-Game 网址以了解更多。"
+"访问 github.com/qingchen239/Red-Alert-3-Bang-Gamemode 网址以了解更多。"
 END
 
 SCRIPT:tutorial__10?chinese_s

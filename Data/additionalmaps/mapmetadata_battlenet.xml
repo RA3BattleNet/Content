@@ -238,9 +238,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:Bang_Red_Cliffs_1_2/Desc"
-			DisplayName="Bang_Red_Cliffs_1_2"
-			FileName="data\maps\official\bang_red_cliffs_1_2\bang_red_cliffs_1_2.map"
+			Description="Map:Bang_Red_Cliffs_2_0/Desc"
+			DisplayName="Bang_Red_Cliffs_2_0"
+			FileName="data\maps\official\bang_red_cliffs_2_0\bang_red_cliffs_2_0.map"
 			Height="610"
 			IsMultiplayer="true"
 			IsOfficial="true"
