@@ -289,5 +289,66 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:stick_to_the_territory/Desc"
+			DisplayName="stick_to_the_territory"
+			FileName="data\maps\official\stick_to_the_territory\stick_to_the_territory.map"
+			Height="560"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="6"
+			Width="560">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="4501.996484"
+					y="1483.960263"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="470.987766"
+					y="3517.941228"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="4074.709222"
+					y="911.176405"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="938.85472"
+					y="4092.909226"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="2025.000006"
+					y="1350.000001"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_6_Start">
+				<Position
+					x="2975.000004"
+					y="3650.000002"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 	</MapMetaData>
 </AssetDeclaration>
