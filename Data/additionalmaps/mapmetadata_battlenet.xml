@@ -184,9 +184,9 @@
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:Bang_Guandu_1_6/Desc"
-			DisplayName="Bang_Guandu_1_6"
-			FileName="data\maps\official\bang_guandu_1_6\bang_guandu_1_6.map"
+			Description="Map:Bang_Guandu_2_0/Desc"
+			DisplayName="Bang_Guandu_2_0"
+			FileName="data\maps\official\bang_guandu_2_0\bang_guandu_2_0.map"
 			Height="601"
 			IsMultiplayer="true"
 			IsOfficial="true"
