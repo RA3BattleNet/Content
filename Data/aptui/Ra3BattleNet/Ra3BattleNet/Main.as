@@ -9,7 +9,13 @@ class Ra3BattleNet.Main {
         splash.loadMovie("Ra3BattleNet_Splash.swf");
         trace("SPLASH " + splash + " LOADED");
 
-        var virtualList = apt.createEmptyMovieClip("Ra3BattleNet_VirtualList", 2);
+        trace("LOAD CONNECTION INFORMATION");
+        var connectionInformation = apt.createEmptyMovieClip("Ra3BattleNet_ConnectionInformationOg", 2);
+        trace("CONNECTION INFORMATION " + connectionInformation);
+        connectionInformation.loadMovie("Ra3BattleNet_ConnectionInformationOg.swf");
+        trace("CONNECTION INFORMATION " + connectionInformation + " LOADED");
+
+        var virtualList = apt.createEmptyMovieClip("Ra3BattleNet_VirtualList", 3);
         trace("VIRTUAL LIST " + virtualList);
         virtualList.loadMovie("Ra3BattleNet_VirtualList.swf");
         trace("VIRTUAL LIST " + virtualList + " LOADED");
