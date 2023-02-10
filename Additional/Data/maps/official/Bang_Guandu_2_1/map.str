@@ -1,5 +1,5 @@
-Map:Bang_Red_Cliffs_2_0
-"Bang_Red Cliffs[2.0]"
+Map:Bang_Guandu_2_1
+"Bang_Guandu[2.1]"
 END
 
 SCRIPT:link
@@ -47,7 +47,7 @@ SCRIPT:tutorial__1
 END
 
 SCRIPT:tutorial__2
-"Each player takes one of the following roles: "
+"In this gamemode, each player takes one of the following roles: "
 END
 
 SCRIPT:tutorial__3
@@ -55,7 +55,7 @@ SCRIPT:tutorial__3
 END
 
 SCRIPT:tutorial__4
-"If you are assigned a role, you will get a reveal on the map near its corresponding corner on radar. "
+"You need to check the text corresponding to the revealed corner of the minimap to know your role. "
 END
 
 SCRIPT:tutorial__5
@@ -82,16 +82,8 @@ SCRIPT:tutorial__10
 "Good luck, have fun. "
 END
 
-SCRIPT:warning1
-"Do not attack the power core. "
-END
-
-SCRIPT:warning2
-"Stop attacking the power core! "
-END
-
-Map:Bang_Red_Cliffs_2_0?chinese_t
-"三國殺之赤壁之戰[2.0]"
+Map:Bang_Guandu_2_1?chinese_t
+"三國殺之官渡之戰[2.1]"
 END
 
 SCRIPT:link?chinese_t
@@ -139,7 +131,7 @@ SCRIPT:tutorial__1?chinese_t
 END
 
 SCRIPT:tutorial__2?chinese_t
-"每位玩家取得以下身份之一："
+"在該模式中，每位玩家取得以下身份之一："
 END
 
 SCRIPT:tutorial__3?chinese_t
@@ -147,7 +139,7 @@ SCRIPT:tutorial__3?chinese_t
 END
 
 SCRIPT:tutorial__4?chinese_t
-"如果您被分配了某一身份，您將在地圖上的雷達相應角附近取得一塊視野。"
+"您需要查看雷達四個角落的視野所對應的文字，以知曉自己的身份。"
 END
 
 SCRIPT:tutorial__5?chinese_t
@@ -163,7 +155,7 @@ SCRIPT:tutorial__7?chinese_t
 END
 
 SCRIPT:tutorial__8?chinese_t
-"內奸必須殺死場上所有其他角色，最後殺死主公。"
+"內奸必須先保護主公並殺死所有其他玩家，最後再殺死主公。"
 END
 
 SCRIPT:tutorial__9?chinese_t
@@ -171,20 +163,11 @@ SCRIPT:tutorial__9?chinese_t
 END
 
 SCRIPT:tutorial__10?chinese_t
-"祝你好運，玩得開心。"
+"祝您好運，玩得開心。"
 END
 
-SCRIPT:warning1?chinese_t
-"不要攻擊能量核心。"
-END
-
-SCRIPT:warning2?chinese_t
-"不要再攻擊能量核心了！"
-END
-
-
-Map:Bang_Red_Cliffs_2_0?chinese_s
-"三国杀之赤壁之战[2.0]"
+Map:Bang_Guandu_2_1?chinese_s
+"三国杀之官渡之战[2.1]"
 END
 
 SCRIPT:link?chinese_s
@@ -232,7 +215,7 @@ SCRIPT:tutorial__1?chinese_s
 END
 
 SCRIPT:tutorial__2?chinese_s
-"每位玩家取得以下身份之一："
+"在该模式中，每位玩家取得以下身份之一："
 END
 
 SCRIPT:tutorial__3?chinese_s
@@ -240,7 +223,7 @@ SCRIPT:tutorial__3?chinese_s
 END
 
 SCRIPT:tutorial__4?chinese_s
-"您需要查看小地图四个角落的视野对应的文字，以得知自己的身份。"
+"您需要查看小地图四个角落的视野所对应的文字，以知晓自己的身份。"
 END
 
 SCRIPT:tutorial__5?chinese_s
@@ -264,14 +247,5 @@ SCRIPT:tutorial__9?chinese_s
 END
 
 SCRIPT:tutorial__10?chinese_s
-"祝你好运，玩得开心。"
+"祝您好运，玩得开心。"
 END
-
-SCRIPT:warning1?chinese_s
-"不要攻击能量核心。"
-END
-
-SCRIPT:warning2?chinese_s
-"不要再攻击能量核心了！"
-END
-
