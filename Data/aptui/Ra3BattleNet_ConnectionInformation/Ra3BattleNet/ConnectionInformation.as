@@ -15,12 +15,15 @@
 		var query: Object = new Object();
 		loadVariables("Ra3BattleNet_ConnectionInformation", query);
 		if (!query.names) {
+			trace("ConnectionInformation::update - no names");
 			return;
 		}
 		refreshWidgets();
 		if (!_widgets) {
+			trace("ConnectionInformation::update - no widgets");
 			return;
 		}
+		trace("ConnectionInformation::update - name and widgets availaible");
 		var latencies: Array = query.latencies.split(",");
 		var packetLosses: Array = query.packetLosses.split(",");
 		var logicLoads: Array = query.logicLoads.split(",");
@@ -28,6 +31,7 @@
 		if (_isInGame) {
 			var names: Array = query.names.split(",");
 			var isPlaying: Array = query.isPlaying.split(",");
+			trace("ConnectionInformation::update - inside game - isPlaying: " + isPlaying);
 			// playing players are always on top
 			var i: Number = 0;
 			var j: Number = 0;
@@ -38,6 +42,7 @@
 				// observer name are temporarily shown for debugging
 				// otherwise it should be null
 				var observerName: String = String(String.fromCharCode.apply(String, names[i].split("_")));
+				trace("ConnectionInformation::update - inside game - player " + i + " is playing, debug name: " + observerName);
 				showWidgets(
 					i,
 					Number(latencies[j]), Number(packetLosses[j]),
@@ -54,6 +59,7 @@
 					++j;
 				}
 				var observerName: String = String(String.fromCharCode.apply(String, names[i].split("_")));
+				trace("ConnectionInformation::update - inside game - player " + i + " is not playing, observerName name: " + observerName);
 				showWidgets(
 					i,
 					Number(latencies[j]), Number(packetLosses[j]),
@@ -67,9 +73,11 @@
 		else {
 			for (var i: Number = 0; i < _widgets.length; ++i) {
 				if (isPlaying[i] === "0") {
+					trace("ConnectionInformation::update - outside game - player " + i + " is not playing");
 					resetWidgets(i);
 				}
 				else {
+					trace("ConnectionInformation::update - outside game - player " + i + " is playing");
 					showWidgets(i, Number(latencies[i]), Number(packetLosses[i]), 1, 1, null);
 				}
 			}
@@ -79,13 +87,16 @@
 	private function refreshWidgets(): Void {
 		removeOutdatedWidgets();
 		if (_widgets) {
+			trace("ConnectionInformation::refreshWidgets - widgets already exist");
 			return;
 		}
 		if (!_global.Cafe2_BaseUIScreen) {
+			trace("ConnectionInformation::refreshWidgets - Cafe2_BaseUIScreen not found");
 			return;
 		}
 		var screenInstance = _global.Cafe2_BaseUIScreen.m_thisClass;
 		if (!screenInstance) {
+			trace("ConnectionInformation::refreshWidgets - Cafe2_BaseUIScreen.m_thisClass not found");
 			return;
 		}
 		_isInGame = false;
@@ -93,10 +104,12 @@
 		if (!playerApts || !(playerApts[0] instanceof MovieClip)) {
 			playerApts = screenInstance.m_playerLineMCs;
 			if (!playerApts || !(playerApts[0] instanceof MovieClip)) {
+				trace("ConnectionInformation::refreshWidgets - player slots not found");
 				return;
 			}
 			// campaign pause menu has no player count
 			if (!screenInstance.m_playerCount) {
+				trace("ConnectionInformation::refreshWidgets - player count not found");
 				return;
 			}
 			_isInGame = true;
@@ -106,6 +119,7 @@
 			var playerApt: MovieClip = playerApts[i];
 			if (!(playerApt instanceof MovieClip)) {
 				// something is wrong
+				trace("ConnectionInformation::refreshWidgets - player slot is not a movie clip");
 				return;
 			}
 			var widgets: Object = _isInGame
@@ -113,17 +127,24 @@
 				: tryConstructOutsideGame(playerApt);
 			if (widgets) {
 				result.push(widgets);
+				trace("ConnectionInformation::refreshWidgets - constructed widgets");
 			}
-			
+			else {
+				trace("ConnectionInformation::refreshWidgets - failed to construct widgets");
+				return;
+			}
 		}
 		if (result.length == 0) {
+			trace("ConnectionInformation::refreshWidgets - no widgets constructed");
 			return;
 		}
 		_widgets = result;
+		trace("ConnectionInformation::refreshWidgets - widgets constructed");
 	}
 
 	private function removeOutdatedWidgets(): Void {
 		if (!_widgets) {
+			trace("ConnectionInformation::removeOutdatedWidgets - no widgets");
 			return;
 		}
 
@@ -143,10 +164,12 @@
 		}
 
 		if (isCachedwidgetsValid) {
+			trace("ConnectionInformation::removeOutdatedWidgets - cached widgets are valid");
 			return;
 		}
 
-		// clear old render targets
+		// clear stale widgets
+		trace("ConnectionInformation::removeOutdatedWidgets - cached widgets are invalid");
 		for (var i: Number = 0; i < _widgets.length; ++i) {
 			var current: Object = _widgets[i];
 			if (!current) {
@@ -154,6 +177,7 @@
 			}
 			for (var k: String in current) {
 				if (current[k] instanceof MovieClip) {
+					trace("ConnectionInformation::removeOutdatedWidgets - removing " + k + " -> " + current[k]);
 					current[k].removeMovieClip();
 				}
 			}
@@ -171,6 +195,7 @@
 		if (!playerApt._visible) {
 			// if the player apt is not visible,
 			// we create a panel to show our information
+			trace("ConnectionInformation::tryConstructInsideGame - player apt " + index + " is not visible");
 			if (!(playerApt._parent[OBSERVER_PANEL_ID] instanceof MovieClip)) {
 				playerApt._parent.attachMovie(
 					"InGameObserverPanel",
@@ -186,6 +211,7 @@
 					var observerName: TextField = playerApt["observer" + String(i + 1)];
 					observerName._visible = false;
 				}
+				trace("ConnectionInformation::tryConstructInsideGame - observer panel created");
 			}
 			var observerName: TextField = playerApt["observer" + String(index + 1)];
 			observerName._visible = true;
@@ -209,6 +235,7 @@
 			movie._y = horizontalMiddle - movie._height * 0.5;
 			x += movie._width;
 			x += padding;
+			trace("ConnectionInformation::tryConstructInsideGame - " + symbol + " created as " + movie);
 			return movie;
 		}
 
@@ -228,11 +255,13 @@
 
 	private function tryConstructOutsideGame(playerApt: MovieClip): Object {
 		var voip: MovieClip = playerApt.voipCheckBox;
-		if (!voip || !(voip instanceof MovieClip)) {
+		if (!(voip instanceof MovieClip)) {
+			trace("ConnectionInformation::tryConstructOutsideGame - voip check box not found in " + playerApt);
 			return null;
 		}
 		var mute: MovieClip = playerApt.muteCheckBox;
-		if (!mute || !(mute instanceof MovieClip)) {
+		if (!(mute instanceof MovieClip)) {
+			trace("ConnectionInformation::tryConstructOutsideGame - mute check box not found in " + playerApt);
 			return null;
 		}
 
@@ -251,7 +280,6 @@
 		var result = new Object();
 		result.network = network;
 		result.cpu = cpu;
-		result.gpu = null;
 		return result;
 	}
 
@@ -280,9 +308,12 @@
 		observerName: String
 	): Void {
 		if (!_widgets || !_widgets[index]) {
+			trace("ConnectionInformation::showWidgets - no widgets for " + index);
 			return;
 		}
 		var widgets: Object = _widgets[index];
+		trace("ConnectionInformation::showWidgets - " + index + " " + latency + " " + packetLoss + " " + cpu + " " + gpu + " " + observerName);
+		trace("ConnectionInformation::showWidgets - network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
 		// NETWORK
 		// latency > 990ms, the connection may lost already
 		// packetLoss > 0.1, too bad
@@ -332,6 +363,7 @@
 		if (!playerApt[name] || !(playerApt[name] instanceof MovieClip)) {
 			playerApt.attachMovie(symbol, name, getNextHighestDepth(playerApt));
 		}
+		trace("ConnectionInformation::tryAttachMovie - " + name + " is now " + playerApt[name]);
 		return playerApt[name];
 	}
 
@@ -340,12 +372,13 @@
         for (var k: String in parent) {
             if (parent[k] instanceof MovieClip) {
                 var mc: MovieClip = parent[k];
-                mc.getDepth();
-                if (mc._depth >= depth) {
-                    depth = mc._depth + 1;
+                if (mc.getDepth() >= depth) {
+					trace("ConnectionInformation::getNextHighestDepth - " + mc + " already has depth " + mc.getDepth());
+                    depth = mc.getDepth() + 1;
                 }
             }
         }
+		trace("ConnectionInformation::getNextHighestDepth - next depth is " + depth);
         return depth;
     }
 }
