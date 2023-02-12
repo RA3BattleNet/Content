@@ -9,17 +9,17 @@ class Ra3BattleNet.Main {
         splash.loadMovie("Ra3BattleNet_Splash.swf");
         trace("SPLASH " + splash + " LOADED");
 
-        trace("LOAD CONNECTION INFORMATION");
-        var connectionInformation = apt.createEmptyMovieClip("Ra3BattleNet_ConnectionInformationOg", 2);
-        trace("CONNECTION INFORMATION " + connectionInformation);
-        connectionInformation.loadMovie("Ra3BattleNet_ConnectionInformationOg.swf");
-        trace("CONNECTION INFORMATION " + connectionInformation + " LOADED");
-
         var virtualList = apt.createEmptyMovieClip("Ra3BattleNet_VirtualList", 3);
         trace("VIRTUAL LIST " + virtualList);
         virtualList.loadMovie("Ra3BattleNet_VirtualList.swf");
         trace("VIRTUAL LIST " + virtualList + " LOADED");
         virtualList._visible = false;
+
+        trace("LOAD CONNECTION INFORMATION");
+        var connectionInformation = apt.createEmptyMovieClip("Ra3BattleNet_ConnectionInformation", 3);
+        trace("CONNECTION INFORMATION " + connectionInformation);
+        connectionInformation.loadMovie("Ra3BattleNet_ConnectionInformation.swf");
+        trace("CONNECTION INFORMATION " + connectionInformation + " LOADED");
 
         trace("ADD MESSAGE HANDLER FOR RESOURCE PATCHER");
         _global.gMH.addPriorityMessageHandler(new ResourcePatcher().tryPatchGameSetupBase, 1);
