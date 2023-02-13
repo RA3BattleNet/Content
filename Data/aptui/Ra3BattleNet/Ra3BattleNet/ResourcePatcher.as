@@ -1,48 +1,47 @@
 class Ra3BattleNet.ResourcePatcher {
-    public function tryPatchGameSetupBase(messageCode) {
-        if (messageCode !== _global.MSGCODE.FE_MP_UPDATE_GAME_SETTINGS) {
-            return;
-        }
-
-        trace("TRY PATCH GAME SETUP BASE");
+    public static function tryPatchGameSetupBase() {
+        trace("Ra3BattleNet.ResourcePatcher::tryPatchGameSetupBase");
         if (_global.GameSetupBase == null) {
-            trace("_global.GameSetupBase not exist yet");
+            trace("Ra3BattleNet.ResourcePatcher::tryPatchGameSetupBase - GameSetupBase not loaded yet");
             return;
         }
         var gameSetupBasePrototype = _global.GameSetupBase.prototype;
         
         // refreshResourcesControl
         if (gameSetupBasePrototype.originalRefreshResourcesControl != undefined) {
-            trace("Already patched");
+            trace("Ra3BattleNet.ResourcePatcher::tryPatchGameSetupBase - GameSetupBase already patched");
             return;
         }
         gameSetupBasePrototype.originalRefreshResourcesControl = gameSetupBasePrototype.refreshResourcesControl;
         
         gameSetupBasePrototype.refreshResourcesControl = function() {
-            trace("NEW refreshResourcesControl");
+            trace("Ra3BattleNet.ResourcePatcher - NEW refreshResourcesControl");
             var resourcesDropdownComponent = _global.Cafe2_BaseUIScreen.m_screen.gameSettings.rulesPanel.resourcesDropdown;    
             
-            trace("REWRITE ON CHANGED FUNCTION");
-            resourcesDropdownComponent.setOnChange(_global.bind1DynamicParams(this, function(resourcesMC) {
-                trace("NEW onResourcesChanged");
-                this.cachedResourcesIndex = resourcesMC.getCurrentIndex()
-                var value = String(resourcesMC.getValueAtIndex(this.cachedResourcesIndex));
-                fscommand("CallGameFunction", "%SetInitialResources?Resources=" + value);
-            }));
-            
-            var ret = new Object();
-            loadVariables("QueryGameEngine?IsPcGameHost",ret);
+            var ret: Object = new Object();
+            loadVariables("QueryGameEngine?IsPcGameHost", ret);
             var isHost: Boolean = ret.IsPcGameHost == "1";
+
+            if (isHost) {
+                trace("Ra3BattleNet.ResourcePatcher - NEW refreshResourcesControl - REWRITE ON CHANGED FUNCTION");
+                // TODO: do not setOnChange every time. Set it only once when needed.
+                resourcesDropdownComponent.setOnChange(_global.bind1DynamicParams(this, function(resourcesMC) {
+                    trace("Ra3BattleNet.ResourcePatcher - NEW onResourcesChanged");
+                    this.cachedResourcesIndex = resourcesMC.getCurrentIndex()
+                    var value = String(resourcesMC.getValueAtIndex(this.cachedResourcesIndex));
+                    fscommand("CallGameFunction", "%SetInitialResources?Resources=" + value);
+                }));
+            }
             
-            var ret = new Object();
+            ret = new Object();
             loadVariables("QueryGameEngine?RESOURCES_OPTIONS",ret);
             var originalOptionValues: Array = new Array();
-            trace("ret.RESOURCES_OPTIONS_VALUES: " + ret.RESOURCES_OPTIONS_VALUES)
+            // trace("ret.RESOURCES_OPTIONS_VALUES: " + ret.RESOURCES_OPTIONS_VALUES)
             originalOptionValues = ret.RESOURCES_OPTIONS_VALUES.split(",");
             var currentChoice = Number(originalOptionValues.shift());
             // Not host, simply show first value.
             if (!isHost) {
-                trace("I AM NOT HOST!");
+                trace("Ra3BattleNet.ResourcePatcher - NEW refreshResourcesControl - NOT HOST");
                 this.cachedResourcesIndex = null;
                 resourcesDropdownComponent.setData(originalOptionValues, originalOptionValues);
                 resourcesDropdownComponent.setSelectedIndex(0);
@@ -99,6 +98,6 @@ class Ra3BattleNet.ResourcePatcher {
             resourcesDropdownComponent.setData(resourceOptionValues, optionValues);
             resourcesDropdownComponent.setSelectedIndex(currentChoice);
         };
-        trace("GAME SETUP BASE PATCHED");
+        trace("Ra3BattleNet.ResourcePatcher::tryPatchGameSetupBase - GameSetupBase patched");
     }
 }

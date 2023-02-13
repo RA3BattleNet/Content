@@ -22,7 +22,12 @@ class Ra3BattleNet.Main {
         trace("CONNECTION INFORMATION " + connectionInformation + " LOADED");
 
         trace("ADD MESSAGE HANDLER FOR RESOURCE PATCHER");
-        _global.gMH.addPriorityMessageHandler(new ResourcePatcher().tryPatchGameSetupBase, 1);
+        _global.gMH.addPriorityMessageHandler(function(messageCode) {
+            switch (messageCode) {
+                case _global.MSGCODE.FE_MP_UPDATE_GAME_SETTINGS:
+                    return ResourcePatcher.tryPatchGameSetupBase();
+            }
+        }, 1);
 
         trace("CREATE SEND MESSAGE FUNCTION");
         apt.sendMessage = function(message, chatMode, isHostOnly) {
