@@ -4,9 +4,11 @@ import Ra3BattleNet.ResourcePatcher;
 class Ra3BattleNet.Main {
     public function Main(apt: MovieClip) {
         // Ra3's apt does not have getNextHighestDepth, so we have to implement it ourselves
-        MovieClip.prototype.getNextHighestDepth = function(): Number {
-            return getNextHighestDepth(this);
-        };
+        if (!MovieClip.prototype.getNextHighestDepth) {
+            MovieClip.prototype.getNextHighestDepth = function(): Number {
+                return getNextHighestDepth(this);
+            };
+        }
 
         trace("LOAD SPLASH");
         var splash = apt.createEmptyMovieClip("Ra3BattleNet_Splash", 1);
