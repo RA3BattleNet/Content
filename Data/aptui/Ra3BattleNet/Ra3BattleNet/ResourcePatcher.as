@@ -44,9 +44,9 @@ class Ra3BattleNet.ResourcePatcher {
         ret = new Object();
         loadVariables("QueryGameEngine?RESOURCES_OPTIONS",ret);
         var originalOptionValues: Array = new Array();
-        // trace("ret.RESOURCES_OPTIONS_VALUES: " + ret.RESOURCES_OPTIONS_VALUES)
+        trace(TRACE_PREFIX + "ret.RESOURCES_OPTIONS_VALUES: " + ret.RESOURCES_OPTIONS_VALUES)
         originalOptionValues = ret.RESOURCES_OPTIONS_VALUES.split(",");
-        var currentChoice = Number(originalOptionValues.shift());
+        var currentChoice: Number = Number(originalOptionValues.shift());
         // Not host, simply show first value.
         if (!isHost) {
             trace(TRACE_PREFIX + "NOT HOST");
