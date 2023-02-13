@@ -1,5 +1,6 @@
 import Ra3BattleNet.ConnectionInformationLoader;
 import Ra3BattleNet.ResourcePatcher;
+import Ra3BattleNet.DisconnectHelper;
 
 class Ra3BattleNet.Main {
     public function Main(apt: MovieClip) {
@@ -40,6 +41,9 @@ class Ra3BattleNet.Main {
                     break;
             }
         }, 1);
+
+        trace("CREATE DISCONNECT HELPER");
+        DisconnectHelper.createDisconnectHelper(apt);
 
         trace("CREATE SEND MESSAGE FUNCTION");
         apt.sendMessage = function(message, chatMode, isHostOnly) {
