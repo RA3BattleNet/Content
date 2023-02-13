@@ -1,41 +1,45 @@
 ﻿import Ra3BattleNet.VirtualListElement;
 
 class Ra3BattleNet.VirtualList {
+    private static var CLASS_NAME = "Ra3BattleNet.VirtualList";
+
     public function patch() {
-        trace("START PATCHING")
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::patch] ";
+        trace(TRACE_PREFIX + "Start")
         var listBoxPrototype = _global.std_mouseScrollingListBox.prototype;
         trace(listBoxPrototype.refreshDisplay)
         if (listBoxPrototype.original_refreshDisplay != undefined) {
-            trace("Already patched")
+            trace(TRACE_PREFIX + "Already patched")
             return;
         }
         if (listBoxPrototype.newRefreshDisplay != undefined) {
-            trace("Already patched")
+            trace(TRACE_PREFIX + "Already patched")
             return;
         }
         listBoxPrototype.original_refreshDisplay = listBoxPrototype.refreshDisplay;
         listBoxPrototype.refreshDisplay = refreshDisplay;
         listBoxPrototype.newRefreshDisplay = newRefreshDisplay;
-        trace("END PATCHING")
+        trace(TRACE_PREFIX + "Finish")
     }
 
     public function refreshDisplay() {
         var self = this;
         if (!self.proper_refreshDisplay) {
-            trace("Found a new list: " + self)
+            var TRACE_PREFIX: String = "[" + CLASS_NAME + "::refreshDisplay@" + self + "] ";
+            trace(TRACE_PREFIX + "Found a new list: " + self)
             var name = String(self._name.split(".").pop());
             if (name != "mapList" && name != "playerListTextBox") {
-                trace("new list does not need to be patched")
+                trace(TRACE_PREFIX + "new list does not need to be patched")
                 self.proper_refreshDisplay = self.original_refreshDisplay;
             }
             else {
-                trace("new list needs to be patched")
+                trace(TRACE_PREFIX + "new list needs to be patched")
                 var virtualListPrototype = Ra3BattleNet.VirtualList.prototype;
                 self.materializeVisibleItems = virtualListPrototype.materializeVisibleItems;
-                trace("Patching refreshScrollbar")
+                trace(TRACE_PREFIX + "Patching refreshScrollbar")
                 self.original_refreshScrollbar = self.refreshScrollbar;
                 self.refreshScrollbar = virtualListPrototype.refreshScrollbar;
-                trace("Patching OnScrollbarThumbUpdate")
+                trace(TRACE_PREFIX + "Patching OnScrollbarThumbUpdate")
                 self.original_OnScrollbarThumbUpdate = self.OnScrollbarThumbUpdate;
                 self.OnScrollbarThumbUpdate = virtualListPrototype.OnScrollbarThumbUpdate;
 
@@ -46,8 +50,9 @@ class Ra3BattleNet.VirtualList {
     }
 
     public function newRefreshDisplay() {
-        trace("START REFRESH");
         var self = this;
+        // var TRACE_PREFIX: String = "[" + CLASS_NAME + "::newRefreshDisplay@" + self + "] ";
+        // trace(TRACE_PREFIX + "Start");
         var maxColumnCount = self.getGreatestColumnDataCount();
         var entryClipsSize = self.m_entryClips.length != undefined ? self.m_entryClips.length : 0;
         self.m_numTotalEntries = Math.max(maxColumnCount, self.m_numVisibleEntries);
@@ -64,18 +69,18 @@ class Ra3BattleNet.VirtualList {
                 var _loc5_ = self.m_dataArrays[j];
                 var _loc4_ = new Object();
                 _loc4_.data = _loc5_[i];
-                trace("Setting data " + _loc4_.data + " for entry " + i + " and column " + j)
+                // trace(TRACE_PREFIX + "Setting data " + _loc4_.data + " for entry " + i + " and column " + j)
                 self.m_entryClips[i].setElementData(j, _loc4_);
                 j = j + 1;
             }
             self.m_entryClips[i].setSelected(i == self.getSelectedEntryIndex());
             self.m_entryClips[i]._y = self.m_contentHeight;
             self.m_contentHeight += self.m_entryClips[i].getHeight() + self.m_vPadding;
-            trace("_y = " + self.m_entryClips[i]._y + " for entry " + i + ", next contentHeight = " + self.m_contentHeight)
+            // trace(TRACE_PREFIX + "_y = " + self.m_entryClips[i]._y + " for entry " + i + ", next contentHeight = " + self.m_contentHeight)
         }
         i = entryClipsSize - 1;
         while(i >= self.m_numTotalEntries) {
-            trace("Removing entry clip " + i)
+            // trace(TRACE_PREFIX + "Removing entry clip " + i)
             self.m_entryClips[i].removeMovieClip();
             self.m_entryClips.pop();
             i = i - 1;
@@ -89,13 +94,14 @@ class Ra3BattleNet.VirtualList {
         self.OnScrollbarThumbUpdate(_loc8_);
         self.m_clipAnchor._x = 0;
         self.m_clipAnchor._y = - self.m_scrollHeight;
-        trace("END REFRESH")
+        // trace(TRACE_PREFIX + "Finish");
     }
 
     // 调用此函数以实例化所有可见的虚拟列表项，并虚拟化所有不可见的实体列表项
     public function materializeVisibleItems() {
         var self = this;
-        trace("START MATERIALIZE, m_clipAnchor._y = " + self.m_clipAnchor._y + ", m_renderHeight = " + self.m_renderHeight)
+        // var TRACE_PREFIX: String = "[" + CLASS_NAME + "::materializeVisibleItems@" + self + "] ";
+        // trace(TRACE_PREFIX + "Start Materialize, m_clipAnchor._y = " + self.m_clipAnchor._y + ", m_renderHeight = " + self.m_renderHeight)
         for (var i = 0; i < self.m_numTotalEntries; ++i) {
             var currentTop = self.m_clipAnchor._y + self.m_entryClips[i]._y;
             var currentBottom = currentTop + self.m_entryClips[i].getHeight();
@@ -106,7 +112,7 @@ class Ra3BattleNet.VirtualList {
                         self.m_entryClips[i].virtualize();
                     }
                 }
-                // trace("Skipping entry because y: " + currentBottom + " < 0")
+                // trace(TRACE_PREFIX + "Skipping entry because y: " + currentBottom + " < 0")
                 continue;
             }
             if (currentTop > self.m_renderHeight) {
@@ -122,7 +128,7 @@ class Ra3BattleNet.VirtualList {
                 self.m_entryClips[i].materialize();
             }
         }
-        trace("END MATERIALIZE")
+        // trace(TRACE_PREFIX + "Finish Materialize")
     }
 
     public function refreshScrollbar() {

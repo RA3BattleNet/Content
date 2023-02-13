@@ -1,7 +1,9 @@
 class Ra3BattleNet.ResourcePatcher {
+    private static var CLASS_NAME = "Ra3BattleNet.ResourcePatcher";
+
     public static function tryPatchGameSetupBase() {
-        var TRACE_PREFIX: String = "Ra3BattleNet.ResourcePatcher::tryPatchGameSetupBase - ";
-        trace(TRACE_PREFIX + "Started");
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::tryPatchGameSetupBase] ";
+        trace(TRACE_PREFIX);
         if (_global.GameSetupBase == null) {
             trace(TRACE_PREFIX + "GameSetupBase not loaded yet");
             return;
@@ -22,8 +24,8 @@ class Ra3BattleNet.ResourcePatcher {
     }
 
     private static function newRefreshResourcesControl(self) {
-        var TRACE_PREFIX: String = "Ra3BattleNet.ResourcePatcher::newRefreshResourcesControl - ";
-        trace(TRACE_PREFIX + "Started");
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::newRefreshResourcesControl] ";
+        trace(TRACE_PREFIX);
         var resourcesDropdownComponent = _global.Cafe2_BaseUIScreen.m_screen.gameSettings.rulesPanel.resourcesDropdown;
 
         var ret: Object = new Object();
@@ -34,7 +36,7 @@ class Ra3BattleNet.ResourcePatcher {
             trace(TRACE_PREFIX + "REWRITE ON CHANGED FUNCTION");
             // TODO: do not setOnChange every time. Set it only once when needed.
             resourcesDropdownComponent.setOnChange(_global.bind1DynamicParams(self, function(resourcesMC) {
-                trace("Ra3BattleNet.ResourcePatcher - NEW onResourcesChanged");
+                trace("[" + CLASS_NAME + "- NEW onResourcesChanged]");
                 this.cachedResourcesIndex = resourcesMC.getCurrentIndex()
                 var value = String(resourcesMC.getValueAtIndex(this.cachedResourcesIndex));
                 fscommand("CallGameFunction", "%SetInitialResources?Resources=" + value);
