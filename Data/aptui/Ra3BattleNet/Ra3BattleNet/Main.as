@@ -1,7 +1,12 @@
+import Ra3BattleNet.ConnectionInformationLoader;
 import Ra3BattleNet.ResourcePatcher;
 
 class Ra3BattleNet.Main {
     public function Main(apt: MovieClip) {
+        // Ra3's apt does not have getNextHighestDepth, so we have to implement it ourselves
+        MovieClip.prototype.getNextHighestDepth = function(): Number {
+            return getNextHighestDepth(this);
+        };
 
         trace("LOAD SPLASH");
         var splash = apt.createEmptyMovieClip("Ra3BattleNet_Splash", 1);
@@ -25,7 +30,12 @@ class Ra3BattleNet.Main {
         _global.gMH.addPriorityMessageHandler(function(messageCode) {
             switch (messageCode) {
                 case _global.MSGCODE.FE_MP_UPDATE_GAME_SETTINGS:
-                    return ResourcePatcher.tryPatchGameSetupBase();
+                    ConnectionInformationLoader.tryLoadForGameSetup();
+                    ResourcePatcher.tryPatchGameSetupBase();
+                    break;
+                case _global.MSGCODE.IG_PAUSE_MENU_REFRESH_PLAYER_STATUS:
+                    ConnectionInformationLoader.tryLoadForPauseMenu();
+                    break;
             }
         }, 1);
 
@@ -40,5 +50,22 @@ class Ra3BattleNet.Main {
             }
             fscommand("CallGameFunction", "%SendChatMessage?ChatText=" + message + "|ChatMode=" + chatMode);
         };
+    }
+
+    private static function getNextHighestDepth(parent: MovieClip): Number {
+        var TRACE_PREFIX: String = "[Ra3BattleNet::getNextHighestDepth] ";
+        var depth: Number = 1;
+        for (var k: String in parent) {
+            if (parent[k] instanceof MovieClip) {
+                trace(TRACE_PREFIX + parent[k] + " has depth " + parent[k].getDepth())
+                var mc: MovieClip = parent[k];
+                if (mc.getDepth() >= depth) {
+                    trace(TRACE_PREFIX + mc + " already has depth " + mc.getDepth());
+                    depth = mc.getDepth() + 1;
+                }
+            }
+        }
+        trace(TRACE_PREFIX + "next depth available in " + parent + " is " + depth);
+        return depth;
     }
 }
