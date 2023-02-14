@@ -10,7 +10,7 @@ class Ra3BattleNet.DisconnectHelper {
         destroyDisconnectHelper(apt);
         var helper: MovieClip = apt.createEmptyMovieClip(
             DISCONNECT_HELPER_ID,
-            apt.getNextHighestDepth()
+            Utils.getNextHighestDepth(apt)
         );
         helper.onEnterFrame = update;
         trace(TRACE_PREFIX + "Helper created: " + helper + ", update: " + helper.onEnterFrame);
