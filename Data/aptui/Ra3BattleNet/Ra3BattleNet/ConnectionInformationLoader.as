@@ -1,3 +1,5 @@
+import Ra3BattleNet.Utils;
+
 class Ra3BattleNet.ConnectionInformationLoader {
     private static var CLASS_NAME = "Ra3BattleNet.ConnectionInformationLoader";
     private static var CONNECTION_INFORMATION_ID: String = "Ra3BattleNet_ConnectionInformation";
@@ -7,11 +9,11 @@ class Ra3BattleNet.ConnectionInformationLoader {
             return;
         }
         var screen = tryGetUnpatchedScreen();
-        if (!instanceOf(screen, _global.fem_m_gameSetup)) {
+        if (!Utils.instanceOf(screen, _global.fem_m_gameSetup)) {
             return;
         }
         trace("[" + CLASS_NAME + "::tryLoadForGameSetup] loading outgame");
-        loadConnectionInformation(screen.m_screen);
+        loadConnectionInformation(_global.Cafe2_BaseUIScreen.m_screen);
     }
 
     public static function tryLoadForPauseMenu(): Void {
@@ -19,11 +21,11 @@ class Ra3BattleNet.ConnectionInformationLoader {
             return;
         }
         var screen = tryGetUnpatchedScreen();
-        if (!instanceOf(screen, _global.igm_pauseMenu)) {
+        if (!Utils.instanceOf(screen, _global.igm_pauseMenu)) {
             return;
         }
         trace("[" + CLASS_NAME + "::tryLoadForPauseMenu] loading ingame");
-        loadConnectionInformation(screen.m_screen);
+        loadConnectionInformation(_global.Cafe2_BaseUIScreen.m_screen);
     }
 
     private static function tryGetUnpatchedScreen() {
@@ -48,26 +50,6 @@ class Ra3BattleNet.ConnectionInformationLoader {
             target.getNextHighestDepth()
         );
         apt.loadMovie(CONNECTION_INFORMATION_ID + ".swf");
-        trace(TRACE_PREFIX + "loaded " + apt);
-    }
-
-    // https://github.com/lanyizi/apt-danmaku/blob/23f9e7ea6c6e4b5be84dd8552fdb28902010af03/Data/AptUI/feg_m_mainMenu3d/danmaku/GameObject.as#L148
-    private static function instanceOf(self, check): Boolean {
-        if (!self) {
-            return false;
-        }
-        self = typeof self === 'function'
-            ? self.prototype
-            : self.__proto__;
-        check = typeof check === 'function'
-            ? check.prototype
-            : check.__proto__;
-        while (self) {
-            if (self === check) {
-                return true;
-            }
-            self = self.__proto__;
-        }
-        return false;
+        trace(TRACE_PREFIX + "loaded " + apt + " on " + target);
     }
 }

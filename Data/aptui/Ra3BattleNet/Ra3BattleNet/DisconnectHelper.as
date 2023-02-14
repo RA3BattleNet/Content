@@ -1,68 +1,58 @@
+import Ra3BattleNet.Utils;
+
 class Ra3BattleNet.DisconnectHelper {
     private static var CLASS_NAME = "Ra3BattleNet.DisconnectHelper";
     private static var DISCONNECT_HELPER_ID: String = "Ra3BattleNet_DisconnectHelper";
 
-    public static function createDisconnectHelper(apt) {
+    public static function createDisconnectHelper(apt: MovieClip): Void {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::createDisconnectHelper] ";
         trace(TRACE_PREFIX);
+        destroyDisconnectHelper(apt);
         var helper: MovieClip = apt.createEmptyMovieClip(
             DISCONNECT_HELPER_ID,
             apt.getNextHighestDepth()
         );
-        helper.onEnterFrame = function() {
-            trace("DISCONNECT_INFO");
-            var ret = new Object();
-            loadVariables("QueryGameEngine?DISCONNECT_INFO", ret);
-            var times = ret.DISCONNECT_INFO_TIMES.split(",");
-            var screen = tryGetUnpatchedScreen();
-            trace(screen);
-            trace(_global.fem_m_load);
-            var isLoading = _global.fem_m_load and instanceOf(screen, _global.fem_m_load);
-            trace(isLoading);
-            for (var i = 0; i < times.length; i++)
-            {
-                if (Number(times[i]) < 25)
-                {
-                    trace("FIND LESS THAN 25 DISCONNECT COUNTER");
-                    if (isLoading)
-                    {
-                        trace("DISCONNECT!");
-                        fscommand("CallGameFunction", "%DisconnectQuitGame");
-                    }
-                }
-            }
-        }
-        trace(TRACE_PREFIX + "HELPER CREATED");
+        helper.onEnterFrame = update;
+        trace(TRACE_PREFIX + "Helper created: " + helper + ", update: " + helper.onEnterFrame);
     }
 
-    private static function tryGetUnpatchedScreen() {
+    public static function destroyDisconnectHelper(apt: MovieClip): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::destroyDisconnectHelper] ";
+        trace(TRACE_PREFIX);
+        if (apt[DISCONNECT_HELPER_ID] instanceof MovieClip) {
+            apt[DISCONNECT_HELPER_ID].removeMovieClip();
+            trace(TRACE_PREFIX + "Helper destroyed -> " + apt[DISCONNECT_HELPER_ID]);
+        }
+    }
+
+    private static function update(): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::update] ";
+        trace(TRACE_PREFIX);
+
         if (!_global.Cafe2_BaseUIScreen) {
-            return undefined;
+            return;
         }
-        var screenInstance = _global.Cafe2_BaseUIScreen.m_thisClass;
-        if (!screenInstance) {
-            return undefined;
+        var screen = _global.Cafe2_BaseUIScreen.m_thisClass;
+        if (!screen) {
+            return;
         }
-        return screenInstance;
-    }
+        trace(TRACE_PREFIX + "screen: " + screen + ", fem_m_load: " + _global.fem_m_load);
+        var isLoading: Boolean = _global.fem_m_load
+            && Utils.instanceOf(screen, _global.fem_m_load);
+        trace(TRACE_PREFIX + "isLoading: " + isLoading);
+        if (!isLoading) {
+            return;
+        }
 
-    // https://github.com/lanyizi/apt-danmaku/blob/23f9e7ea6c6e4b5be84dd8552fdb28902010af03/Data/AptUI/feg_m_mainMenu3d/danmaku/GameObject.as#L148
-    private static function instanceOf(self, check): Boolean {
-        if (!self) {
-            return false;
-        }
-        self = typeof self === 'function'
-            ? self.prototype
-            : self.__proto__;
-        check = typeof check === 'function'
-            ? check.prototype
-            : check.__proto__;
-        while (self) {
-            if (self === check) {
-                return true;
+        var ret: Object = new Object();
+        loadVariables("QueryGameEngine?DISCONNECT_INFO", ret);
+        var times: Array = ret.DISCONNECT_INFO_TIMES.split(",");
+        for (var i = 0; i < times.length; i++) {
+            if (Number(times[i]) < 25) {
+                trace(TRACE_PREFIX + "Found less than 25 disconnect counter, disconnect!");
+                fscommand("CallGameFunction", "%DisconnectQuitGame");
+                break;
             }
-            self = self.__proto__;
         }
-        return false;
     }
 }
