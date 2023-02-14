@@ -5,17 +5,44 @@
     private static var GPU_ID: String = "Ra3BattleNetConnectionInformationGpu";
     private static var OBSERVER_PANEL_ID: String = "Ra3BattleNetConnectionInformationObserverPanel";
 
-    private var _apt: MovieClip;
+    private static var _instance: ConnectionInformation;
+    private static var _apt: MovieClip;
     private var _widgets: Array;
     private var _isInGame: Boolean;
 
     public function ConnectionInformation(apt: MovieClip) {
+        if (_instance) {
+            trace("[" + CLASS_NAME + "::ConnectionInformation] instance already exists: " + _instance);
+            return;
+        }
+        _instance = this;
         _apt = apt;
         _apt.onEnterFrame = _global.bind0(this, update);
+        // 下面这代码实在是太诡异了，但也只能这样了
+        _global.gSM.setOnExitScreen(_global.bind1(this, function(previousOnExitScreen: Function) {
+            unload();
+            if(String(previousOnExitScreen) == "[function]" || previousOnExitScreen != null) {
+                trace("[" + CLASS_NAME + "::ConnectionInformation] calling previous onExitScreen");
+                previousOnExitScreen.call(_global.gSM);
+            }
+        }, _global.gSM.onExitScreen));
     }
 
-    private function update() {
-        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::update]";
+    private function unload(): Void {
+        trace("[" + CLASS_NAME + "::unload] apt unloading");
+        delete _isInGame;
+        delete _widgets;
+        delete _apt.onEnterFrame;
+        delete _apt.onUnload;
+        delete _apt;
+        delete _instance;
+        delete _global.Ra3BattleNet.ConnectionInformation;
+        trace("[" + CLASS_NAME + "::unload] apt unloaded");
+    }
+
+    private function update(): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::update] ";
+        trace(TRACE_PREFIX + "unload = " + _apt.onUnload);
         var query: Object = new Object();
         loadVariables("Ra3BattleNet_ConnectionInformation", query);
         if (!query.names) {
@@ -28,14 +55,14 @@
             return;
         }
         trace(TRACE_PREFIX + "name and widgets availaible");
+        var isPlaying: Array = query.isPlaying.split(",");
         var latencies: Array = query.latencies.split(",");
         var packetLosses: Array = query.packetLosses.split(",");
         var logicLoads: Array = query.logicLoads.split(",");
         var renderLoads: Array = query.renderLoads.split(",");
+        trace(TRACE_PREFIX + "ingame: " + _isInGame + "isPlaying: " + isPlaying);
         if (_isInGame) {
             var names: Array = query.names.split(",");
-            var isPlaying: Array = query.isPlaying.split(",");
-            trace(TRACE_PREFIX + "inside game - isPlaying: " + isPlaying);
             // playing players are always on top
             var i: Number = 0;
             var j: Number = 0;
@@ -192,7 +219,7 @@
             x = colorRect.x + colorRect.width + padding;
             horizontalMiddle = colorRect.y + colorRect.height * 0.5;
         }
-        
+
         function appendWidget(symbol: String, id: String) {
             var widget: MovieClip = tryAttachMovie(symbol, id);
             widget._x = x;
@@ -208,7 +235,7 @@
         result.gpu = appendWidget("GpuSymbol", GPU_ID + index);
         // only for debugging!
         if (!result.observerName) {
-            _apt.createTextField("debug" + index, _global.Ra3BattleNet.Utils.getNextHighestDepth(_apt), x, horizontalMiddle - 10, 100, 20);
+            _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10, 100, 20);
             var debug: TextField = _apt["debug" + index];
             debug.setTextFormat(_global.std_config.textBox_textFormat_highlight);
             debug.text = "debug";
@@ -290,13 +317,14 @@
         latency: Number, packetLoss: Number, cpu: Number, gpu: Number,
         observerName: String
     ): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::showWidgets] ";
         if (!_widgets || !_widgets[index]) {
-            trace("ConnectionInformation::showWidgets - no widgets for " + index);
+            trace(TRACE_PREFIX + "no widgets for " + index);
             return;
         }
         var widgets: Object = _widgets[index];
-        trace("ConnectionInformation::showWidgets - " + index + " " + latency + " " + packetLoss + " " + cpu + " " + gpu + " " + observerName);
-        trace("ConnectionInformation::showWidgets - network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
+        trace(TRACE_PREFIX + index + " " + latency + " " + packetLoss + " " + cpu + " " + gpu + " " + observerName);
+        trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
         // NETWORK
         // latency > 990ms, the connection may lost already
         // packetLoss > 0.1, too bad
@@ -340,13 +368,13 @@
         }
     }
 
-    private function tryAttachMovie(symbol: String, name: String): MovieClip {
+    private static function tryAttachMovie(symbol: String, name: String): MovieClip {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::tryAttachMovie] ";
         if (!_apt[name] || !(_apt[name] instanceof MovieClip)) {
             // TODO: import instead of referencing global
             // need to rework the defaultscript.cs and reorganize the code,
             // putting all .fla files into a single folder
-            var nextDepth: Number = _global.Ra3BattleNet.Utils.getNextHighestDepth(_apt);
+            var nextDepth: Number = _apt.getNextHighestDepth();
             var attached: MovieClip = _apt.attachMovie(symbol, name, nextDepth);
             trace(TRACE_PREFIX + "Symbol " + symbol + " attached as " + name + " at depth " + nextDepth + " -> " + attached);
         }
@@ -357,7 +385,7 @@
     // 从 from 的坐标系转换到 _apt 的坐标系
     // 该函数假定 from 没有被旋转或者扭曲
     // 也假定我们的 _apt 没有被旋转或者扭曲
-    private function convertCoordinates(from: MovieClip): Object {
+    private static function convertCoordinates(from: MovieClip): Object {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::convertCoordinates] ";
         trace(TRACE_PREFIX + "Converting coordinates from " + from + " to " + _apt);
         trace(TRACE_PREFIX + "from._x: " + from._x + " from._y: " + from._y);
