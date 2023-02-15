@@ -41,7 +41,7 @@ class Ra3BattleNet.Main {
                     break;
             }
             return false;
-        }, 1);
+        }, -1);
 
         trace("CREATE SEND MESSAGE FUNCTION");
         apt.sendMessage = function(message, chatMode, isHostOnly) {
