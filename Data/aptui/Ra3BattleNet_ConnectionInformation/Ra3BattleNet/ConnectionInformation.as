@@ -73,10 +73,10 @@
                 }
                 // observer name are temporarily shown for debugging
                 // otherwise it should be null
-                var observerName: String = String(String.fromCharCode.apply(String, names[i].split("_")));
+                var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is playing, debug name: " + observerName);
                 updateWidgets(
-                    i, observerName, !!names[i],
+                    i, observerName, !!names[j],
                     Number(latencies[j]), Number(packetLosses[j]),
                     Number(logicLoads[j]), Number(renderLoads[j])
                 );
@@ -89,7 +89,7 @@
                 if (isPlaying[j] === "1") {
                     ++j;
                 }
-                var observerName: String = String(String.fromCharCode.apply(String, names[i].split("_")));
+                var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
                 updateWidgets(
                     i, observerName, !!observerName,
