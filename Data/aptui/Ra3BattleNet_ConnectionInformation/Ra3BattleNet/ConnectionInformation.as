@@ -55,14 +55,15 @@
             return;
         }
         trace(TRACE_PREFIX + "name and widgets availaible");
-        var isPlaying: Array = query.isPlaying.split(",");
+        var names: Array = query.names.split(",");
         var latencies: Array = query.latencies.split(",");
         var packetLosses: Array = query.packetLosses.split(",");
         var logicLoads: Array = query.logicLoads.split(",");
         var renderLoads: Array = query.renderLoads.split(",");
-        trace(TRACE_PREFIX + "ingame: " + _isInGame + "， isPlaying: " + isPlaying);
+        trace(TRACE_PREFIX + "ingame: " + _isInGame);
         if (_isInGame) {
-            var names: Array = query.names.split(",");
+            var isPlaying: Array = query.isPlaying.split(",");
+            trace(TRACE_PREFIX + "isPlaying: " + isPlaying);
             // playing players are always on top
             var i: Number = 0;
             var j: Number = 0;
@@ -74,11 +75,10 @@
                 // otherwise it should be null
                 var observerName: String = String(String.fromCharCode.apply(String, names[i].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is playing, debug name: " + observerName);
-                showWidgets(
-                    i,
+                updateWidgets(
+                    i, observerName, !!names[i],
                     Number(latencies[j]), Number(packetLosses[j]),
-                    Number(logicLoads[j]), Number(renderLoads[j]),
-                    observerName
+                    Number(logicLoads[j]), Number(renderLoads[j])
                 );
                 ++i;
                 ++j;
@@ -91,11 +91,10 @@
                 }
                 var observerName: String = String(String.fromCharCode.apply(String, names[i].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
-                showWidgets(
-                    i,
+                updateWidgets(
+                    i, observerName, !!observerName,
                     Number(latencies[j]), Number(packetLosses[j]),
-                    Number(logicLoads[j]), Number(renderLoads[j]),
-                    observerName
+                    Number(logicLoads[j]), Number(renderLoads[j])
                 );
                 ++i;
                 ++j;
@@ -103,14 +102,11 @@
         }
         else {
             for (var i: Number = 0; i < _widgets.length; ++i) {
-                if (isPlaying[i] === "0") {
-                    trace(TRACE_PREFIX + "outside game - player " + i + " is not playing");
-                    resetWidgets(i);
-                }
-                else {
-                    trace(TRACE_PREFIX + "outside game - player " + i + " is playing");
-                    showWidgets(i, Number(latencies[i]), Number(packetLosses[i]), 1, 1, null);
-                }
+                updateWidgets(
+                    i, null, !!names[i], 
+                    Number(latencies[i]), Number(packetLosses[i]), 
+                    Number(logicLoads[j]), Number(renderLoads[j])
+                );
             }
         }
     }
@@ -293,38 +289,29 @@
         return result;
     }
 
-    private function resetWidgets(index: Number): Void {
-        if (!_widgets || !_widgets[index]) {
-            return;
-        }
-        var widgets: Object = _widgets[index];
-        var isInGameObserver: Boolean = widgets.observerName instanceof TextField;
-        if (isInGameObserver) {
-            widgets.observerName._visible = false;
-        }
-        for (var k: String in widgets) {
-            if (widgets[k] instanceof MovieClip) {
-                widgets[k].gotoAndStop(1);
-                if (isInGameObserver) {
-                    widgets[k]._visible = false;
-                }
-            }
-        }
-    }
-
-    private function showWidgets(
-        index: Number,
-        latency: Number, packetLoss: Number, cpu: Number, gpu: Number,
-        observerName: String
+    private function updateWidgets(
+        index: Number, name: String, hasData: Boolean,
+        latency: Number, packetLoss: Number, cpu: Number, gpu: Number
     ): Void {
-        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::showWidgets] ";
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::updateWidgets] ";
         if (!_widgets || !_widgets[index]) {
             trace(TRACE_PREFIX + "no widgets for " + index);
             return;
         }
         var widgets: Object = _widgets[index];
-        trace(TRACE_PREFIX + index + " " + latency + " " + packetLoss + " " + cpu + " " + gpu + " " + observerName);
+        trace(TRACE_PREFIX + index + " " + name + " " + hasData + " " + latency + " " + packetLoss + " " + cpu + " " + gpu);
         trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
+        if (widgets.observerName) {
+            widgets.observerName.text = name;
+        }
+        if (!hasData) {
+            widgets.network.gotoAndStop(1);
+            widgets.cpu.gotoAndStop(1);
+            if (widgets.gpu) {
+                widgets.gpu.gotoAndStop(1);
+            }
+            return;
+        }
         // NETWORK
         // latency > 990ms, the connection may lost already
         // packetLoss > 0.1, too bad
@@ -350,7 +337,7 @@
             widgets.cpu.gotoAndStop(4);
         }
         // GAME RENDER LOAD
-        if (widgets.gpu instanceof MovieClip) {
+        if (widgets.gpu) {
             if (gpu < 0.25) {
                 widgets.gpu.gotoAndStop(2);
             }
@@ -360,11 +347,6 @@
             else {
                 widgets.gpu.gotoAndStop(4);
             }
-        }
-        // OBSERVER NAME
-        if (widgets.observerName instanceof TextField) {
-            widgets.observerName.text = observerName;
-            widgets.observerName._visible = true;
         }
     }
 
