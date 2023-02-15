@@ -22,10 +22,10 @@
         _global.gSM.setOnExitScreen(_global.bind1(this, function(previousOnExitScreen: Function) {
             unload();
             if(String(previousOnExitScreen) == "[function]" || previousOnExitScreen != null) {
-                trace("[" + CLASS_NAME + "::ConnectionInformation] calling previous onExitScreen");
+                trace("[" + CLASS_NAME + "::onExitScreen] calling previous onExitScreen");
                 previousOnExitScreen.call(_global.gSM);
             }
-        }, _global.gSM.onExitScreen));
+        }, _global.gSM.m_onExitScreenFunc));
     }
 
     private function unload(): Void {
@@ -60,7 +60,7 @@
         var packetLosses: Array = query.packetLosses.split(",");
         var logicLoads: Array = query.logicLoads.split(",");
         var renderLoads: Array = query.renderLoads.split(",");
-        trace(TRACE_PREFIX + "ingame: " + _isInGame + "isPlaying: " + isPlaying);
+        trace(TRACE_PREFIX + "ingame: " + _isInGame + "， isPlaying: " + isPlaying);
         if (_isInGame) {
             var names: Array = query.names.split(",");
             // playing players are always on top
