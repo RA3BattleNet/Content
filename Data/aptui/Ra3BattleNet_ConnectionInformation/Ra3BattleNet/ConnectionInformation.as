@@ -9,6 +9,7 @@
     private static var _apt: MovieClip;
     private var _widgets: Array;
     private var _isInGame: Boolean;
+    private var _observerIndex: Number;
 
     public function ConnectionInformation(apt: MovieClip) {
         if (_instance) {
@@ -30,7 +31,6 @@
 
     private function unload(): Void {
         trace("[" + CLASS_NAME + "::unload] apt unloading");
-        delete _isInGame;
         delete _widgets;
         delete _apt.onEnterFrame;
         delete _apt.onUnload;
@@ -185,18 +185,19 @@
             trace(TRACE_PREFIX + "player apt " + index + " is not visible");
             if (!(_apt[OBSERVER_PANEL_ID] instanceof MovieClip)) {
                 // create observer panel at playerApt's position
+                tryAttachMovie("InGameObserverPanel", OBSERVER_PANEL_ID);
+                var panel: MovieClip = _apt[OBSERVER_PANEL_ID];
                 var playerAptRect: Object = convertCoordinates(playerApt);
-                // now consider the panel as the player apt
-                playerApt = tryAttachMovie("InGameObserverPanel", OBSERVER_PANEL_ID);
-                playerApt._x = playerAptRect.x;
-                playerApt._y = playerAptRect.y;
+                panel._x = playerAptRect.x;
+                panel._y = playerAptRect.y;
                 for (var i: Number = 0; i < 6; ++i) {
-                    var observerName: MovieClip = playerApt["observer" + i];
+                    var observerName: MovieClip = panel["observer" + i];
                     observerName._visible = false;
                 }
-                trace(TRACE_PREFIX + "observer panel created");
+                _observerIndex = index;
+                trace(TRACE_PREFIX + "observer panel created at index " + _observerIndex);
             }
-            var observerName: MovieClip = playerApt["observer" + index];
+            var observerName: MovieClip = panel["observer" + (index - _observerIndex)];
             observerName._visible = true;
             var observerRect: Object = convertCoordinates(observerName);
             x = observerRect.x + observerRect.width + padding;
@@ -301,15 +302,15 @@
         var widgets: Object = _widgets[index];
         trace(TRACE_PREFIX + index + " " + name + " " + hasData + " " + latency + " " + packetLoss + " " + cpu + " " + gpu);
         trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
-        if (widgets.observerName) {
+        if (_isInGame) {
+            widgets.network._visible = hasData;
+            widgets.cpu._visible = hasData;
+            widgets.gpu._visible = hasData;
             widgets.observerName.text = name;
         }
-        if (!hasData) {
+        else if (!hasData) {
             widgets.network.gotoAndStop(1);
             widgets.cpu.gotoAndStop(1);
-            if (widgets.gpu) {
-                widgets.gpu.gotoAndStop(1);
-            }
             return;
         }
         // NETWORK
