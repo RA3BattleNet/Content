@@ -64,20 +64,15 @@ class Ra3BattleNet.Main {
                 trace(TRACE_PREFIX + "skipping _parent");
                 continue;
             }
-            if (Utils.instanceOf(this[k], MovieClip)) {
-                trace(TRACE_PREFIX + this[k] + " has depth " + this[k].getDepth())
-                var mc: MovieClip = this[k];
-                if (mc.getDepth() >= depth) {
-                    trace(TRACE_PREFIX + mc + " already has depth " + mc.getDepth());
-                    depth = mc.getDepth() + 1;
+            if (this[k].getDepth) {
+                var existingDepth: Number = Number(this[k].getDepth());
+                if (isNaN(existingDepth)) {
+                    trace(TRACE_PREFIX + k + " -> " + this[k] + " depth is NaN, skipping");
+                    continue;
                 }
-            }
-            else if (Utils.instanceOf(this[k], TextField)) {
-                trace(TRACE_PREFIX + this[k] + " has depth " + this[k].getDepth())
-                var tf: TextField = this[k];
-                if (tf.getDepth() >= depth) {
-                    trace(TRACE_PREFIX + tf + " already has depth " + tf.getDepth());
-                    depth = tf.getDepth() + 1;
+                if (existingDepth >= depth) {
+                    trace(TRACE_PREFIX + this[k] + " already has depth " + depth);
+                    depth = existingDepth + 1;
                 }
             }
         }
