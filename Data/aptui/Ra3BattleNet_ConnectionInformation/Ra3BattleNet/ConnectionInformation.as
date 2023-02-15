@@ -175,6 +175,7 @@
         var x: Number = 0;
         var horizontalMiddle: Number = 0;
         var padding: Number = 8;
+        var direction: Number = 1;
         var result = new Object();
         // the player apt is the movieclip which contains player's information
         // our connection information is also "player's information"
@@ -214,7 +215,10 @@
                 return null;
             }
             var statusRect: Object = convertCoordinates(status);
-            x = statusRect.x + statusRect.width + padding;
+            // 实在是没想到连接状态居然占了整行，所以我们只能从覆盖在连接状态的上方
+            // 并从右向左排列，以避免遮挡连接状态的文本
+            x = statusRect.x + statusRect.width;
+            direction = -1;
             horizontalMiddle = statusRect.y + statusRect.height * 0.5;
         }
 
@@ -222,8 +226,10 @@
             var widget: MovieClip = tryAttachMovie(symbol, id);
             widget._x = x;
             widget._y = horizontalMiddle - widget._height * 0.5;
-            x += widget._width;
-            x += padding;
+            x += (widget._width + padding) * direction;
+            if (direction === -1) {
+                widget._x -= widget._width;
+            }
             trace(TRACE_PREFIX + symbol + " created as " + widget);
             return widget;
         }
