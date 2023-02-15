@@ -203,6 +203,7 @@
             x = observerRect.x + observerRect.width + padding;
             horizontalMiddle = observerRect.y + observerRect.height * 0.5;
             result.observerName = observerName.name;
+            trace(TRACE_PREFIX + "player " + index + " has " + observerName);
         }
         else {
             // create widgets at the right of the player's color
@@ -234,8 +235,10 @@
         if (!result.observerName) {
             _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10, 100, 20);
             var debug: TextField = _apt["debug" + index];
+            trace(TRACE_PREFIX + "debug text field created at depth " + debug.getDepth() + " as " + debug);
             debug.setTextFormat(_global.std_config.textBox_textFormat_highlight);
             debug.text = "debug";
+            debug.textColor = 0x00FF00;
             result.observerName = debug;
         }
         return result;
