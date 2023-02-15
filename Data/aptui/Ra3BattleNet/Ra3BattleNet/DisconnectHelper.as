@@ -19,7 +19,7 @@ class Ra3BattleNet.DisconnectHelper {
     public static function destroyDisconnectHelper(apt: MovieClip): Void {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::destroyDisconnectHelper] ";
         trace(TRACE_PREFIX);
-        if (apt[DISCONNECT_HELPER_ID] instanceof MovieClip) {
+        if (typeof(apt[DISCONNECT_HELPER_ID]) === "movieclip") {
             apt[DISCONNECT_HELPER_ID].removeMovieClip();
             trace(TRACE_PREFIX + "Helper destroyed -> " + apt[DISCONNECT_HELPER_ID]);
         }

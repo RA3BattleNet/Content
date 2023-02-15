@@ -40,7 +40,7 @@ class Ra3BattleNet.ConnectionInformationLoader {
     }
 
     private static function tryGetUnpatchedScreenApt(screenConstructor: Function): MovieClip {
-        if (typeof screenConstructor !== 'function') {
+        if (typeof screenConstructor !== "function") {
             return undefined;
         }
         if (!_global.Cafe2_BaseUIScreen) {
@@ -54,7 +54,7 @@ class Ra3BattleNet.ConnectionInformationLoader {
             return undefined;
         }
         var screenApt: MovieClip = _global.Cafe2_BaseUIScreen.m_screen;
-        if (screenApt[CONNECTION_INFORMATION_ID] instanceof MovieClip) {
+        if (typeof(screenApt[CONNECTION_INFORMATION_ID]) === "movieclip") {
             // Already patched
             return undefined;
         }

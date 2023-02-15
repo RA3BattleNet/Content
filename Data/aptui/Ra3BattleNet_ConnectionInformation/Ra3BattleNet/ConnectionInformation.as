@@ -42,7 +42,6 @@
 
     private function update(): Void {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::update] ";
-        trace(TRACE_PREFIX + "unload = " + _apt.onUnload);
         var query: Object = new Object();
         loadVariables("Ra3BattleNet_ConnectionInformation", query);
         if (!query.names) {
@@ -105,7 +104,7 @@
                 updateWidgets(
                     i, null, !!names[i],
                     Number(latencies[i]), Number(packetLosses[i]),
-                    Number(logicLoads[j]), Number(renderLoads[j])
+                    Number(logicLoads[i]), Number(renderLoads[i])
                 );
             }
         }
@@ -128,9 +127,9 @@
         }
         _isInGame = false;
         var playerApts: Array = screenInstance.m_playerSlots;
-        if (!playerApts || !(playerApts[0] instanceof MovieClip)) {
+        if (!playerApts || typeof(playerApts[0]) !== "movieclip") {
             playerApts = screenInstance.m_playerLineMCs;
-            if (!playerApts || !(playerApts[0] instanceof MovieClip)) {
+            if (!playerApts || typeof(playerApts[0]) !== "movieclip") {
                 trace(TRACE_PREFIX + "player slots not found");
                 return;
             }
@@ -145,7 +144,7 @@
         var result: Array = new Array();
         for (var i: Number = 0; i < playerApts.length; ++i) {
             var playerApt: MovieClip = playerApts[i];
-            if (!(playerApt instanceof MovieClip)) {
+            if (typeof(playerApt) !== "movieclip") {
                 // something is wrong
                 trace(TRACE_PREFIX + "player slot is not a movie clip");
                 return;
@@ -183,7 +182,7 @@
             // if the player apt is not visible,
             // we create a panel to show our information
             trace(TRACE_PREFIX + "player apt " + index + " is not visible");
-            if (!(_apt[OBSERVER_PANEL_ID] instanceof MovieClip)) {
+            if (typeof(_apt[OBSERVER_PANEL_ID]) !== "movieclip") {
                 // create observer panel at playerApt's position
                 tryAttachMovie("InGameObserverPanel", OBSERVER_PANEL_ID);
                 var panel: MovieClip = _apt[OBSERVER_PANEL_ID];
@@ -206,16 +205,17 @@
             trace(TRACE_PREFIX + "player " + index + " has " + observerName);
         }
         else {
-            // create widgets at the right of the player's color
-            var color: MovieClip = playerApt.colorMC;
-            if (!color || !(color instanceof MovieClip)) {
+            // 在玩家的状态（“战败”）的右边显示连接状态
+            // var color: MovieClip = playerApt.colorMC;
+            var status: MovieClip = playerApt.statusMC;
+            if (typeof(status) !== "movieclip") {
                 // something is wrong
-                trace(TRACE_PREFIX + "color movie clip not found in " + playerApt);
+                trace(TRACE_PREFIX + "status movie clip not found in " + playerApt);
                 return null;
             }
-            var colorRect: Object = convertCoordinates(color);
-            x = colorRect.x + colorRect.width + padding;
-            horizontalMiddle = colorRect.y + colorRect.height * 0.5;
+            var statusRect: Object = convertCoordinates(status);
+            x = statusRect.x + statusRect.width + padding;
+            horizontalMiddle = statusRect.y + statusRect.height * 0.5;
         }
 
         function appendWidget(symbol: String, id: String) {
@@ -248,12 +248,12 @@
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::createOutGameWidgets] ";
 
         var voip: MovieClip = playerApt.voipCheckBox;
-        if (!(voip instanceof MovieClip)) {
+        if (typeof(voip) !== "movieclip") {
             trace(TRACE_PREFIX + "voip check box not found in " + playerApt);
             return null;
         }
         var mute: MovieClip = playerApt.muteCheckBox;
-        if (!(mute instanceof MovieClip)) {
+        if (typeof(mute) !== "movieclip") {
             trace(TRACE_PREFIX + "mute check box not found in " + playerApt);
             return null;
         }
@@ -356,7 +356,7 @@
 
     private static function tryAttachMovie(symbol: String, name: String): MovieClip {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::tryAttachMovie] ";
-        if (!_apt[name] || !(_apt[name] instanceof MovieClip)) {
+        if (typeof(_apt[name]) !== "movieclip") {
             // TODO: import instead of referencing global
             // need to rework the defaultscript.cs and reorganize the code,
             // putting all .fla files into a single folder
