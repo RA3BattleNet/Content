@@ -103,8 +103,8 @@
         else {
             for (var i: Number = 0; i < _widgets.length; ++i) {
                 updateWidgets(
-                    i, null, !!names[i], 
-                    Number(latencies[i]), Number(packetLosses[i]), 
+                    i, null, !!names[i],
+                    Number(latencies[i]), Number(packetLosses[i]),
                     Number(logicLoads[j]), Number(renderLoads[j])
                 );
             }
