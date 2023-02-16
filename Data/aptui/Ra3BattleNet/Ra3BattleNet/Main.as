@@ -1,3 +1,4 @@
+import Ra3BattleNet.BroadcastSetter;
 import Ra3BattleNet.ConnectionInformationLoader;
 import Ra3BattleNet.DisconnectHelper;
 import Ra3BattleNet.ResourcePatcher;
@@ -29,6 +30,7 @@ class Ra3BattleNet.Main {
                 case _global.MSGCODE.FE_MP_UPDATE_GAME_SETTINGS:
                     ConnectionInformationLoader.tryLoadForGameSetup();
                     ResourcePatcher.tryPatchGameSetupBase();
+                    BroadcastSetter.update();
                     break;
                 case _global.MSGCODE.FE_SHOW_MP_DISCONNECT:
                     DisconnectHelper.createDisconnectHelper(apt);
