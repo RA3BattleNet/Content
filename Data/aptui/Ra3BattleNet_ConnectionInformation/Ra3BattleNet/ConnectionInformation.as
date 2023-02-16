@@ -233,7 +233,7 @@
         result.network = appendWidget("NetworkSymbol", NETWORK_ID + index);
         // only for debugging!
         if (!result.observerName) {
-            _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10, 100, 20);
+            _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10 + result.gpu._height, 100, 20);
             var debug: TextField = _apt["debug" + index];
             trace(TRACE_PREFIX + "debug text field created at depth " + debug.getDepth() + " as " + debug);
             debug.setTextFormat(_global.std_config.textBox_textFormat_highlight);
