@@ -359,19 +359,25 @@
         else if (cpu < 75) {
             widgets.cpu.gotoAndStop(3);
         }
-        else {
+        else if (cpu < 75) {
             widgets.cpu.gotoAndStop(4);
+        }
+        else {
+            widgets.cpu.gotoAndStop(5);
         }
         // GAME RENDER LOAD
         if (widgets.gpu) {
             if (gpu < 25) {
                 widgets.gpu.gotoAndStop(2);
             }
-            else if (gpu < 75) {
+            else if (gpu < 50) {
                 widgets.gpu.gotoAndStop(3);
             }
-            else {
+            else if (gpu < 75) {
                 widgets.gpu.gotoAndStop(4);
+            }
+            else {
+                widgets.gpu.gotoAndStop(5);
             }
         }
     }
