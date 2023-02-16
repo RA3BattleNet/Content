@@ -341,7 +341,7 @@
         }
         // latency > 990ms, the connection may lost already
         // packetLoss > 0.1, too bad
-        if (latency > 0.99 || packetLoss > 0.1) {
+        else if (latency > 0.99 || packetLoss > 0.1) {
             widgets.network.gotoAndStop(2);
         }
         // latency > 300ms
@@ -353,13 +353,13 @@
             widgets.network.gotoAndStop(4);
         }
         // GAME LOGIC LOAD
-        if (cpu < 25) {
+        if (cpu < 40) {
             widgets.cpu.gotoAndStop(2);
         }
-        else if (cpu < 75) {
+        else if (cpu < 70) {
             widgets.cpu.gotoAndStop(3);
         }
-        else if (cpu < 75) {
+        else if (cpu < 95) {
             widgets.cpu.gotoAndStop(4);
         }
         else {
@@ -367,13 +367,13 @@
         }
         // GAME RENDER LOAD
         if (widgets.gpu) {
-            if (gpu < 25) {
+            if (gpu < 40) {
                 widgets.gpu.gotoAndStop(2);
             }
-            else if (gpu < 50) {
+            else if (gpu < 70) {
                 widgets.gpu.gotoAndStop(3);
             }
-            else if (gpu < 75) {
+            else if (gpu < 95) {
                 widgets.gpu.gotoAndStop(4);
             }
             else {
