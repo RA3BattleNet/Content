@@ -4,8 +4,10 @@ Ra3BattleNet*/*.dat
 Ra3BattleNet*/*.eaf
 Ra3BattleNet*/*.flm
 Ra3BattleNet*/*.hash
-Ra3BattleNet*/*.swf
+Ra3BattleNet*/*.swd
 Ra3BattleNet*/*.tac
+Ra3BattleNet*/*.swf
+Ra3BattleNet*/*.html
 Ra3BattleNet*/Ra3BattleNet*.xml
 Ra3BattleNet*/Ra3BattleNet*_art
 Ra3BattleNet*/Ra3BattleNet*_geometry

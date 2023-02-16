@@ -1,4 +1,5 @@
 class Ra3BattleNet.VirtualListElement {
+    private static var CLASS_NAME = "Ra3BattleNet.VirtualListElement";
     public var isVirtual = true;
     private var _listbox;
     private var _index: Number;
@@ -27,19 +28,21 @@ class Ra3BattleNet.VirtualListElement {
         _eventListeners = new Array();
 
         if (_listbox.templateGetWidth == undefined || _listbox.templateGetHeight == undefined) {
-            trace("VirtualListElement: templateGetWidth or templateGetHeight not defined, materializing to get size");
+            var TRACE_PREFIX: String = "[" + CLASS_NAME + "@" + _listbox + "[" + _index + "]] ";
+            trace(TRACE_PREFIX + "templateGetWidth or templateGetHeight not defined, materializing to get size");
             var real = materialize();
             _listbox.templateGetWidth = real.getWidth();
             _listbox.templateGetHeight = real.getHeight();
             real.virtualize();
         }
-        
+
         _getWidth = _listbox.templateGetWidth;
         _getHeight = _listbox.templateGetHeight;
     }
 
     public function materialize() {
-        trace("Materializing " + _index);
+        // var TRACE_PREFIX: String = "[" + CLASS_NAME + "::materialize@" + _listbox + "[" + _index + "]] ";
+        // trace(TRACE_PREFIX + "Materializing " + _index);
         var virtual = this;
         var materialized: MovieClip = _listbox.createEntryClip(
             _index,
@@ -48,14 +51,14 @@ class Ra3BattleNet.VirtualListElement {
             _entryElementInfo,
             _entryHeight
         );
-        trace("Materializing " + _listbox + "." + _index + ", entry clip created as " + materialized);
+        // trace(TRACE_PREFIX + "Materializing " + _listbox + "." + _index + ", entry clip created as " + materialized);
         materialized._x = _x;
         materialized._y = _y;
         _listbox.m_entryClips[_index] = materialized;
-        trace("Materializing " + _index + ", calling " + _delayedCalls.length + " delayed calls");
+        // trace(TRACE_PREFIX + "Materializing " + _index + ", calling " + _delayedCalls.length + " delayed calls");
         for (var i = 0; i < _delayedCalls.length; ++i) {
             var call = _delayedCalls[i];
-            trace("Materializing " + _index + ", calling " + call.f)
+            // trace(TRACE_PREFIX + "Materializing " + _index + ", calling " + call.f)
             var f = materialized[call.f];
             var arg = call.arg;
             var arg1 = call.arg1;
@@ -68,13 +71,13 @@ class Ra3BattleNet.VirtualListElement {
                 f.call(materialized);
             }
         }
-        trace("Materialized");
+        // trace(TRACE_PREFIX + "Materialized");
         if (!materialized.virtualize) {
             materialized.virtualize = function() {
-                trace("Virtualizing " + virtual._index + " which is " + materialized);
+                // trace(TRACE_PREFIX + "Virtualizing " + virtual._index + " which is " + materialized);
                 virtual._listbox.m_entryClips[virtual._index] = virtual;
                 materialized.removeMovieClip();
-                trace("Virtualized");
+                // trace(TRACE_PREFIX + "Virtualized");
             }
         }
         return materialized;
