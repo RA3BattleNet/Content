@@ -1,4 +1,4 @@
-﻿class Ra3BattleNet.ConnectionInformation {
+class Ra3BattleNet.ConnectionInformation {
     private static var CLASS_NAME: String = "Ra3BattleNet.ConnectionInformation";
     private static var NETWORK_ID: String = "Ra3BattleNetConnectionInformationNetwork";
     private static var CPU_ID: String = "Ra3BattleNetConnectionInformationCpu";
@@ -69,6 +69,7 @@
             while (i < _widgets.length && j < isPlaying.length) {
                 if (isPlaying[j] === "0") {
                     ++j;
+                    continue;
                 }
                 // observer name are temporarily shown for debugging
                 // otherwise it should be null
@@ -87,6 +88,7 @@
             while (i < _widgets.length) {
                 if (isPlaying[j] === "1") {
                     ++j;
+                    continue;
                 }
                 var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
