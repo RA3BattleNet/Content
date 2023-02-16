@@ -362,7 +362,7 @@
         else if (cpu < 70) {
             widgets.cpu.gotoAndStop(3);
         }
-        else if (cpu < 95) {
+        else if (cpu < 90) {
             widgets.cpu.gotoAndStop(4);
         }
         else {
@@ -376,7 +376,7 @@
             else if (gpu < 70) {
                 widgets.gpu.gotoAndStop(3);
             }
-            else if (gpu < 95) {
+            else if (gpu < 90) {
                 widgets.gpu.gotoAndStop(4);
             }
             else {
