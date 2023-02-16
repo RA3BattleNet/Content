@@ -57,8 +57,8 @@
         var names: Array = query.names.split(",");
         var latencies: Array = query.latencies.split(",");
         var packetLosses: Array = query.packetLosses.split(",");
-        var logicLoads: Array = query.logicLoads.split(",");
-        var renderLoads: Array = query.renderLoads.split(",");
+        var logicScores: Array = query.logicScores.split(",");
+        var renderScores: Array = query.renderScores.split(",");
         trace(TRACE_PREFIX + "ingame: " + _isInGame);
         if (_isInGame) {
             var isPlaying: Array = query.isPlaying.split(",");
@@ -77,7 +77,7 @@
                 updateWidgets(
                     i, observerName, !!names[j],
                     Number(latencies[j]), Number(packetLosses[j]),
-                    Number(logicLoads[j]), Number(renderLoads[j])
+                    Number(logicScores[j]), Number(renderScores[j])
                 );
                 ++i;
                 ++j;
@@ -93,7 +93,7 @@
                 updateWidgets(
                     i, observerName, !!observerName,
                     Number(latencies[j]), Number(packetLosses[j]),
-                    Number(logicLoads[j]), Number(renderLoads[j])
+                    Number(logicScores[j]), Number(renderScores[j])
                 );
                 ++i;
                 ++j;
@@ -104,7 +104,7 @@
                 updateWidgets(
                     i, null, !!names[i],
                     Number(latencies[i]), Number(packetLosses[i]),
-                    Number(logicLoads[i]), Number(renderLoads[i])
+                    Number(logicScores[i]), Number(renderScores[i])
                 );
             }
         }
@@ -338,10 +338,10 @@
             widgets.network.gotoAndStop(4);
         }
         // GAME LOGIC LOAD
-        if (cpu < 0.25) {
+        if (cpu < 25) {
             widgets.cpu.gotoAndStop(2);
         }
-        else if (cpu < 0.75) {
+        else if (cpu < 75) {
             widgets.cpu.gotoAndStop(3);
         }
         else {
@@ -349,10 +349,10 @@
         }
         // GAME RENDER LOAD
         if (widgets.gpu) {
-            if (gpu < 0.25) {
+            if (gpu < 25) {
                 widgets.gpu.gotoAndStop(2);
             }
-            else if (gpu < 0.75) {
+            else if (gpu < 75) {
                 widgets.gpu.gotoAndStop(3);
             }
             else {
