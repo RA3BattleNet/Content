@@ -1,4 +1,4 @@
-class Ra3BattleNet.ConnectionInformation {
+﻿class Ra3BattleNet.ConnectionInformation {
     private static var CLASS_NAME: String = "Ra3BattleNet.ConnectionInformation";
     private static var NETWORK_ID: String = "Ra3BattleNetConnectionInformationNetwork";
     private static var CPU_ID: String = "Ra3BattleNetConnectionInformationCpu";
@@ -84,16 +84,24 @@ class Ra3BattleNet.ConnectionInformation {
                 ++j;
             }
             // if there are some non-playing players (observers), show them at the bottom
+            // hide if there are no observers with data
+            _apt[OBSERVER_PANEL_ID]._visible = false;
             j = 0;
-            while (i < _widgets.length) {
+            while (i < _widgets.length && j < isPlaying.length) {
                 if (isPlaying[j] === "1") {
                     ++j;
                     continue;
                 }
+                if (!names[j]) {
+                    trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, no data");
+                    ++j;
+                    continue;
+                }
+                _apt[OBSERVER_PANEL_ID]._visible = true;
                 var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
                 updateWidgets(
-                    i, observerName, !!observerName,
+                    i, observerName, true,
                     Number(latencies[j]), Number(packetLosses[j]),
                     Number(logicScores[j]), Number(renderScores[j])
                 );
@@ -326,6 +334,11 @@ class Ra3BattleNet.ConnectionInformation {
             return;
         }
         // NETWORK
+        // is local player?
+        // network information is meaningless for local player
+        if (latency < 0 && packetLoss < 0) {
+            widgets.network.gotoAndStop(1);
+        }
         // latency > 990ms, the connection may lost already
         // packetLoss > 0.1, too bad
         if (latency > 0.99 || packetLoss > 0.1) {
