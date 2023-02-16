@@ -1,0 +1,7 @@
+Map:stick_to_the_territory
+    "Stick to the Territory"
+END
+
+Map:stick_to_the_territory?chinese
+    "坚守领土"
+END
