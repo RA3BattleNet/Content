@@ -221,6 +221,9 @@
             widget._x = x;
             widget._y = horizontalMiddle - widget._height * 0.5;
             x -= padding;
+            // ingame widgets aren't visible by default
+            widget._visible = false;
+            widget.stop();
             trace(TRACE_PREFIX + symbol + " created as " + widget);
             return widget;
         }
