@@ -170,73 +170,54 @@
     }
 
     private function createInGameWidgets(playerApt: MovieClip, index: Number): Object {
+        // 函数参数 playerApt 是指暂停菜单里那个显示玩家信息的 MovieClip
+        // 我们的连接状态信息将显示在这个 MovieClip 的右侧
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::createInGameWidgets] ";
 
         var x: Number = 0;
         var horizontalMiddle: Number = 0;
         var padding: Number = 8;
-        var direction: Number = 1;
         var result = new Object();
-        // the player apt is the movieclip which contains player's information
-        // our connection information is also "player's information"
+        // 在玩家的状态（“战败”）的右边显示连接状态
+        // var color: MovieClip = playerApt.colorMC;
+        var status: MovieClip = playerApt.statusMC;
+        if (typeof(status) !== "movieclip") {
+            // something is wrong
+            trace(TRACE_PREFIX + "status movie clip not found in " + playerApt);
+            return null;
+        }
+        var statusRect: Object = convertCoordinates(status);
+        // 实在是没想到连接状态居然占了整行，所以我们只能从覆盖在连接状态的上方
+        // 并从右向左排列，以避免遮挡连接状态的文本
+        x = statusRect.x + statusRect.width;
         if (!playerApt._visible) {
-            // if the player apt is not visible,
-            // we create a panel to show our information
+            // 假如 playerApt 不可见，我们就创建一个面板来显示信息
             trace(TRACE_PREFIX + "player apt " + index + " is not visible");
-            if (typeof(_apt[OBSERVER_PANEL_ID]) !== "movieclip") {
-                // create observer panel at playerApt's position
-                tryAttachMovie("InGameObserverPanel", OBSERVER_PANEL_ID);
-                var panel: MovieClip = _apt[OBSERVER_PANEL_ID];
-                var playerAptRect: Object = convertCoordinates(playerApt);
-                panel._x = playerAptRect.x;
-                panel._y = playerAptRect.y;
-                for (var i: Number = 0; i < 6; ++i) {
-                    var observerName: MovieClip = panel["observer" + i];
-                    observerName._visible = false;
-                }
-                _observerIndex = index;
-                trace(TRACE_PREFIX + "observer panel created at index " + _observerIndex);
-            }
+            var panel: MovieClip = getInGameObserverPanel(playerApt, index);
             var observerName: MovieClip = panel["observer" + (index - _observerIndex)];
             observerName._visible = true;
             var observerRect: Object = convertCoordinates(observerName);
-            x = observerRect.x + observerRect.width + padding;
             horizontalMiddle = observerRect.y + observerRect.height * 0.5;
             result.observerName = observerName.name;
             trace(TRACE_PREFIX + "player " + index + " has " + observerName);
         }
         else {
-            // 在玩家的状态（“战败”）的右边显示连接状态
-            // var color: MovieClip = playerApt.colorMC;
-            var status: MovieClip = playerApt.statusMC;
-            if (typeof(status) !== "movieclip") {
-                // something is wrong
-                trace(TRACE_PREFIX + "status movie clip not found in " + playerApt);
-                return null;
-            }
-            var statusRect: Object = convertCoordinates(status);
-            // 实在是没想到连接状态居然占了整行，所以我们只能从覆盖在连接状态的上方
-            // 并从右向左排列，以避免遮挡连接状态的文本
-            x = statusRect.x + statusRect.width;
-            direction = -1;
             horizontalMiddle = statusRect.y + statusRect.height * 0.5;
         }
 
         function appendWidget(symbol: String, id: String) {
             var widget: MovieClip = tryAttachMovie(symbol, id);
+            x -= widget._width;
             widget._x = x;
             widget._y = horizontalMiddle - widget._height * 0.5;
-            x += (widget._width + padding) * direction;
-            if (direction === -1) {
-                widget._x -= widget._width;
-            }
+            x -= padding;
             trace(TRACE_PREFIX + symbol + " created as " + widget);
             return widget;
         }
 
-        result.network = appendWidget("NetworkSymbol", NETWORK_ID + index);
-        result.cpu = appendWidget("CpuSymbol", CPU_ID + index);
         result.gpu = appendWidget("GpuSymbol", GPU_ID + index);
+        result.cpu = appendWidget("CpuSymbol", CPU_ID + index);
+        result.network = appendWidget("NetworkSymbol", NETWORK_ID + index);
         // only for debugging!
         if (!result.observerName) {
             _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10, 100, 20);
@@ -248,6 +229,26 @@
             result.observerName = debug;
         }
         return result;
+    }
+
+    private function getInGameObserverPanel(playerApt: MovieClip, index: Number): MovieClip {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::getInGameObserverPanel] ";
+        var panel: MovieClip = _apt[OBSERVER_PANEL_ID];
+        if (typeof(panel) === "movieclip") {
+            return panel;
+        }
+        // create observer panel at playerApt's position
+        panel = tryAttachMovie("InGameObserverPanel", OBSERVER_PANEL_ID);
+        var playerAptRect: Object = convertCoordinates(playerApt);
+        panel._x = playerAptRect.x;
+        panel._y = playerAptRect.y;
+        for (var i: Number = 0; i < 6; ++i) {
+            var observerName: MovieClip = panel["observer" + i];
+            observerName._visible = false;
+        }
+        _observerIndex = index;
+        trace(TRACE_PREFIX + "observer panel created at index " + _observerIndex);
+        return panel;
     }
 
     private function createOutGameWidgets(playerApt: MovieClip, index: Number): Object {
