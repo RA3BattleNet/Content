@@ -357,6 +357,14 @@
         if (latency < 0 && packetLoss < 0) {
             widgets.network.gotoAndStop(1);
         }
+        // player disconnected, disable everything
+        else if (latency >= 1 || packetLoss >= 1) {
+            widgets.network.gotoAndStop(1);
+            widgets.cpu.gotoAndStop(1);
+            if (widgets.gpu) {
+                widgets.gpu.gotoAndStop(1);
+            }
+        }
         // latency > 990ms, the connection may lost already
         // packetLoss > 0.25, too bad
         else if (latency > 0.99 || packetLoss > 0.25) {
