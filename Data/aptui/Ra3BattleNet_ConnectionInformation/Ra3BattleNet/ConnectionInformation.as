@@ -382,6 +382,15 @@
         else {
             widgets.network.gotoAndStop(5);
         }
+
+        // 游戏逻辑计算与画面渲染
+        // 分数计算公式：
+        // score = 100 - (27.5 - frames_per_second) / 15 * 100;
+        // - 满分是 100 分，代表帧率为 27.5 FPS 或更高
+        //   也就是 CPU 计算 / 显卡渲染的耗时在 36 毫秒以内
+        // - 最低为 0 分，代表帧率为 12.5 FPS 或更低
+        //   也就是计算 / 渲染的耗时超过了 80 毫秒
+
         // GAME LOGIC LOAD
         if (cpu < 40) {
             widgets.cpu.gotoAndStop(2);
