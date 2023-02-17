@@ -208,7 +208,7 @@
             var observerName: MovieClip = panel["observer" + (index - _observerIndex)];
             var observerRect: Object = convertCoordinates(observerName);
             horizontalMiddle = observerRect.y + observerRect.height * 0.5;
-            result.observerName = observerName.name;
+            result.observerName = observerName.textField;
             trace(TRACE_PREFIX + "player " + index + " has " + observerName);
         }
         else {
@@ -261,7 +261,7 @@
         panel._y = playerAptRect.y;
         for (var i: Number = 0; i < 6; ++i) {
             var observerName: MovieClip = panel["observer" + i];
-            observerName._visible = false;
+            observerName.textField._visible = false;
         }
         _observerIndex = index;
         trace(TRACE_PREFIX + "observer panel created at index " + _observerIndex);
