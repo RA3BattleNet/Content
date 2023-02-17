@@ -63,16 +63,16 @@
             trace(TRACE_PREFIX + "no widgets");
             return;
         }
-        trace(TRACE_PREFIX + "name and widgets availaible");
+        /// trace(TRACE_PREFIX + "name and widgets availaible");
         var names: Array = query.names.split(",");
         var latencies: Array = query.latencies.split(",");
         var packetLosses: Array = query.packetLosses.split(",");
         var logicScores: Array = query.logicScores.split(",");
         var renderScores: Array = query.renderScores.split(",");
-        trace(TRACE_PREFIX + "ingame: " + _isInGame);
+        /// trace(TRACE_PREFIX + "ingame: " + _isInGame);
         if (_isInGame) {
             var isPlaying: Array = query.isPlaying.split(",");
-            trace(TRACE_PREFIX + "isPlaying: " + isPlaying);
+            /// trace(TRACE_PREFIX + "isPlaying: " + isPlaying);
             // playing players are always on top
             var i: Number = 0;
             var j: Number = 0;
@@ -81,12 +81,12 @@
                     ++j;
                     continue;
                 }
-                // observer name are temporarily shown for debugging
-                // otherwise it should be null
-                var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
-                trace(TRACE_PREFIX + "inside game - player " + i + " is playing, debug name: " + observerName);
+                /// // observer name are temporarily shown for debugging
+                /// // otherwise it should be null
+                /// var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
+                /// trace(TRACE_PREFIX + "inside game - player " + i + " is playing, debug name: " + observerName);
                 updateWidgets(
-                    i, observerName, !!names[j],
+                    i, null, !!names[j],
                     Number(latencies[j]), Number(packetLosses[j]),
                     Number(logicScores[j]), Number(renderScores[j])
                 );
@@ -103,13 +103,13 @@
                     continue;
                 }
                 if (!names[j]) {
-                    trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, no data");
+                    /// trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, no data");
                     ++j;
                     continue;
                 }
                 _apt[OBSERVER_PANEL_SYMBOL]._visible = true;
                 var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
-                trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
+                /// trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
                 updateWidgets(
                     i, observerName, true,
                     Number(latencies[j]), Number(packetLosses[j]),
@@ -133,7 +133,7 @@
     private function requestWidgets(): Void {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::requestWidgets] ";
         if (_widgets) {
-            trace(TRACE_PREFIX + "widgets already exist");
+            /// trace(TRACE_PREFIX + "widgets already exist");
             return;
         }
         if (!_global.Cafe2_BaseUIScreen) {
@@ -240,16 +240,16 @@
         result.gpu = appendWidget(GPU_SYMBOL);
         result.cpu = appendWidget(CPU_SYMBOL);
         result.network = appendWidget(INGAME_NETWORK_SYMBOL);
-        // only for debugging!
-        if (!result.observerName) {
-            _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10 + result.gpu._height, 100, 20);
-            var debug: TextField = _apt["debug" + index];
-            trace(TRACE_PREFIX + "debug text field created at depth " + debug.getDepth() + " as " + debug);
-            debug.setTextFormat(_global.std_config.textBox_textFormat_highlight);
-            debug.text = "debug";
-            debug.textColor = 0x00FF00;
-            result.observerName = debug;
-        }
+        /// // only for debugging!
+        /// if (!result.observerName) {
+        ///     _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10 + result.gpu._height, 100, 20);
+        ///     var debug: TextField = _apt["debug" + index];
+        ///     trace(TRACE_PREFIX + "debug text field created at depth " + debug.getDepth() + " as " + debug);
+        ///     debug.setTextFormat(_global.std_config.textBox_textFormat_highlight);
+        ///     debug.text = "debug";
+        ///     debug.textColor = 0x00FF00;
+        ///     result.observerName = debug;
+        /// }
         return result;
     }
 
@@ -331,18 +331,20 @@
     ): Void {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::updateWidgets] ";
         if (!_widgets || !_widgets[index]) {
-            trace(TRACE_PREFIX + "no widgets for " + index);
+            /// trace(TRACE_PREFIX + "no widgets for " + index);
             return;
         }
         var widgets: Object = _widgets[index];
-        trace(TRACE_PREFIX + index + " " + name + " " + hasData + " " + latency + " " + packetLoss + " " + cpu + " " + gpu);
-        trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
+        /// trace(TRACE_PREFIX + index + " " + name + " " + hasData + " " + latency + " " + packetLoss + " " + cpu + " " + gpu);
+        /// trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
         if (_isInGame) {
             widgets.network._visible = hasData;
             widgets.cpu._visible = hasData;
             widgets.gpu._visible = hasData;
-            widgets.observerName._visible = hasData;
-            widgets.observerName.text = name;
+            if (widgets.observerName) {
+                widgets.observerName._visible = hasData;
+                widgets.observerName.text = name;
+            }
         }
         else if (!hasData) {
             widgets.network.gotoAndStop(1);
