@@ -8,6 +8,7 @@
 
     private static var _instance: ConnectionInformation;
     private static var _apt: MovieClip;
+    private var _updateCounter: Number;
     private var _widgets: Array;
     private var _isInGame: Boolean;
     private var _observerIndex: Number;
@@ -19,6 +20,7 @@
         }
         _instance = this;
         _apt = apt;
+        _updateCounter = 0;
         _apt.onEnterFrame = _global.bind0(this, update);
         // 下面这代码实在是太诡异了，但也只能这样了
         _global.gSM.setOnExitScreen(_global.bind1(this, function(previousOnExitScreen: Function) {
@@ -43,6 +45,13 @@
 
     private function update(): Void {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::update] ";
+        // 不需要每帧更新
+        if (_updateCounter > 0) {
+            --_updateCounter;
+            return;
+        }
+        _updateCounter = 10;
+
         var query: Object = new Object();
         loadVariables("Ra3BattleNet_ConnectionInformation", query);
         if (!query.names) {
