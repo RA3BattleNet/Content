@@ -1,9 +1,10 @@
 ﻿class Ra3BattleNet.ConnectionInformation {
     private static var CLASS_NAME: String = "Ra3BattleNet.ConnectionInformation";
-    private static var NETWORK_ID: String = "Ra3BattleNetConnectionInformationNetwork";
-    private static var CPU_ID: String = "Ra3BattleNetConnectionInformationCpu";
-    private static var GPU_ID: String = "Ra3BattleNetConnectionInformationGpu";
-    private static var OBSERVER_PANEL_ID: String = "Ra3BattleNetConnectionInformationObserverPanel";
+    private static var INGAME_NETWORK_SYMBOL: String = "InGameNetworkSymbol";
+    private static var OUTGAME_NETWORK_SYMBOL: String = "OutGameNetworkSymbol";
+    private static var CPU_SYMBOL: String = "CpuSymbol";
+    private static var GPU_SYMBOL: String = "GpuSymbol";
+    private static var OBSERVER_PANEL_SYMBOL: String = "InGameObserverPanel";
 
     private static var _instance: ConnectionInformation;
     private static var _apt: MovieClip;
@@ -85,7 +86,7 @@
             }
             // if there are some non-playing players (observers), show them at the bottom
             // hide if there are no observers with data
-            _apt[OBSERVER_PANEL_ID]._visible = false;
+            _apt[OBSERVER_PANEL_SYMBOL]._visible = false;
             j = 0;
             while (i < _widgets.length && j < isPlaying.length) {
                 if (isPlaying[j] === "1") {
@@ -97,7 +98,7 @@
                     ++j;
                     continue;
                 }
-                _apt[OBSERVER_PANEL_ID]._visible = true;
+                _apt[OBSERVER_PANEL_SYMBOL]._visible = true;
                 var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
                 updateWidgets(
@@ -205,7 +206,6 @@
             trace(TRACE_PREFIX + "player apt " + index + " is not visible");
             var panel: MovieClip = getInGameObserverPanel(playerApt, index);
             var observerName: MovieClip = panel["observer" + (index - _observerIndex)];
-            observerName._visible = true;
             var observerRect: Object = convertCoordinates(observerName);
             horizontalMiddle = observerRect.y + observerRect.height * 0.5;
             result.observerName = observerName.name;
@@ -215,8 +215,8 @@
             horizontalMiddle = statusRect.y + statusRect.height * 0.5;
         }
 
-        function appendWidget(symbol: String, id: String) {
-            var widget: MovieClip = tryAttachMovie(symbol, id);
+        function appendWidget(symbol: String) {
+            var widget: MovieClip = tryAttachMovie(symbol, index);
             x -= widget._width;
             widget._x = x;
             widget._y = horizontalMiddle - widget._height * 0.5;
@@ -228,9 +228,9 @@
             return widget;
         }
 
-        result.gpu = appendWidget("GpuSymbol", GPU_ID + index);
-        result.cpu = appendWidget("CpuSymbol", CPU_ID + index);
-        result.network = appendWidget("NetworkSymbol", NETWORK_ID + index);
+        result.gpu = appendWidget(GPU_SYMBOL);
+        result.cpu = appendWidget(CPU_SYMBOL);
+        result.network = appendWidget(INGAME_NETWORK_SYMBOL);
         // only for debugging!
         if (!result.observerName) {
             _apt.createTextField("debug" + index, _apt.getNextHighestDepth(), x, horizontalMiddle - 10 + result.gpu._height, 100, 20);
@@ -246,12 +246,16 @@
 
     private function getInGameObserverPanel(playerApt: MovieClip, index: Number): MovieClip {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::getInGameObserverPanel] ";
-        var panel: MovieClip = _apt[OBSERVER_PANEL_ID];
+        var panel: MovieClip = _apt[OBSERVER_PANEL_SYMBOL];
         if (typeof(panel) === "movieclip") {
             return panel;
         }
         // create observer panel at playerApt's position
-        panel = tryAttachMovie("InGameObserverPanel", OBSERVER_PANEL_ID);
+        panel = _apt.attachMovie(
+            OBSERVER_PANEL_SYMBOL,
+            OBSERVER_PANEL_SYMBOL,
+            _apt.getNextHighestDepth()
+        );
         var playerAptRect: Object = convertCoordinates(playerApt);
         panel._x = playerAptRect.x;
         panel._y = playerAptRect.y;
@@ -282,7 +286,7 @@
         var voipRect: Object = convertCoordinates(voip);
         var muteRect: Object = convertCoordinates(mute);
 
-        var network: MovieClip = tryAttachMovie("NetworkSymbol", NETWORK_ID + index);
+        var network: MovieClip = tryAttachMovie(OUTGAME_NETWORK_SYMBOL, index);
         network._width = voipRect.width * 1.1;
         network._height = voipRect.height * 1.1;
         network._x = voipRect.x - network._width * 0.5;
@@ -299,8 +303,7 @@
         trace(TRACE_PREFIX + "network check x/y: " + networkCheck.x + "/" + networkCheck.y);
         trace(TRACE_PREFIX + "voip check x/y: " + voipCheck.x + "/" + voipCheck.y + ", width/height: " + voip._width + "/" + voip._height);
 
-
-        var cpu: MovieClip = tryAttachMovie("CpuSymbol", CPU_ID + index);
+        var cpu: MovieClip = tryAttachMovie(CPU_SYMBOL, index);
         cpu._width = muteRect.width * 1.1;
         cpu._height = muteRect.height * 1.1;
         cpu._x = muteRect.x - cpu._width * 0.5;
@@ -329,6 +332,7 @@
             widgets.network._visible = hasData;
             widgets.cpu._visible = hasData;
             widgets.gpu._visible = hasData;
+            widgets.observerName._visible = hasData;
             widgets.observerName.text = name;
         }
         else if (!hasData) {
@@ -343,17 +347,21 @@
             widgets.network.gotoAndStop(1);
         }
         // latency > 990ms, the connection may lost already
-        // packetLoss > 0.1, too bad
-        else if (latency > 0.99 || packetLoss > 0.1) {
+        // packetLoss > 0.25, too bad
+        else if (latency > 0.99 || packetLoss > 0.25) {
+            widgets.network.gotoAndStop(2);
+        }
+        // latency > 400ms or packetLess > 0.1, lag!
+        else if (latency > 0.4 || packetLoss > 0.15) {
             widgets.network.gotoAndStop(2);
         }
         // latency > 300ms
         // there is a loss!
         else if (latency > 0.3 || packetLoss > 0) {
-            widgets.network.gotoAndStop(3);
+            widgets.network.gotoAndStop(4);
         }
         else {
-            widgets.network.gotoAndStop(4);
+            widgets.network.gotoAndStop(5);
         }
         // GAME LOGIC LOAD
         if (cpu < 40) {
@@ -385,8 +393,9 @@
         }
     }
 
-    private static function tryAttachMovie(symbol: String, name: String): MovieClip {
+    private static function tryAttachMovie(symbol: String, id: Number): MovieClip {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::tryAttachMovie] ";
+        var name: String = symbol + id;
         if (typeof(_apt[name]) !== "movieclip") {
             // TODO: import instead of referencing global
             // need to rework the defaultscript.cs and reorganize the code,
