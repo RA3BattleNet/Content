@@ -364,6 +364,7 @@
             if (widgets.gpu) {
                 widgets.gpu.gotoAndStop(1);
             }
+            return;
         }
         // latency > 990ms, the connection may lost already
         // packetLoss > 0.25, too bad
