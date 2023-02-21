@@ -24,6 +24,11 @@ class Ra3BattleNet.Main {
         trace("VIRTUAL LIST " + virtualList + " LOADED");
         virtualList._visible = false;
 
+        var debug = apt.createEmptyMovieClip("LanyiDebug", 3);
+        trace("LanyiDebug " + debug);
+        debug.loadMovie("LanyiDebug.swf");
+        trace("LanyiDebug " + debug + " LOADED");
+
         trace("ADD MESSAGE HANDLERS");
         _global.gMH.addPriorityMessageHandler(function(messageCode) {
             switch (messageCode) {
