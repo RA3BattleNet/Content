@@ -238,9 +238,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:Bang_Red_Cliffs_2_1/Desc"
-			DisplayName="Bang_Red_Cliffs_2_1"
-			FileName="data\maps\official\bang_red_cliffs_2_1\bang_red_cliffs_2_1.map"
+			Description="Map:Bang_Red_Cliffs_2_2/Desc"
+			DisplayName="Bang_Red_Cliffs_2_2"
+			FileName="data\maps\official\bang_red_cliffs_2_2\bang_red_cliffs_2_2.map"
 			Height="610"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -256,8 +256,8 @@
 			<StartPosition
 				Name="Player_1_Start">
 				<Position
-					x="2813.710406"
-					y="2786.567465"
+					x="2771.724262"
+					y="2743.515623"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
