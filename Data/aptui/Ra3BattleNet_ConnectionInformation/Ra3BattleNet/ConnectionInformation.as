@@ -121,9 +121,10 @@
         }
         else {
             for (var i: Number = 0; i < _widgets.length; ++i) {
+                // use fake network issue because it is not reliable before game start
                 updateWidgets(
                     i, null, !!names[i],
-                    Number(latencies[i]), Number(packetLosses[i]),
+                    0.01, 0,
                     Number(logicScores[i]), Number(renderScores[i])
                 );
             }
