@@ -85,7 +85,7 @@
                 /// // otherwise it should be null
                 /// var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 /// trace(TRACE_PREFIX + "inside game - player " + i + " is playing, debug name: " + observerName);
-                updateWidgets(
+                updateInGameWidgets(
                     i, null, !!names[j],
                     Number(latencies[j]), Number(packetLosses[j]),
                     Number(logicScores[j]), Number(renderScores[j])
@@ -110,7 +110,7 @@
                 _apt[OBSERVER_PANEL_SYMBOL]._visible = true;
                 var observerName: String = String(String.fromCharCode.apply(String, names[j].split("_")));
                 /// trace(TRACE_PREFIX + "inside game - player " + i + " is not playing, observerName name: " + observerName);
-                updateWidgets(
+                updateInGameWidgets(
                     i, observerName, true,
                     Number(latencies[j]), Number(packetLosses[j]),
                     Number(logicScores[j]), Number(renderScores[j])
@@ -122,9 +122,9 @@
         else {
             for (var i: Number = 0; i < _widgets.length; ++i) {
                 // use fake network issue because it is not reliable before game start
-                updateWidgets(
-                    i, null, !!names[i],
-                    0.01, 0,
+                updateOutGameWidgets(
+                    i, !!names[i],
+                    Number(latencies[i]), Number(packetLosses[i]),
                     Number(logicScores[i]), Number(renderScores[i])
                 );
             }
@@ -320,17 +320,25 @@
         cpu._y = muteRect.y - cpu._height * 0.5;
         trace(TRACE_PREFIX + cpu + " x/y/width/height: " + cpu._x + "/" + cpu._y + "/" + cpu._width + "/" + cpu._height);
 
+        var gpu: MovieClip = tryAttachMovie(GPU_SYMBOL, index);
+        gpu._width = cpu._width;
+        gpu._height = cpu._height;
+        gpu._x = cpu._x;
+        gpu._y = cpu._y;
+        trace(TRACE_PREFIX + gpu + " x/y/width/height: " + gpu._x + "/" + gpu._y + "/" + gpu._width + "/" + gpu._height);
+
         var result = new Object();
         result.network = network;
         result.cpu = cpu;
+        result.gpu = gpu;
         return result;
     }
 
-    private function updateWidgets(
+    private function updateInGameWidgets(
         index: Number, name: String, hasData: Boolean,
         latency: Number, packetLoss: Number, cpu: Number, gpu: Number
     ): Void {
-        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::updateWidgets] ";
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::updateInGameWidgets] ";
         if (!_widgets || !_widgets[index]) {
             /// trace(TRACE_PREFIX + "no widgets for " + index);
             return;
@@ -338,19 +346,12 @@
         var widgets: Object = _widgets[index];
         /// trace(TRACE_PREFIX + index + " " + name + " " + hasData + " " + latency + " " + packetLoss + " " + cpu + " " + gpu);
         /// trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
-        if (_isInGame) {
-            widgets.network._visible = hasData;
-            widgets.cpu._visible = hasData;
-            widgets.gpu._visible = hasData;
-            if (widgets.observerName) {
-                widgets.observerName._visible = hasData;
-                widgets.observerName.text = name;
-            }
-        }
-        else if (!hasData) {
-            widgets.network.gotoAndStop(1);
-            widgets.cpu.gotoAndStop(1);
-            return;
+        widgets.network._visible = hasData;
+        widgets.cpu._visible = hasData;
+        widgets.gpu._visible = hasData;
+        if (widgets.observerName) {
+            widgets.observerName._visible = hasData;
+            widgets.observerName.text = name;
         }
         // NETWORK
         // is local player?
@@ -362,9 +363,7 @@
         else if (latency >= 1 || packetLoss >= 1) {
             widgets.network.gotoAndStop(1);
             widgets.cpu.gotoAndStop(1);
-            if (widgets.gpu) {
-                widgets.gpu.gotoAndStop(1);
-            }
+            widgets.gpu.gotoAndStop(1);
             return;
         }
         // latency > 990ms, the connection may lost already
@@ -385,6 +384,64 @@
             widgets.network.gotoAndStop(5);
         }
 
+        updateCpuGpuWidgets(index, cpu, gpu);
+    }
+
+    private function updateOutGameWidgets(
+        index: Number, hasData: Boolean,
+        latency: Number, packetLoss: Number, cpu: Number, gpu: Number
+    ): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::updateOutGameWidgets] ";
+        if (!_widgets || !_widgets[index]) {
+            /// trace(TRACE_PREFIX + "no widgets for " + index);
+            return;
+        }
+        var widgets: Object = _widgets[index];
+        /// trace(TRACE_PREFIX + "network: " + widgets.network + " cpu: " + widgets.cpu + " gpu: " + widgets.gpu + " observerName: " + widgets.observerName);
+        if (!hasData) {
+            widgets.network.gotoAndStop(1);
+            widgets.cpu.gotoAndStop(1);
+            widgets.cpu._visible = true;
+            widgets.gpu._visible = false;
+            return;
+        }
+        // NETWORK
+        // is local player?
+        // network information is meaningless for local player
+        if (latency < 0 && packetLoss < 0) {
+            widgets.network.gotoAndStop(1);
+        }
+        // player disconnected, disable everything
+        else if (latency >= 1 || packetLoss >= 1) {
+            widgets.network.gotoAndStop(1);
+            widgets.cpu.gotoAndStop(1);
+            widgets.gpu.gotoAndStop(1);
+            return;
+        }
+        // 游戏外的网络状态并不可信，因此只要能连上就显示为绿色
+        else {
+            widgets.network.gotoAndStop(5);
+        }
+
+        updateCpuGpuWidgets(index, cpu, gpu);
+        // 游戏外：按照负荷决定显示 CPU 或 GPU
+        if (cpu <= gpu) {
+            widgets.cpu._visible = true;
+            widgets.gpu._visible = false;
+        }
+        else {
+            widgets.cpu._visible = false;
+            widgets.gpu._visible = true;
+        }
+    }
+
+    private function updateCpuGpuWidgets(index: Number, cpu: Number, gpu: Number) {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::updateCpuGpuWidgets] ";
+        if (!_widgets || !_widgets[index]) {
+            /// trace(TRACE_PREFIX + "no widgets for " + index);
+            return;
+        }
+        var widgets: Object = _widgets[index];
         // 游戏逻辑计算与画面渲染
         // 分数计算公式：
         // score = 100 - (27.5 - frames_per_second) / 15 * 100;
@@ -407,19 +464,17 @@
             widgets.cpu.gotoAndStop(5);
         }
         // GAME RENDER LOAD
-        if (widgets.gpu) {
-            if (gpu < 40) {
-                widgets.gpu.gotoAndStop(2);
-            }
-            else if (gpu < 70) {
-                widgets.gpu.gotoAndStop(3);
-            }
-            else if (gpu < 90) {
-                widgets.gpu.gotoAndStop(4);
-            }
-            else {
-                widgets.gpu.gotoAndStop(5);
-            }
+        if (gpu < 40) {
+            widgets.gpu.gotoAndStop(2);
+        }
+        else if (gpu < 70) {
+            widgets.gpu.gotoAndStop(3);
+        }
+        else if (gpu < 90) {
+            widgets.gpu.gotoAndStop(4);
+        }
+        else {
+            widgets.gpu.gotoAndStop(5);
         }
     }
 
