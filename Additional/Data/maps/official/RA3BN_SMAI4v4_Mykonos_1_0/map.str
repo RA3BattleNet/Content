@@ -2,12 +2,12 @@ Title Creds*
 "Map made by AUX./Do not modify this map without my permission./Good luck have fun."
 End
 
-MAP:SMAI4v4_BN_Mykonos_1_0
-"[SMAI4v4_BN]Mykonos(1.0)"
+MAP:RA3BN_SMAI4v4_Mykonos_1_0
+"[RA3BN][SMAI4v4]Mykonos(1.0)"
 End
 
-MAP:SMAI4v4_BN_Mykonos_1_0?chinese
-"[SMAI4v4_BN]米克诺斯(1.0)"
+MAP:RA3BN_SMAI4v4_Mykonos_1_0?chinese
+"[RA3BN][SMAI4v4]米克诺斯(1.0)"
 End
 
 MISSIONOBJ:A00_Destroy or Capture the Soviet Advance Base

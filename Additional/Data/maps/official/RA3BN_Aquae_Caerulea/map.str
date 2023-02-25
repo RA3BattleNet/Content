@@ -1,0 +1,11 @@
+SCRIPT:MapCreater
+"Map author: Snowy from 'Deep Sea'. GLHF"
+END
+
+Map:RA3BN_Aquae_Caerulea
+"[RA3BN]Aquae Caerulea"
+END
+
+Map:RA3BN_Aquae_Caerulea?chinese
+"[RA3BN]蔚蓝深海（Aquae Caerulea）"
+END
