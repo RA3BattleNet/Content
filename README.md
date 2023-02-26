@@ -3,17 +3,18 @@
 ## 地图要求
 - 假如往地图内添加了脚本、队伍、命名单位，则它们的名称需要是英文，不能是中文
 - 地图文件名必须是英文、数字和下划线，不能有额外的小数点、方括号、中文等字符。
-  - 例子：`Bang_Guandu_1_6.map` 是可以的
-  - 反面例子：`[Bang]Guandu_1.6.map` 是需要修改的
-- 地图显示名称可以是任意字符，它们在 `map.str` 里被定义：
+- 为了保证地图不会和目前正在玩家中流传的地图重复，也为了让玩家能辨认哪些是战网自带的，要求地图文件名为`RA3BN_This_Is_My_Map_1_2.map`（版本号可省略）
+  - 例子：`RA3BN_Bang_Guandu_1_6.map` 是可以的
+  - 反面例子：`RA3BN_[Bang]Guandu_1.6.map` 是需要修改的
+- 地图显示名称可以是任意字符，它们在 `map.str` 里被定义，为了一致性地图显示名要求为`[RA3BN]ThisIsMyMap[1.2]`（版本号可省略）：
 例如：
 ```
-Map:Bang_Guandu_1_6
-"Bang_Guandu[1.6]"
+Map:RA3BN_Bang_Guandu_1_6
+"[RA3BN]Bang_Guandu[1.6]"
 END
 
-Map:Bang_Guandu_1_6?chinese
-"三国杀之官渡之战[1.6]"
+Map:RA3BN_Bang_Guandu_1_6?chinese
+"[RA3BN]三国杀之官渡之战[1.6]"
 END
 ```
 
@@ -23,7 +24,7 @@ END
     - 地图编辑器对于打开后根本没有修改过的地图，似乎并不会执行保存，也就不会生成新的 map.xml。因此可以随意做一些修改（例如添加一个脚本，然后再删除脚本），然后再保存。
 3. map.xml 里可以找到 `<MapMetaData>` 标签，确认 `MapMetaData.DisplayName` 是否与真实地图文件名符合。假如不符合，删除 map.xml，然后根据第二步的操作重新生成 map.xml。
     - `MapMetaData.FileName` 需要手动修改，把它修改为 `data\maps\official\地图名\地图名.map`
-      - 例子：`FileName="data\maps\official\smai4v4_bn_hidden_fortress_1_0\smai4v4_bn_hidden_fortress_1_0.map"`
+      - 例子：`FileName="data\maps\official\ra3bn_smai4v4_hidden_fortress_1_0\ra3bn_smai4v4_hidden_fortress_1_0.map"`
     - `MapMetaData.IsMultiplayer` 和 `MapMetaData.IsOfficial` 需要手动修改，请把它们的值改为 `true`
 4. 把修改过的 `MapMetaData` 添加到 [mapmetadata_battlenet.xml](Data/additionalmaps/mapmetadata_battlenet.xml)
 5. 在此之后，map.xml 已经没有其他作用，为了节省空间的目的，可以把它删除。游戏只需要以下文件：
