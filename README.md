@@ -7,7 +7,6 @@
   - 例子：`RA3BN_Bang_Guandu_1_6.map` 是可以的
   - 反面例子：`RA3BN_[Bang]Guandu_1.6.map` 是需要修改的
 - 地图显示名称可以是任意字符，它们在 `map.str` 里被定义，为了一致性地图显示名要求为`[RA3BN]ThisIsMyMap[1.2]`（版本号可省略）：
-例如：
 ```
 Map:RA3BN_Bang_Guandu_1_6
 "[RA3BN]Bang_Guandu[1.6]"
