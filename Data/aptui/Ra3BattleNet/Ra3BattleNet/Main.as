@@ -1,3 +1,4 @@
+﻿import Ra3BattleNet.AutoMatchHelper;
 import Ra3BattleNet.BroadcastSetter;
 import Ra3BattleNet.ConnectionInformationLoader;
 import Ra3BattleNet.DisconnectHelper;
@@ -23,6 +24,9 @@ class Ra3BattleNet.Main {
         virtualList.loadMovie("Ra3BattleNet_VirtualList.swf");
         trace("VIRTUAL LIST " + virtualList + " LOADED");
         virtualList._visible = false;
+
+        trace("CREATE AUTO MATCH HELPER");
+        AutoMatchHelper.startWatch();
 
         trace("ADD MESSAGE HANDLERS");
         _global.gMH.addPriorityMessageHandler(function(messageCode) {
