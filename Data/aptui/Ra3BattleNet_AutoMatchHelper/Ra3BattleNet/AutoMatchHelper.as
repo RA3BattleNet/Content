@@ -2,8 +2,6 @@
 
 class Ra3BattleNet.AutoMatchHelper {
     private static var CLASS_NAME: String = "Ra3BattleNet.AutoMatchHelper";
-    private static var IDENTIFIER_PREFIX: String = "Ra3BattleNet_AutoMatchHelper_";
-    private static var RANKED_CONTAINER: String = IDENTIFIER_PREFIX + "RankedContainer";
     private static var RANKED_CHECKBOX: String = "rankedCheckBox";
     private static var RANKED_CHECKBOX_OFFSET_Y: Number = -30;
     private static var RANKED_LABEL_OFFSET_X: Number = 22.5;
@@ -12,65 +10,60 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var RANKED_DETAILS_OFFSET_Y: Number = -5;
     private static var RANKED_DETAILS_WIDTH: Number = 500;
     private static var RANKED_DETAILS_HEIGHT: Number = 60;
-    private static var _internalId: Number;
+    private static var AUTOMATCH_SEARCH_DETAILS: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchDetails";
+    private static var AUTOMATCH_SEARCH_DETAILS_X: Number = -491.5;
+    private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -244.9;
+    private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5;
+    private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = 55.95;
+    public static var apt: MovieClip;
 
-    public static function startWatch(): Void {
-        trace("[" + CLASS_NAME + "::startWatch] setting interval");
-        _internalId = setInterval(watch, 500);
-    }
+    public function AutoMatchHelper(thisApt: MovieClip) {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::AutoMatchHelper] ";
+        if (typeof apt === "movieclip") {
+            trace(TRACE_PREFIX + "already initialized, unloading old instance");
+            apt.unloadMovie();
+            delete apt;
+        }
+        apt = thisApt;
 
-    public static function stopWatch(): Void {
-        trace("[" + CLASS_NAME + "::stopWatch] clearing interval");
-        clearInterval(_internalId);
-        delete _internalId;
-    }
-
-    private static function watch(): Void {
-        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::watch] ";
-        if (!_global.fem_m_onlineMultiplayer) {
-            return;
-        }
-        if (!Utils.instanceOf(_global.Cafe2_BaseUIScreen.m_thisClass, _global.fem_m_onlineMultiplayer)) {
-            trace(TRACE_PREFIX + "online multiplayer constructor exists but screen is not online multiplayer");
-            return;
-        }
-        var screen: MovieClip = _global.Cafe2_BaseUIScreen.m_screen;
-        if (typeof screen !== "movieclip") {
-            trace(TRACE_PREFIX + "screen is not a movieclip");
-            return;
-        }
-        var autoMatchPanel: MovieClip = screen.autoMatchPanel;
-        if (typeof autoMatchPanel !== "movieclip") {
-            trace(TRACE_PREFIX + "autoMatchPanel is not a movieclip");
-            return;
-        }
-        var autoMatchSetup: MovieClip = autoMatchPanel.autoMatchSetup;
+        trace(TRACE_PREFIX + "running on " + apt);
+        var autoMatchSetup: MovieClip = apt._parent;
         if (typeof autoMatchSetup !== "movieclip") {
             trace(TRACE_PREFIX + "autoMatchSetup is not a movieclip");
             return;
         }
-        var rankedContainer: MovieClip = autoMatchSetup[RANKED_CONTAINER];
-        if (typeof rankedContainer !== "movieclip") {
-            trace(TRACE_PREFIX + "autoMatchSetup found, creating elements");
-            createElements(autoMatchPanel, autoMatchSetup);
-            rankedContainer = autoMatchSetup[RANKED_CONTAINER];
-            if (rankedContainer !== "movieclip") {
-                trace(TRACE_PREFIX + "failed to create elements");
-                return;
-            }
+        var autoMatchPanel: MovieClip = autoMatchSetup._parent;
+        if (typeof autoMatchPanel !== "movieclip") {
+            trace(TRACE_PREFIX + "autoMatchPanel is not a movieclip");
+            return;
         }
+        createElements(autoMatchPanel, autoMatchSetup);
+    }
 
+    // 这个函数将会被 Ra3BattleNet.apt 的 AutoMatchHelperLoader 自动调用，不需要手动调用
+    public static function update(): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::update] ";
+        if (typeof apt !== "movieclip") {
+            trace(TRACE_PREFIX + "apt is not a movieclip");
+            return;
+        }
+        var autoMatchSetup = apt._parent;
+        if (typeof autoMatchSetup !== "movieclip") {
+            trace(TRACE_PREFIX + "autoMatchSetup is not a movieclip");
+            return;
+        }
         var inviteButton: MovieClip = autoMatchSetup.inviteButton;
         if (inviteButton.isEnabled()) {
-            rankedContainer._visible = false;
+            apt._visible = false;
             inviteButton._alpha = 100;
         }
         else {
-            rankedContainer._visible = true;
+            apt._visible = true;
             inviteButton._alpha = 0;
 
-            var rankedCheckBox: MovieClip = rankedContainer[RANKED_CHECKBOX];
+            var rankedCheckBox: MovieClip = apt[RANKED_CHECKBOX];
             if (rankedCheckBox.isEnabled() === false) {
+                trace(TRACE_PREFIX + "ranked checkbox does not have value, request it");
                 var result: Object = new Object();
                 loadVariables("Ra3BattleNet_InGameHttpRequest", result);
                 updateRankedCheckBox(rankedCheckBox, result["isCurrentPlayerRanked"]);
@@ -107,15 +100,11 @@ class Ra3BattleNet.AutoMatchHelper {
             return;
         }
 
-        var container: MovieClip = autoMatchSetup.createEmptyMovieClip(
-            RANKED_CONTAINER, 
-            autoMatchSetup.getNextHighestDepth()
-        );
-
-        var newCheckbox: MovieClip = container.attachMovie(
+        trace(TRACE_PREFIX + "creating elements on " + apt);
+        var newCheckbox: MovieClip = apt.attachMovie(
             "std_MouseCheckBoxSymbol",
             RANKED_CHECKBOX,
-            container.getNextHighestDepth(), {
+            apt.getNextHighestDepth(), {
                 m_width: 200,
                 m_textAlign: false,
                 m_labelPosition: "right align",
@@ -144,9 +133,9 @@ class Ra3BattleNet.AutoMatchHelper {
             updateRankedCheckBox(newCheckbox, result["isCurrentPlayerRanked"]);
         });
 
-        var label: MovieClip = container.createEmptyMovieClip(
+        var label: MovieClip = apt.createEmptyMovieClip(
             "rankedCheckBoxLabel", 
-            container.getNextHighestDepth()
+            apt.getNextHighestDepth()
         );
         label._x = newCheckbox._x + RANKED_LABEL_OFFSET_X;
         label._y = newCheckbox._y + RANKED_LABEL_OFFSET_Y;
@@ -162,18 +151,43 @@ class Ra3BattleNet.AutoMatchHelper {
         drop.text = top.text = "$IsPersonaRankedLabel";
         top.text += "&Outline"
 
-        container.createTextField(
+        apt.createTextField(
             "rankedCheckBoxDetails", 
-            container.getNextHighestDepth(),
+            apt.getNextHighestDepth(),
             label._x + RANKED_DETAILS_OFFSET_X,
             label._y + label._height + RANKED_DETAILS_OFFSET_Y,
             RANKED_DETAILS_WIDTH,
             RANKED_DETAILS_HEIGHT
         );
-        var details: TextField = container["rankedCheckBoxDetails"];
+        var details: TextField = apt["rankedCheckBoxDetails"];
         details.setTextFormat(new TextFormat("Lucida Sans Unicode", 14, top.textColor));
         details.wordWrap = true;
         details.text = "$IsPersonaRankedDetails";
+        trace(TRACE_PREFIX + "created elements on " + apt);
+
+        // 给搜索框也加个文本框
+        trace(TRACE_PREFIX + "creating textfield on autoMatchSearch");
+        var autoMatchSearch: MovieClip = autoMatchPanel.autoMatchSearch;
+        if (typeof autoMatchSearch !== "movieclip") {
+            trace(TRACE_PREFIX + "autoMatchSearch is not a movieclip");
+            return;
+        }
+
+        autoMatchSearch.createTextField(
+            AUTOMATCH_SEARCH_DETAILS, 
+            autoMatchSearch.getNextHighestDepth(),
+            AUTOMATCH_SEARCH_DETAILS_X,
+            AUTOMATCH_SEARCH_DETAILS_Y + 7,
+            AUTOMATCH_SEARCH_DETAILS_WIDTH,
+            AUTOMATCH_SEARCH_DETAILS_HEIGHT
+        );
+        var searchDetails: TextField = autoMatchSearch[AUTOMATCH_SEARCH_DETAILS];
+        searchDetails.textHeight = 22;
+        searchDetails.textColor = 0xFE8101;
+        searchDetails.setTextFormat(new TextFormat("Red Alert", 22));
+        searchDetails.autoSize = "center";
+        searchDetails.text = "$AUTOMATCHSEARCHHEADER";
+        trace(TRACE_PREFIX + "created textfield on autoMatchSearch");
     }
 
     private static function updateRankedCheckBox(checkBox: MovieClip, isRanked): Void {
