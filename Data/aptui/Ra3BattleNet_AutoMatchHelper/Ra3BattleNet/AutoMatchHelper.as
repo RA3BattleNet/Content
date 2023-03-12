@@ -12,9 +12,10 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var RANKED_DETAILS_HEIGHT: Number = 60;
     private static var AUTOMATCH_SEARCH_DETAILS: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchDetails";
     private static var AUTOMATCH_SEARCH_DETAILS_X: Number = -491.5;
-    private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -244.9;
+    private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -188.55;
     private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5;
     private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = 55.95;
+    private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xFE8101;
     private static var _apt: MovieClip;
     private static var _intervalId: Number;
 
@@ -199,20 +200,20 @@ class Ra3BattleNet.AutoMatchHelper {
             return false;
         }
 
+        var searchDetailsTextFormat: TextFormat = new TextFormat("Red Alert", 22);
+        searchDetailsTextFormat.align = "center";
+        searchDetailsTextFormat.color = AUTOMATCH_SEARCH_DETAILS_COLOR;
         autoMatchSearch.createTextField(
             AUTOMATCH_SEARCH_DETAILS, 
             autoMatchSearch.getNextHighestDepth(),
             AUTOMATCH_SEARCH_DETAILS_X,
-            AUTOMATCH_SEARCH_DETAILS_Y + 7,
+            AUTOMATCH_SEARCH_DETAILS_Y,
             AUTOMATCH_SEARCH_DETAILS_WIDTH,
             AUTOMATCH_SEARCH_DETAILS_HEIGHT
         );
         var searchDetails: TextField = autoMatchSearch[AUTOMATCH_SEARCH_DETAILS];
-        searchDetails.textHeight = 22;
-        searchDetails.textColor = 0xFE8101;
-        searchDetails.setTextFormat(new TextFormat("Red Alert", 22));
-        searchDetails.autoSize = "center";
-        searchDetails.text = "$AUTOMATCHSEARCHHEADER";
+        searchDetails.setTextFormat(searchDetailsTextFormat);
+        searchDetails.text = "$AUTOMATCHPANELHEADER";
         trace(TRACE_PREFIX + "created textfield on autoMatchSearch");
         return true;
     }
