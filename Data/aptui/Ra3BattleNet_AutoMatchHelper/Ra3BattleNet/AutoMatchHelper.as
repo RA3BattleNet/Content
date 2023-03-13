@@ -211,9 +211,10 @@ class Ra3BattleNet.AutoMatchHelper {
             return false;
         }
 
-        var searchDetailsTextFormat: TextFormat = new TextFormat("Lucida Sans Unicode", 18);
+        var searchDetailsTextFormat: TextFormat = new TextFormat("Lucida Sans Unicode", 16);
         searchDetailsTextFormat.align = "center";
         searchDetailsTextFormat.color = AUTOMATCH_SEARCH_DETAILS_COLOR;
+        searchDetailsTextFormat.bold = true;
         autoMatchSearch.createTextField(
             AUTOMATCH_SEARCH_DETAILS, 
             autoMatchSearch.getNextHighestDepth(),
