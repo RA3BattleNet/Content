@@ -23,6 +23,7 @@
         _updateCounter = 0;
         _apt.onEnterFrame = _global.bind0(this, update);
         // 下面这代码实在是太诡异了，但也只能这样了
+        // 我们必须依靠这段代码才能在我们“寄生”的 screen 退出时，把自己 unload 掉
         _global.gSM.setOnExitScreen(_global.bind1(this, function(previousOnExitScreen: Function) {
             unload();
             if(String(previousOnExitScreen) == "[function]" || previousOnExitScreen != null) {
@@ -34,9 +35,9 @@
 
     private function unload(): Void {
         trace("[" + CLASS_NAME + "::unload] apt unloading");
+        _apt.removeMovieClip();
         delete _widgets;
         delete _apt.onEnterFrame;
-        delete _apt.onUnload;
         delete _apt;
         delete _instance;
         delete _global.Ra3BattleNet.ConnectionInformation;
