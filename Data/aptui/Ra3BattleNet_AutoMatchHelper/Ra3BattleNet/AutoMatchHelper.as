@@ -12,10 +12,10 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var RANKED_DETAILS_HEIGHT: Number = 60;
     private static var AUTOMATCH_SEARCH_DETAILS: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchDetails";
     private static var AUTOMATCH_SEARCH_DETAILS_X: Number = -491.5;
-    private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -188.55;
+    private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -210.5;
     private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5;
     private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = 55.95;
-    private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xFE8101;
+    private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xF3B061;
     private static var _apt: MovieClip;
     private static var _intervalId: Number;
 
@@ -32,7 +32,8 @@ class Ra3BattleNet.AutoMatchHelper {
             trace(TRACE_PREFIX + "failed to create elements");
             return;
         }
-        setInterval(update, 500);
+        _apt._visible = false;
+        _intervalId = setInterval(update, 500);
         // 下面这代码实在是太诡异了，但也只能这样了
         // 我们必须依靠这段代码才能在我们“寄生”的 screen 退出时，把自己 unload 掉
         _global.gSM.setOnExitScreen(_global.bind1(this, function(previousOnExitScreen: Function) {
@@ -65,6 +66,15 @@ class Ra3BattleNet.AutoMatchHelper {
             trace(TRACE_PREFIX + "autoMatchSetup is not a movieclip");
             return;
         }
+        var autoMatchPanel: MovieClip = autoMatchSetup._parent;
+        if (typeof autoMatchPanel !== "movieclip") {
+            trace(TRACE_PREFIX + "autoMatchPanel is not a movieclip");
+            return;
+        }
+
+        // 邀请按钮和排位复选框的位置重叠了。
+        // 我们在邀请按钮不需要使用的时候，把它隐藏掉
+        // 在邀请按钮需要使用的时候，显示它、并把排位复选框隐藏掉
         var inviteButton: MovieClip = autoMatchSetup.inviteButton;
         if (inviteButton.isEnabled()) {
             _apt._visible = false;
@@ -73,7 +83,7 @@ class Ra3BattleNet.AutoMatchHelper {
         else {
             _apt._visible = true;
             inviteButton._alpha = 0;
-
+            // 假如排位复选框并不是隐藏状态，请求它的值
             var rankedCheckBox: MovieClip = _apt[RANKED_CHECKBOX];
             if (rankedCheckBox.isEnabled() === false) {
                 trace(TRACE_PREFIX + "ranked checkbox does not have value, request it");
@@ -187,8 +197,9 @@ class Ra3BattleNet.AutoMatchHelper {
             RANKED_DETAILS_HEIGHT
         );
         var details: TextField = _apt["rankedCheckBoxDetails"];
-        details.setTextFormat(new TextFormat("Lucida Sans Unicode", 14, top.textColor));
+        details.multiline = true;
         details.wordWrap = true;
+        details.setTextFormat(new TextFormat("Lucida Sans Unicode", 14, top.textColor));
         details.text = "$IsPersonaRankedDetails";
         trace(TRACE_PREFIX + "created elements on " + _apt);
 
@@ -200,7 +211,7 @@ class Ra3BattleNet.AutoMatchHelper {
             return false;
         }
 
-        var searchDetailsTextFormat: TextFormat = new TextFormat("Red Alert", 22);
+        var searchDetailsTextFormat: TextFormat = new TextFormat("Lucida Sans Unicode", 18);
         searchDetailsTextFormat.align = "center";
         searchDetailsTextFormat.color = AUTOMATCH_SEARCH_DETAILS_COLOR;
         autoMatchSearch.createTextField(
@@ -212,9 +223,12 @@ class Ra3BattleNet.AutoMatchHelper {
             AUTOMATCH_SEARCH_DETAILS_HEIGHT
         );
         var searchDetails: TextField = autoMatchSearch[AUTOMATCH_SEARCH_DETAILS];
+        searchDetails.multiline = true;
+        searchDetails.wordWrap = true;
         searchDetails.setTextFormat(searchDetailsTextFormat);
-        searchDetails.text = "$AUTOMATCHPANELHEADER";
+        searchDetails.text = "$AutoMatchSearchDetails";
         trace(TRACE_PREFIX + "created textfield on autoMatchSearch");
+
         return true;
     }
 
