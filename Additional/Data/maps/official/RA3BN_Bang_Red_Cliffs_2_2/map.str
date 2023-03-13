@@ -1,5 +1,5 @@
 Map:RA3BN_Bang_Red_Cliffs_2_2
-"[RA3BN]Bang Red Cliffs[2.2]"
+"Bang Red Cliffs[2.2]"
 END
 
 SCRIPT:link
@@ -83,7 +83,7 @@ SCRIPT:tutorial__10
 END
 
 Map:RA3BN_Bang_Red_Cliffs_2_2?chinese_t
-"[RA3BN]三國殺之赤壁之戰[2.2]"
+"三國殺之赤壁之戰[2.2]"
 END
 
 SCRIPT:link?chinese_t
@@ -167,7 +167,7 @@ SCRIPT:tutorial__10?chinese_t
 END
 
 Map:RA3BN_Bang_Red_Cliffs_2_2?chinese_s
-"[RA3BN]三国杀之赤壁之战[2.2]"
+"三国杀之赤壁之战[2.2]"
 END
 
 SCRIPT:link?chinese_s
