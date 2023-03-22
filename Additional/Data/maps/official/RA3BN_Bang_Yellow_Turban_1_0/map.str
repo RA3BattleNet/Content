@@ -1,4 +1,4 @@
-Map:Bang_Yellow_Turban_1_0
+Map:RA3BN_Bang_Yellow_Turban_1_0
 "Bang Yellow Turban[1.0]"
 END
 
@@ -82,7 +82,7 @@ SCRIPT:tutorial__10
 "Good luck, have fun. "
 END
 
-Map:Bang_Yellow_Turban_1_0?chinese_t
+Map:RA3BN_Bang_Yellow_Turban_1_0?chinese_t
 "三國殺之黃巾之亂[1.0]"
 END
 
@@ -166,7 +166,7 @@ SCRIPT:tutorial__10?chinese_t
 "祝您好運，玩得開心。"
 END
 
-Map:Bang_Yellow_Turban_1_0?chinese_s
+Map:RA3BN_Bang_Yellow_Turban_1_0?chinese_s
 "三国杀之黄巾之乱[1.0]"
 END
 
