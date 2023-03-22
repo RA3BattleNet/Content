@@ -1,0 +1,23 @@
+Map:RA3BN_Archon_Infinity_Isle
+"[Archon]Infinity Isle"
+END
+
+Map:RA3BN_Archon_Infinity_Isle?chinese
+"[执政官]无限岛(Infinity Isle)"
+END
+
+SCRIPT:cd1
+"ability1 at the ready!"
+End
+
+SCRIPT:cd2
+"ability2 at the ready!"
+End
+
+SCRIPT:cd3
+"ability3 at the ready!"
+End
+
+SCRIPT:kjsh
+"Send any bugs or suggestions to me on the QQ:1210664538.  good luck have fun"
+End

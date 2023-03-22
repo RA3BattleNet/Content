@@ -1,0 +1,23 @@
+Map:RA3BN_Archon_Industrial_Strength
+"[Archon]Industrial Strength"
+END
+
+Map:RA3BN_Archon_Industrial_Strength?chinese
+"[执政官]工业区(Industrial Strength)"
+END
+
+SCRIPT:cd1
+"ability1 at the ready!"
+End
+
+SCRIPT:cd2
+"ability2 at the ready!"
+End
+
+SCRIPT:cd3
+"ability3 at the ready!"
+End
+
+SCRIPT:kjsh
+"Send any bugs or suggestions to me on the QQ:1210664538.  good luck have fun"
+End
