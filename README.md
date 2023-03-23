@@ -6,7 +6,7 @@
 - 为了保证地图不会和目前正在玩家中流传的地图重复，也为了让玩家能辨认哪些是战网自带的，要求地图文件名为`RA3BN_This_Is_My_Map_1_2.map`（版本号可省略）
   - 例子：`RA3BN_Bang_Guandu_1_6.map` 是可以的
   - 反面例子：`RA3BN_[Bang]Guandu_1.6.map` 是需要修改的
-- 地图显示名称可以是任意字符，它们在 `map.str` 里被定义，为了一致性地图显示名要求为`[RA3BN]ThisIsMyMap[1.2]`（版本号可省略）：
+- 地图显示名称可以是任意字符，它们在 `map.str` 里被定义，为了一致性地图显示名要求为`ThisIsMyMap[1.2]`（版本号可省略）：
 ```
 Map:RA3BN_Bang_Guandu_1_6
 "[RA3BN]Bang_Guandu[1.6]"
