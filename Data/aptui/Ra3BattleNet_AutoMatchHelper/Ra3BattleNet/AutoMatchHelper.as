@@ -26,6 +26,7 @@ class Ra3BattleNet.AutoMatchHelper {
             return;
         }
         _apt = thisApt;
+        _apt.swapDepths(_apt._parent.broadcastCheckBox.getDepth() + 1);
 
         trace(TRACE_PREFIX + "running on " + _apt);
         if (!createElements()) {
@@ -75,14 +76,10 @@ class Ra3BattleNet.AutoMatchHelper {
         // 邀请按钮和排位复选框的位置重叠了。
         // 我们在邀请按钮不需要使用的时候，把它隐藏掉
         // 在邀请按钮需要使用的时候，显示它、并把排位复选框隐藏掉
-        var inviteButton: MovieClip = autoMatchSetup.inviteButton;
-        if (inviteButton.isEnabled()) {
-            _apt._visible = false;
-            inviteButton._alpha = 100;
-        }
-        else {
+        var firstSelection = String(autoMatchSetup.gameTypesMenu.getValueAtIndex(0));
+        var currentSelection = String(autoMatchSetup.gameTypesMenu.getValueAtIndex(autoMatchSetup.gameTypesMenu.getCurrentIndex()));
+        if (currentSelection == firstSelection) {
             _apt._visible = true;
-            inviteButton._alpha = 0;
             // 假如排位复选框并不是隐藏状态，请求它的值
             var rankedCheckBox: MovieClip = _apt[RANKED_CHECKBOX];
             if (rankedCheckBox.isEnabled() === false) {
@@ -91,6 +88,16 @@ class Ra3BattleNet.AutoMatchHelper {
                 loadVariables("Ra3BattleNet_InGameHttpRequest", result);
                 updateRankedCheckBox(rankedCheckBox, result["isCurrentPlayerRanked"]);
             }
+        }
+        else {
+            _apt._visible = false;
+        }
+        var inviteButton: MovieClip = autoMatchSetup.inviteButton;
+        if (inviteButton.isEnabled()) {
+            inviteButton._alpha = 100;
+        }
+        else {
+            inviteButton._alpha = 0;
         }
     }
 
