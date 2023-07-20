@@ -14,6 +14,11 @@ class Ra3BattleNet.DisconnectHelper {
         );
         helper.onEnterFrame = update;
         trace(TRACE_PREFIX + "Helper created: " + helper + ", update: " + helper.onEnterFrame);
+
+        // try to report alive (if possible) so the fair play server can judge
+        // the disconnected match as a win for the player who is still alive
+        var noResultExpected: Object = new Object();
+        loadVariables("Ra3BattleNet_ReportAlive", noResultExpected);
     }
 
     public static function destroyDisconnectHelper(apt: MovieClip): Void {
