@@ -75,36 +75,69 @@
 			</StartPosition>
 		</MapMetaData>
 		<MapMetaData
-			BorderSize="15"
-			CRC="0"
-			Description="Map:RA3BN_Lake_of_Albatross/Desc"
-			DisplayName="RA3BN_Lake_of_Albatross"
-			FileName="data\maps\official\ra3bn_lake_of_albatross\ra3bn_lake_of_albatross.map"
-			Height="405"
-			IsMultiplayer="true"
-			IsOfficial="true"
-			NumPlayers="2"
-			Width="470">
+				BorderSize="30"
+				CRC="0"
+				Description="Map:ra3bn_temple_legend_1_0/Desc"
+				DisplayName="ra3bn_temple_legend_1_0"
+				FileName="data\maps\ra3bn_temple_legend_1_0\ra3bn_temple_legend_1_0.map"
+				Height="460"
+				IsMultiplayer="true"
+				IsOfficial="true"
+				NumPlayers="2"
+				Width="600">
 			<StartPosition
-				Name="InitialCameraPosition">
+					Name="InitialCameraPosition">
 				<Position
-					x="0"
-					y="0"
-					z="0"/>
+						x="0"
+						y="0"
+						z="0"/>
 			</StartPosition>
 			<StartPosition
-				Name="Player_1_Start">
+					Name="Player_1_Start">
 				<Position
-					x="3682.904847"
-					y="474.05578"
-					z="0"/>
+						x="934.805441"
+						y="2012.842026"
+						z="0"/>
 			</StartPosition>
 			<StartPosition
-				Name="Player_2_Start">
+					Name="Player_2_Start">
 				<Position
-					x="712.332727"
-					y="475.063182"
-					z="0"/>
+						x="4519.164044"
+						y="1992.228009"
+						z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+				BorderSize="15"
+				CRC="0"
+				Description="Map:ra3bn_lake_of_albatross_1_1/Desc"
+				DisplayName="ra3bn_lake_of_albatross_1_1"
+				FileName="data\maps\official\ra3bn_lake_of_albatross_1_1\ra3bn_lake_of_albatross_1_1.map"
+				Height="405"
+				IsMultiplayer="true"
+				IsOfficial="true"
+				NumPlayers="2"
+				Width="470">
+			<StartPosition
+					Name="InitialCameraPosition">
+				<Position
+						x="0"
+						y="0"
+						z="0"/>
+			</StartPosition>
+			<StartPosition
+					Name="Player_1_Start">
+				<Position
+						x="3682.904847"
+						y="474.05578"
+						z="0"/>
+			</StartPosition>
+			<StartPosition
+					Name="Player_2_Start">
+				<Position
+						x="712.332727"
+						y="475.063182"
+						z="0"/>
 			</StartPosition>
 		</MapMetaData>
 		<MapMetaData
