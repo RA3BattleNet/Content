@@ -2,10 +2,10 @@ SCRIPT:MapCreater
 "Map author: Snowy. GLHF"
 END
 
-Map:ra3bn_lake_of_albatross_1_1
+Map:ra3bn_lake_of_albatross
 "Lake of Albatross"
 END
 
-Map:ra3bn_lake_of_albatross_1_1?chinese
+Map:ra3bn_lake_of_albatross?chinese
 "信天翁之湖(Lake of Albatross)"
 END
