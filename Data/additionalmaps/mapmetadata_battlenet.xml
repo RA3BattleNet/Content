@@ -110,9 +110,9 @@
 		<MapMetaData
 				BorderSize="15"
 				CRC="0"
-				Description="Map:ra3bn_lake_of_albatross/Desc"
-				DisplayName="ra3bn_lake_of_albatross"
-				FileName="data\maps\official\ra3bn_lake_of_albatross\ra3bn_lake_of_albatross.map"
+				Description="Map:ra3bn_lake_of_albatross_1_1/Desc"
+				DisplayName="ra3bn_lake_of_albatross_1_1"
+				FileName="data\maps\official\ra3bn_lake_of_albatross_1_1\ra3bn_lake_of_albatross_1_1.map"
 				Height="405"
 				IsMultiplayer="true"
 				IsOfficial="true"
