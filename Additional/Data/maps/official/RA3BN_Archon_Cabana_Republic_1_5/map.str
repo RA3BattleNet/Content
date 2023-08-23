@@ -1,9 +1,9 @@
-Map:RA3BN_Archon_Infinity_Isle
-"[Archon]Infinity Isle"
+Map:RA3BN_Archon_Cabana_Republic_1_5
+"[Archon]Cabana Republic[1.5]"
 END
 
-Map:RA3BN_Archon_Infinity_Isle?chinese
-"[执政官]无限岛(Infinity Isle)"
+Map:RA3BN_Archon_Cabana_Republic_1_5?chinese
+"[执政官]卡巴纳(Cabana Republic)[1.5]"
 END
 
 SCRIPT:cd1

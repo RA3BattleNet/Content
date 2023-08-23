@@ -1,9 +1,9 @@
-Map:RA3BN_Archon_Snow_Plow
-"[Archon]Snow Plow"
+Map:RA3BN_Archon_Industrial_Strength_1_5
+"[Archon]Industrial Strength[1.5]"
 END
 
-Map:RA3BN_Archon_Snow_Plow?chinese
-"[执政官]雪犁(Snow Plow)"
+Map:RA3BN_Archon_Industrial_Strength_1_5?chinese
+"[执政官]工业区(Industrial Strength)[1.5]"
 END
 
 SCRIPT:cd1

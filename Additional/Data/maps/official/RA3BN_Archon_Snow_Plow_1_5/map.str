@@ -1,9 +1,9 @@
-Map:RA3BN_Archon_BattleBase_Beta
-"[Archon]Battlebase Beta"
+Map:RA3BN_Archon_Snow_Plow_1_5
+"[Archon]Snow Plow[1.5]"
 END
 
-Map:RA3BN_Archon_BattleBase_Beta?chinese
-"[执政官]战斗实验平台(Battlebase Beta)"
+Map:RA3BN_Archon_Snow_Plow_1_5?chinese
+"[执政官]雪犁(Snow Plow)[1.5]"
 END
 
 SCRIPT:cd1

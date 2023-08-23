@@ -243,9 +243,9 @@
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Aquae_Caerulea/Desc"
-			DisplayName="RA3BN_Archon_Aquae_Caerulea"
-			FileName="data\maps\official\ra3bn_archon_aquae_caerulea\ra3bn_archon_aquae_caerulea.map"
+			Description="Map:RA3BN_Archon_Aquae_Caerulea_1_5/Desc"
+			DisplayName="RA3BN_Archon_Aquae_Caerulea_1_5"
+			FileName="data\maps\official\ra3bn_archon_aquae_caerulea_1_5\ra3bn_archon_aquae_caerulea_1_5.map"
 			Height="560"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -275,24 +275,24 @@
 			<StartPosition
 				Name="Player_3_Start">
 				<Position
-					x="594.870721"
-					y="4310.736424"
+					x="551.633206"
+					y="4309.434026"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_4_Start">
 				<Position
-					x="4505.521604"
-					y="811.004008"
+					x="4504.474443"
+					y="608.843402"
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Battlebase_Beta/Desc"
-			DisplayName="RA3BN_Archon_Battlebase_Beta"
-			FileName="data\maps\official\ra3bn_archon_battlebase_beta\ra3bn_archon_battlebase_beta.map"
+			Description="Map:RA3BN_Archon_Battlebase_Beta_1_5/Desc"
+			DisplayName="RA3BN_Archon_Battlebase_Beta_1_5"
+			FileName="data\maps\official\ra3bn_archon_battlebase_beta_1_5\ra3bn_archon_battlebase_beta_1_5.map"
 			Height="600"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -337,9 +337,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Cabana_Republic/Desc"
-			DisplayName="RA3BN_Archon_Cabana_Republic"
-			FileName="data\maps\official\ra3bn_archon_cabana_republic\ra3bn_archon_cabana_republic.map"
+			Description="Map:RA3BN_Archon_Cabana_Republic_1_5/Desc"
+			DisplayName="RA3BN_Archon_Cabana_Republic_1_5"
+			FileName="data\maps\official\ra3bn_archon_cabana_republic_1_5\ra3bn_archon_cabana_republic_1_5.map"
 			Height="520"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -384,9 +384,9 @@
 		<MapMetaData
 			BorderSize="50"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Chrysoberyl_Garden/Desc"
-			DisplayName="RA3BN_Archon_Chrysoberyl_Garden"
-			FileName="data\maps\official\ra3bn_archon_chrysoberyl_garden\ra3bn_archon_chrysoberyl_garden.map"
+			Description="Map:RA3BN_Archon_Chrysoberyl_Garden_1_5/Desc"
+			DisplayName="RA3BN_Archon_Chrysoberyl_Garden_1_5"
+			FileName="data\maps\official\ra3bn_archon_chrysoberyl_garden_1_5\ra3bn_archon_chrysoberyl_garden_1_5.map"
 			Height="550"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -431,9 +431,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Fire_Island/Desc"
-			DisplayName="RA3BN_Archon_Fire_Island"
-			FileName="data\maps\official\ra3bn_archon_fire_island\ra3bn_archon_fire_island.map"
+			Description="Map:RA3BN_Archon_Fire_Island_1_5/Desc"
+			DisplayName="RA3BN_Archon_Fire_Island_1_5"
+			FileName="data\maps\official\ra3bn_archon_fire_island_1_5\ra3bn_archon_fire_island_1_5.map"
 			Height="540"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -478,9 +478,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Industrial_Strength/Desc"
-			DisplayName="RA3BN_Archon_Industrial_Strength"
-			FileName="data\maps\official\ra3bn_archon_industrial_strength\ra3bn_archon_industrial_strength.map"
+			Description="Map:RA3BN_Archon_Industrial_Strength_1_5/Desc"
+			DisplayName="RA3BN_Archon_Industrial_Strength_1_5"
+			FileName="data\maps\official\ra3bn_archon_industrial_strength_1_5\ra3bn_archon_industrial_strength_1_5.map"
 			Height="512"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -525,9 +525,9 @@
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Infinity_Isle/Desc"
-			DisplayName="RA3BN_Archon_Infinity_Isle"
-			FileName="data\maps\official\ra3bn_archon_infinity_isle\ra3bn_archon_infinity_isle.map"
+			Description="Map:RA3BN_Archon_Infinity_Isle_1_5/Desc"
+			DisplayName="RA3BN_Archon_Infinity_Isle_1_5"
+			FileName="data\maps\official\ra3bn_archon_infinity_isle_1_5\ra3bn_archon_infinity_isle_1_5.map"
 			Height="440"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -572,9 +572,9 @@
 		<MapMetaData
 			BorderSize="15"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Lake_of_Albatross/Desc"
-			DisplayName="RA3BN_Archon_Lake_of_Albatross"
-			FileName="data\maps\official\ra3bn_archon_lake_of_albatross\ra3bn_archon_lake_of_albatross.map"
+			Description="Map:RA3BN_Archon_Lake_of_Albatross_1_5/Desc"
+			DisplayName="RA3BN_Archon_Lake_of_Albatross_1_5"
+			FileName="data\maps\official\ra3bn_archon_lake_of_albatross_1_5\ra3bn_archon_lake_of_albatross_1_5.map"
 			Height="405"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -604,24 +604,24 @@
 			<StartPosition
 				Name="Player_3_Start">
 				<Position
-					x="4222.732485"
-					y="447.32112"
+					x="4367.446086"
+					y="1172.713869"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_4_Start">
 				<Position
-					x="138.078507"
-					y="417.682485"
+					x="92.613778"
+					y="1172.645524"
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Snow_Plow/Desc"
-			DisplayName="RA3BN_Archon_Snow_Plow"
-			FileName="data\maps\official\ra3bn_archon_snow_plow\ra3bn_archon_snow_plow.map"
+			Description="Map:RA3BN_Archon_Snow_Plow_1_5/Desc"
+			DisplayName="RA3BN_Archon_Snow_Plow_1_5"
+			FileName="data\maps\official\ra3bn_archon_snow_plow_1_5\ra3bn_archon_snow_plow_1_5.map"
 			Height="580"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -666,9 +666,9 @@
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:RA3BN_Archon_Temple_Prime/Desc"
-			DisplayName="RA3BN_Archon_Temple_Prime"
-			FileName="data\maps\official\ra3bn_archon_temple_prime\ra3bn_archon_temple_prime.map"
+			Description="Map:RA3BN_Archon_Temple_Prime_1_5/Desc"
+			DisplayName="RA3BN_Archon_Temple_Prime_1_5"
+			FileName="data\maps\official\ra3bn_archon_temple_prime_1_5\ra3bn_archon_temple_prime_1_5.map"
 			Height="460"
 			IsMultiplayer="true"
 			IsOfficial="true"

@@ -1,9 +1,9 @@
-Map:RA3BN_Archon_Temple_Prime
-"[Archon]Temple Prime"
+Map:RA3BN_Archon_Fire_Island_1_5
+"[Archon]Fire Island[1.5]"
 END
 
-Map:RA3BN_Archon_Temple_Prime?chinese
-"[执政官]原始神庙(Temple Prime)"
+Map:RA3BN_Archon_Fire_Island_1_5?chinese
+"[执政官]火山岛(Fire Island)[1.5]"
 END
 
 SCRIPT:cd1

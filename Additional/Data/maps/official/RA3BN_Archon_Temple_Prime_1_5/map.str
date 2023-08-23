@@ -1,9 +1,9 @@
-Map:RA3BN_Archon_Industrial_Strength
-"[Archon]Industrial Strength"
+Map:RA3BN_Archon_Temple_Prime_1_5
+"[Archon]Temple Prime[1.5]"
 END
 
-Map:RA3BN_Archon_Industrial_Strength?chinese
-"[执政官]工业区(Industrial Strength)"
+Map:RA3BN_Archon_Temple_Prime_1_5?chinese
+"[执政官]原始神庙(Temple Prime)[1.5]"
 END
 
 SCRIPT:cd1
