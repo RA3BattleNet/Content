@@ -78,7 +78,7 @@
 			BorderSize="30"
 			CRC="0"
 			Description="Map:RA3BN_Temple_Legend_1_1/Desc"
-			DisplayName="Temple Legend"
+			DisplayName="RA3BN_Temple_Legend_1_1"
 			FileName="data\maps\official\ra3bn_temple_legend_1_1\ra3bn_temple_legend_1_1.map"
 			Height="460"
 			IsMultiplayer="true"
