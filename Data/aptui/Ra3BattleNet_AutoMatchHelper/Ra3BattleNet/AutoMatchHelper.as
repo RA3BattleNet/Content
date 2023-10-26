@@ -1,4 +1,4 @@
-﻿import Ra3BattleNet.Utils;
+﻿import Ra3BattleNet.AutoMatchHint;
 
 class Ra3BattleNet.AutoMatchHelper {
     private static var CLASS_NAME: String = "Ra3BattleNet.AutoMatchHelper";
@@ -16,8 +16,10 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5;
     private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = 55.95;
     private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xF3B061;
+    private static var AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL: Number = 5000;
     private static var _apt: MovieClip;
     private static var _intervalId: Number;
+    private static var _hintIntervalId: Number;
 
     public function AutoMatchHelper(thisApt: MovieClip) {
         var TRACE_PREFIX: String = "[" + CLASS_NAME + "::AutoMatchHelper] ";
@@ -48,6 +50,10 @@ class Ra3BattleNet.AutoMatchHelper {
 
     private static function unload(): Void {
         trace("[" + CLASS_NAME + "::unload] apt unloading");
+        if (_hintIntervalId != null) {
+            clearInterval(_hintIntervalId);
+            delete _hintIntervalId;
+        }
         clearInterval(_intervalId);
         _apt.removeMovieClip();
         delete _intervalId;
@@ -235,6 +241,13 @@ class Ra3BattleNet.AutoMatchHelper {
         searchDetails.wordWrap = true;
         searchDetails.setTextFormat(searchDetailsTextFormat);
         searchDetails.text = "$AutoMatchSearchDetails";
+
+        var hintText: AutoMatchHint = new AutoMatchHint();
+        searchDetails.text = hintText.getNextText();
+        _hintIntervalId = setInterval(function () {
+            searchDetails.text = hintText.getNextText();
+        }, AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL);
+
         trace(TRACE_PREFIX + "created textfield on autoMatchSearch");
 
         return true;
