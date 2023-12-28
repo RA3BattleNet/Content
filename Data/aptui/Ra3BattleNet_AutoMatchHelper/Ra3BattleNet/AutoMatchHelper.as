@@ -11,14 +11,16 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var RANKED_DETAILS_WIDTH: Number = 500;
     private static var RANKED_DETAILS_HEIGHT: Number = 60;
     private static var AUTOMATCH_SEARCH_DETAILS: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchDetails";
-    private static var AUTOMATCH_SEARCH_DETAILS_X: Number = -491.5;
+    private static var AUTOMATCH_SEARCH_DETAILS_X: Number = -491.5 + /* 边框太窄了，加一点 */ 20;
     private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -210.5;
-    private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5;
-    private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = 55.95;
+    private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5 - /* 边框太窄了，加一点 */ 40;
+    private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = /* 55.95 */ 350;
     private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xF3B061;
-    private static var AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL: Number = 5000;
+    private static var AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL: Number = 1500;
     private static var _apt: MovieClip;
     private static var _intervalId: Number;
+    // 这玩意可能不是那么有用，本来是想要提示一行一行地显示出来
+    // 可是实际上这个 interval 是从提示被创建的时候就开始了，而不是从显示的时候开始……
     private static var _hintIntervalId: Number;
 
     public function AutoMatchHelper(thisApt: MovieClip) {
@@ -94,6 +96,11 @@ class Ra3BattleNet.AutoMatchHelper {
                 loadVariables("Ra3BattleNet_InGameHttpRequest", result);
                 updateRankedCheckBox(rankedCheckBox, result["isCurrentPlayerRanked"]);
             }
+
+            // 其实 2v2 匹配没人玩的，既然玩家默认选择了第一个选项，不如把后面的都隐藏掉
+            // 隐藏除了 1v1 以外的匹配选项
+            trace(TRACE_PREFIX + "hiding all game types except 1v1");
+            limitTypeMenu(autoMatchSetup.gameTypesMenu);
         }
         else {
             _apt._visible = false;
@@ -189,8 +196,16 @@ class Ra3BattleNet.AutoMatchHelper {
         );
         label._x = newCheckbox._x + RANKED_LABEL_OFFSET_X;
         label._y = newCheckbox._y + RANKED_LABEL_OFFSET_Y;
-        label.createTextField("drop", 1, originalDrop._x, originalDrop._y, originalDrop._width, originalDrop._height);
-        label.createTextField("top", 2, originalTop._x, originalTop._y, originalTop._width, originalTop._height);
+        label.createTextField(
+            "drop", 1, originalDrop._x, originalDrop._y,
+            /* originalDrop._width */ RANKED_DETAILS_WIDTH, // 对于某些语言和字体来说，原来的宽度太小了
+            originalDrop._height
+        );
+        label.createTextField(
+            "top", 2, originalTop._x, originalTop._y,
+            /* originalTop._width */ RANKED_DETAILS_WIDTH, // 对于某些语言和字体来说，原来的宽度太小了
+            originalTop._height
+        );
         var drop: TextField = label.drop;
         var top: TextField = label.top;
         drop.textColor = originalDrop.textColor;
@@ -244,6 +259,8 @@ class Ra3BattleNet.AutoMatchHelper {
 
         var hintText: AutoMatchHint = new AutoMatchHint();
         searchDetails.text = hintText.getNextText();
+        // 这玩意可能不是那么有用，本来是想要提示一行一行地显示出来
+        // 可是实际上这个 interval 是从现在（提示被创建的时候）就开始了，而不是从显示的时候开始……
         _hintIntervalId = setInterval(function () {
             searchDetails.text = hintText.getNextText();
         }, AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL);
@@ -266,5 +283,25 @@ class Ra3BattleNet.AutoMatchHelper {
         else {
             checkBox.disable();
         }
+    }
+
+    private static function limitTypeMenu(menuComponent): Void {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::limitTypeMenu] ";
+        if (menuComponent.m_itemValues.length <= 1) {
+            // 已经被限制过了
+            return;
+        }
+        var data = new Object();
+        loadVariables("QueryGameEngine?AUTOMATCHTYPES", data);
+        var values: Array = data.AUTOMATCHTYPES_VALUES.split(",");
+        var strings: Array = data.AUTOMATCHTYPES_STRINGS.split(",");
+        trace(TRACE_PREFIX + "values = " + values);
+        trace(TRACE_PREFIX + "strings = " + strings);
+        var firstVal: Number = Number(values.shift());
+        values = values.slice(0, 1);
+        strings = strings.slice(0, 1);
+        menuComponent.setData(strings, values);
+        menuComponent.setSelectedIndex(firstVal);
+        trace(TRACE_PREFIX + "limited type menu, length = " + menuComponent.m_itemValues.length);
     }
 }
