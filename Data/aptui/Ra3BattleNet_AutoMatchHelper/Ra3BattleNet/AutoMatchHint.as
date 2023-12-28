@@ -124,19 +124,19 @@
             },
             {
                 ra3: true,
-                corona: true,
+                corona: false,
                 zh: [ "多数伤害都能一击将被冰冻住的东西击碎。" ],
                 en: [ "A single bullet, or almost any other types of damage, is enough to smash a frozen stuff." ]
             },
             {
                 ra3: true,
-                corona: true,
+                corona: false,
                 zh: [ "看见那个被缩小的天启坦克了吗？现在，随便来个坦克都能踩扁他！" ],
                 en: [ "See that shrinked apocalypse tank? Now any tanks can teach him a lesson by crushing him!" ]
             },
             {
                 ra3: true,
-                corona: true,
+                corona: false,
                 zh: [ "海豚——唯一在海上还能倒着游的武装兵种。" ],
                 en: [ "Dolphin, the only armed unit that can reverse on the sea." ]
             },
@@ -160,14 +160,14 @@
             },
             {
                 ra3: true,
-                corona: true,
+                corona: false,
                 zh: [ "铁锤的特殊技能可以卡在三家基础炮台的极限距离攻击。" ],
                 en: [ "The special ability of hammer tank allows it attack T1 defense turret without getting damaged." ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "双刃与牛蛙是一个很强的组合，天狗VX也是。" ],
+                zh: [ "双刃与牛蛙是一个很强的组合，天狗 VX 也是。" ],
                 en: [ "Twinblade and Bullfrog is a strong combo, as is Tengu VX." ]
             },
             {
@@ -185,8 +185,8 @@
             {
                 ra3: true,
                 corona: true,
-                zh: [ "一般来说，最好通过搬动基地的方式去开三矿。" ],
-                en: [ "Generally, the best way to deploy the third ore refinery is moving your MCV to there." ]
+                zh: [ "对于盟军、苏联和帝国来说，最好通过移动主基地的方式去开三矿。" ],
+                en: [ "For Allies, Soviets and Empire, the best way to deploy the third ore refinery is moving your MCV to there." ]
             },
             {
                 ra3: true,
@@ -197,31 +197,37 @@
             {
                 ra3: true,
                 corona: true,
-                zh: [ "Shift+空格可以开血条。" ],
-                en: [ "Shift+space to turn on the HP bar." ]
+                zh: [ 
+                    "Shift+空格键可以开启或关闭血条。",
+                    "在战网客户端的设置里可以让游戏默认启用或者禁用血条。"
+                ],
+                en: [
+                    "Press Shift+Space to turn on the HP bar.",
+                    "You can enable or disable the HP bar by default in the settings of the RA3BattleNet Client."
+                ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "按A键可以让单位行进攻击。" ],
-                en: [ "Pressing A allows units to attack a target." ]
+                zh: [ "按 A 键可以让单位行进攻击。" ],
+                en: [ "Pressing 'A' allows units to attack-move towards a destination." ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "按一下W可以选定同屏幕同种单位，而两下W可以选定全图的同种单位。" ],
-                en: [ "One press of W selects the same type of unit on the same screen, while two presses of W selects the same type of unit on the whole map." ]
+                zh: [ "按一下 W 键可以选定同屏幕同种单位，按两下 W 可以选定全图的同种单位。" ],
+                en: [ "One press of 'W' key selects the same type of unit on the same screen, while two presses of 'W' selects the same type of unit on the whole map." ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "在侵略模式下，【除了指定攻击目标之外的】其他指令不会让单位转移攻击目标。" ],
-                en: [ "In Aggression Mode, commands [other than those that specify the target of the attack] do not cause the unit to shift the target of the attack." ]
+                zh: [ "在侵略模式下，（除了指定攻击目标之外的）其他指令不会让单位转移当前的攻击目标。" ],
+                en: [ "In Aggression Mode, commands (other than those that specify the target of the attack) do not cause the unit to shift the target of the attack." ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "选中一堆单位按X键散开时，散开的中心点是所有单位坐标的加权平均。" ],
+                zh: [ "选中一堆单位按 X 键散开时，散开的中心点是所有单位坐标的加权平均。" ],
                 en: [ "When you select a bunch of units and press X to spread them out, the center point of the spread is a weighted average of all the unit coordinates." ]
             },
             {
@@ -232,7 +238,7 @@
             },
             {
                 ra3: true,
-                corona: true,
+                corona: false,
                 zh: [ "星级动员兵可以在大多数房子的攻击范围之外向房子内投掷燃烧弹。" ],
                 en: [ "Elite conscript can throw Molotov cocktail into most buildings from outside the attack range of that building." ]
             },
@@ -240,12 +246,12 @@
                 ra3: true,
                 corona: true,
                 zh: [ "默认键位下，空格键可以让你的屏幕中心对准上一个发生的事件。比如你家里矿车被打了但你的屏幕在前线，你可以按一下空格把视角切到矿车。" ],
-                en: [ "With the default keystrokes, the spacebar centers your screen on the last event that happened. For example, if your ore miner is under attack but your screen is in the front line, you can press space to cut the view to the ore miner." ]
+                en: [ "With the default hotkey settings, the spacebar centers your screen on the last event that happened. For example, if your ore miner is under attack but your screen is in the front line, you can press space to cut the view to the ore miner." ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "如果你想提高你的PVP技术，不建议你经常使用Q来同时操作所有战斗单位。" ],
+                zh: [ "如果你想提高你的 PVP 技术，不建议你经常使用 Q 来同时操作所有战斗单位。" ],
                 en: [ "If you want to improve your PVP skills, it is not recommended that you regularly use Q to operate all combat units at the same time." ]
             },
             {
@@ -275,7 +281,7 @@
             {
                 ra3: true,
                 corona: true,
-                zh: [ "蜘蛛可以定住载具上附着的蜻蜓，别烦了！" ],
+                zh: [ "蜘蛛可以定住载具上附着的蜻蜓" ],
                 en: [ "Terror drones can immobilize the burst drone that is attaching a vehicle, don't bother!" ]
             },
             {
@@ -311,14 +317,14 @@
             {
                 ra3: true,
                 corona: true,
-                zh: [ "选中一些部队时，再按住shift然后框选一批部队，可以把后选中的部队加入先选中的部队中。" ],
+                zh: [ "选中一些部队时，再按住 Shift 然后框选一批部队，可以把后选中的部队加入先选中的部队中。" ],
                 en: [ "When you select some units, then hold shift and then box a batch of units, you can select all of them at once." ]
             },
             {
                 ra3: true,
                 corona: true,
-                zh: [ "有人使用违禁bug？不妨试试去举报他吧！" ],
-                en: [ "Someone using a banned bug? Try reporting him!" ]
+                zh: [ "有人使用违禁 BUG？不妨试试去举报他吧！" ],
+                en: [ "Someone using a banned bug? Report him!" ]
             }
         ];
 
