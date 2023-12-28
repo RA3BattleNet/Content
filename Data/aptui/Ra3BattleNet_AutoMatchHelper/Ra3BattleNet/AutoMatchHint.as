@@ -127,6 +127,198 @@
                 corona: true,
                 zh: [ "多数伤害都能一击将被冰冻住的东西击碎。" ],
                 en: [ "A single bullet, or almost any other types of damage, is enough to smash a frozen stuff." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "看见那个被缩小的天启坦克了吗？现在，随便来个坦克都能踩扁他！" ],
+                en: [ "See that shrinked apocalypse tank? Now any tanks can teach him a lesson by crushing him!" ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "海豚——唯一在海上还能倒着游的武装兵种。" ],
+                en: [ "Dolphin, the only armed unit that can reverse on the sea." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "工程师占领中立建筑不需要读条哦。" ],
+                en: [ "There is no delay when a engineer occupy a neutral building." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "红色警戒3里并没有轻重甲之分，每个单位都有自己的伤害修正比。" ],
+                en: [ "There is no distinction between light and heavy armor in Red Alert 3, each unit has its own damage modifier ratio." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "当你不在中国，与在中国的玩家玩而不开加速器，那么高概率会有比较卡的游戏体验。" ],
+                en: [ "When you are not in China and play with players in China without any network improvement tools, then there is a high probability of lag." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "铁锤的特殊技能可以卡在三家基础炮台的极限距离攻击。" ],
+                en: [ "The special ability of hammer tank allows it attack T1 defense turret without getting damaged." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "双刃与牛蛙是一个很强的组合，天狗VX也是。" ],
+                en: [ "Twinblade and Bullfrog is a strong combo, as is Tengu VX." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "你知道吗？维护者轰炸机四颗炸弹就能炸掉一个牛蛙。" ],
+                en: [ "Did you know that Vindicators can take out a bullfrog with only four bombs?" ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "矿场可以补矿车。" ],
+                en: [ "You can build ore miner in ore refinery." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "一般来说，最好通过搬动基地的方式去开三矿。" ],
+                en: [ "Generally, the best way to deploy the third ore refinery is moving your MCV to there." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "速机场的建造顺序是电站机场，而0矿机是兵营电站机场。" ],
+                en: [ "For Allied fast airbase, you can build the airbase immediately after the power plan. However, 0-ore-airbase strategy requires you to have a boot camp first." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "Shift+空格可以开血条。" ],
+                en: [ "Shift+space to turn on the HP bar." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "按A键可以让单位行进攻击。" ],
+                en: [ "Pressing A allows units to attack a target." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "按一下W可以选定同屏幕同种单位，而两下W可以选定全图的同种单位。" ],
+                en: [ "One press of W selects the same type of unit on the same screen, while two presses of W selects the same type of unit on the whole map." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "在侵略模式下，【除了指定攻击目标之外的】其他指令不会让单位转移攻击目标。" ],
+                en: [ "In Aggression Mode, commands [other than those that specify the target of the attack] do not cause the unit to shift the target of the attack." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "选中一堆单位按X键散开时，散开的中心点是所有单位坐标的加权平均。" ],
+                en: [ "When you select a bunch of units and press X to spread them out, the center point of the spread is a weighted average of all the unit coordinates." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "熊或狗互相拼杀主要比拼的是数量。" ],
+                en: [ "When dogs and bears are fighting against each other, the key factor is the number." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "星级动员兵可以在大多数房子的攻击范围之外向房子内投掷燃烧弹。" ],
+                en: [ "Elite conscript can throw Molotov cocktail into most buildings from outside the attack range of that building." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "默认键位下，空格键可以让你的屏幕中心对准上一个发生的事件。比如你家里矿车被打了但你的屏幕在前线，你可以按一下空格把视角切到矿车。" ],
+                en: [ "With the default keystrokes, the spacebar centers your screen on the last event that happened. For example, if your ore miner is under attack but your screen is in the front line, you can press space to cut the view to the ore miner." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "如果你想提高你的PVP技术，不建议你经常使用Q来同时操作所有战斗单位。" ],
+                en: [ "If you want to improve your PVP skills, it is not recommended that you regularly use Q to operate all combat units at the same time." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "编队不是队伍数越多越好，而是使用编队的频率越高越好。" ],
+                en: [ "Teams are not better the more teams you have, but the more often you use them." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "选中一批单位，按下鼠标左右键，然后朝某个方向拖动，可以给这批单位拉阵型。" ],
+                en: [ "Select a group of units, press the left and right mouse buttons, and drag in a certain direction to pull formations for that group of units." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "基地车闲置时，可以提前拖到想要造下一个建筑的位置。" ],
+                en: [ "When the MCV is idle, it can be towed ahead to the location where you want to build the next building." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "蜘蛛可以秒杀海豚和一切步兵。" ],
+                en: [ "Terror drones can kill dolphins and all infantry in seconds." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "蜘蛛可以定住载具上附着的蜻蜓，别烦了！" ],
+                en: [ "Terror drones can immobilize the burst drone that is attaching a vehicle, don't bother!" ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "当局面僵持不下，试着攀升科技或者转型海军空军。" ],
+                en: [ "When the situation is stalemated, try to upgrade the tech or consider using navy and air force." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "远程重轰炸是防御塔的克星。" ],
+                en: [ "Long range artillery is the nemesis of defense towers." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "用围墙把矿石精炼厂围上有百利无一害。" ],
+                en: [ "There is no harm in fencing off the ore refinery." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "与红色警戒2不同，当你失去所有建筑时，即使你有防御塔，你也会立刻战败。" ],
+                en: [ "Unlike Red Alert 2, when you lose all your buildings, even if you have defense towers, you lose the battle immediately." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "当你想要短时间内集中力量一举击败对手，不妨卖掉基地！" ],
+                en: [ "When you want to focus on beating your opponents in one fell swoop in a short period of time, you may want to sell your MCV!" ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "选中一些部队时，再按住shift然后框选一批部队，可以把后选中的部队加入先选中的部队中。" ],
+                en: [ "When you select some units, then hold shift and then box a batch of units, you can select all of them at once." ]
+            },
+            {
+                ra3: true,
+                corona: true,
+                zh: [ "有人使用违禁bug？不妨试试去举报他吧！" ],
+                en: [ "Someone using a banned bug? Try reporting him!" ]
             }
         ];
 
