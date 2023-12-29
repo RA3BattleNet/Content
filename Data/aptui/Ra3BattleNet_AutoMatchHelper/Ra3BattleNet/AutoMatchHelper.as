@@ -16,7 +16,7 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5 - /* 边框太窄了，加一点 */ 40;
     private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = /* 55.95 */ 350;
     private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xF3B061;
-    private static var AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL: Number = 1500;
+    private static var AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL: Number = 30000; // 30s
     private static var _apt: MovieClip;
     private static var _intervalId: Number;
     // 这玩意可能不是那么有用，本来是想要提示一行一行地显示出来

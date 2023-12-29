@@ -2,7 +2,9 @@
     private static var CLASS_NAME: String = "Ra3BattleNet.AutoMatchHint";
     private var _currentMainText: String;
     private var _currentHintTexts: Array;
+    private var _hintTitle: String;
     private var _hintIndex: Number;
+    private var _hintCandidates: Array;
     
     public function AutoMatchHint() {
         var mainTexts = {
@@ -339,30 +341,33 @@
         var modName: String = (query.modName || "ra3").toLowerCase();
         trace("[" + CLASS_NAME + "] modName: " + modName);
 
-        var candidates: Array = new Array();
+        _hintTitle = hintTitle[language];
+
+        _hintCandidates = new Array();
         for (var i = 0; i < hintTexts.length; ++i) {
             if (hintTexts[i][modName]) {
-                candidates.push(hintTexts[i]);
+                _hintCandidates.push(hintTexts[i]);
             }
         }
 
         _currentMainText = mainTexts[language].join("\n");
-        _currentHintTexts = candidates[Math.floor(Math.random() * candidates.length)][language].slice()
-        _currentHintTexts.unshift(hintTitle[language])
+        _currentHintTexts = _hintCandidates[Math.floor(Math.random() * _hintCandidates.length)][language].slice()
+        _currentHintTexts.unshift(_hintTitle)
         _hintIndex = 0;
     }
 
     public function getNextText(): String {
-        var text: String = _currentMainText;
-        if (_currentHintTexts.length > 0) {
-            if (_hintIndex < _currentHintTexts.length) {
-                ++_hintIndex;
-            }
-            text += "\n\n" + _currentHintTexts.slice(0, _hintIndex).join("\n");;
-            if (_hintIndex < _currentHintTexts.length) {
-                text += "\n...";
-            }
+        var language: String = "en";
+        var query = new Object();
+        loadVariables("RA3BattleNet_GameLanguage", query);
+        if (query.languageId && query.languageId.indexOf("chinese") != -1) {
+            language = "zh";
         }
+
+        _currentHintTexts = _hintCandidates[Math.floor(Math.random() * _hintCandidates.length)][language].slice()
+        _currentHintTexts.unshift(_hintTitle)
+
+        var text: String = _currentMainText + "\n\n" + _currentHintTexts.join("\n");
         trace("[" + CLASS_NAME + "] getNextText: " + text);
         return text;
     }
