@@ -9,19 +9,17 @@
             zh: [
                 "您也可以尝试在战网客户端的设置页面启用提醒功能。",
                 "启用后，您可以放心将游戏最小化并去做其他事情，我们会在匹配到对手时提醒您。",
-                "",
-                "1：点击匹配后，系统会等待约 1 分钟，为您寻找水平最为接近的对手（按照双方隐藏分数决定）。",
+                "1：点击匹配后，系统会等待约 1 分钟，为您寻找水平最为接近的对手。",
                 "2：若超出该时间，系统将强制撮合满足分数限制的对手进入对战，但双方的分数限制均需满足。",
                 "3：若其余玩家与您水平差距较大且选择了较小的分数范围，您可能在该时段不能进行成功的匹配。",
                 "在极少数情况下，有可能出现 BUG 导致无法退出匹配，此时您可以尝试点击右上角的五角星，然后登出再重新登录"
             ],
             en: [
                 "You can also try enabling the notification feature in the RA3BattleNet Client's Settings. Once enabled, you can minimize the game and go do something else while we notify you when a match is found.",
-                "",
-                "1: After starting automatch search, the system will wait for about 1 minute to find an opponent with a similar skill level (determined by the hidden ELO of both players).",
-                "2: If the time is exceeded, the system will force the matching of opponents who meet the score limit into the battle, but the score limit of both parties must be met.",
-                "3: If other players have a large gap with you and choose a smaller score range, you may not be able to match successfully at that time.",
-                "In very rare cases, it may be impossible to exit the match due to a BUG. In this case, you can try clicking the pentagram in the upper right corner, then log out and log in again."
+                "1: The system will wait for about 1 minute to find an opponent with a similar skill level.",
+                "2: If the time is exceeded, the system will match opponents who meet the score limit of both parties.",
+                "3: If all players have a large gap with you, you may not be able to match successfully.",
+                "In very rare cases, you cannot exit the automatch due to a bug. In this case, log out and log in again."
             ]
         };
         var hintTitle = {
