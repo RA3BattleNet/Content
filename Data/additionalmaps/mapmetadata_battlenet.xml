@@ -874,7 +874,7 @@
 			DisplayName="RA3BN_Hot_Conflict_1_1"
 			FileName="data\maps\official\ra3bn_hot_conflict_1_1\ra3bn_hot_conflict_1_1.map"
 			Height="540"
-			IsMultiplayer="false"
+			IsMultiplayer="true"
 			IsOfficial="true"
 			NumPlayers="6"
 			Width="540">
@@ -996,7 +996,7 @@
 			DisplayName="RA3BN_Snowtop_Conqueror_1_1"
 			FileName="data\maps\official\ra3bn_snowtop_conqueror_1_1\ra3bn_snowtop_conqueror_1_1.map"
 			Height="540"
-			IsMultiplayer="false"
+			IsMultiplayer="true"
 			IsOfficial="true"
 			NumPlayers="6"
 			Width="540">
@@ -1057,7 +1057,7 @@
 			DisplayName="RA3BN_Spring_Showdown_1_1"
 			FileName="data\maps\official\ra3bn_spring_showdown_1_1\ra3bn_spring_showdown_1_1.map"
 			Height="660"
-			IsMultiplayer="false"
+			IsMultiplayer="true"
 			IsOfficial="true"
 			NumPlayers="6"
 			Width="660">
@@ -1261,7 +1261,7 @@
 			DisplayName="RA3BN_Bang_Guandu_2_3"
 			FileName="data\maps\official\ra3bn_bang_guandu_2_3\ra3bn_bang_guandu_2_3.map"
 			Height="601"
-			IsMultiplayer="false"
+			IsMultiplayer="true"
 			IsOfficial="false"
 			NumPlayers="5"
 			Width="601">
@@ -1315,7 +1315,7 @@
 			DisplayName="RA3BN_Bang_Red_Cliffs_2_3"
 			FileName="data\maps\official\ra3bn_bang_red_cliffs_2_3\ra3bn_bang_red_cliffs_2_3.map"
 			Height="610"
-			IsMultiplayer="false"
+			IsMultiplayer="true"
 			IsOfficial="false"
 			NumPlayers="5"
 			Width="610">
@@ -1369,7 +1369,7 @@
 			DisplayName="RA3BN_Bang_Yellow_Turban_1_1"
 			FileName="data\maps\official\ra3bn_bang_yellow_turban_1_1\ra3bn_bang_yellow_turban_1_1.map"
 			Height="660"
-			IsMultiplayer="false"
+			IsMultiplayer="true"
 			IsOfficial="false"
 			NumPlayers="5"
 			Width="660">
