@@ -77,9 +77,9 @@
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:RA3BN_Temple_Legend_1_1/Desc"
-			DisplayName="RA3BN_Temple_Legend_1_1"
-			FileName="data\maps\official\ra3bn_temple_legend_1_1\ra3bn_temple_legend_1_1.map"
+			Description="Map:RA3BN_Temple_Legend_1_2/Desc"
+			DisplayName="RA3BN_Temple_Legend_1_2"
+			FileName="data\maps\official\ra3bn_temple_legend_1_2\ra3bn_temple_legend_1_2.map"
 			Height="460"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -870,11 +870,11 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Hot_Conflict/Desc"
-			DisplayName="RA3BN_Hot_Conflict"
-			FileName="data\maps\official\ra3bn_hot_conflict\ra3bn_hot_conflict.map"
+			Description="Map:RA3BN_Hot_Conflict_1_1/Desc"
+			DisplayName="RA3BN_Hot_Conflict_1_1"
+			FileName="data\maps\official\ra3bn_hot_conflict_1_1\ra3bn_hot_conflict_1_1.map"
 			Height="540"
-			IsMultiplayer="true"
+			IsMultiplayer="false"
 			IsOfficial="true"
 			NumPlayers="6"
 			Width="540">
@@ -992,11 +992,11 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Snowtop_Conqueror/Desc"
-			DisplayName="RA3BN_Snowtop_Conqueror"
-			FileName="data\maps\official\ra3bn_snowtop_conqueror\ra3bn_snowtop_conqueror.map"
+			Description="Map:RA3BN_Snowtop_Conqueror_1_1/Desc"
+			DisplayName="RA3BN_Snowtop_Conqueror_1_1"
+			FileName="data\maps\official\ra3bn_snowtop_conqueror_1_1\ra3bn_snowtop_conqueror_1_1.map"
 			Height="540"
-			IsMultiplayer="true"
+			IsMultiplayer="false"
 			IsOfficial="true"
 			NumPlayers="6"
 			Width="540">
@@ -1010,54 +1010,54 @@
 			<StartPosition
 				Name="Player_1_Start">
 				<Position
-					x="3675.168426"
-					y="3216.833606"
+					x="3694.86208"
+					y="3264.106024"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_2_Start">
 				<Position
-					x="3207.851205"
-					y="3775.960421"
+					x="3185.869864"
+					y="3772.393286"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_3_Start">
 				<Position
-					x="1787.028422"
-					y="3624.518085"
+					x="1722.394823"
+					y="3667.157229"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_4_Start">
 				<Position
-					x="3494.247243"
-					y="1098.902668"
+					x="3313.544644"
+					y="1312.724008"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_5_Start">
 				<Position
-					x="1714.992808"
-					y="1597.719466"
+					x="1805.617607"
+					y="1248.033448"
 					z="0"/>
 			</StartPosition>
 			<StartPosition
 				Name="Player_6_Start">
 				<Position
-					x="1181.225128"
-					y="1951.018409"
+					x="1318.432808"
+					y="1736.897067"
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:RA3BN_Spring_Showdown/Desc"
-			DisplayName="RA3BN_Spring_Showdown"
-			FileName="data\maps\official\ra3bn_spring_showdown\ra3bn_spring_showdown.map"
+			Description="Map:RA3BN_Spring_Showdown_1_1/Desc"
+			DisplayName="RA3BN_Spring_Showdown_1_1"
+			FileName="data\maps\official\ra3bn_spring_showdown_1_1\ra3bn_spring_showdown_1_1.map"
 			Height="660"
-			IsMultiplayer="true"
+			IsMultiplayer="false"
 			IsOfficial="true"
 			NumPlayers="6"
 			Width="660">
@@ -1254,6 +1254,168 @@
 			</StartPosition>
 		</MapMetaData>
 		<!--Bang Map-->
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:RA3BN_Bang_Guandu_2_3/Desc"
+			DisplayName="RA3BN_Bang_Guandu_2_3"
+			FileName="data\maps\official\ra3bn_bang_guandu_2_3\ra3bn_bang_guandu_2_3.map"
+			Height="601"
+			IsMultiplayer="false"
+			IsOfficial="false"
+			NumPlayers="5"
+			Width="601">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="2703.224646"
+					y="2684.9536"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="965.160246"
+					y="2895.750826"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="2491.873607"
+					y="4422.516043"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="2281.403462"
+					y="1241.693382"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="4147.662822"
+					y="3105.755629"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Bang_Red_Cliffs_2_3/Desc"
+			DisplayName="RA3BN_Bang_Red_Cliffs_2_3"
+			FileName="data\maps\official\ra3bn_bang_red_cliffs_2_3\ra3bn_bang_red_cliffs_2_3.map"
+			Height="610"
+			IsMultiplayer="false"
+			IsOfficial="false"
+			NumPlayers="5"
+			Width="610">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="2771.724262"
+					y="2743.515623"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="1944.62464"
+					y="4843.011203"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="4787.414408"
+					y="1958.547468"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="480.575124"
+					y="3040.561066"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="3026.851624"
+					y="493.829366"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:RA3BN_Bang_Yellow_Turban_1_1/Desc"
+			DisplayName="RA3BN_Bang_Yellow_Turban_1_1"
+			FileName="data\maps\official\ra3bn_bang_yellow_turban_1_1\ra3bn_bang_yellow_turban_1_1.map"
+			Height="660"
+			IsMultiplayer="false"
+			IsOfficial="false"
+			NumPlayers="5"
+			Width="660">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1847.618244"
+					y="4156.16886"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="1189.278988"
+					y="2353.632"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="3630.531208"
+					y="4792.428484"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="3268.374086"
+					y="1207.978409"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="4773.948487"
+					y="2758.736009"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"

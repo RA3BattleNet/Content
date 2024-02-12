@@ -1,0 +1,11 @@
+Map:RA3BN_Archon_Chrysoberyl_Garden
+"[Archon]Chrysoberyl Garden"
+END
+
+Map:RA3BN_Archon_Chrysoberyl_Garden?chinese
+"[执政官]绿石花园(Chrysoberyl Garden)"
+END
+
+SCRIPT:MapCreater
+"Map author: Snowy '2016 vs 2022 Revisited'. GLHF"
+END
