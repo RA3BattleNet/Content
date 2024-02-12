@@ -1,5 +1,5 @@
-Map:RA3BN_Bang_Red_Cliffs_2_2
-"Bang Red Cliffs[2.2]"
+Map:RA3BN_Bang_Red_Cliffs_2_3
+"Bang Red Cliffs[2.3]"
 END
 
 SCRIPT:link
@@ -82,8 +82,8 @@ SCRIPT:tutorial__10
 "Good luck, have fun. "
 END
 
-Map:RA3BN_Bang_Red_Cliffs_2_2?chinese_t
-"三國殺之赤壁之戰[2.2]"
+Map:RA3BN_Bang_Red_Cliffs_2_3?chinese_t
+"三國殺之赤壁之戰[2.3]"
 END
 
 SCRIPT:link?chinese_t
@@ -166,8 +166,8 @@ SCRIPT:tutorial__10?chinese_t
 "祝您好運，玩得開心。"
 END
 
-Map:RA3BN_Bang_Red_Cliffs_2_2?chinese_s
-"三国杀之赤壁之战[2.2]"
+Map:RA3BN_Bang_Red_Cliffs_2_3?chinese_s
+"三国杀之赤壁之战[2.3]"
 END
 
 SCRIPT:link?chinese_s

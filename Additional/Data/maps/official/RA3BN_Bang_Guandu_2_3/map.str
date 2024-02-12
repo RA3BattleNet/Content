@@ -1,5 +1,5 @@
-Map:RA3BN_Bang_Guandu_2_1
-"Bang Guandu[2.1]"
+Map:RA3BN_Bang_Guandu_2_3
+"Bang Guandu[2.3]"
 END
 
 SCRIPT:link
@@ -82,8 +82,16 @@ SCRIPT:tutorial__10
 "Good luck, have fun. "
 END
 
-Map:RA3BN_Bang_Guandu_2_1?chinese_t
-"三國殺之官渡之戰[2.1]"
+SCRIPT:warning1
+"Do not attack the power core. "
+END
+
+SCRIPT:warning2
+"Stop attacking the power core! "
+END
+
+Map:RA3BN_Bang_Guandu_2_3?chinese_t
+"三國殺之官渡之戰[2.3]"
 END
 
 SCRIPT:link?chinese_t
@@ -166,8 +174,16 @@ SCRIPT:tutorial__10?chinese_t
 "祝您好運，玩得開心。"
 END
 
-Map:RA3BN_Bang_Guandu_2_1?chinese_s
-"三国杀之官渡之战[2.1]"
+SCRIPT:warning1?chinese_t
+"不要攻擊動力核心。"
+END
+
+SCRIPT:warning2?chinese_t
+"別再攻擊動力核心了！"
+END
+
+Map:RA3BN_Bang_Guandu_2_3?chinese_s
+"三国杀之官渡之战[2.3]"
 END
 
 SCRIPT:link?chinese_s
@@ -248,4 +264,11 @@ END
 
 SCRIPT:tutorial__10?chinese_s
 "祝您好运，玩得开心。"
+END
+SCRIPT:warning1?chinese_s
+"不要攻击动力核心。"
+END
+
+SCRIPT:warning2?chinese_s
+"别再攻击动力核心了！"
 END
