@@ -942,6 +942,68 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<!--Ban 3v3 Maps-->
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Magmageddon/Desc"
+			DisplayName="RA3BN_Ban_Magmageddon"
+			FileName="data\maps\official\ra3bn_ban_magmageddon\ra3bn_ban_magmageddon.map"
+			Height="640"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="6"
+			Width="660">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1318.16458"
+					y="972.538586"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="4303.724484"
+					y="780.957388"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="747.026981"
+					y="3286.730025"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="5146.063261"
+					y="2502.883042"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="5155.283884"
+					y="4885.211629"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_6_Start">
+				<Position
+					x="1641.234402"
+					y="4793.266446"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 		<!--2v2 Map-->
 		<MapMetaData
 			BorderSize="20"

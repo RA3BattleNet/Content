@@ -1,0 +1,143 @@
+Map:RA3BN_Ban_Magmageddon
+"[Ban]Magmageddon"
+END
+
+Map:RA3BN_Ban_Magmageddon?chinese
+"[Ban]麦格马戈登(Magmageddon)"
+END
+
+INTRO:ProtectPhase
+"Team Captain: \nSelect 2 units to PROTECT for your team (ctrl + right click); \n(The opposing team will not be able to ban the units you protected)"
+END
+
+INTRO:BanPhase
+"Each Team Member: \nDestroy 2 units to BAN for the opposing team; \nForce Fire (ctrl + right click) with your Yuriko."
+END
+
+CAP:TimeBan
+"Time Remaining:"
+END
+
+CAP:BanFinCount
+"Players Ready:"
+END
+
+INTRO:SideInfo_left
+"You guys are on the LEFT"
+END
+
+INTRO:SideInfo_right
+"You guys are on the RIGHT"
+END
+
+INTRO:MsgProtectResult_left
+"These units cannot be banned for the LEFT: "
+END
+
+INTRO:MsgProtectResult_right
+"These units cannot be banned for the RIGHT: "
+END
+
+INTRO:MsgProtectExtra
+"Proceeding to Bans..."
+END
+
+INTRO:MsgBanResult_left
+"The LEFT side cannot build: "
+END
+
+INTRO:MsgBanResult_right
+"The RIGHT side cannot build: "
+END
+
+INTRO:MsgShowdownExtra
+"Match starting... \n(Please Report Bugs to XYHC)"
+END
+
+CAP:TimeMatchStart
+"Match Starting In:"
+END
+
+INTRO:MsgWaitProtect
+"Waiting for the other team captain to finish..."
+END
+
+INTRO:MsgWait
+"Waiting for other players to finish their bans..."
+END
+
+TOP:BonusSput
+"Banning Sputnik gives $500 cash to each member on your team"
+END
+
+TOP:BonusTech
+"Each Tier 3 Ban gives you $1000 extra starting cash"
+END
+
+INTRO:ProtectPhase?chinese
+"队长： \n选择两个单位作为保护单位（Ctrl+右键）。\n（对手无法禁用你保护的单位）"
+END
+
+INTRO:BanPhase?chinese
+"每个队员: \n摧毁两个单位以使你的对手无法使用他们。 \n使用你的百合子强制攻击（Ctrl+右键）。"
+END
+
+CAP:TimeBan?chinese
+"剩余时间："
+END
+
+CAP:BanFinCount?chinese
+"玩家就绪："
+END
+
+INTRO:SideInfo_left?chinese
+"你的队伍位于左侧。"
+END
+
+INTRO:SideInfo_right?chinese
+"你的队伍位于右侧。"
+END
+
+INTRO:MsgProtectResult_left?chinese
+"左侧的队伍一定可以使用这些单位："
+END
+
+INTRO:MsgProtectResult_right?chinese
+"右侧的队伍一定可以使用这些单位："
+END
+
+INTRO:MsgProtectExtra?chinese
+"进入禁用阶段..."
+END
+
+INTRO:MsgBanResult_left?chinese
+"左侧无法建造："
+END
+
+INTRO:MsgBanResult_right?chinese
+"右侧无法建造："
+END
+
+INTRO:MsgShowdownExtra?chinese
+"比赛即将开始... \n（请报告bug给XYHC）"
+END
+
+CAP:TimeMatchStart?chinese
+"游戏即将开始："
+END
+
+INTRO:MsgWaitProtect?chinese
+"等待对手队伍队长完成选择..."
+END
+
+INTRO:MsgWait?chinese
+"等待其他玩家完成选择..."
+END
+
+TOP:BonusSput?chinese
+"禁用苏联拓展车将会给予每个队员500额外初始资金。"
+END
+
+TOP:BonusTech?chinese
+"每一个被禁用的T3单位都会给予你1000额外初始资金。"
+END
