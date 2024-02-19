@@ -710,6 +710,238 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<!--Ban Maps-->
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Battlebase_Beta_2_1/Desc"
+			DisplayName="RA3BN_Ban_Battlebase_Beta_2_1"
+			FileName="data\maps\official\ra3bn_ban_battlebase_beta_2_1\ra3bn_ban_battlebase_beta_2_1.map"
+			Height="600"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="540">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1290.845786"
+					y="1403.955527"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="3716.409601"
+					y="4198.180067"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Cabana_Republic_2_1/Desc"
+			DisplayName="RA3BN_Ban_Cabana_Republic_2_1"
+			FileName="data\maps\official\ra3bn_ban_cabana_republic_2_1\ra3bn_ban_cabana_republic_2_1.map"
+			Height="520"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="720">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1315.434644"
+					y="1278.086982"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="5484.116481"
+					y="1276.595447"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Fire_Island_2_1/Desc"
+			DisplayName="RA3BN_Ban_Fire_Island_2_1"
+			FileName="data\maps\official\ra3bn_ban_fire_island_2_1\ra3bn_ban_fire_island_2_1.map"
+			Height="540"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="540">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1127.220187"
+					y="1135.722182"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="3826.222822"
+					y="3870.030822"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Industrial_Strength_2_1/Desc"
+			DisplayName="RA3BN_Ban_Industrial_Strength_2_1"
+			FileName="data\maps\official\ra3bn_ban_industrial_strength_2_1\ra3bn_ban_industrial_strength_2_1.map"
+			Height="512"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="512">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="3187.217605"
+					y="3252.469228"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="1512.86144"
+					y="1499.25386"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Infinity_Isle_2_1/Desc"
+			DisplayName="RA3BN_Ban_Infinity_Isle_2_1"
+			FileName="data\maps\official\ra3bn_ban_infinity_isle_2_1\ra3bn_ban_infinity_isle_2_1.map"
+			Height="440"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="590">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1390.145067"
+					y="1587.575209"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="3981.395626"
+					y="2188.428428"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Snow_Plow_2_1/Desc"
+			DisplayName="RA3BN_Ban_Snow_Plow_2_1"
+			FileName="data\maps\official\ra3bn_ban_snow_plow_2_1\ra3bn_ban_snow_plow_2_1.map"
+			Height="580"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="580">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="2680.332485"
+					y="1415.608645"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="2731.855045"
+					y="3998.072869"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:RA3BN_Ban_Temple_Prime_2_1/Desc"
+			DisplayName="RA3BN_Ban_Temple_Prime_2_1"
+			FileName="data\maps\official\ra3bn_ban_temple_prime_2_1\ra3bn_ban_temple_prime_2_1.map"
+			Height="460"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="2"
+			Width="592">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="857.540009"
+					y="2015.354025"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="4404.116481"
+					y="2016.024803"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 		<!--2v2 Map-->
 		<MapMetaData
 			BorderSize="20"
@@ -1262,7 +1494,7 @@
 			FileName="data\maps\official\ra3bn_bang_guandu_2_3\ra3bn_bang_guandu_2_3.map"
 			Height="601"
 			IsMultiplayer="true"
-			IsOfficial="false"
+			IsOfficial="true"
 			NumPlayers="5"
 			Width="601">
 			<StartPosition
@@ -1316,7 +1548,7 @@
 			FileName="data\maps\official\ra3bn_bang_red_cliffs_2_3\ra3bn_bang_red_cliffs_2_3.map"
 			Height="610"
 			IsMultiplayer="true"
-			IsOfficial="false"
+			IsOfficial="true"
 			NumPlayers="5"
 			Width="610">
 			<StartPosition
@@ -1370,7 +1602,7 @@
 			FileName="data\maps\official\ra3bn_bang_yellow_turban_1_1\ra3bn_bang_yellow_turban_1_1.map"
 			Height="660"
 			IsMultiplayer="true"
-			IsOfficial="false"
+			IsOfficial="true"
 			NumPlayers="5"
 			Width="660">
 			<StartPosition

@@ -1,0 +1,159 @@
+Map:RA3BN_Ban_Industrial_Strength_2_1
+"[Ban]Industrial Strength[2.1]"
+END
+
+Map:RA3BN_Ban_Industrial_Strength_2_1?chinese
+"[Ban]工业区(Industrial Strength)[2.1]"
+END
+
+INTRO:MsgStart
+"Destroy 3 units to BAN them for your opponent. \nForce Fire (ctrl + right click) with your Yuriko."
+END
+
+INTRO:Phase1
+"Phase 1: (You can ban 3 total units across two phases) \nBAN enemy units by Force Firing (ctrl + right click)"
+END
+
+INTRO:Phase2
+"Phase 2: (Phase 1 units no longer available) \nContinue force firing until you've banned 3 units in total."
+END
+
+TOP:Skip1
+"Destroy this when ready to move on to Phase 2."
+END
+
+TOP:Skip2
+"Destroy this to GIVE UP your remaining bans."
+END
+
+CAP:TimeBan1
+"Phase 1 Ends In:"
+END
+
+CAP:TimeBan
+"Time Remaining:"
+END
+
+INTRO:MsgBanResult
+"Banned Units: "
+END
+
+INTRO:MsgShowdownExtra
+"Match starting... \n(Please Report Bugs to XYHC)"
+END
+
+INTRO:MsgBanResult_Phase1
+"Banned Units so far: "
+END
+
+INTRO:MsgShowdownExtra_Phase1
+"Proceeding to Phase 2"
+END
+
+CAP:TimeMatchStart
+"Match Starting In:"
+END
+
+INTRO:MsgWait
+"Waiting for the other player to finish their bans..."
+END
+
+INTRO:MsgWait2
+"Did you mean to spend ALL 3 BANS before Phase 2?"
+END
+
+TOP:BonusSput
+"Ban Sputnik for $2000 extra starting cash"
+END
+
+TOP:BonusTech
+"Each Tier 3 Ban gives you $1000 extra starting cash"
+END
+
+TOP:BonusHarv
+"Banning Harvester gives your OPPONENT $3000 extra starting cash"
+END
+
+TOP:BanMecha
+"Ban transformer & its air form (counts as 2 bans)"
+END
+
+TOP:BanJet
+"Ban transform ability only (counts as 1 ban)"
+END
+
+INTRO:MsgStart?chinese
+"摧毁三个单位以使你的对手无法使用他们。 \n使用你的百合子强制攻击（Ctrl+右键）。"
+END
+
+INTRO:Phase1?chinese
+"阶段1：（你在两个阶段中总共可以禁用三个单位） \n使用强制攻击以使你的对手无法使用这个单位（Ctrl+右键）"
+END
+
+INTRO:Phase2?chinese
+"Phase 2: （阶段一已不可用） \n继续强制攻击直到你一共选择了三个单位。"
+END
+
+TOP:Skip1?chinese
+"当你准备好进入阶段二时，摧毁它。"
+END
+
+TOP:Skip2?chinese
+"如果你不希望禁用其他单位，摧毁它"
+END
+
+CAP:TimeBan1?chinese
+"阶段一即将结束："
+END
+
+CAP:TimeBan?chinese
+"剩余时间："
+END
+
+INTRO:MsgBanResult?chinese
+"已禁用单位："
+END
+
+INTRO:MsgShowdownExtra?chinese
+"游戏即将开始... \n（请报告bug给XYHC）"
+END
+
+INTRO:MsgBanResult_Phase1?chinese
+"目前已禁用的单位："
+END
+
+INTRO:MsgShowdownExtra_Phase1?chinese
+"正在进入阶段二"
+END
+
+CAP:TimeMatchStart?chinese
+"比赛即将开始："
+END
+
+INTRO:MsgWait?chinese
+"正在等待其他玩家结束选择..."
+END
+
+INTRO:MsgWait2?chinese
+"你是否确定要在阶段一选择全部的三个禁用单位？"
+END
+
+TOP:BonusSput?chinese
+"禁用苏联拓展车将会给予你2000额外初始资金。"
+END
+
+TOP:BonusTech?chinese
+"每一个被禁用的T3单位都会给予你1000额外初始资金。"
+END
+
+TOP:BonusHarv?chinese
+"禁用矿车将会给予你的对手3000额外初始资金。"
+END
+
+TOP:BanMecha?chinese
+"禁用这个可变形单位以及他的空中形态，这算做两个禁用。"
+END
+
+TOP:BanJet?chinese
+"禁用这个可变形单位的变形能力，这算做一个禁用。"
+END
