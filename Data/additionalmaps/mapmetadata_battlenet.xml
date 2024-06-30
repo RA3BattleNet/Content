@@ -1115,8 +1115,8 @@
 			DisplayName="RA3BN_22442_Classic"
 			FileName="data\maps\official\ra3bn_22442_classic\ra3bn_22442_classic.map"
 			Height="880"
-			IsMultiplayer="false"
-			IsOfficial="false"
+			IsMultiplayer="true"
+			IsOfficial="true"
 			NumPlayers="6"
 			Width="880">
 			<StartPosition
