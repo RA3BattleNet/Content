@@ -438,8 +438,8 @@
 			DisplayName="RA3BN_Archon_Temple_Legend_1_6"
 			FileName="data\maps\official\ra3bn_archon_temple_legend_1_6\ra3bn_archon_temple_legend_1_6.map"
 			Height="460"
-			IsMultiplayer="false"
-			IsOfficial="false"
+			IsMultiplayer="true"
+			IsOfficial="true"
 			NumPlayers="4"
 			Width="600">
 			<StartPosition
