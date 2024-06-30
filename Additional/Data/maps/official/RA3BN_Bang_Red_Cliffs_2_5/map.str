@@ -1,0 +1,263 @@
+Map:RA3BN_Bang_Red_Cliffs_2_5
+"Bang Red Cliffs[2.5]"
+END
+
+SCRIPT:link
+"github.com/qingchen239/Red-Alert-3-Bang-Gamemode"
+END
+
+SCRIPT:transferControl
+"If the Sheriff sells this wall hub, he/she will voluntarily and irreversibly transfer control of all units to a computer player and enter observer mode. This behavior will not affect the progress of the battle. "
+END
+
+SCRIPT:sheriffEliminated
+"The Sheriff has been eliminated. "
+END
+
+SCRIPT:renegadeEliminated
+"The Renegade has been eliminated. "
+END
+
+SCRIPT:deputyEliminated
+"The Deputy has been eliminated. "
+END
+
+SCRIPT:outlawEliminated
+"A Outlaw has been eliminated. "
+END
+
+SCRIPT:sheriffWin
+"The Sheriff and his Deputy win. "
+END
+
+SCRIPT:renegadeWin
+"The Renegade wins. "
+END
+
+SCRIPT:nobodyWin
+"Game over. Nobody wins. "
+END
+
+SCRIPT:outlawWin
+"The Outlaws win. "
+END
+
+SCRIPT:debugCode
+"Random int: "
+END
+
+SCRIPT:tutorial__1
+"Welcome to Red Alert 3 "Bang!" gamemode. "
+END
+
+SCRIPT:tutorial__2
+"In this gamemode, each player takes one of the following roles: \nSheriff x 1, Deputy Sheriff x 1, Outlaws x 2, and Renegade x 1. "
+END
+
+SCRIPT:tutorial__3
+"You need to check the text corresponding to the revealed corner of the minimap to know your role. "
+END
+
+SCRIPT:tutorial__4
+"The objective of the game is different for every role: "
+END
+
+SCRIPT:tutorial__5
+"The Outlaws must kill the Sheriff; "
+END
+
+SCRIPT:tutorial__6
+"The Sheriff and his Deputy must kill the Outlaws and the Renegade; "
+END
+
+SCRIPT:tutorial__7
+"The Renegade must kill all the characters with the Sheriff being the last one dead. "
+END
+
+SCRIPT:tutorial__8
+"Before the entire army is annihilated, the Sheriff should not exit the game by any means other than selling the wall hub. "
+END
+
+SCRIPT:tutorial__9
+"Learn more on github.com/qingchen239/Red-Alert-3-Bang-Gamemode . "
+END
+
+SCRIPT:tutorial__10
+"Good luck, have fun. "
+END
+
+Map:RA3BN_Bang_Red_Cliffs_2_5?chinese_t
+"三國殺之赤壁之戰[2.5]"
+END
+
+SCRIPT:link?chinese_t
+"github.com/qingchen239/Red-Alert-3-Bang-Gamemode"
+END
+
+SCRIPT:transferControl?chinese_t
+"如果主公出售這個圍牆結點，他/她將自願且不可逆轉地將所有單位的控制權轉移給一位電腦玩家並進入觀察者模式。該行為不會影響戰鬥進度。"
+END
+
+SCRIPT:sheriffEliminated?chinese_t
+"主公已被擊敗。"
+END
+
+SCRIPT:renegadeEliminated?chinese_t
+"內奸已被擊敗。"
+END
+
+SCRIPT:deputyEliminated?chinese_t
+"忠臣已被擊敗。"
+END
+
+SCRIPT:outlawEliminated?chinese_t
+"一位反賊已被擊敗。"
+END
+
+SCRIPT:sheriffWin?chinese_t
+"主公和忠臣獲勝。"
+END
+
+SCRIPT:renegadeWin?chinese_t
+"內奸獲勝。"
+END
+
+SCRIPT:nobodyWin?chinese_t
+"遊戲結束。無人獲勝。"
+END
+
+SCRIPT:outlawWin?chinese_t
+"反賊獲勝。"
+END
+
+SCRIPT:debugCode?chinese_t
+"隨機整數："
+END
+
+SCRIPT:tutorial__1?chinese_t
+"歡迎來到《紅色警戒3》三國殺遊戲模式。"
+END
+
+SCRIPT:tutorial__2?chinese_t
+"在該模式中，每位玩家取得以下身份之一：\n主公 x 1，忠臣 x 1，反賊 x 2，內奸 x 1。"
+END
+
+SCRIPT:tutorial__3?chinese_t
+"您需要查看雷達四個角落的視野所對應的文字，以知曉自己的身份。"
+END
+
+SCRIPT:tutorial__4?chinese_t
+"對不同身份而言，遊戲的目標是不同的："
+END
+
+SCRIPT:tutorial__5?chinese_t
+"反賊必須殺死主公；"
+END
+
+SCRIPT:tutorial__6?chinese_t
+"主公和忠臣必須殺死反賊和內奸；"
+END
+
+SCRIPT:tutorial__7?chinese_t
+"內奸必須先保護主公並殺死所有其他玩家，最後再殺死主公。"
+END
+
+SCRIPT:tutorial__8?chinese_t
+"在全軍覆沒之前，主公不得以除了出售城牆節點外的任何方式退出遊戲。"
+END
+
+SCRIPT:tutorial__9?chinese_t
+"訪問 github.com/qingchen239/Red-Alert-3-Bang-Gamemode 網址以瞭解更多。"
+END
+
+SCRIPT:tutorial__10?chinese_t
+"祝您好運，玩得開心。"
+END
+
+Map:RA3BN_Bang_Red_Cliffs_2_5?chinese_s
+"三国杀之赤壁之战[2.5]"
+END
+
+SCRIPT:link?chinese_s
+"github.com/qingchen239/Red-Alert-3-Bang-Gamemode"
+END
+
+SCRIPT:transferControl?chinese_s
+"如果主公出售这个围墙结点，他/她将自愿且不可逆转地将所有单位的控制权转移给一位电脑玩家并进入观察者模式。该行为不会影响战斗进度。"
+END
+
+SCRIPT:sheriffEliminated?chinese_s
+"主公已被击败。"
+END
+
+SCRIPT:renegadeEliminated?chinese_s
+"内奸已被击败。"
+END
+
+SCRIPT:deputyEliminated?chinese_s
+"忠臣已被击败。"
+END
+
+SCRIPT:outlawEliminated?chinese_s
+"一位反贼已被击败。"
+END
+
+SCRIPT:sheriffWin?chinese_s
+"主公和忠臣获胜。"
+END
+
+SCRIPT:renegadeWin?chinese_s
+"内奸获胜。"
+END
+
+SCRIPT:nobodyWin?chinese_s
+"游戏结束。无人获胜。"
+END
+
+SCRIPT:outlawWin?chinese_s
+"反贼获胜。"
+END
+
+SCRIPT:debugCode?chinese_s
+"随机整数："
+END
+
+SCRIPT:tutorial__1?chinese_s
+"欢迎来到《红色警戒3》三国杀游戏模式。"
+END
+
+SCRIPT:tutorial__2?chinese_s
+"在该模式中，每位玩家取得以下身份之一：\n主公 x 1，忠臣 x 1，反贼 x 2，内奸 x 1。"
+END
+
+SCRIPT:tutorial__3?chinese_s
+"您需要查看小地图四个角落的视野所对应的文字，以知晓自己的身份。"
+END
+
+SCRIPT:tutorial__4?chinese_s
+"对不同身份而言，游戏的目标是不同的："
+END
+
+SCRIPT:tutorial__5?chinese_s
+"反贼必须杀死主公；"
+END
+
+SCRIPT:tutorial__6?chinese_s
+"主公和忠臣必须杀死反贼和内奸；"
+END
+
+SCRIPT:tutorial__7?chinese_s
+"内奸必须先保护主公并杀死所有其他玩家，最后再杀死主公。"
+END
+
+SCRIPT:tutorial__8?chinese_s
+"在全军覆没之前，主公不得以除了出售城墙节点外的任何方式退出游戏。"
+END
+
+SCRIPT:tutorial__9?chinese_s
+"访问 github.com/qingchen239/Red-Alert-3-Bang-Gamemode 网址以了解更多。"
+END
+
+SCRIPT:tutorial__10?chinese_s
+"祝您好运，玩得开心。"
+END

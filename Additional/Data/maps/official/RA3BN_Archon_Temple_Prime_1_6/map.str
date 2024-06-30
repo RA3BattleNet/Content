@@ -1,0 +1,23 @@
+Map:RA3BN_Archon_Temple_Prime_1_6
+"[Archon]Temple Prime[1.6]"
+END
+
+Map:RA3BN_Archon_Temple_Prime_1_6?chinese
+"[执政官]原始神庙(Temple Prime)[1.6]"
+END
+
+SCRIPT:cd1
+"ability1 at the ready!"
+End
+
+SCRIPT:cd2
+"ability2 at the ready!"
+End
+
+SCRIPT:cd3
+"ability3 at the ready!"
+End
+
+SCRIPT:kjsh
+"Send any bugs or suggestions to me on the QQ:1210664538.  good luck have fun"
+End

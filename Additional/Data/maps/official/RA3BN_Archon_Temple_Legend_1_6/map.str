@@ -1,0 +1,11 @@
+Map:RA3BN_Archon_Temple_Legend_1_6
+"[Archon]Temple Legend[1.6]"
+END
+
+Map:RA3BN_Archon_Temple_Legend_1_6?chinese
+"[执政官]神庙传奇(Temple Legend)[1.6]"
+END
+
+SCRIPT:kjsh
+"Send any bugs or suggestions to me on the QQ:1210664538.  good luck have fun"
+End

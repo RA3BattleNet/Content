@@ -1,0 +1,11 @@
+Map:RA3BN_Archon_Lake_of_Albatross_1_6
+"[Archon]Lake of Albatross[1.6]"
+END
+
+Map:RA3BN_Archon_Lake_of_Albatross_1_6?chinese
+"[执政官]信天翁之湖(Lake of Albatross)[1.6]"
+END
+
+SCRIPT:MapCreater
+"Map author: Snowy. GLHF"
+END
