@@ -82,7 +82,7 @@
             },
             {
                 ra3: true,
-                corona: true,
+                corona: false,
                 zh: [ "谭雅和工程师可从海面上飞行的世纪轰炸机上直接跳伞进入水中。" ],
                 en: [ "Tanya and Engineers can parachute into the water from a Century Bomber flying over the sea." ]
             },
@@ -124,7 +124,7 @@
             },
             {
                 ra3: true,
-                corona: false,
+                corona: true,
                 zh: [ "多数伤害都能一击将被冰冻住的东西击碎。" ],
                 en: [ "A single bullet, or almost any other types of damage, is enough to smash a frozen stuff." ]
             },
@@ -351,8 +351,13 @@
         }
 
         _currentMainText = mainTexts[language].join("\n");
-        _currentHintTexts = _hintCandidates[Math.floor(Math.random() * _hintCandidates.length)][language].slice()
-        _currentHintTexts.unshift(_hintTitle)
+        if (_hintCandidates.length > 0) {
+            _currentHintTexts = _hintCandidates[Math.floor(Math.random() * _hintCandidates.length)][language].slice()
+            _currentHintTexts.unshift(_hintTitle)
+        }
+        else {
+            _currentHintTexts = new Array();
+        }
         _hintIndex = 0;
     }
 
@@ -364,8 +369,13 @@
             language = "zh";
         }
 
-        _currentHintTexts = _hintCandidates[Math.floor(Math.random() * _hintCandidates.length)][language].slice()
-        _currentHintTexts.unshift(_hintTitle)
+        if (_hintCandidates.length > 0) {
+            _currentHintTexts = _hintCandidates[Math.floor(Math.random() * _hintCandidates.length)][language].slice()
+            _currentHintTexts.unshift(_hintTitle);
+        }
+        else {
+            _currentHintTexts = new Array();
+        }
 
         var text: String = _currentMainText + "\n\n" + _currentHintTexts.join("\n");
         trace("[" + CLASS_NAME + "] getNextText: " + text);
