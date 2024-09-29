@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+		<Include type="reference" source="DATA:static.xml" />
+		<Include type="reference" source="DATA:global.xml" />
+		<Include type="reference" source="DATA:audio.xml" />
+	</Includes>
+	<MapMetaData id="TheBattleNetCoronaMapCache">
+		<MapMetaData
+			BorderSize="20"
+			CRC="0"
+			Description="Map:RA3BN_CARDPLAY_1_0/Desc"
+			DisplayName="RA3BN_CARDPLAY_1_0"
+			FileName="data\maps\official\ra3bn_cardplay_1_0\ra3bn_cardplay_1_0.map"
+			Height="740"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="6"
+			Width="740">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1000.804665"
+					y="6489.1392"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="3516.255263"
+					y="6494.983248"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="5993.1658"
+					y="6478.774402"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="980.399849"
+					y="527.601189"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="3472.268047"
+					y="531.32832"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_6_Start">
+				<Position
+					x="6015.108046"
+					y="528.715328"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+    </MapMetaData>
+</AssetDeclaration>

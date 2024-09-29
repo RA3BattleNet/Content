@@ -1,7 +1,11 @@
 Map:RA3BN_22442_Classic
-"Warlords: Rome"
+"Warlords: Rome[Old]"
 END
 
 Map:RA3BN_22442_Classic?chinese
-"亚欧非战之狂热"
+"亚欧非战之狂热[旧]"
+END
+
+SCRIPT:HK416
+"Mapper By HK416"
 END
