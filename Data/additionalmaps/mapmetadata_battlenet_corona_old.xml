@@ -6,6 +6,6 @@
 		<Include type="reference" source="DATA:global.xml" />
 		<Include type="reference" source="DATA:audio.xml" />
 	</Includes>
-	<MapMetaData id="TheBattleNetCoronaOldMapCache">
-    </MapMetaData>
+	<!-- <MapMetaData id="TheBattleNetCoronaOldMapCache">
+    </MapMetaData> -->
 </AssetDeclaration>
