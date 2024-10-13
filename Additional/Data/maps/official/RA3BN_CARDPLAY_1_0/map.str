@@ -1,9 +1,9 @@
 MAP:RA3BN_CARDPLAY_1_0
-"[COR]Corona Cardplay[Basic]" 
+"[COR]Corona Cardplay[Basic][Old]" 
 END
 
 MAP:RA3BN_CARDPLAY_1_0?chinese
-"[COR]日冕战棋[基础]" 
+"[COR]日冕战棋[基础][旧]" 
 END
 
 SCRIPT: WAIT

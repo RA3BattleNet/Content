@@ -894,5 +894,66 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:RA3BN_22442_Classic_1_1/Desc"
+			DisplayName="RA3BN_22442_Classic_1_1"
+			FileName="data\maps\official\ra3bn_22442_classic_1_1\ra3bn_22442_classic_1_1.map"
+			Height="880"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="6"
+			Width="880">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1583.119203"
+					y="6004.228044"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="4628.424422"
+					y="6596.535245"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="7091.569624"
+					y="4777.321602"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="7240"
+					y="890"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="4600"
+					y="960"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_6_Start">
+				<Position
+					x="1223.472986"
+					y="1892.221068"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 	</MapMetaData>
 </AssetDeclaration>

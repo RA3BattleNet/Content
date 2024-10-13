@@ -1,0 +1,503 @@
+MAP:RA3BN_Pub_2_4
+"Red Alert Pub" 
+END
+
+MAP:RA3BN_Pub_2_4?chinese
+"红警酒馆" 
+END
+
+NAME:TogglePlayerReadyStateOn
+	"就绪"
+End
+
+NAME:TogglePlayerReadyStateOff
+	"取消"
+End
+
+NAME:GeneralFinancialFundSettlement
+	"贷款"
+End
+
+NAME:GeneralPurchaseCommandPoints
+	"购买协议点"
+End
+
+DESC:GeneralFinancialFundSettlement
+	"立刻获得$3000，下回合开始每回合还款$800，持续5回合"
+End
+
+DESC:TogglePlayerReadyStateOn
+	"当所有玩家都就绪后，进入下一阶段"
+End
+
+DESC:TogglePlayerReadyStateOff
+	"取消就绪状态"
+End
+
+DESC:GeneralPurchaseCommandPoints
+	"花费$500，购买一个协议点"
+End
+
+SCRIPT:Ra3TavernText_1
+	"当前回合数："
+End
+
+SCRIPT:Ra3TavernText_2
+	"当前阶段剩余时间："
+End
+
+SCRIPT:Ra3TavernText_3
+	"现在是升级阶段，您可以在基地中购买升级已获取对应的许可"
+End
+
+SCRIPT:Ra3TavernText_4
+	"购买完成后您可以选择就绪按钮"
+End
+
+SCRIPT:Ra3TavernText_5
+	"现在是买卡阶段，您可以使用对应阵营的工程师购买已获得权限的卡牌或者进行卡牌合成，例如使用苏联工程师才可以购买征召兵卡牌"
+End
+
+SCRIPT:Ra3TavernText_6
+	"合成卡不占用卡槽位置，不消耗原卡牌，每人上限十张卡牌，盟军工程师被击杀或展开后购买阶段结束"
+End
+
+SCRIPT:Ra3TavernText_7
+	"现在是战斗阶段，请不要在非战斗区域使用协议，战斗结束后会根据剩余单位的数量来扣除相应的血量"
+End
+
+SCRIPT:Ra3TavernText_8
+	"祝君武运昌隆，玩得愉快，欢迎加群讨论：639201737"
+End
+
+UpgradeName:GeneralInfantryListTech1
+	"一级步兵科技"
+End
+
+UpgradeName:GeneralInfantryListTech2
+	"二级步兵科技"
+End
+
+UpgradeName:GeneralInfantryListTech3
+	"三级步兵科技"
+End
+
+UpgradeName:GeneralWarplaneListTech1
+	"一级飞行器科技"
+End
+
+UpgradeName:GeneralWarplaneListTech2
+	"二级飞行器科技"
+End
+
+UpgradeName:GeneralWarplaneListTech3
+	"三级飞行器科技"
+End
+
+UpgradeName:GeneralVehicleListTech1
+	"一级载具科技"
+End
+
+UpgradeName:GeneralVehicleListTech2
+	"二级载具科技"
+End
+
+UpgradeName:GeneralVehicleListTech3
+	"三级载具科技"
+End
+
+UpgradeName:FinancialFundInvestmentTech1
+	"一级投资"
+End
+
+UpgradeName:FinancialFundInvestmentTech2
+	"二级投资"
+End
+
+UpgradeName:FinancialFundInvestmentTech3
+	"三级投资"
+End
+
+UpgradeDesc:FinancialFundInvestmentTech1
+	"从下回合开始，每回合增加收入$200"
+End
+
+UpgradeDesc:FinancialFundInvestmentTech2
+	"从下回合开始，每回合增加收入$500"
+End
+
+UpgradeDesc:FinancialFundInvestmentTech3
+	"从下回合开始，每回合增加收入$800"
+End
+
+UpgradeDesc:GeneralInfantryListTech1
+	"解锁一级步兵科技，获得初级步兵的购买许可"
+End
+
+UpgradeDesc:GeneralInfantryListTech2
+	"解锁二级步兵科技，获得中级步兵的购买许可"
+End
+
+UpgradeDesc:GeneralInfantryListTech3
+	"解锁三级步兵科技，获得高级步兵的购买许可"
+End
+
+UpgradeDesc:GeneralWarplaneListTech1
+	"解锁一级飞行器科技，获得初级飞行器的购买许可"
+End
+
+UpgradeDesc:GeneralWarplaneListTech2
+	"解锁二级飞行器科技，获得中级飞行器的购买许可"
+End
+
+UpgradeDesc:GeneralWarplaneListTech3
+	"解锁三级飞行器科技，获得高级飞行器的购买许可"
+End
+
+UpgradeDesc:GeneralVehicleListTech1
+	"解锁一级载具科技，获得初级载具的购买许可"
+End
+
+UpgradeDesc:GeneralVehicleListTech2
+	"解锁二级载具科技，获得中级载具的购买许可"
+End
+
+UpgradeDesc:GeneralVehicleListTech3
+	"解锁三级载具科技，获得高级载具的购买许可"
+End
+
+SCRIPT:PeaceKeeper
+	"购买价格：400  需求科技：步兵科技一级  出售价格：100  每回合新增二"
+End
+
+SCRIPT:ImperialWarrior
+	"购买价格：300  需求科技：步兵科技一级  出售价格：100  每回合新增二"
+End
+
+SCRIPT:Conscript
+	"购买价格：400  需求科技：步兵科技一级  出售价格：100  每回合新增四"
+End
+
+SCRIPT:JavelinSoldier
+	"购买价格：800  需求科技：步兵科技一级  出售价格：200  每回合新增二"
+End
+
+SCRIPT:FlakTrooper
+	"购买价格：800  需求科技：步兵科技一级  出售价格：200  每回合新增二"
+End
+
+SCRIPT:Tankbuster
+	"购买价格：600  需求科技：步兵科技一级  出售价格：150  每回合新增二"
+End
+
+SCRIPT:TeslaTrooper
+	"购买价格：1500  需求科技：步兵科技二级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:Shinobi
+	"购买价格：2000  需求科技：步兵科技二级  出售价格：200  每回合新增二"
+End
+
+SCRIPT:Natasha
+	"购买价格：2000  需求科技：步兵科技三级  出售价格：400  每两回合新增一"
+End
+
+SCRIPT:Tanya
+	"购买价格：2000  需求科技：步兵科技三级  出售价格：400  每两回合新增一"
+End
+
+SCRIPT:YurikoOmega
+	"购买价格：2000  需求科技：步兵科技三级  出售价格：400  每两回合新增一"
+End
+
+SCRIPT:RocketAngel
+	"购买价格：1800  需求科技：步兵科技三级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:RiptideACV
+	"购买价格：1500  需求科技：载具科技一级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:MultigunnerIFV
+	"购买价格：1600  需求科技：载具科技一级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:GuardianTank
+	"购买价格：1900  需求科技：载具科技二级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:MirageTank
+	"购买价格：1600  需求科技：载具科技三级  出售价格：300  每两回合新增一"
+End
+
+SCRIPT:AthenaCannon
+	"购买价格：1400  需求科技：载具科技三级  出售价格：300  每两回合新增一"
+End
+
+SCRIPT:MechaTengu
+	"购买价格：1600  需求科技：载具科技一级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:TsunamiTank
+	"购买价格：2000  需求科技：载具科技二级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:StrikerVX
+	"购买价格：2000  需求科技：载具科技二级  出售价格：400  每回合新增二"
+End
+
+SCRIPT:KingOni
+	"购买价格：2000  需求科技：载具科技三级  出售价格：500  每两回合新增一"
+End
+
+SCRIPT:WaveForceArtillery
+	"购买价格：1800  需求科技：载具科技三级  出售价格：300  每两回合新增一"
+End
+
+SCRIPT:Sickle
+	"购买价格：1800  需求科技：载具科技一级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:Bullforg
+	"购买价格：1800  需求科技：载具科技一级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:HammerTank
+	"购买价格：2000  需求科技：载具科技二级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:ApocalypseTank
+	"购买价格：2000  需求科技：载具科技三级  出售价格：500  每两回合新增一"
+End
+
+SCRIPT:V4RocketLauncher
+	"购买价格：1200  需求科技：载具科技三级  出售价格：400  每两回合新增一"
+End
+
+SCRIPT:Cryocopter
+	"购买价格：2400  需求科技：飞行器科技二级  出售价格：400  每两回合新增二"
+End
+
+SCRIPT:Twinblade
+	"购买价格：1800  需求科技：飞行器科技二级  出售价格：300  每两回合新增二"
+End
+
+SCRIPT:KirovAirship
+	"购买价格：2000  需求科技：飞行器科技三级  出售价格：500  每两回合新增一"
+End
+
+SCRIPT:GrenadeInfantry
+	"购买价格：600  需求科技：步兵科技一级  出售价格：200  每回合新增二"
+End
+
+SCRIPT:LegionnaireInfantry
+	"购买价格：1500  需求科技：步兵科技二级  出售价格：300  每回合新增二"
+End
+
+SCRIPT:ArcherInfantry
+	"购买价格：800  需求科技：步兵科技一级  出售价格：200  每回合新增二"
+End
+
+SCRIPT:Mortarcycle
+	"购买价格：750  需求科技：步兵科技一级  出售价格：200  每回合新增一"
+End
+
+SCRIPT:DesolatorTrooper
+	"购买价格：750  需求科技：步兵科技二级  出售价格：200  每回合新增一"
+End
+
+SCRIPT:GrinderVehicle
+	"购买价格：2600  需求科技：载具科技二级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:WalkerVehicle
+	"购买价格：2800  需求科技：载具科技二级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:Titan
+	"购买价格：2800  需求科技：载具科技二级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:FutureTank
+	"购买价格：3200  需求科技：载具科技三级  出售价格：600  每两回合新增一"
+End
+
+SCRIPT:SteelRonin
+	"购买价格：2800  需求科技：载具科技二级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:GunOni
+	"购买价格：3000  需求科技：载具科技二级  出售价格：900  每回合新增二"
+End
+
+SCRIPT:Hurricane
+	"购买价格：1000  需求科技：飞行器科技一级  出售价格：200  每回合新增一"
+End
+
+SCRIPT:Paladin
+	"购买价格：1400  需求科技：飞行器科技二级  出售价格：300  每回合新增一"
+End
+
+SCRIPT:TeslaTank
+	"购买价格：2800  需求科技：载具科技二级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:TsunamiTank_Remix
+	"购买价格：2000  需求科技：载具科技一级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:HammerTank_Remix
+	"购买价格：2000  需求科技：载具科技一级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:GuardianTank_Remix
+	"购买价格：1900  需求科技：载具科技一级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:BlazeTrooper
+	"购买价格：500  需求科技：步兵科技一级  出售价格：120  每回合新增二"
+End
+
+SCRIPT:IronGuard
+	"购买价格：1000  需求科技：步兵科技一级  出售价格：250  每回合新增二"
+End
+
+SCRIPT:MistyAssassin
+	"购买价格：2000  需求科技：步兵科技二级  出售价格：400  每回合新增二"
+End
+
+SCRIPT:SwiftsureThunderer
+	"购买价格：1500  需求科技：步兵科技三级  出售价格：350  每回合新增一"
+End
+
+SCRIPT:WaveriderIFV
+	"购买价格：1700  需求科技：载具科技一级  出售价格：400  每回合新增二"
+End
+
+SCRIPT:MagbowSPADSystem
+	"购买价格：1800  需求科技：载具科技一级  出售价格：400  每回合新增二"
+End
+
+SCRIPT:QilinBreakthroughTank
+	"购买价格：2000  需求科技：载具科技一级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:QingfengATGMLauncher
+	"购买价格：2800  需求科技：载具科技一级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:ZhurongAssaultTank
+	"购买价格：2000  需求科技：载具科技三级  出售价格：500  每两回合新增一"
+End
+
+SCRIPT:BaihuQuantumArtillery
+	"购买价格：1800  需求科技：载具科技三级  出售价格：400  每两回合新增一"
+End
+
+SCRIPT:PrismTank
+	"购买价格：2800  需求科技：载具科技二级  出售价格：600  每回合新增二"
+End
+
+SCRIPT:RhinoTank
+	"购买价格：2200  需求科技：载具科技二级  出售价格：500  每回合新增二"
+End
+
+SCRIPT:SledgehammerSPG
+	"购买价格：3000  需求科技：载具科技二级  出售价格：700  每回合新增二"
+End
+
+SCRIPT:ShinshinMecha
+	"购买价格：2000  需求科技：载具科技三级  出售价格：700  每回合新增一"
+End
+
+SCRIPT:BifangSupportCopter
+	"购买价格：1200  需求科技：飞行器科技一级  出售价格：400  每回合新增一"
+End
+
+SCRIPT:ZhuqueAttackAircraft
+	"购买价格：2600  需求科技：飞行器科技二级  出售价格：600  每两回合新增二"
+End
+
+SCRIPT:SoldAreaDescription
+	"售卖区域"
+End
+
+SCRIPT:VolumeUpCardDescription
+	"合成区域"
+End
+
+SCRIPT:MigFighter
+	"购买价格：1500  需求科技：飞行器科技一级  出售价格：600  每两回合新增三"
+End
+
+SCRIPT:ApolloFighter
+	"购买价格：1500  需求科技：飞行器科技一级  出售价格：600  每两回合新增三"
+End
+
+SCRIPT:PhoenixFighter
+	"购买价格：1500  需求科技：飞行器科技一级  出售价格：600  每两回合新增三"
+End
+
+SCRIPT:VolumeUp Dog
+	"合成价格：400   需求条件：三名维和部队    数量二，不新增"
+End
+
+SCRIPT:VolumeUp Bear
+	"合成价格：500   需求条件：三名征召兵    数量二，不新增"
+End
+
+SCRIPT:VolumeUp BurstDrone
+	"合成价格：600   需求条件：三名帝国武士    数量二，不新增"
+End
+
+SCRIPT:VolumeUp TerrorDrone
+	"合成价格：1200   需求条件：两个镰刀机甲    数量二，不新增"
+End
+
+SCRIPT:VolumeUp TeslaTank
+	"合成价格：1400   需求条件：两个磁暴部队    数量二，不新增"
+End
+
+SCRIPT:VolumeUp SecretAgent
+	"合成价格：1500   需求条件：两名维和部队，一名标枪兵    数量二，不新增"
+End
+
+SCRIPT:VolumeUp ArtilleryVehicle
+	"合成价格：4600   需求条件：一个冷冻军团，一个泰坦，一个未来坦克，一名标枪兵    数量二，不新增"
+End
+
+SCRIPT:VolumeUp ZeusWarShip
+	"合成价格：7000   需求条件：一个泰坦，一个未来坦克，一个雅典娜炮    每五回合新增一"
+End
+
+SCRIPT:VolumeUp GigaFortress
+	"合成价格：7000   需求条件：一个铳鬼，一个鬼王，一个波能    每五回合新增一"
+End
+
+SCRIPT:VolumeUp IronFortress
+	"合成价格：7000   需求条件：一个磁暴坦克，一个天启坦克，一个V4导弹发射车    每五回合新增一"
+End
+
+SCRIPT:VolumeUp SkyeyeSentry
+	"合成价格：400   需求条件：两名龙炎军    数量二，不新增"
+End
+
+SCRIPT:VolumeUp QinglongCoreShip
+	"合成价格：12000   需求条件：一架凤凰战机，一辆祝融，一辆白虎，一名迅雷天罡，飞行器科技三级    一艘满配龙船加两架重名截击机，不新增"
+End
+
+SCRIPT:VolumeUp ArmybreakerMecha
+	"合成价格：4500   需求条件：一辆青峰，一名铁卫，一名天罡    每三回合新增一"
+End
+
+SCRIPT:VolumeUp UnionHeavyTank
+	"合成价格：4500   需求条件：一辆V4，一辆天启，一辆重锤    每三回合新增一"
+End
+
+SCRIPT:VolumeUp KingOniX
+	"合成价格：4500   需求条件：一个鬼王，一辆波能，一个心神机甲    每三回合新增一"
+End
+
+SCRIPT:VolumeUp AlkaidSoDS
+	"合成价格：5500   需求条件：一个凤凰战机，一个毕方，一个朱雀，飞行器科技三级    每三回合新增一"
+End

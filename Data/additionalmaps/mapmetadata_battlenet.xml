@@ -1003,9 +1003,9 @@
 		<MapMetaData
 			BorderSize="30"
 			CRC="0"
-			Description="Map:RA3BN_22442_Classic_1_1/Desc"
-			DisplayName="RA3BN_22442_Classic_1_1"
-			FileName="data\maps\official\ra3bn_22442_classic_1_1\ra3bn_22442_classic_1_1.map"
+			Description="Map:RA3BN_22442_Classic_1_2/Desc"
+			DisplayName="RA3BN_22442_Classic_1_2"
+			FileName="data\maps\official\ra3bn_22442_classic_1_2\ra3bn_22442_classic_1_2.map"
 			Height="880"
 			IsMultiplayer="true"
 			IsOfficial="true"

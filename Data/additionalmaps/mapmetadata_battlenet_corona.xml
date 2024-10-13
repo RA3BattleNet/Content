@@ -10,9 +10,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_CARDPLAY_1_0/Desc"
-			DisplayName="RA3BN_CARDPLAY_1_0"
-			FileName="data\maps\official\ra3bn_cardplay_1_0\ra3bn_cardplay_1_0.map"
+			Description="Map:RA3BN_CARDPLAY_1_1/Desc"
+			DisplayName="RA3BN_CARDPLAY_1_1"
+			FileName="data\maps\official\ra3bn_cardplay_1_1\ra3bn_cardplay_1_1.map"
 			Height="740"
 			IsMultiplayer="true"
 			IsOfficial="true"
