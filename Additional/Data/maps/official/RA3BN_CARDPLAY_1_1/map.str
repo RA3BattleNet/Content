@@ -1,9 +1,9 @@
 MAP:RA3BN_CARDPLAY_1_1
-"[COR]Corona Cardplay[Basic]" 
+"[COR]Corona Cardplay 3.0[<<Official>>]" 
 END
 
 MAP:RA3BN_CARDPLAY_1_1?chinese
-"[COR]日冕战棋[基础]" 
+"[COR]日冕酒馆3.0[<<正式版>>]" 
 END
 
 SCRIPT: WAIT?chinese
@@ -272,10 +272,6 @@ END
 
 HOTSPOT:START
 "所有人点击或框选并触发三角形热点信标，开始游戏" 
-END
-
-MAP:RA3BN_CARDPLAY_1
-"[COR]日冕酒馆3.0[<<正式版>>]" 
 END
 
 SCRIPT: DKILL 
