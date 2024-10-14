@@ -1122,5 +1122,67 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<!-- Pub Maps -->
+		<MapMetaData
+			BorderSize="50"
+			CRC="0"
+			Description="Map:RA3BN_Pub_2_4/Desc"
+			DisplayName="RA3BN_Pub_2_4"
+			FileName="data\maps\official\ra3bn_pub_2_4\ra3bn_pub_2_4.map"
+			Height="900"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="6"
+			Width="900">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="833.123362"
+					y="8817.386446"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="832.568802"
+					y="8816.414647"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="829.033785"
+					y="8815.202464"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="830.900002"
+					y="8815.0538"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_5_Start">
+				<Position
+					x="829.586586"
+					y="8815.991245"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_6_Start">
+				<Position
+					x="831.936168"
+					y="8814.068042"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 	</MapMetaData>
 </AssetDeclaration>

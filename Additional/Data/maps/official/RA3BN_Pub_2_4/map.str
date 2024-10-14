@@ -1,9 +1,9 @@
 MAP:RA3BN_Pub_2_4
-"Red Alert Pub" 
+"Red Alert Pub[2.4]" 
 END
 
 MAP:RA3BN_Pub_2_4?chinese
-"红警酒馆" 
+"红警酒馆[2.4]" 
 END
 
 NAME:TogglePlayerReadyStateOn
