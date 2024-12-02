@@ -342,6 +342,71 @@
                 corona: true,
                 zh: [ "有人使用违禁 BUG？不妨试试去举报他吧！" ],
                 en: [ "Someone using a banned bug? Report him!" ]
+            },
+            {
+                armorrush: true,
+                zh: [ "工程师可以远程入侵防御塔，而星级的工程师可以远程入侵建筑" ],
+                en: [ "Engineers can remotely infiltrate defense towers, while star-rated engineers can remotely infiltrate buildings." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "在AR中升级往往是决定胜负的关键" ],
+                en: [ "Upgrading in AR is often the key to victory or defeat." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "航母的打击范围是非常大的同时也非常消耗资金,所以它往往是对战的转折点" ],
+                en: [ "The carrier has a very large strike range but consumes a lot of resources, so it is often a turning point in battle." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "轩辕长戟的导弹是有血量的，所以在发射时要小心不被攻击" ],
+                en: [ "The missiles of Xuanyuan Changji have health points, so be careful not to be attacked when launching them." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "血月的突击兵在房子中可以丢手雷" ],
+                en: [ "Blood Moon's assault troops can throw grenades while inside houses." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "即使在海上也可以建立围墙" ],
+                en: [ "Walls can be built even at sea." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "大部分建筑都有自己的独立升级" ],
+                en: [ "Most buildings have their own independent upgrades." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "AR中船是有碾压等级的" ],
+                en: [ "In AR, ships have crushing levels." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "AR的蜘蛛是可以倒车的" ],
+                en: [ "In AR, spiders can reverse." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "阳炎帽子可以反步兵" ],
+                en: [ "Kamikaze's tankbuster can counter infantry." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "阳炎宫女反装甲防空且追踪" ],
+                en: [ "Kamikaze's archer counters armor and air defense, and has tracking capabilities." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "血月运兵车被摧毁后掉的枪能被突击兵捡起" ],
+                en: [ "When the Blood Moon's transport vehicle is destroyed, the guns it drops can be picked up by assault troops." ]
+            },
+            {
+                armorrush: true,
+                zh: [ "大部分的特种单位都是可以隐身的" ],
+                en: [ "Most special units are invisible." ]
             }
         ];
 
@@ -355,7 +420,7 @@
 
         query = new Object();
         loadVariables("RA3BattleNet_GameModName", query);
-        var modName: String = (query.modName || "ra3").toLowerCase();
+        var modName: String = (query.modName || "ra3").toLowerCase().split(" ").join(""); // 把空格去掉
         trace("[" + CLASS_NAME + "] modName: " + modName);
 
         _hintTitle = hintTitle[language];
