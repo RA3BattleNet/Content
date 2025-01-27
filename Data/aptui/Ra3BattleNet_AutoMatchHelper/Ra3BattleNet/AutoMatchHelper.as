@@ -11,12 +11,19 @@ class Ra3BattleNet.AutoMatchHelper {
     private static var RANKED_DETAILS_WIDTH: Number = 500;
     private static var RANKED_DETAILS_HEIGHT: Number = 60;
     private static var AUTOMATCH_SEARCH_DETAILS: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchDetails";
+    private static var AUTOMATCH_SEARCH_DETAILS_SHADOW: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchDetailsShadow";
     private static var AUTOMATCH_SEARCH_DETAILS_X: Number = -491.5 + /* 边框太窄了，加一点 */ 20;
     private static var AUTOMATCH_SEARCH_DETAILS_Y: Number = -210.5;
     private static var AUTOMATCH_SEARCH_DETAILS_WIDTH: Number = 979.5 - /* 边框太窄了，加一点 */ 40;
     private static var AUTOMATCH_SEARCH_DETAILS_HEIGHT: Number = /* 55.95 */ 350;
     private static var AUTOMATCH_SEARCH_DETAILS_COLOR: Number = 0xF3B061;
     private static var AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL: Number = 30000; // 30s
+    private static var AUTOMATCH_SEARCH_CHATBUTTON: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchChatButton";
+    private static var AUTOMATCH_SEARCH_ROOMSBUTTON: String = "Ra3BattleNet_AutoMatchHelper_AutomatchSearchRoomsButton";
+    private static var AUTOMATCH_SEARCH_CHATBUTTON_X: Number = -166 - 10;
+    private static var AUTOMATCH_SEARCH_CHATBUTTON_Y: Number = 80;
+    private static var AUTOMATCH_SEARCH_ROOMSBUTTON_X: Number = 10;
+    private static var AUTOMATCH_SEARCH_ROOMSBUTTON_Y: Number = 80;
     private static var _apt: MovieClip;
     private static var _intervalId: Number;
     // 这玩意可能不是那么有用，本来是想要提示一行一行地显示出来
@@ -243,6 +250,18 @@ class Ra3BattleNet.AutoMatchHelper {
         searchDetailsTextFormat.align = "center";
         searchDetailsTextFormat.color = AUTOMATCH_SEARCH_DETAILS_COLOR;
         searchDetailsTextFormat.bold = true;
+        var searchDetailsShadowTextFormat: TextFormat = new TextFormat("Lucida Sans Unicode", 16);
+        searchDetailsShadowTextFormat.align = "center";
+        searchDetailsShadowTextFormat.color = 0x000000;
+        searchDetailsShadowTextFormat.bold = true;
+        autoMatchSearch.createTextField(
+            AUTOMATCH_SEARCH_DETAILS_SHADOW, 
+            autoMatchSearch.getNextHighestDepth(),
+            AUTOMATCH_SEARCH_DETAILS_X + 1,
+            AUTOMATCH_SEARCH_DETAILS_Y + 1,
+            AUTOMATCH_SEARCH_DETAILS_WIDTH,
+            AUTOMATCH_SEARCH_DETAILS_HEIGHT
+        );
         autoMatchSearch.createTextField(
             AUTOMATCH_SEARCH_DETAILS, 
             autoMatchSearch.getNextHighestDepth(),
@@ -256,16 +275,82 @@ class Ra3BattleNet.AutoMatchHelper {
         searchDetails.wordWrap = true;
         searchDetails.setTextFormat(searchDetailsTextFormat);
         searchDetails.text = "$AutoMatchSearchDetails";
+        var searchDetailsShadow: TextField = autoMatchSearch[AUTOMATCH_SEARCH_DETAILS_SHADOW];
+        searchDetailsShadow.multiline = true;
+        searchDetailsShadow.wordWrap = true;
+        searchDetailsShadow.setTextFormat(searchDetailsShadowTextFormat);
+        searchDetailsShadow.text = "$AutoMatchSearchDetails";
 
         var hintText: AutoMatchHint = new AutoMatchHint();
         searchDetails.text = hintText.getNextText();
+        searchDetailsShadow.text = searchDetails.text;
         // 这玩意可能不是那么有用，本来是想要提示一行一行地显示出来
         // 可是实际上这个 interval 是从现在（提示被创建的时候）就开始了，而不是从显示的时候开始……
         _hintIntervalId = setInterval(function () {
             searchDetails.text = hintText.getNextText();
+            searchDetailsShadow.text = searchDetails.text;
         }, AUTOMATCH_SEARCH_DETAILS_HINT_INTERVAL);
 
         trace(TRACE_PREFIX + "created textfield on autoMatchSearch");
+
+        trace(TRACE_PREFIX + "creating buttons on autoMatchSearch");
+        var screen = _global.Cafe2_BaseUIScreen.m_thisClass;
+        var chatButton: MovieClip = autoMatchSearch.attachMovie(
+            "std_MouseButtonSymbol",
+            AUTOMATCH_SEARCH_CHATBUTTON,
+            autoMatchSearch.getNextHighestDepth(), {
+                m_focusDirs: "Up/Down",
+                m_bEnabled: true,
+                m_refFM: "_root.gFM",
+                m_initiallySelected: false,
+                m_tabIndex: -1,
+                m_bVisible: true,
+                m_label: "$CHATLOBBY",
+                m_contentSymbol: "buttonContentSymbol"
+            }
+        );
+        chatButton._x = AUTOMATCH_SEARCH_CHATBUTTON_X;
+        chatButton._y = AUTOMATCH_SEARCH_CHATBUTTON_Y;
+        
+        var roomsButton: MovieClip = autoMatchSearch.attachMovie(
+            "std_MouseButtonSymbol",
+            AUTOMATCH_SEARCH_ROOMSBUTTON,
+            autoMatchSearch.getNextHighestDepth(), {
+                m_focusDirs: "Up/Down",
+                m_bEnabled: true,
+                m_refFM: "_root.gFM",
+                m_initiallySelected: false,
+                m_tabIndex: -1,
+                m_bVisible: true,
+                m_label: "$ROOMLIST",
+                m_contentSymbol: "buttonContentSymbol"
+            }
+        );
+        roomsButton._x = AUTOMATCH_SEARCH_ROOMSBUTTON_X;
+        roomsButton._y = AUTOMATCH_SEARCH_ROOMSBUTTON_Y;
+        
+        var nextFrameIntervalId;
+        nextFrameIntervalId = setInterval(function () {
+            clearInterval(nextFrameIntervalId);
+            chatButton.noIntro();
+            chatButton.enable();
+            chatButton.show();
+            chatButton.visual_unhighlight();
+            roomsButton.noIntro();
+            roomsButton.enable();
+            roomsButton.show();
+            roomsButton.visual_unhighlight();
+            chatButton.setOnMouseDownFunction(function () {
+                if (_global.fem_m_onlineMultiplayer) {
+                    screen.onTabClicked(_global.fem_m_onlineMultiplayer.PANEL_COMMUNITY);
+                }
+            });
+            roomsButton.setOnMouseDownFunction(function () {
+                if (_global.fem_m_onlineMultiplayer) {
+                    screen.onTabClicked(_global.fem_m_onlineMultiplayer.PANEL_CUSTOM_MATCH);
+                }
+            });
+        }, 0);
 
         return true;
     }
