@@ -367,6 +367,53 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<MapMetaData
+			BorderSize="0"
+			CRC="0"
+			Description="Map:RA3BN_Volcanic_Citadel_1_2/Desc"
+			DisplayName="RA3BN_Volcanic_Citadel_1_2"
+			FileName="data\maps\ra3bn_volcanic_citadel_1_2\ra3bn_volcanic_citadel_1_2.map"
+			Height="700"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="4"
+			Width="700">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="1938.61504"
+					y="2194.866246"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="3079.734402"
+					y="1770.601442"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="5168.386028"
+					y="3865.712008"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="4649.708485"
+					y="5074.393601"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 		<!--3v3 Map-->
 		<MapMetaData
 			BorderSize="30"
@@ -1035,9 +1082,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Bang_Jieting_1_2/Desc"
-			DisplayName="RA3BN_Bang_Jieting_1_2"
-			FileName="data\maps\official\ra3bn_bang_jieting_1_2\ra3bn_bang_jieting_1_2.map"
+			Description="Map:RA3BN_Bang_Jieting_1_3/Desc"
+			DisplayName="RA3BN_Bang_Jieting_1_3"
+			FileName="data\maps\official\ra3bn_bang_jieting_1_3\ra3bn_bang_jieting_1_3.map"
 			Height="740"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -1089,9 +1136,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Bang_Xinxiangfan_1_3/Desc"
-			DisplayName="RA3BN_Bang_Xinxiangfan_1_3"
-			FileName="data\maps\official\ra3bn_bang_xinxiangfan_1_3\ra3bn_bang_xinxiangfan_1_3.map"
+			Description="Map:RA3BN_Bang_Xinxiangfan_1_4/Desc"
+			DisplayName="RA3BN_Bang_Xinxiangfan_1_4"
+			FileName="data\maps\official\ra3bn_bang_xinxiangfan_1_4\ra3bn_bang_xinxiangfan_1_4.map"
 			Height="610"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -1143,9 +1190,9 @@
 		<MapMetaData
 			BorderSize="0"
 			CRC="0"
-			Description="Map:RA3BN_Bang_Xubeng_Campaign_1_0/Desc"
-			DisplayName="RA3BN_Bang_Xubeng_Campaign_1_0"
-			FileName="data\maps\official\ra3bn_bang_xubeng_campaign_1_0\ra3bn_bang_xubeng_campaign_1_0.map"
+			Description="Map:RA3BN_Bang_Xubeng_Campaign_1_1/Desc"
+			DisplayName="RA3BN_Bang_Xubeng_Campaign_1_1"
+			FileName="data\maps\official\ra3bn_bang_xubeng_campaign_1_1\ra3bn_bang_xubeng_campaign_1_1.map"
 			Height="500"
 			IsMultiplayer="true"
 			IsOfficial="true"
@@ -1197,9 +1244,9 @@
 		<MapMetaData
 			BorderSize="20"
 			CRC="0"
-			Description="Map:RA3BN_Bang_Yiling_1_1/Desc"
-			DisplayName="RA3BN_Bang_Yiling_1_1"
-			FileName="data\maps\official\ra3bn_bang_yiling_1_1\ra3bn_bang_yiling_1_1.map"
+			Description="Map:RA3BN_Bang_Yiling_1_2/Desc"
+			DisplayName="RA3BN_Bang_Yiling_1_2"
+			FileName="data\maps\official\ra3bn_bang_yiling_1_2\ra3bn_bang_yiling_1_2.map"
 			Height="740"
 			IsMultiplayer="true"
 			IsOfficial="true"

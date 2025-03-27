@@ -1,0 +1,159 @@
+Map:RA3BN_Bang_Yiling_1_2
+"Bang Yiling[1.2]"
+END
+
+Map:RA3BN_Bang_Yiling_1_2?chinese_t
+"三國殺之夷陵之戰[1.2]"
+END
+
+Map:RA3BN_Bang_Yiling_1_2?chinese_s
+"三国杀之夷陵之战[1.2]"
+END
+
+SCRIPT:link
+"inaninstant制作"
+END
+
+SCRIPT:sheriffEliminated
+"问君能有几多愁，恰似一江春水向东流！ "
+END
+
+SCRIPT:renegadeEliminated
+"陈思竭虑难成功，一朝丧尽所有！"
+END
+
+SCRIPT:deputyEliminated
+"风萧萧兮易水寒，忠臣一去兮不复还！ "
+END
+
+SCRIPT:outlawEliminated
+"当头只做出头鸟，后头自有后来人 。"
+END
+
+SCRIPT:sheriffWin
+"天命所归，再造汉室！ "
+END
+
+SCRIPT:renegadeWin
+"窃钩者诛，窃国者侯，登堂入室，逆反乾坤！ "
+END
+
+SCRIPT:nobodyWin
+"神器失落，无人获胜. "
+END
+
+SCRIPT:outlawWin
+"起义匡扶天下正，血起百万祭神州. "
+END
+
+SCRIPT:debugCode
+"Random int: "
+END
+
+SCRIPT:tutorial__1
+"欢迎来到瞬间制作的三国杀之夷陵之战 "
+END
+
+SCRIPT:tutorial__2
+"主公出生于中心位置"
+END
+
+SCRIPT:tutorial__3
+"无倒计时常规版本"
+END
+
+SCRIPT:tutorial__4
+"反贼须杀死主公 "
+END
+
+SCRIPT:tutorial__5
+"主公与忠臣需杀死反贼，再杀死内奸."
+END
+
+SCRIPT:tutorial__6
+"内奸需先杀死反贼，忠臣，最后杀死主公"
+END
+
+SCRIPT:tutorial__7
+"忠臣需帮助主公杀死反贼和内奸"
+END
+
+SCRIPT:tutorial__8
+"祝你好运"
+END
+
+SCRIPT:tutorial__9
+"祝你好运"
+END
+
+SCRIPT:tutorial__10
+"祝诸君，武运昌隆！"
+END
+
+SCRIPT:tutorial__11
+"三国杀之夷陵之战，inaninstant制作"
+END
+
+SCRIPT:killoutlaw
+"无 "
+END
+
+SCRIPT:outlawgetpower
+"无 "
+END
+
+SCRIPT:renegaewin
+"无 "
+END
+
+SCRIPT:bustmode
+"风萧萧兮易水寒，忠臣一去兮不复还！"
+END
+
+SCRIPT:outpowerful
+"时来天地皆同力，反贼获得1.5万资金支持！"
+END
+
+SCRIPT:outlawlose
+"一鼓作气，再而衰，三而竭，斩首失败大幕落 ，反贼只做鸟兽散！"
+END
+
+SCRIPT:wuwin
+"窃钩者诛，窃国者侯，登堂入室，逆反乾坤！"
+END
+
+SCRIPT:zcpowerful
+"平叛成功，忠臣获得2.5万资金支持"
+END
+
+SCRIPT:xiangyangcheng
+"反贼已攻克中心，尽枭贼首，势必清扫天下，重整宇内"
+END
+
+MISSIONOBJ:xiangyangcheng_DESC
+"如果反贼攻破中间建筑，将士气大振，凝聚人心，不再死亡"
+END
+
+MISSIONOBJ:fish
+"占领这座渔港可以提升少许士气（这也算一个存活建筑）"
+END
+
+MISSIONOBJ:zhugong
+"如果你开局就有这里视野，则你的身份是主公，和忠臣合作击败所有人"
+END
+
+MISSIONOBJ:zhongchen
+"如果你开局就有这里视野，则你的身份是忠臣，必须保护主公不被击败"
+END
+
+MISSIONOBJ:Fanzei
+"如果你开局就有这里视野，则你的身份是反贼，任务目标是击败主公"
+END
+
+MISSIONOBJ:Neijian
+"如果你开局就有这里视野，则你的身份是内奸，需要最后一个击败主公"
+END
+
+MISSIONOBJ:Shenfen
+"请查看地图四个角落已确认你的身份"
+END
