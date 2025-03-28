@@ -525,6 +525,53 @@
 					z="0"/>
 			</StartPosition>
 		</MapMetaData>
+		<MapMetaData
+			BorderSize="30"
+			CRC="0"
+			Description="Map:RA3BN_Archon_Spring_Walker/Desc"
+			DisplayName="RA3BN_Archon_Spring_Walker"
+			FileName="data\maps\official\ra3bn_archon_spring_walker\ra3bn_archon_spring_walker.map"
+			Height="460"
+			IsMultiplayer="true"
+			IsOfficial="true"
+			NumPlayers="4"
+			Width="460">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="3369.22486"
+					y="894.649527"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="630.000001"
+					y="3090.000002"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_3_Start">
+				<Position
+					x="3600"
+					y="490"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_4_Start">
+				<Position
+					x="390"
+					y="3490.000003"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
 		<!--Ban Maps-->
 		<MapMetaData
 			BorderSize="20"
