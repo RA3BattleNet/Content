@@ -1,0 +1,95 @@
+Map:RA3BN_Bang_Jiange_1_0
+"Bang Jiange[1.0]"
+END
+
+Map:RA3BN_Bang_Jiange_1_0?chinese_t
+"三國殺之劍閣之戰[1.0]"
+END
+
+Map:RA3BN_Bang_Jiange_1_0?chinese_s
+"三国杀之剑阁之战[1.0]"
+END
+
+SCRIPT:link
+"欢迎来到inaninstant制作的三国杀之剑阁之战"
+END
+
+SCRIPT:sheriffEliminated
+"运交华盖，紫薇潜行！（主公失败） "
+END
+
+SCRIPT:renegadeEliminated
+"阴煞陀罗，天机隐晦！（内奸失败） "
+END
+
+SCRIPT:deputyEliminated
+"左辅右弼，先死后生！（忠臣死亡）"
+END
+
+SCRIPT:outlawEliminated
+"明火执仗，劫杀两都！（反贼死亡） "
+END
+
+SCRIPT:sheriffWin
+"天权开阳，护国社稷！（主忠胜利） "
+END
+
+SCRIPT:renegadeWin
+"荧惑守心，红光似血！（内奸获胜） "
+END
+
+SCRIPT:nobodyWin
+"神器失落，神州陆沉！"
+END
+
+SCRIPT:outlawWin
+"彗星袭月，奎木出世！（反贼胜利） "
+END
+
+SCRIPT:debugCode
+"Random int: "
+END
+
+SCRIPT:tutorial__1
+"剑阁之战，一夫当关，万夫莫开 "
+END
+
+SCRIPT:tutorial__2
+"由inaninstant设计制作，双子代码"
+END
+
+SCRIPT:tutorial__3
+"常规三国杀规则"
+END
+
+SCRIPT:tutorial__4
+"经济介绍：反贼、内奸、忠臣5矿1油井，主公5矿6油井"
+END
+
+SCRIPT:tutorial__5
+"主公出售围墙则会移交AI所有单位和建筑，请不要轻易出售"
+END
+
+SCRIPT:tutorial__6
+"反贼必须击败主公"
+END
+
+SCRIPT:tutorial__7
+"主公与忠臣必须击败反贼和内奸"
+END
+
+SCRIPT:tutorial__8
+"内奸需要击败忠臣和反贼，最后击败主公 "
+END
+
+SCRIPT:tutorial__9
+"反馈请加入Q群：638487283"
+END
+
+SCRIPT:tutorial__10
+"提示：停机坪可以停靠飞机"
+END
+
+SCRIPT:Transferone?chinese_s
+"出售此围墙由AI托管 "
+END

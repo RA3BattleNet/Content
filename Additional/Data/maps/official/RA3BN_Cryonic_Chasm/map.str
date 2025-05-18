@@ -1,0 +1,19 @@
+Map:RA3BN_Cryonic_Chasm
+"Cryonic Chasm"
+END
+
+Map:RA3BN_Cryonic_Chasm?chinese
+"冰封峡谷(Cryonic Chasm)"
+END
+
+SCRIPT: OreNodeMessege?chinese
+"陈旧老矿，储量1万"
+END
+
+SCRIPT: CSKMessege?chinese
+"不稳定的超时空，只能启动一次"
+END
+
+SCRIPT: T5banner?chinese
+"T5抑制器，摧毁后全图玩家获得T5升级权限"
+END

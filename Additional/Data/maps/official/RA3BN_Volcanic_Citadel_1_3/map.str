@@ -1,0 +1,11 @@
+Map:RA3BN_Volcanic_Citadel_1_3
+"Volcanic Citadel[1.3]"
+END
+
+Map:RA3BN_Volcanic_Citadel_1_3?chinese
+"火山要塞(Volcanic Citadel)[1.3]"
+END
+
+SCRIPT:T5 banner
+"T5抑制器，摧毁后全图玩家获得T5升级权限"
+END

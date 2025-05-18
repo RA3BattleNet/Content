@@ -1,0 +1,11 @@
+Map:RA3BN_Secret_Island
+"Secret Island"
+END
+
+Map:RA3BN_Secret_Island?chinese
+"秘密岛(Secret Island)"
+END
+
+SCRIPT: T5banner?chinese
+"T5抑制器，两个抑制器均被摧毁后全图玩家获得T5升级权限（日冕）"
+END

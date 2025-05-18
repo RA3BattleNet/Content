@@ -1,0 +1,344 @@
+Map:RA3BN_Dual_Arms_Combat_Sea_1_0
+"Dual Arms Combat Sea[1.0]"
+END
+
+Map:RA3BN_Dual_Arms_Combat_Sea_1_0?chinese
+"双兵种海战[1.0]"
+END
+
+MISSIONOBJ: mission_1_title
+"鼠标左键选择自己的第一个兵种"
+END
+
+MISSIONOBJ: mission_1_desc
+"任务目标描述"
+END
+
+MISSIONOBJ: mission_2_title
+"鼠标左键选择自己的第二个兵种"
+END
+
+MISSIONOBJ: mission_2_desc
+"任务目标描述"
+END
+
+MISSIONOBJ: mission_3_title
+"胜利条件：保护己方核心，摧毁敌方核心"
+END
+
+MISSIONOBJ: mission_3_desc
+"任务目标描述"
+END
+
+MISSIONOBJ: mission_4_title
+"胜利条件2：收集10万团队资金"
+END
+
+MISSIONOBJ: mission_4_desc
+"任务目标描述"
+END
+
+MISSIONOBJ: mission_5_title
+"任一防御塔被摧毁后战线后撤，前线天灯消失"
+END
+
+MISSIONOBJ: mission_5_desc
+"任务目标描述"
+END
+
+
+SCRIPT:StartSelect
+"NanoSwarmHive and vision will disappear after 15 second,Use Terror Drone be close to unit,Select stage will end after 60 second,If not select in time,then default select Guardian Tank--By LanHuayao(QQ695885612)"
+END
+
+
+SUBTITLE:B001
+"点击兵种模型进行选择,选兵节奏分为两轮。[5:0.3]注意左下角计时区分轮次。[10:0.3]载具可立即再次选择步兵以装载步兵，悍马装载步兵可移动开火。[15:0.3]潜艇只能第一轮选择"
+END
+
+SUBTITLE:B002
+"摧毁敌方主塔或收集十万资金以获得胜利。[5:0.3]随着游戏进程推进，双方会获得后方无法占领的固定油井。[10:0.3]摧毁高地防御塔后铁幕装置消失。[15:0.3]顶部第三个按钮可查看玩法说明。[20:0.3]地图作者：岚华尧、RAN-SEELE、凉宫春日的幻影、镜子Arrim、双子Binary、VC[25:0.3]祝诸君武运昌隆"
+END
+
+
+SCRIPT:SelectTimer
+"SelectTime"
+END
+
+SCRIPT: SelectTimer1?chinese
+"选兵第一阶段剩余时间"
+END
+
+SCRIPT: SelectTimer?chinese
+"选兵第二阶段剩余时间"
+END
+
+SCRIPT:ADestory
+"Left Team Tower Indestructible has been disappear"
+END
+
+SCRIPT: ADestory?chinese
+"纳米虫群保护已消失"
+END
+
+SCRIPT:BDestory
+"Right Team Tower Indestructible has been disappear"
+END
+
+SCRIPT: BDestory?chinese
+"纳米虫群保护已消失"
+END
+
+SCRIPT:MoneyA
+"Left Team Money:"
+END
+
+SCRIPT: MoneyA?chinese
+"左侧队伍现有资金："
+END
+
+SCRIPT: ATMTIMER?chinese
+"左侧队伍铁幕购买冷却："
+END
+
+SCRIPT: BTMTIMER?chinese
+"右侧队伍铁幕购买冷却："
+END
+
+SCRIPT:MoneyB
+"Right Team Money:"
+END
+
+SCRIPT: MoneyB?chinese
+"右侧队伍现有资金："
+END
+
+SCRIPT:ShopDF
+"DF41 X1,7000"
+END
+
+SCRIPT: ShopDF?chinese
+"东风导弹发射车，真理只在射程范围之内，将三个独立核弹头投放至目标区域，所及区域将化为灰烬，7000元/辆"
+END
+
+SCRIPT: ShopXZ?chinese
+"为部分陆军提供训练，将其化为更有经验的杀戮机器，1000元/一组"
+END
+
+SCRIPT: ShopSH?chinese
+"武器升级，增加单位伤害，15000元/次"
+END
+
+SCRIPT: ShopLM?chinese
+"一辆装甲升级过的精英联盟重型坦克，2500元/辆"
+END
+
+SCRIPT: ShopSD?chinese
+"传动装置与飞行器升级，增加单位移速和些许伤害，7000元/次"
+END
+
+SCRIPT: ShopGS?chinese
+"超频并保护你的防御塔和基地，持续30s，有10分钟的购买冷却，7000元/次"
+END
+
+SCRIPT: ShopHJ?chinese
+"护甲升级，加厚单位护甲，10000元/一次"
+END
+
+SCRIPT:ShopDF
+"DF41 X1,7000"
+END
+
+SCRIPT: ShopYG?chinese
+"摇光巡天炮，众星静默，可升至常规防空武器无法企及的近地轨道对敌人陆空力量进行打击，唯有截击机或轨道武器才能进行有效防御，7000元/个"
+END
+
+SCRIPT: ShopIFV?chinese
+"迅捷的防空火力小组，提供地面防空，密集的火箭弹可以轻易撕碎中小型飞行器，4000元/7个"
+END
+
+SCRIPT:ShopBHZ
+"Yuriko X1,4000"
+END
+
+SCRIPT: ShopBHZ?chinese
+"欧米伽百合子，摧毁重兵把守的神罗心灵研究所出逃的神秘少女，任何敌人在念动力下都会化为废墟与血沫，3000元/个"
+END
+
+SCRIPT:ShopNTS
+"Natasha X1,7000"
+END
+
+SCRIPT: ShopTY?chinese
+"谭雅,盟军特战部队第一个女性成员，擅长用双枪收割敌军以及用便携C4将他们炸上天，3000元/个"
+END
+
+SCRIPT: ShopNTS?chinese
+"娜塔莎,擅长远距离狙杀的传奇女英雄，可以瘫痪重型坦克，呼叫轰炸打击防御工事和装甲部队，5000元/个"
+END
+
+SCRIPT: ShopZLJ?chinese
+"玄冥战列巡洋舰，搭载3门舰载火炮以及防空导弹阵列，在改装最新式电磁武器后，主炮能够轻易撕碎装甲部队，2000元/艘"
+END
+
+SCRIPT:ShopSJ
+"CelestialScoutDrone X1,500"
+END
+
+SCRIPT: ShopSJ?chinese
+"天眼哨机，担任反隐反渗透的重要任务，提供一定的视野，500元/个"
+END
+
+SCRIPT:ShopXL
+"JapanLightTransportVehicle X1,1000"
+END
+
+SCRIPT: ShopXL?chinese
+"迅雷车，先进的光学迷彩让这辆轻型运兵车伪装为敌方载具，在意想不到的位置发动打击，1500元/个"
+END
+
+SCRIPT: ShopAC?chinese
+"AC130,一组带有惊人的射程和凶猛火力的实验重轰炸艇，拥有逆转战场局势的可怕能力，50000元/7个"
+END
+
+SCRIPT:ShopBF
+"BiFang X1,1000"
+END
+
+SCRIPT: ShopBF?chinese
+"毕方支援机，1000元/3个"
+END
+
+SCRIPT:ShopTL
+"NanoCore X10,7000"
+END
+
+SCRIPT: ShopZZ?chinese
+"纳米护盾塔核心，为单位提供保护，8000元/个"
+END
+
+SCRIPT: ShopZZ?chinese
+"己方队伍开放三级协议（支援位开放五级），仅限购买一次，10000元"
+END
+
+SCRIPT: ShopXY?chinese
+"己方队伍开放三级协议（支援位开放五级），仅限购买一次，10000元"
+END
+
+SCRIPT: ShopKCC?chinese
+"工程师IFV，提供前线维修，1000元/个"
+END
+
+SCRIPT:ShopExceptTower
+"ExceptTower X1,5000"
+END
+
+SCRIPT: ShopExceptTower?chinese
+"额外防御塔（重弩碉台），5000元/个，每局每队限购1次"
+END
+
+SCRIPT:ShopJapanMacheKing
+"JapanMacheKing X1"
+END
+
+SCRIPT: ShopJapanMacheKing?chinese
+"将军刽子手，仅当中部两个防御塔全部被摧毁时可购买，购买后摧毁所有己方高低防御塔，每局每队限购1次"
+END
+
+
+SCRIPT:ShopJBXY
+"Veterancy X1,10000"
+END
+
+SCRIPT: ShopJBXY?chinese
+"精兵学院，10000/20000/30000元/个，每局每队限购3次"
+END
+
+SCRIPT:ShopTM
+"IronCurtain X1,10000"
+END
+
+SCRIPT: ShopTM?chinese
+"铁幕，7000元/次，购买后获得一次铁幕使用次数，每人最多同时拥有一次，释放后有5分钟购买冷却"
+END
+
+SCRIPT: ShopCC?chinese
+"虫巢，8000元/次，一方经济胜利后无效"
+END
+
+SCRIPT: ShopZG?chinese
+"止戈，9000元/次，一方经济胜利后无效"
+END
+
+SCRIPT: SU123?chinese
+"不再正常刷兵，转而获得个人四级协议开放，百夫长协议，一个特殊娜塔莎，医院，一个额外油田和纳米虫群的使用权限"
+END
+
+SCRIPT: SU456?chinese
+"不再正常刷兵，转而获得个人四级协议开放，百夫长协议，一个特殊娜塔莎，医院，一个额外油田和纳米虫群的使用权限"
+END
+
+
+SCRIPT:ShopWall
+"IronCurtain X1,5000"
+END
+
+SCRIPT: ShopWall?chinese
+"上方为商店区域，在商品上打信标内以完成购买，打标时请确保物体边缘发亮，信标消失则购买成功（步兵可点击旁边的兵营）。"
+END
+
+SCRIPT:ShopSHYReinForce
+"NanoCore X1,1500"
+END
+
+SCRIPT: ShopSHYReinForce?chinese
+"呼叫一波苏霍伊截击机支援（无法同时呼叫两波），4000元/次"
+END
+
+SCRIPT: ShopDB?chinese
+"神州量子建造科技与日本藩属纳米建造科技结合的最新产物，可以瞬间在指定位置建造一座大型碉堡，但是碉堡门忘记加锁了，5000元/个"
+END
+
+SCRIPT: DBZ?chinese
+"已开启单兵种模式"
+END
+
+SCRIPT: CLD?chinese
+"已开启纯陆地模式"
+END
+
+SCRIPT: T1T2?chinese
+"已限制选择T1T2单位"
+END
+
+SCRIPT: GS2?chinese
+"所有塔血量减半"
+END
+
+SCRIPT: GS4?chinese
+"低地塔消失"
+END
+
+SCRIPT: GS6?chinese
+"所有高地子塔和边路塔消失"
+END
+
+SCRIPT: Jinwu?chinese
+"———无拓展技能———"
+END
+
+SCRIPT: Yier?chinese
+"———无拓展技能———"
+END
+
+SCRIPT: Ban_Phase_1?chinese
+"禁止单位第一阶段剩余时间"
+END
+
+SCRIPT: Ban_Phase_2?chinese
+"禁止单位第二阶段剩余时间"
+END
+
+SCRIPT: StartTimer?chinese
+"开局时间"
+END
