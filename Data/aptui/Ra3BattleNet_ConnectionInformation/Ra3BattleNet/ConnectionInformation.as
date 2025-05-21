@@ -358,7 +358,7 @@
         // is local player?
         // network information is meaningless for local player
         if (latency < 0 && packetLoss < 0) {
-            widgets.network.gotoAndStop(1);
+            widgets.network.gotoAndStop(6);
         }
         // player disconnected, disable everything
         else if (latency >= 1 || packetLoss >= 1) {
@@ -410,7 +410,7 @@
         // is local player?
         // network information is meaningless for local player
         if (latency < 0 && packetLoss < 0) {
-            widgets.network.gotoAndStop(1);
+            widgets.network.gotoAndStop(6);
         }
         // player disconnected, disable everything
         else if (latency >= 1 || packetLoss >= 1) {
