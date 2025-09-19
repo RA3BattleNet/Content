@@ -1,0 +1,64 @@
+Map:RA3BN_Summoners_Rift_Fortress
+"Summoner's Rift Fortress"
+END
+
+Map:RA3BN_Summoners_Rift_Fortress?chinese
+"召唤师峡谷要塞(Summoner's Rift Fortress)"
+END
+
+SCRIPT: HUAN
+"欢迎玩家来到召唤师峡谷要塞，王者峡谷,,不不不,来自红警之间的33对抗图,请尽情厮杀吧,祝你在新地图玩的开心！对了对了,你们有多久没有看动漫了呢?我是地图作者笨桔子 有需要请联系我，q2695751194"
+End
+
+SCRIPT: 1
+"喜羊羊,你看见懒羊羊了嘛,真不知道跑哪里偷懒了"
+End
+
+
+SCRIPT: 2
+"圣龙阿乔,基尼奇快完蛋!快完蛋!"
+End
+
+SCRIPT: 3
+"可莉,大魔王,大魔王,哇咿!我来抓你啦,噶--!"
+End
+
+SCRIPT: 4
+"小八,咿呀!咿呀!咿呀!咿呀!"
+End
+
+SCRIPT: 5
+"汤姆,杰瑞,你是我全世界最好的朋友!你在哪里?"
+End
+
+SCRIPT: 6
+"懒羊羊,躲在这里就不会被喜羊羊发现了,美好的日子从偷懒开始!"
+End
+
+SCRIPT: 7
+"可莉:轰轰火花,全都给我炸开!"
+End
+
+SCRIPT: 8
+"杰瑞,我知道,你爱吃我.但是你找不到我"
+End
+
+SCRIPT: 9
+"五条悟,我五条悟,没有弱点,无敌于天下."
+End
+
+SCRIPT: 10
+"库洛米,我只想做我自己喜欢的样子!"
+End
+
+SCRIPT: 11
+"この术绝対にかわすことができないは"
+End
+
+SCRIPT: 12
+"阿尼亚:好激动!好激动出萌出萌出萌出萌啦啦啦 ,"
+End
+
+SCRIPT: 13
+"蜜雪雪王,你爱我我爱你,蜜雪冰城甜蜜蜜!"
+End
