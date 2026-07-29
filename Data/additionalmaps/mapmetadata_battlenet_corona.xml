@@ -675,5 +675,337 @@
                     z="0" />
             </StartPosition>
         </MapMetaData>
+
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Guandu_4_0/Desc"
+            DisplayName="RA3BN_Bang_Guandu_4_0"
+            FileName="data\maps\official\ra3bn_bang_guandu_4_0\ra3bn_bang_guandu_4_0.map"
+            Height="601"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="5"
+            Width="601">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="2703.224646"
+                    y="2684.9536"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="965.160246"
+                    y="2895.750826"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="2491.873607"
+                    y="4422.516043"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="2281.403462"
+                    y="1241.693382"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="4147.662822"
+                    y="3105.755629"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="20"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Red_Cliffs_4_0/Desc"
+            DisplayName="RA3BN_Bang_Red_Cliffs_4_0"
+            FileName="data\maps\official\ra3bn_bang_red_cliffs_4_0\ra3bn_bang_red_cliffs_4_0.map"
+            Height="610"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="5"
+            Width="610">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="2771.724262"
+                    y="2743.515623"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1944.62464"
+                    y="4843.011203"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="4787.414408"
+                    y="1958.547468"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="480.575124"
+                    y="3040.561066"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="3026.851624"
+                    y="493.829366"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Yellow_Turban_4_0/Desc"
+            DisplayName="RA3BN_Bang_Yellow_Turban_4_0"
+            FileName="data\maps\official\ra3bn_bang_yellow_turban_4_0\ra3bn_bang_yellow_turban_4_0.map"
+            Height="660"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="5"
+            Width="660">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1847.618244"
+                    y="4156.16886"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1189.278988"
+                    y="2353.632"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="3630.531208"
+                    y="4792.428484"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="3268.374086"
+                    y="1207.978409"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="4773.948487"
+                    y="2758.736009"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Cangting_4_0/Desc"
+            DisplayName="RA3BN_Bang_Cangting_4_0"
+            FileName="data\maps\official\ra3bn_bang_cangting_4_0\ra3bn_bang_cangting_4_0.map"
+            Height="601"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="5"
+            Width="601">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="2703.224646"
+                    y="2684.9536"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="965.160246"
+                    y="2895.750826"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="2491.873607"
+                    y="4422.516043"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="2281.403462"
+                    y="1241.693382"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="4147.662822"
+                    y="3105.755629"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Jingkang_4_0/Desc"
+            DisplayName="RA3BN_Bang_Jingkang_4_0"
+            FileName="data\maps\official\ra3bn_bang_jingkang_4_0\ra3bn_bang_jingkang_4_0.map"
+            Height="600"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="600">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="3900"
+                    y="2090"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="3210.000002"
+                    y="3040"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1250"
+                    y="4200.000001"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="4490.000002"
+                    y="5030.000008"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="2449.999842"
+                    y="5270.000009"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="1000"
+                    y="1260"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Incheon_4_0/Desc"
+            DisplayName="RA3BN_Bang_Incheon_4_0"
+            FileName="data\maps\official\ra3bn_bang_incheon_4_0\ra3bn_bang_incheon_4_0.map"
+            Height="750"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="5"
+            Width="750">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="4106.612064"
+                    y="6154.769288"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="2039.815848"
+                    y="1919.818822"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1819.977061"
+                    y="5127.05526"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="4489.073604"
+                    y="1174.189608"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="6680"
+                    y="3580"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
     </MapMetaData>
 </AssetDeclaration>
