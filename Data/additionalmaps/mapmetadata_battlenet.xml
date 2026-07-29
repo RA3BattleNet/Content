@@ -78,9 +78,9 @@
         <MapMetaData
             BorderSize="30"
             CRC="0"
-            Description="Map:RA3BN_Temple_Legend_1_2/Desc"
-            DisplayName="RA3BN_Temple_Legend_1_2"
-            FileName="data\maps\official\ra3bn_temple_legend_1_2\ra3bn_temple_legend_1_2.map"
+            Description="Map:RA3BN_Temple_Legend_1_3/Desc"
+            DisplayName="RA3BN_Temple_Legend_1_3"
+            FileName="data\maps\official\ra3bn_temple_legend_1_3\ra3bn_temple_legend_1_3.map"
             Height="460"
             IsMultiplayer="true"
             IsOfficial="true"
@@ -96,15 +96,15 @@
             <StartPosition
                 Name="Player_1_Start">
                 <Position
-                    x="934.805441"
-                    y="2012.842026"
+                    x="1011.471066"
+                    y="2000.749224"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_2_Start">
                 <Position
-                    x="4519.164044"
-                    y="1992.228009"
+                    x="4448.247688"
+                    y="2000.733441"
                     z="0" />
             </StartPosition>
         </MapMetaData>
@@ -204,39 +204,6 @@
                 <Position
                     x="3970.000002"
                     y="3060.000001"
-                    z="0" />
-            </StartPosition>
-        </MapMetaData>
-        <MapMetaData
-            BorderSize="20"
-            CRC="0"
-            Description="Map:RA3BN_Tank_Crash_2_0/Desc"
-            DisplayName="RA3BN_Tank_Crash_2_0"
-            FileName="data\maps\official\ra3bn_tank_crash_2_0\ra3bn_tank_crash_2_0.map"
-            Height="640"
-            IsMultiplayer="true"
-            IsOfficial="true"
-            NumPlayers="2"
-            Width="640">
-            <StartPosition
-                Name="InitialCameraPosition">
-                <Position
-                    x="0"
-                    y="0"
-                    z="0" />
-            </StartPosition>
-            <StartPosition
-                Name="Player_1_Start">
-                <Position
-                    x="1315.041123"
-                    y="2787.333868"
-                    z="0" />
-            </StartPosition>
-            <StartPosition
-                Name="Player_2_Start">
-                <Position
-                    x="4697.494087"
-                    y="3236.147627"
                     z="0" />
             </StartPosition>
         </MapMetaData>
@@ -469,6 +436,72 @@
                     x="4659.999684"
                     y="4600"
                     z="0"/>
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="40"
+            CRC="0"
+            Description="Map:RA3BN_Mechanical_Force/Desc"
+            DisplayName="RA3BN_Mechanical_Force"
+            FileName="data\maps\official\ra3bn_mechanical_force\ra3bn_mechanical_force.map"
+            Height="600"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="2"
+            Width="600">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1090.183926"
+                    y="2131.8848"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="4103.483622"
+                    y="3066.85824"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="40"
+            CRC="0"
+            Description="Map:RA3BN_Pilgrimages_End/Desc"
+            DisplayName="RA3BN_Pilgrimages_End"
+            FileName="data\maps\official\ra3bn_pilgrimages_end\ra3bn_pilgrimages_end.map"
+            Height="530"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="2"
+            Width="530">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="3116.154664"
+                    y="616.9216"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="3075.764807"
+                    y="3881.488002"
+                    z="0" />
             </StartPosition>
         </MapMetaData>
         <!--2v2 Map-->
