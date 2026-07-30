@@ -131,9 +131,12 @@ class Ra3BattleNet.RulesPanelSetter {
             return;
         }
         onlineGameSetupPrototype.originalInitBroadcastOption = onlineGameSetupPrototype.initBroadcastOption;
-
         onlineGameSetupPrototype.initBroadcastOption = function() {
             newInitBroadcastOption(this);
+        };
+        onlineGameSetupPrototype.originalOnToggleBroadcastStatus = onlineGameSetupPrototype.onToggleBroadcastStatus;
+        onlineGameSetupPrototype.onToggleBroadcastStatus = function() {
+            newOnToggleBroadcastStatus(this);
         };
         trace(TRACE_PREFIX + "fem_m_gameSetup patched");
     }
@@ -145,6 +148,13 @@ class Ra3BattleNet.RulesPanelSetter {
         if (self.setBroadcastCheckboxVisibility != null) {
             self.setBroadcastCheckboxVisibility(true);
         }
+    }
+
+    private static function newOnToggleBroadcastStatus(self) {
+        if (self.originalOnToggleBroadcastStatus != null) {
+            self.originalOnToggleBroadcastStatus();
+        }
+        shouldSmartEnableBroadcast = false;
     }
 
     private static function selectLastMapOnNextFrame() {
@@ -261,6 +271,11 @@ class Ra3BattleNet.RulesPanelSetter {
     }
 
     private static function enableBroadcast(gameSetup) {
+        shouldSmartEnableBroadcast = false;
+        if (!gameSetup.gameSettings.rulesPanel.broadcastCheckbox
+            || !gameSetup.gameSettings.rulesPanel.broadcastCheckbox._visible) {
+            return;
+        }
         // check if broadcast is enabled
         var broadcastQuery = new Object();
         loadVariables("QueryGameEngine?GAME_BROADCASTER", broadcastQuery);
