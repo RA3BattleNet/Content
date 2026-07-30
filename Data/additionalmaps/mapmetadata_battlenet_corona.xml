@@ -72,10 +72,10 @@
         <MapMetaData
             BorderSize="80"
             CRC="0"
-            Description="Map:RA3BN_Dual_Arms_Combat_S_3_9/Desc"
-            DisplayName="RA3BN_Dual_Arms_Combat_S_3_9"
-            FileName="data\maps\official\ra3bn_dual_arms_combat_s_3_9\ra3bn_dual_arms_combat_s_3_9.map"
-            Height="770"
+            Description="Map:RA3BN_Dual_Arms_Combat_S_3_256V24/Desc"
+            DisplayName="RA3BN_Dual_Arms_Combat_S_3_256V24"
+            FileName="data\maps\official\ra3bn_dual_arms_combat_s_3_256v24\ra3bn_dual_arms_combat_s_3_256v24.map"
+            Height="560"
             IsMultiplayer="true"
             IsOfficial="true"
             NumPlayers="6"
@@ -91,52 +91,52 @@
                 Name="Player_1_Start">
                 <Position
                     x="970"
-                    y="4130.000003"
+                    y="1300"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_2_Start">
                 <Position
-                    x="950.000001"
-                    y="3230.000008"
+                    x="970"
+                    y="400"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_3_Start">
                 <Position
-                    x="980.000001"
-                    y="5040.000001"
+                    x="970"
+                    y="2100"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_4_Start">
                 <Position
-                    x="5030.000008"
-                    y="5030.000008"
+                    x="5030"
+                    y="2100"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_5_Start">
                 <Position
-                    x="5030.000008"
-                    y="4130.000003"
+                    x="5030"
+                    y="1300"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_6_Start">
                 <Position
-                    x="5030.000008"
-                    y="3220.000001"
+                    x="5030"
+                    y="400"
                     z="0" />
             </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="80"
             CRC="0"
-            Description="Map:RA3BN_Dual_Arms_Combat_L_3_9/Desc"
-            DisplayName="RA3BN_Dual_Arms_Combat_L_3_9"
-            FileName="data\maps\official\ra3bn_dual_arms_combat_l_3_9\ra3bn_dual_arms_combat_l_3_9.map"
-            Height="880"
+            Description="Map:RA3BN_Dual_Arms_Combat_L_3_256V24/Desc"
+            DisplayName="RA3BN_Dual_Arms_Combat_L_3_256V24"
+            FileName="data\maps\official\ra3bn_dual_arms_combat_l_3_256v24\ra3bn_dual_arms_combat_l_3_256v24.map"
+            Height="650"
             IsMultiplayer="true"
             IsOfficial="true"
             NumPlayers="6"
@@ -152,52 +152,52 @@
                 Name="Player_1_Start">
                 <Position
                     x="1200"
-                    y="4440"
+                    y="2360"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_2_Start">
                 <Position
                     x="1200"
-                    y="3440.000001"
+                    y="1360"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_3_Start">
                 <Position
                     x="1200"
-                    y="5440"
+                    y="3360"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_4_Start">
                 <Position
-                    x="8800.000001"
-                    y="5440"
+                    x="8800"
+                    y="3360"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_5_Start">
                 <Position
-                    x="8800.000001"
-                    y="4440"
+                    x="8800"
+                    y="2360"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_6_Start">
                 <Position
-                    x="8800.000001"
-                    y="3440.000001"
+                    x="8800"
+                    y="1360"
                     z="0" />
             </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
             CRC="0"
-            Description="Map:RA3BN_Dual_Arms_Combat_Sea_1_0/Desc"
-            DisplayName="RA3BN_Dual_Arms_Combat_Sea_1_0"
-            FileName="data\maps\official\ra3bn_dual_arms_combat_sea_1_0\ra3bn_dual_arms_combat_sea_1_0.map"
-            Height="1000"
+            Description="Map:RA3BN_Dual_Arms_Combat_Sea_3_256V26/Desc"
+            DisplayName="RA3BN_Dual_Arms_Combat_Sea_3_256V26"
+            FileName="data\maps\official\ra3bn_dual_arms_combat_sea_3_256v26\ra3bn_dual_arms_combat_sea_3_256v26.map"
+            Height="800"
             IsMultiplayer="true"
             IsOfficial="true"
             NumPlayers="6"
@@ -213,42 +213,103 @@
                 Name="Player_1_Start">
                 <Position
                     x="1290"
-                    y="5310.000009"
+                    y="3310"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_2_Start">
                 <Position
-                    x="2334.615849"
-                    y="3727.260061"
+                    x="2334.61572"
+                    y="1727.26025"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_3_Start">
                 <Position
-                    x="1840.493867"
-                    y="7579.569841"
+                    x="1840.49365"
+                    y="5579.569"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_4_Start">
                 <Position
-                    x="7702.477801"
-                    y="8344.105602"
+                    x="7702.47656"
+                    y="6344.10547"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_5_Start">
                 <Position
-                    x="8747.22324"
-                    y="6774.120086"
+                    x="8747.223"
+                    y="4774.12"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_6_Start">
                 <Position
-                    x="8178.002463"
-                    y="4511.514442"
+                    x="8178.00244"
+                    y="2511.51416"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Holy_War_3_256V6/Desc"
+            DisplayName="RA3BN_Holy_War_3_256V6"
+            FileName="data\maps\official\ra3bn_holy_war_3_256v6\ra3bn_holy_war_3_256v6.map"
+            Height="200"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="500">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1030"
+                    y="1000"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="980"
+                    y="220"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1020"
+                    y="1720"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="3980"
+                    y="1000"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="3960"
+                    y="1710"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="4040"
+                    y="250"
                     z="0" />
             </StartPosition>
         </MapMetaData>

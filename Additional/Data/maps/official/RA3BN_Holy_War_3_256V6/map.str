@@ -1,0 +1,17 @@
+Map:RA3BN_Holy_War_3_256V6
+"Holy War[3.256V6]"
+END
+
+Map:RA3BN_Holy_War_3_256V6?chinese
+"神坛战争[3.256V6]"
+END
+
+SCRIPT:holytimer
+"圣地胜利可用倒计时:"
+END
+SCRIPT:lefthloly
+"左侧玩家圣地胜利进度条(180):"
+END
+SCRIPT:righthloly
+"右侧玩家圣地胜利进度条(180):"
+END
