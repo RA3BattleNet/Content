@@ -46,6 +46,10 @@ SCRIPT:debugCode
 "Random int: "
 END
 
+SCRIPT:PowerCoreCalibrate
+"Reactors Unstable For: "
+END
+
 SCRIPT:tutorial__1
 "Welcome to Red Alert 3 "Bang!" gamemode. "
 END
@@ -132,6 +136,10 @@ END
 
 SCRIPT:debugCode?chinese_t
 "隨機整數："
+END
+
+SCRIPT:PowerCoreCalibrate?chinese_t
+"反應堆不穩定："
 END
 
 SCRIPT:tutorial__1?chinese_t
@@ -222,6 +230,10 @@ SCRIPT:debugCode?chinese_s
 "随机整数："
 END
 
+SCRIPT:PowerCoreCalibrate?chinese_s
+"反应堆不稳定："
+END
+
 SCRIPT:tutorial__1?chinese_s
 "欢迎来到《红色警戒3》三国杀游戏模式。"
 END
@@ -260,4 +272,903 @@ END
 
 SCRIPT:tutorial__10?chinese_s
 "祝您好运，玩得开心。"
+END
+
+SCRIPT:warning1?chinese_s
+"不要攻击反应堆。"
+END
+
+SCRIPT:warning2?chinese_s
+"别再攻击反应堆了！"
+END
+
+SCRIPT:BANG_ROLE_LORD
+"Lord"
+END
+
+SCRIPT:BANG_ROLE_LORD?chinese
+"主公"
+END
+
+SCRIPT:BANG_ROLE_LOYALIST
+"Loyalist"
+END
+
+SCRIPT:BANG_ROLE_LOYALIST?chinese
+"忠臣"
+END
+
+SCRIPT:BANG_ROLE_REBEL
+"Rebel"
+END
+
+SCRIPT:BANG_ROLE_REBEL?chinese
+"反贼"
+END
+
+SCRIPT:BANG_ROLE_TRAITOR
+"Traitor"
+END
+
+SCRIPT:BANG_ROLE_TRAITOR?chinese
+"内奸"
+END
+
+SCRIPT:BANG_ROLE_ABSTAIN
+"No preference"
+END
+
+SCRIPT:BANG_ROLE_ABSTAIN?chinese
+"弃权"
+END
+
+SCRIPT:BANG_COLOR_BLUE
+"Blue"
+END
+
+SCRIPT:BANG_COLOR_BLUE?chinese
+"蓝色"
+END
+
+SCRIPT:BANG_COLOR_RED
+"Red"
+END
+
+SCRIPT:BANG_COLOR_RED?chinese
+"红色"
+END
+
+SCRIPT:BANG_COLOR_YELLOW
+"Yellow"
+END
+
+SCRIPT:BANG_COLOR_YELLOW?chinese
+"黄色"
+END
+
+SCRIPT:BANG_COLOR_ORANGE
+"Orange"
+END
+
+SCRIPT:BANG_COLOR_ORANGE?chinese
+"橙色"
+END
+
+SCRIPT:BANG_COLOR_GREEN
+"Green"
+END
+
+SCRIPT:BANG_COLOR_GREEN?chinese
+"绿色"
+END
+
+SCRIPT:BANG_COLOR_PURPLE
+"Purple"
+END
+
+SCRIPT:BANG_COLOR_PURPLE?chinese
+"紫色"
+END
+
+SCRIPT:BANG_COLOR_CYAN
+"Cyan"
+END
+
+SCRIPT:BANG_COLOR_CYAN?chinese
+"青色"
+END
+
+SCRIPT:BANG_COLOR_UNKNOWN
+"Unknown"
+END
+
+SCRIPT:BANG_COLOR_UNKNOWN?chinese
+"未知"
+END
+
+SCRIPT:BANG_STATUS_ALIVE
+"Alive"
+END
+
+SCRIPT:BANG_STATUS_ALIVE?chinese
+"存活"
+END
+
+SCRIPT:BANG_STATUS_DEAD
+"Dead"
+END
+
+SCRIPT:BANG_STATUS_DEAD?chinese
+"死亡"
+END
+
+SCRIPT:BANG_STATUS_ROLE_STATE
+"%s/%s"
+END
+
+SCRIPT:BANG_STATUS_ROLE_STATE?chinese
+"%s/%s"
+END
+
+SCRIPT:BANG_STATUS_SELF_ROLE
+"You: %s"
+END
+
+SCRIPT:BANG_STATUS_SELF_ROLE?chinese
+"你：%s"
+END
+
+SCRIPT:BANG_STATUS_MUTUAL_ALLY
+"Mutual ally"
+END
+
+SCRIPT:BANG_STATUS_MUTUAL_ALLY?chinese
+"双向盟友"
+END
+
+SCRIPT:BANG_STATUS_ONE_WAY_ALLY
+"One-way ally"
+END
+
+SCRIPT:BANG_STATUS_ONE_WAY_ALLY?chinese
+"单向盟友"
+END
+
+SCRIPT:BANG_STATUS_LORD_MARK
+" (Lord)"
+END
+
+SCRIPT:BANG_STATUS_LORD_MARK?chinese
+"（主公）"
+END
+
+SCRIPT:BANG_STATUS_DEAD_MARK
+" (Dead)"
+END
+
+SCRIPT:BANG_STATUS_DEAD_MARK?chinese
+"（死亡）"
+END
+
+SCRIPT:BANG_SCORE_TITLE
+"Players in the Field"
+END
+
+SCRIPT:BANG_SCORE_TITLE?chinese
+"场上玩家情况"
+END
+
+SCRIPT:BANG_SCORE_PLAYER
+"Player"
+END
+
+SCRIPT:BANG_SCORE_PLAYER?chinese
+"玩家"
+END
+
+SCRIPT:BANG_SCORE_COLOR
+"Color"
+END
+
+SCRIPT:BANG_SCORE_COLOR?chinese
+"颜色"
+END
+
+SCRIPT:BANG_SCORE_ROLE_STATUS
+"Role/Status"
+END
+
+SCRIPT:BANG_SCORE_ROLE_STATUS?chinese
+"身份/状态"
+END
+
+SCRIPT:BANG_SCORE_PLAYERS_1_6
+"Players 1-6"
+END
+
+SCRIPT:BANG_SCORE_PLAYERS_1_6?chinese
+"玩家1-6"
+END
+
+SCRIPT:BANG_SCORE_PLAYERS_7_12
+"Players 7-12"
+END
+
+SCRIPT:BANG_SCORE_PLAYERS_7_12?chinese
+"玩家7-12"
+END
+
+SCRIPT:BANG_SCORE_MUTUAL_ALLIANCES
+"Mutual Alliances"
+END
+
+SCRIPT:BANG_SCORE_MUTUAL_ALLIANCES?chinese
+"双向结盟"
+END
+
+SCRIPT:BANG_SCORE_NO_MUTUAL_ALLIANCE
+"No mutual alliances"
+END
+
+SCRIPT:BANG_SCORE_NO_MUTUAL_ALLIANCE?chinese
+"暂无双向结盟"
+END
+
+SCRIPT:BANG_PREFERENCE_TITLE
+"Choose your preferred role"
+END
+
+SCRIPT:BANG_PREFERENCE_TITLE?chinese
+"请选择你的身份偏好"
+END
+
+SCRIPT:BANG_PREFERENCE_SELECTED
+"Preferred role selected: %s"
+END
+
+SCRIPT:BANG_PREFERENCE_SELECTED?chinese
+"你选择了身份偏好：%s"
+END
+
+SCRIPT:BANG_PREFERENCE_CARD_DESC
+"%s\nTotal slots: %d"
+END
+SCRIPT:BANG_PREFERENCE_CARD_DESC?chinese
+"%s\n总名额：%d"
+END
+SCRIPT:BANG_PREFERENCE_CARD_EMPTY_DESC
+"%s\nNo slots are available this game."
+END
+SCRIPT:BANG_PREFERENCE_CARD_EMPTY_DESC?chinese
+"%s\n本局没有该身份名额。"
+END
+SCRIPT:BANG_PREFERENCE_ABSTAIN_DESC
+"No preference\nReceive a random remaining role."
+END
+SCRIPT:BANG_PREFERENCE_ABSTAIN_DESC?chinese
+"弃权\n将从剩余身份中随机分配。"
+END
+
+SCRIPT:BANG_YOUR_ROLE
+"Your role is: %s"
+END
+
+SCRIPT:BANG_YOUR_ROLE?chinese
+"你的身份是：%s"
+END
+
+SCRIPT:BANG_PLAYER_INFO_LINE
+"%s/%s: %s"
+END
+
+SCRIPT:BANG_PLAYER_INFO_LINE?chinese
+"%s/%s：%s"
+END
+
+SCRIPT:BANG_UI_IDENTITY_DESC
+"Role: %s\nClick to open the role panel\nHotkey: comma to open/close\nPanel: Alt+1-9 selects items 1-9; Alt+0 selects item 10"
+END
+
+SCRIPT:BANG_UI_IDENTITY_DESC?chinese
+"身份：%s\n点击打开身份面板\n快捷键：逗号键打开/关闭\n面板中：Alt+1-9选择第1-9项，Alt+0选择第10项"
+END
+
+SCRIPT:BANG_UI_PANEL_TITLE
+"Role Panel"
+END
+
+SCRIPT:BANG_UI_PANEL_TITLE?chinese
+"身份面板"
+END
+
+SCRIPT:BANG_UI_PANEL_INITIAL_HINT
+"Choose a player or an action."
+END
+
+SCRIPT:BANG_UI_PANEL_INITIAL_HINT?chinese
+"选择玩家，或选择行动。"
+END
+
+SCRIPT:BANG_UI_SELECT_PLAYER_TITLE
+"Role Panel: Select Player"
+END
+
+SCRIPT:BANG_UI_SELECT_PLAYER_TITLE?chinese
+"身份面板：选择玩家"
+END
+
+SCRIPT:BANG_UI_SELECT_PLAYER_HINT
+"Select a player, then choose an alliance or quick message."
+END
+
+SCRIPT:BANG_UI_SELECT_PLAYER_HINT?chinese
+"点击玩家后选择结盟或发送快捷语句。"
+END
+
+SCRIPT:BANG_UI_TARGET_TITLE
+"Target: %s/%s"
+END
+
+SCRIPT:BANG_UI_TARGET_TITLE?chinese
+"目标：%s/%s"
+END
+
+SCRIPT:BANG_UI_TARGET_STATUS
+"Status: %s"
+END
+
+SCRIPT:BANG_UI_TARGET_STATUS?chinese
+"状态：%s"
+END
+
+SCRIPT:BANG_UI_SELF_TARGET
+"You cannot select yourself as the target."
+END
+
+SCRIPT:BANG_UI_SELF_TARGET?chinese
+"不能选择自己作为目标"
+END
+
+SCRIPT:BANG_OBSERVER_TITLE
+"Observer role information:"
+END
+
+SCRIPT:BANG_OBSERVER_TITLE?chinese
+"观察者身份信息："
+END
+
+SCRIPT:BANG_OBSERVER_LINE
+"%s/%s/%s/%s"
+END
+
+SCRIPT:BANG_OBSERVER_LINE?chinese
+"%s/%s/%s/%s"
+END
+
+SCRIPT:BANG_ACTION_ALLIANCE
+"Alliance/Cancel"
+END
+
+SCRIPT:BANG_ACTION_ALLIANCE?chinese
+"结盟/解除"
+END
+
+SCRIPT:BANG_ACTION_ATTACK
+"I will attack them"
+END
+
+SCRIPT:BANG_ACTION_ATTACK?chinese
+"我要进攻他"
+END
+
+SCRIPT:BANG_ACTION_UNDER_ATTACK
+"They are attacking me"
+END
+
+SCRIPT:BANG_ACTION_UNDER_ATTACK?chinese
+"他在进攻我"
+END
+
+SCRIPT:BANG_ACTION_PREPARE_ATTACK_LORD
+"They plan to attack the Lord"
+END
+
+SCRIPT:BANG_ACTION_PREPARE_ATTACK_LORD?chinese
+"他准备进攻主公"
+END
+
+SCRIPT:BANG_ACTION_GROUP_ATTACK
+"Attack them together"
+END
+
+SCRIPT:BANG_ACTION_GROUP_ATTACK?chinese
+"一起进攻他"
+END
+
+SCRIPT:BANG_ACTION_PROTECT_LORD
+"Protect the Lord"
+END
+
+SCRIPT:BANG_ACTION_PROTECT_LORD?chinese
+"请求护主"
+END
+
+SCRIPT:BANG_ACTION_TRUCE
+"Truce and develop"
+END
+
+SCRIPT:BANG_ACTION_TRUCE?chinese
+"停战发育"
+END
+
+SCRIPT:BANG_ACTION_FORM_ALLIANCE
+"Form alliance"
+END
+
+SCRIPT:BANG_ACTION_FORM_ALLIANCE?chinese
+"发起结盟"
+END
+
+SCRIPT:BANG_ACTION_BREAK_ALLIANCE
+"Break alliance"
+END
+
+SCRIPT:BANG_ACTION_BREAK_ALLIANCE?chinese
+"解除结盟"
+END
+
+SCRIPT:BANG_ALLIANCE_MUTUAL_REMOVED
+"Player %s ended their alliance with player %s. The mutual alliance has been dissolved."
+END
+
+SCRIPT:BANG_ALLIANCE_MUTUAL_REMOVED?chinese
+"玩家%s解除了对玩家%s的结盟，双向结盟已解除。"
+END
+
+SCRIPT:BANG_ALLIANCE_ONE_WAY_REMOVED
+"Player %s ended their one-way alliance with player %s."
+END
+
+SCRIPT:BANG_ALLIANCE_ONE_WAY_REMOVED?chinese
+"玩家%s解除了对玩家%s的单向结盟。"
+END
+
+SCRIPT:BANG_ALLIANCE_MUTUAL_CREATED
+"Player %s and player %s have formed a mutual alliance."
+END
+
+SCRIPT:BANG_ALLIANCE_MUTUAL_CREATED?chinese
+"玩家%s和玩家%s已经双向结盟。"
+END
+
+SCRIPT:BANG_ALLIANCE_ONE_WAY_CREATED
+"Player %s initiated a one-way alliance with player %s."
+END
+
+SCRIPT:BANG_ALLIANCE_ONE_WAY_CREATED?chinese
+"玩家%s对玩家%s发起单向结盟。"
+END
+
+SCRIPT:BANG_ACTION_ATTACK_BROADCAST
+"Player %s announces: I will attack player %s."
+END
+
+SCRIPT:BANG_ACTION_ATTACK_BROADCAST?chinese
+"玩家%s宣布：我要进攻玩家%s。"
+END
+
+SCRIPT:BANG_ACTION_UNDER_ATTACK_BROADCAST
+"Player %s warns: Player %s is attacking me."
+END
+
+SCRIPT:BANG_ACTION_UNDER_ATTACK_BROADCAST?chinese
+"玩家%s警告：玩家%s正在进攻我。"
+END
+
+SCRIPT:BANG_ACTION_PREPARE_ATTACK_BROADCAST
+"Player %s warns everyone: Player %s is preparing to attack the Lord."
+END
+
+SCRIPT:BANG_ACTION_PREPARE_ATTACK_BROADCAST?chinese
+"玩家%s提醒全场：玩家%s准备进攻主公。"
+END
+
+SCRIPT:BANG_ACTION_GROUP_ATTACK_BROADCAST
+"Player %s asks everyone to attack player %s together."
+END
+
+SCRIPT:BANG_ACTION_GROUP_ATTACK_BROADCAST?chinese
+"玩家%s请求一起进攻玩家%s。"
+END
+
+SCRIPT:BANG_ACTION_PROTECT_LORD_BROADCAST
+"Player %s asks everyone to protect the Lord and watch player %s."
+END
+
+SCRIPT:BANG_ACTION_PROTECT_LORD_BROADCAST?chinese
+"玩家%s请求大家保护主公，注意玩家%s。"
+END
+
+SCRIPT:BANG_ACTION_TRUCE_BROADCAST
+"Player %s proposes a truce with player %s to develop."
+END
+
+SCRIPT:BANG_ACTION_TRUCE_BROADCAST?chinese
+"玩家%s向玩家%s提议停战发育。"
+END
+
+SCRIPT:BANG_PLAYER_DIED
+"Player %s has been eliminated. Role: %s."
+END
+
+SCRIPT:BANG_PLAYER_DIED?chinese
+"玩家%s已经死亡！身份：%s。"
+END
+
+SCRIPT:BANG_PERSONAL_DEFEAT
+"Unfortunately, your faction has been defeated."
+END
+
+SCRIPT:BANG_PERSONAL_DEFEAT?chinese
+"很遗憾，你的阵营失败了。"
+END
+
+SCRIPT:BANG_PERSONAL_VICTORY
+"Congratulations, your faction is victorious!"
+END
+
+SCRIPT:BANG_PERSONAL_VICTORY?chinese
+"恭喜你，你的阵营获胜！"
+END
+
+SCRIPT:BANG_REBEL_VICTORY
+"The Rebel faction is victorious!"
+END
+
+SCRIPT:BANG_REBEL_VICTORY?chinese
+"反贼阵营获胜！"
+END
+
+SCRIPT:BANG_LORD_LOYALIST_VICTORY
+"The Lord and Loyalist faction is victorious!"
+END
+
+SCRIPT:BANG_LORD_LOYALIST_VICTORY?chinese
+"主公和忠臣阵营获胜！"
+END
+
+SCRIPT:BANG_TRAITOR_VICTORY
+"The Traitor is victorious!"
+END
+
+SCRIPT:BANG_TRAITOR_VICTORY?chinese
+"内奸获胜！"
+END
+
+SCRIPT:BANG_NO_WINNER_GAME_OVER
+"No winner. The game is over."
+END
+
+SCRIPT:BANG_NO_WINNER_GAME_OVER?chinese
+"无胜者，游戏结束！"
+END
+
+SCRIPT:BANG_PERSONAL_NO_WINNER
+"This game has no winner."
+END
+
+SCRIPT:BANG_PERSONAL_NO_WINNER?chinese
+"本局游戏没有胜者。"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_TITLE
+"Attack"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_TITLE?chinese
+"进攻"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_1
+"The moon hides behind the clouds. Tonight, the city falls!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_1?chinese
+"月隐云层，今夜屠城！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_2
+"The drums are cold and the frost is heavy. We raid by moonlight!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_2?chinese
+"鼓寒霜重，月夜袭营！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_3
+"Today we burn our boats and swear to strike down the tyrant!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_3?chinese
+"今日破釜沉舟，誓要立斩昏君！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_4
+"The Lord? I hold the oil derrick, so I am the Lord!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_4?chinese
+"主公？我拿了油井我就是主公！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_5
+"A young ruler and a doubtful realm: the perfect time to sow chaos!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_5?chinese
+"主少国疑，正是搅乱天下之机！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_6
+"March on the capital, seize the ruler, strike the heart, and behead the unjust!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_6?chinese
+"兵发京畿，轻取擒王，直取要害，枭首无道！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_7
+"The gale breaks the tallest tree; the blade takes the ruler's head!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_7?chinese
+"强风折秀木，铡刀断王头！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_8
+"What else can we do? Kill!"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_8?chinese
+"怎么办，只有杀！"
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_9
+"This strike will leave your body whole."
+END
+
+SCRIPT:BANG_SENTENCE_ATTACK_9?chinese
+"这一击，留你全尸"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_TITLE
+"Counterattack"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_TITLE?chinese
+"反击"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_1
+"The Lord is in peril. Today we restore the realm!"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_1?chinese
+"救主危难，今日匡扶汉室！"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_2
+"Fear not, my Lord. Zhao Zilong of Changshan is here!"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_2?chinese
+"主公莫急，常山赵子龙来也！"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_3
+"If I am falsely accused of regicide, I may as well make it true!"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_3?chinese
+"既诬我弑君，那便坐实了这罪名！"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_4
+"You rabble are no match for a single exchange."
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_4?chinese
+"歪瓜裂枣，非我一合之敌"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_5
+"Marked men waiting for the blade, and you dare invade my land?"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_5?chinese
+"尔等插标卖首，也敢来犯吾境？"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_6
+"Cut off my income and I will cut you down."
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_6?chinese
+"妈的，敢断我财路就宰了你"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_7
+"The splendor of Jiangdong will not suffer fools."
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_7?chinese
+"锦秀江东，岂容小丑横行"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_8
+"Warlords? A herd awaiting slaughter."
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_8?chinese
+"群雄？呵，一群待宰猪羊罢了！"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_9
+"Stop! I do not want the giant electric baton!"
+END
+
+SCRIPT:BANG_SENTENCE_COUNTER_9?chinese
+"快停下！我不要大电棒子"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_TITLE
+"Reflection"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_TITLE?chinese
+"感慨"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_1
+"Let heaven distinguish the loyal from the treacherous!"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_1?chinese
+"请苍天辩忠奸！"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_2
+"My mistake was mercy. I should have torn out the roots!"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_2?chinese
+"某错在太过仁慈，未斩草除根！"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_3
+"You skulk in the shadows. Are you plotting rebellion?"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_3?chinese
+"鬼鬼祟祟，形迹可疑，可是密谋造反？"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_4
+"War permits deception. You have no cause to resent your fate!"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_4?chinese
+"兵法云‘兵不厌诈’，阁下死的不怨呐！"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_5
+"The granaries of Wuchao are consumed by flame!"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_5?chinese
+"乌巢粮仓，付之一炬！"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_6
+"Rebels surge and the capital is besieged. Loyal forces, make haste."
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_6?chinese
+"贼势汹涌，京都困顿，勤王者速行。"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_7
+"Chang'an has fallen and the court flees west. The protector shall be supreme general!"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_7?chinese
+"长安沦陷，川蜀西狩，护驾者当为上将军！"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_8
+"Phoenix and Vermilion Bird dance; a million White Tigers march in gold. Who can withstand them?"
+END
+
+SCRIPT:BANG_SENTENCE_REFLECT_8?chinese
+"凤凰朱雀齐舞，金甲白虎百万，试问安何当之！"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_TITLE
+"Peace"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_TITLE?chinese
+"和平"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_1
+"Let us farm, mine, and develop in peace."
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_1?chinese
+"屯田开矿，我们一起安稳发育可好？"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_2
+"Raise walls and deepen moats. We seek no conquest."
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_2?chinese
+"高墙深池，不做攻伐之举。"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_3
+"Vengeance never ends. Hear me: lay down arms and make peace!"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_3?chinese
+"冤冤相报何时了，我有一言：停兵休战！"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_4
+"Why should Loyalist and Traitor destroy each other? Turn weapons into peace!"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_4?chinese
+"忠内何苦自相残，立化干戈为玉帛！"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_5
+"Rumors kill the heart. The Lord must not believe them."
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_5?chinese
+"流言诛心，主公万不可信"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_6
+"Belief or doubt rests with the Lord. What more need I say?"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_6?chinese
+"信与不信，皆在主公一念，吾又何须多言？"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_7
+"I seek no endless conquest, only unity and prosperity for the people."
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_7?chinese
+"征伐天下并非我意，只愿四海归一，生民蕃息。"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_8
+"You skulk in the shadows. Are you plotting rebellion?"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_8?chinese
+"鬼鬼祟祟，形迹可疑，可是密谋造反？"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_9
+"Today's defeat was not a failure of arms, but the denial of heaven's hour!"
+END
+
+SCRIPT:BANG_SENTENCE_PEACE_9?chinese
+"今日之败，非战之罪，乃天时不予！"
 END
