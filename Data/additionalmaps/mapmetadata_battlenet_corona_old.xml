@@ -638,5 +638,125 @@
                     z="0" />
             </StartPosition>
         </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Redemption_Base_Ore_1_2/Desc"
+            DisplayName="RA3BN_Redemption_Base_Ore_1_2"
+            FileName="data\maps\official\ra3bn_redemption_base_ore_1_2\ra3bn_redemption_base_ore_1_2.map"
+            Height="550"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="2"
+            Width="600">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1186.472666"
+                    y="2309.862029"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="4778.017848"
+                    y="3126.588486"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Secret_Island_Ore_1_2/Desc"
+            DisplayName="RA3BN_Secret_Island_Ore_1_2"
+            FileName="data\maps\official\ra3bn_secret_island_ore_1_2\ra3bn_secret_island_ore_1_2.map"
+            Height="468"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="2"
+            Width="595">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1610.789928"
+                    y="1676.722246"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="4340.397648"
+                    y="2982.099201"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="20"
+            CRC="0"
+            Description="Map:RA3BN_Bang_Jiange_1_0/Desc"
+            DisplayName="RA3BN_Bang_Jiange_1_0"
+            FileName="data\maps\official\ra3bn_bang_jiange_1_0\ra3bn_bang_jiange_1_0.map"
+            Height="660"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="5"
+            Width="660">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="2708.132267"
+                    y="3518.802447"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1110.000001"
+                    y="3010.000002"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="3285.179629"
+                    y="5134.071824"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="2540"
+                    y="1190.000001"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="4979.999684"
+                    y="3560.000001"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
     </MapMetaData>
 </AssetDeclaration>

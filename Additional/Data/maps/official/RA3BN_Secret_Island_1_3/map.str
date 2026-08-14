@@ -1,9 +1,9 @@
-Map:RA3BN_Secret_Island_1_2
-"Secret Island[1.2]"
+Map:RA3BN_Secret_Island_1_3
+"Secret Island"
 END
 
-Map:RA3BN_Secret_Island_1_2?chinese
-"秘密岛屿(Secret Island)[1.2]"
+Map:RA3BN_Secret_Island_1_3?chinese
+"秘密岛屿(Secret Island)"
 END
 
 SCRIPT: T5banner?chinese
