@@ -1740,5 +1740,71 @@
                     z="0"/>
             </StartPosition>
         </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Redemption_Base_1_2/Desc"
+            DisplayName="RA3BN_Redemption_Base_1_2"
+            FileName="data\maps\official\ra3bn_redemption_base_1_2\ra3bn_redemption_base_1_2.map"
+            Height="550"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="2"
+            Width="600">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1186.472666"
+                    y="2309.862029"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="4778.017848"
+                    y="3126.588486"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="0"
+            Description="Map:RA3BN_Secret_Island_1_2/Desc"
+            DisplayName="RA3BN_Secret_Island_1_2"
+            FileName="data\maps\official\ra3bn_secret_island_1_2\ra3bn_secret_island_1_2.map"
+            Height="468"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="2"
+            Width="595">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1514.041926"
+                    y="1870.16906"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="4427.707881"
+                    y="2832.434668"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
     </MapMetaData>
 </AssetDeclaration>
