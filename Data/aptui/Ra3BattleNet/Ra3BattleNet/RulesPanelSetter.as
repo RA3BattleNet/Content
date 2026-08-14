@@ -5,7 +5,8 @@ class Ra3BattleNet.RulesPanelSetter {
     private static var OUR_GAME_SETUP_KEY_NAME = "Ra3BattleNet_OurGameSetup";
     private static var inGameSetup: Boolean = false;
     private static var coronaBroadcastMaps: Array = null;
-    private static var shouldSmartEnableBroadcast: Boolean = false;
+    private static var autoManageBroadcast: Boolean = false;
+    private static var lastEvaluatedMapNameKey: String = null;
     private static var lastMapNameKey: String = null;
 
     public static function getCoronaEnableBroadcastMaps() {
@@ -83,11 +84,18 @@ class Ra3BattleNet.RulesPanelSetter {
                 && gameSetup.gameSettings.rulesPanel.broadcastCheckbox != undefined) {
                 gameSetup.refreshRulesCheckbox("GAME_BROADCASTER", gameSetup.gameSettings.rulesPanel.broadcastCheckbox);
             }
+            if (autoManageBroadcast) {
+                autoEvaluateBroadcastOnMapChange();
+            }
             return;
         }
         trace(TRACE_PREFIX + "First time entering game setup, setting up rules panel");
         gameSetup[OUR_GAME_SETUP_KEY_NAME] = true;
-        
+
+        // Reset per-room state: auto management only applies while hosting a mod room
+        autoManageBroadcast = false;
+        lastEvaluatedMapNameKey = null;
+
         // Check host
         var ret = new Object();
         loadVariables("QueryGameEngine?IsPcGameHost", ret);
@@ -109,11 +117,11 @@ class Ra3BattleNet.RulesPanelSetter {
         ret = new Object();
         loadVariables("QueryGameEngine?DISABLE_BROADCAST_ON_MOD", ret);
         if(ret.DISABLE_BROADCAST_ON_MOD == 1) {
-            shouldSmartEnableBroadcast = true;
+            autoManageBroadcast = true;
             return;
         }
         // Check the checkbox
-        enableBroadcast(gameSetup);
+        setBroadcast(gameSetup, true);
     }
 
     private static function tryPatchOnlineGameSetup() {
@@ -154,7 +162,7 @@ class Ra3BattleNet.RulesPanelSetter {
         if (self.originalOnToggleBroadcastStatus != null) {
             self.originalOnToggleBroadcastStatus();
         }
-        shouldSmartEnableBroadcast = false;
+        autoManageBroadcast = false;
     }
 
     private static function selectLastMapOnNextFrame() {
@@ -201,29 +209,35 @@ class Ra3BattleNet.RulesPanelSetter {
         var nameKey = mapQuery.CURRENT_MAP_NAMEKEY;
         trace(TRACE_PREFIX + "Current map name key: " + nameKey);
         lastMapNameKey = nameKey;
-
-        if (shouldSmartEnableBroadcast) {
-            smartEnableBroadcastIfNeeded(decodeCurrentMapToLowerCase(mapQuery.CURRENT_MAP_UNICODE));
-        }
     }
 
-    private static function smartEnableBroadcastIfNeeded(currentMapLower: String) {
-        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::smartEnableBroadcastIfNeeded] ";
+    private static function autoEvaluateBroadcastOnMapChange() {
+        var TRACE_PREFIX: String = "[" + CLASS_NAME + "::autoEvaluateBroadcastOnMapChange] ";
+        if (!autoManageBroadcast) {
+            return;
+        }
         var gameSetup = _global.Cafe2_BaseUIScreen.m_screen;
-        var ourValue = gameSetup[OUR_GAME_SETUP_KEY_NAME];
-        if (ourValue !== true) {
+        if (!gameSetup || gameSetup[OUR_GAME_SETUP_KEY_NAME] !== true) {
             // for some reason this is not our game setup, we cannot do anything
-            trace(TRACE_PREFIX + "Not our game setup, cannot smart enable broadcast");
+            trace(TRACE_PREFIX + "Not our game setup, cannot manage broadcast");
             return;
         }
-        if (isPve()) {
+        var mapQuery = new Object();
+        loadVariables("Ra3BattleNet_Map", mapQuery);
+        var nameKey = mapQuery.CURRENT_MAP_NAMEKEY;
+        if (!nameKey || nameKey === lastEvaluatedMapNameKey) {
+            // map has not changed since last evaluation
             return;
         }
-        if (!isCurrentMapInCoronaBroadcastMaps(currentMapLower)) {
+        var currentMapLower = decodeCurrentMapToLowerCase(mapQuery.CURRENT_MAP_UNICODE);
+        if (!currentMapLower) {
+            // cannot identify the current map, retry on the next update
             return;
         }
-        trace(TRACE_PREFIX + "Enabling broadcast for map: " + currentMapLower);
-        enableBroadcast(gameSetup);
+        lastEvaluatedMapNameKey = nameKey;
+        var shouldEnable = !isPve() && isCurrentMapInCoronaBroadcastMaps(currentMapLower);
+        trace(TRACE_PREFIX + "Map: " + nameKey + ", enabling broadcast: " + shouldEnable);
+        setBroadcast(gameSetup, shouldEnable);
     }
 
     private static function decodeCurrentMapToLowerCase(unicode: String): String {
@@ -270,23 +284,26 @@ class Ra3BattleNet.RulesPanelSetter {
         return false;
     }
 
-    private static function enableBroadcast(gameSetup) {
-        shouldSmartEnableBroadcast = false;
-        if (!gameSetup.gameSettings.rulesPanel.broadcastCheckbox
-            || !gameSetup.gameSettings.rulesPanel.broadcastCheckbox._visible) {
+    private static function setBroadcast(gameSetup, enabled: Boolean) {
+        var broadcastCheckbox = gameSetup.gameSettings.rulesPanel.broadcastCheckbox;
+        if (!broadcastCheckbox || !broadcastCheckbox._visible) {
             return;
         }
-        // check if broadcast is enabled
+        // check if broadcast is already in the desired state
         var broadcastQuery = new Object();
         loadVariables("QueryGameEngine?GAME_BROADCASTER", broadcastQuery);
-        if (broadcastQuery.GAME_BROADCASTER_VALUE == "1") {
-            // already enabled
+        var isEnabled = broadcastQuery.GAME_BROADCASTER_VALUE == "1";
+        if (isEnabled == enabled) {
             return;
         }
-        gameSetup.gameSettings.rulesPanel.broadcastCheckbox.check();
+        if (enabled) {
+            broadcastCheckbox.check();
+        } else {
+            broadcastCheckbox.unCheck();
+        }
         fscommand("CallGameFunction", "%ToggleBroadcastGame");
         if (gameSetup.refreshRulesCheckbox != undefined) {
-            gameSetup.refreshRulesCheckbox("GAME_BROADCASTER", gameSetup.gameSettings.rulesPanel.broadcastCheckbox);
+            gameSetup.refreshRulesCheckbox("GAME_BROADCASTER", broadcastCheckbox);
         }
     }
 }
