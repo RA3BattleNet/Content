@@ -48,5 +48,5 @@ END
 
 - `8p` 分支新增 9 张原版测试地图，目录与文件 id 使用 `RA3BN_8PTEST_` 前缀，注册在 `Data/additionalmaps/mapmetadata_battlenet_vanilla.xml`。
 - 显示名前缀为 `[8PTEST]`；源地图未提供中文名称，中文名称条目暂使用相同英文名称。
-- 源地图元数据均为 6 人、6 个玩家出生点，安装时保留；`8PTEST` 是名称标记，不代表已改为 8 人地图。
+- 9 张地图均注册为 8 人；源 `MapMetaData` 遗漏的第七、第八出生点已从源 `map.xml` 的 `Player_7_Start`、`Player_8_Start` Waypoint 补入。
 - 小地图转换为不带透明通道的 PNG，保留 `_art.tga` 后缀；不安装 `map.xml` 与 `overrides.xml`。

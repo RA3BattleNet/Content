@@ -1095,7 +1095,7 @@
             Height="770"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="775">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1146,6 +1146,20 @@
                     y="5761.376006"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5942.629226"
+                    y="3453.406082"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="5125.804485"
+                    y="4716.423248"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="10"
@@ -1156,7 +1170,7 @@
             Height="560"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="670">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1207,6 +1221,20 @@
                     y="404.739765"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="6135.300044"
+                    y="3728.840422"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="6132.220067"
+                    y="2027.44"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
@@ -1217,7 +1245,7 @@
             Height="560"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="804">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1268,6 +1296,20 @@
                     y="1021.207842"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5938.589646"
+                    y="2033.310081"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="5949.201844"
+                    y="3019.720007"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
@@ -1278,7 +1320,7 @@
             Height="710"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="710">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1329,6 +1371,20 @@
                     y="6114.15808"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5098.032009"
+                    y="5826.513289"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="588.918804"
+                    y="5944.171621"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
@@ -1339,7 +1395,7 @@
             Height="810"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="810">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1390,6 +1446,20 @@
                     y="6047.369866"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5096.559686"
+                    y="5383.430404"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="5308.47764"
+                    y="5170.418447"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
@@ -1400,7 +1470,7 @@
             Height="840"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="660">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1451,6 +1521,20 @@
                     y="761.864"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5092.7104"
+                    y="4525.932484"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="5447.463685"
+                    y="2604.484266"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
@@ -1461,7 +1545,7 @@
             Height="620"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="660">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1512,6 +1596,20 @@
                     y="5153.424424"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="2461.902081"
+                    y="5260.856421"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="3532.443206"
+                    y="5313.234462"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
@@ -1522,7 +1620,7 @@
             Height="660"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="700">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1573,6 +1671,20 @@
                     y="1249.542982"
                     z="0" />
             </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5790.080001"
+                    y="2453.178665"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="5832.477802"
+                    y="3560.06646"
+                    z="0" />
+            </StartPosition>
         </MapMetaData>
         <MapMetaData
             BorderSize="40"
@@ -1583,7 +1695,7 @@
             Height="780"
             IsMultiplayer="true"
             IsOfficial="true"
-            NumPlayers="6"
+            NumPlayers="8"
             Width="780">
             <StartPosition
                 Name="InitialCameraPosition">
@@ -1632,6 +1744,20 @@
                 <Position
                     x="4646.07242"
                     y="997.909524"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5027.710082"
+                    y="1505.960006"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="5483.790084"
+                    y="1962.040004"
                     z="0" />
             </StartPosition>
         </MapMetaData>
