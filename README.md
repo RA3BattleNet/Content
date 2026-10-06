@@ -43,3 +43,10 @@ END
     3. 把 png 文件重命名为 `地图名_art.tga`。这个文件表面上看起来是 TGA 的后缀名，但实际上是个 PNG 文件。游戏依然能正确读取这个文件，而且文件大小也减少了很多。
 
 7. 被取代或删除的旧版本地图，请放在 content 里，保留到老版本的 map metadata 里面 （_old后缀）
+
+## 8PTEST 地图
+
+- `8p` 分支新增 9 张原版测试地图，目录与文件 id 使用 `RA3BN_8PTEST_` 前缀，注册在 `Data/additionalmaps/mapmetadata_battlenet_vanilla.xml`。
+- 显示名前缀为 `[8PTEST]`；源地图未提供中文名称，中文名称条目暂使用相同英文名称。
+- 源地图元数据均为 6 人、6 个玩家出生点，安装时保留；`8PTEST` 是名称标记，不代表已改为 8 人地图。
+- 小地图转换为不带透明通道的 PNG，保留 `_art.tga` 后缀；不安装 `map.xml` 与 `overrides.xml`。

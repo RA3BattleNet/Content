@@ -1086,5 +1086,554 @@
                     z="0" />
             </StartPosition>
         </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Battlebase_Sigma_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Battlebase_Sigma_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Battlebase_Sigma_v1\RA3BN_8PTEST_Battlebase_Sigma_v1.map"
+            Height="770"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="775">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1350.575784"
+                    y="5352.65802"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="2007.799622"
+                    y="2403.918407"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1754.435624"
+                    y="1344.141609"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="1160.661602"
+                    y="3634.708043"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5762.945287"
+                    y="1746.511203"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="5369.046408"
+                    y="5761.376006"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="10"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Fallout_Fortress_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Fallout_Fortress_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Fallout_Fortress_v1\RA3BN_8PTEST_Fallout_Fortress_v1.map"
+            Height="560"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="670">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="380.259328"
+                    y="3647.209286"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="361.077045"
+                    y="2027.73706"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="592.219446"
+                    y="5011.8912"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="600.586806"
+                    y="391.178167"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5896.009866"
+                    y="5022.061227"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="5929.252482"
+                    y="404.739765"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Freezone_Port_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Freezone_Port_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Freezone_Port_v1\RA3BN_8PTEST_Freezone_Port_v1.map"
+            Height="560"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="804">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1509.959208"
+                    y="1982.333225"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1487.914722"
+                    y="2980.797224"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1799.461221"
+                    y="3963.180062"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="1807.177442"
+                    y="1001.524261"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5612.884481"
+                    y="4000.289606"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="5633.11606"
+                    y="1021.207842"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Island_Adventure_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Island_Adventure_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Island_Adventure_v1\RA3BN_8PTEST_Island_Adventure_v1.map"
+            Height="710"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="710">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="546.608523"
+                    y="2084.185228"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1399.704803"
+                    y="681.156186"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="2902.884489"
+                    y="364.935764"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="5895.435626"
+                    y="553.807765"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5940.695683"
+                    y="4441.491626"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="3601.834024"
+                    y="6114.15808"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Joint_Operations_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Joint_Operations_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Joint_Operations_v1\RA3BN_8PTEST_Joint_Operations_v1.map"
+            Height="810"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="810">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1427.538188"
+                    y="3410.146886"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="2102.966086"
+                    y="2350.477865"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="3334.622405"
+                    y="1501.097442"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="2337.398087"
+                    y="2116.635847"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="6015.557662"
+                    y="4137.068068"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="4105.73844"
+                    y="6047.369866"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="20"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Magmapocalypse_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Magmapocalypse_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Magmapocalypse_v1\RA3BN_8PTEST_Magmapocalypse_v1.map"
+            Height="840"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="660">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1641.234402"
+                    y="6793.265626"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="747.026981"
+                    y="5286.729608"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1021.216725"
+                    y="3389.868485"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="1309.532003"
+                    y="948.248184"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5155.283884"
+                    y="6885.211229"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="4298.914445"
+                    y="761.864"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Silent_Hill_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Silent_Hill_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Silent_Hill_v1\RA3BN_8PTEST_Silent_Hill_v1.map"
+            Height="620"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="660">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="542.784768"
+                    y="456.17984"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="2576.865607"
+                    y="285.228928"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="3525.674441"
+                    y="348.22"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="5546.849849"
+                    y="580.524362"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="560.004782"
+                    y="5121.222084"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="5397.733224"
+                    y="5153.424424"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Snow_Burial_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Snow_Burial_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Snow_Burial_v1\RA3BN_8PTEST_Snow_Burial_v1.map"
+            Height="660"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="700">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="575.088567"
+                    y="3575.604048"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="564.250964"
+                    y="2447.519628"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="638.378965"
+                    y="4728.874024"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="617.322981"
+                    y="1314.173068"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5729.736422"
+                    y="4712.190082"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="5772.719823"
+                    y="1249.542982"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="40"
+            CRC="0"
+            Description="Map:RA3BN_8PTEST_Unreal_City_v1/Desc"
+            DisplayName="RA3BN_8PTEST_Unreal_City_v1"
+            FileName="data\maps\official\RA3BN_8PTEST_Unreal_City_v1\RA3BN_8PTEST_Unreal_City_v1.map"
+            Height="780"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="6"
+            Width="780">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="1020.198243"
+                    y="4624.879823"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1528.157864"
+                    y="5005.850442"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="1994.24522"
+                    y="5472.445809"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="2375.915204"
+                    y="5981.588049"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="6004.233866"
+                    y="2352.399842"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="4646.07242"
+                    y="997.909524"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
     </MapMetaData>
 </AssetDeclaration>
