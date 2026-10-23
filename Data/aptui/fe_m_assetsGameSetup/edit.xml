@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptdata>
+	<movieclip screensizex="1280" screensizey="720" unknown="33">
+		<imports>
+			<import name="std_mouseDropDownMenuSymbol" movie="../cafe/mouseComponents/std_mouseDropDownMenu" character="14"/>
+			<import name="std_MouseCheckBoxSymbol" movie="../cafe/mouseComponents/std_MouseCheckBox" character="15"/>
+			<import name="std_MousebuttonSymbol" movie="../cafe/mouseComponents/std_MouseButton" character="18"/>
+			<import name="std_mouseScrollingListboxSymbol" movie="../cafe/mouseComponents/std_mouseScrollingListbox" character="25"/>
+			<import name="std_mouseScrollbarSymbol" movie="../cafe/mouseComponents/std_mouseScrollbar" character="26"/>
+		</imports>
+		<exports>
+			<export character="1" name="RulesBG.png"/>
+			<export character="2" name="mapSelectionButtonRing"/>
+			<export character="13" name="MPtabButtonContentClip"/>
+			<export character="16" name="playerSlotMC"/>
+			<export character="1" name="RulesBG.png"/>
+			<export character="23" name="rulesPanel_skirmish"/>
+			<export character="23" name="rulesPanel_skirmish"/>
+			<export character="28" name="MapPreviewComponent"/>
+			<export character="30" name="yellowBar"/>
+			<export character="31" name="mapPanel"/>
+			<export character="32" name="gameSettings_skirmish"/>
+			<export character="1" name="RulesBG.png"/>
+			<export character="44" name="rulesPanel"/>
+			<export character="44" name="rulesPanel"/>
+			<export character="31" name="mapPanel"/>
+			<export character="45" name="gameSettings"/>
+			<export character="31" name="mapPanel"/>
+			<export character="28" name="MapPreviewComponent"/>
+			<export character="2" name="mapSelectionButtonRing"/>
+			<export character="48" name="mapPosSelectioHitRegionSymbol"/>
+			<export character="51" name="buttonLabel"/>
+			<export character="52" name="startPositionButtonContent"/>
+			<export character="51" name="buttonLabel"/>
+			<export character="48" name="mapPosSelectioHitRegionSymbol"/>
+			<export character="30" name="yellowBar"/>
+			<export character="30" name="yellowBar"/>
+			<export character="53" name="yellowBar"/>
+			<export character="54" name="MapListBGStrip"/>
+			<export character="54" name="MapListBGStrip"/>
+			<export character="55" name="MapListBGStrip"/>
+		</exports>
+		<frames>
+			<frame id="0">
+				<background color="-3355444"/>
+			</frame>
+		</frames>
+	</movieclip>
+	<image id="1" image="art\Textures\apt_fe_m_assetsGameSetup_1.tga"/>
+	<image id="2" image="art\Textures\apt_fe_m_assetsGameSetup_1.tga"/>
+	<image id="3" image="art\Textures\apt_fe_m_assetsGameSetup_1.tga"/>
+	<shape id="4" top="0.000000" left="0.000000" bottom="31.000000" right="188.000000" geometry="fe_m_assetsGameSetup_geometry\4.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fe_m_assetsGameSetup_1.tga:1:0:0:1:737:1
+			t 0:31:0:0:188:0
+			t 188:0:188:31:0:31
+		</ru>
+	</shape>
+	<button id="5" top="0.000000" left="0.000000" bottom="31.000000" right="188.000000">
+		<vertexes>
+			<vertex x="0.000000" y="31.000000"/>
+			<vertex x="0.000000" y="0.000000"/>
+			<vertex x="188.000000" y="0.000000"/>
+			<vertex x="188.000000" y="31.000000"/>
+		</vertexes>
+		<triangles>
+			<triangle v1="0" v2="1" v3="2"/>
+			<triangle v1="2" v2="3" v3="0"/>
+		</triangles>
+		<buttonrecords>
+			<buttonrecord flags="StateUp|StateOver|StateDown|StateHit" character="4" depth="1" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000"/>
+		</buttonrecords>
+	</button>
+	<sprite id="6">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="7" name="Red Alert">
+	</font>
+	<edittext id="8" top="-2.000000" left="-2.000000" bottom="28.850000" right="183.000000" font="7" alignment="2" red="255" green="255" blue="255" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="BUTTON"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="9">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="2.000000">
+				<poname name="labelTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="10" image="art\Textures\apt_fe_m_assetsGameSetup_1.tga"/>
+	<shape id="11" top="0.000000" left="0.000000" bottom="36.000000" right="188.000000" geometry="fe_m_assetsGameSetup_geometry\11.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fe_m_assetsGameSetup_1.tga:1:0:0:1:547:1
+			t 0:36:0:0:188:0
+			t 188:0:188:36:0:36
+		</ru>
+	</shape>
+	<sprite id="12">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="11" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="13">
+	<frames>
+		<frame id="0">
+			<framelabel label="_disable" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="1" character="5" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="20.000000" red="255" green="255" blue="255" alpha="25" unknown="0">
+				<poname name="hitRegion"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="6" rotm00="0.929993" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.550000" ty="20.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="5" character="9" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.001617" tx="-5.000000" ty="25.000000" red="0" green="0" blue="0" alpha="255" unknown="0">
+				<poname name="labelShadowTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="7" character="9" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-7.000000" ty="23.000000">
+				<poname name="labelMC"/>
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="3">
+			<removeobject depth="3"/>
+			<framelabel label="_selected" frame="3"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasRatio" depth="3" character="12" rotm00="0.929993" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.550000" ty="20.000000" ratio="0.000046">
+			</placeobject>
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="6">
+			<removeobject depth="3"/>
+			<framelabel label="_unselected" frame="6"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasRatio" depth="3" character="6" rotm00="0.929993" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.550000" ty="20.000000" ratio="0.000092">
+			</placeobject>
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="9">
+			<removeobject depth="3"/>
+			<framelabel label="_selectedRollover" frame="9"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasRatio" depth="3" character="12" rotm00="0.929993" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.550000" ty="20.000000" ratio="0.000137">
+			</placeobject>
+		</frame>
+		<frame id="10">
+		</frame>
+		<frame id="11">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="12">
+			<framelabel label="_unselectedRollover" frame="12"/>
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="15">
+			<framelabel label="_downState" frame="15"/>
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="18">
+			<removeobject depth="3"/>
+			<framelabel label="_intro" frame="18"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasRatio" depth="3" character="6" rotm00="0.929993" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.550000" ty="20.000000" ratio="0.000275">
+			</placeobject>
+		</frame>
+		<frame id="19">
+		</frame>
+		<frame id="20">
+			<action><![CDATA[
+				EAPushZero
+				pushthis
+				getstrmember "_parent"
+				pushstr "introComplete"
+				callmethodpop
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="21">
+			<framelabel label="_outtro" frame="21"/>
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+			<action><![CDATA[
+				EAPushZero
+				pushthis
+				getstrmember "_parent"
+				pushstr "outtroComplete"
+				callmethodpop
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<empty id="14"/>
+	<empty id="15"/>
+	<sprite id="16">
+	<frames>
+		<frame id="0">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="1" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="803.200012" ty="3.000000">
+				<poname name="colorOptions"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 5
+					ActionSetVariable
+					pushstr "m_width"
+					pushbyte 62
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "ColorSwatchDropdownContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryColorSwatchElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="3" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="730.799988" ty="3.000000">
+				<poname name="teamOptions"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 4
+					ActionSetVariable
+					pushstr "m_width"
+					pushbyte 46
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "TextDropdownMenuContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryTextElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="5" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="530.400024" ty="3.000000">
+				<poname name="personalityOptions"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 4
+					ActionSetVariable
+					pushstr "m_width"
+					pushshort 174
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "TextDropdownMenuContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryTextElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="7" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="436.399994" ty="3.000000">
+				<poname name="factionOptions"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 5
+					ActionSetVariable
+					pushstr "m_width"
+					pushbyte 66
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "RenderImageDropdownContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryRenderImageElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="9" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="146.000000" ty="3.000000">
+				<poname name="playerSlotOptions"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 4
+					ActionSetVariable
+					pushstr "m_width"
+					pushshort 264
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "TextDropdownMenuContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryTextElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="11" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="929.099976" ty="16.000000">
+				<poname name="readyCheckBox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "GameSetupCheckBoxContentClip"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="13" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="108.800003" ty="16.000000">
+				<poname name="muteCheckBox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "GameSetupCheckBoxContentClip"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="15" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="34.799999" ty="16.000000">
+				<poname name="voipCheckBox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "GameSetupCheckBoxContentClip"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="17" top="0.000000" left="0.000000" bottom="244.000000" right="426.000000" geometry="fe_m_assetsGameSetup_geometry\17.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fe_m_assetsGameSetup_1.tga:1.276982:0:0:1:1:1
+			t 0:244:0:0:426:0
+			t 426:0:426:244:0:244
+		</ru>
+	</shape>
+	<empty id="18"/>
+	<edittext id="19" top="-2.000000" left="-2.000000" bottom="26.549999" right="271.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:InitialResources"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="20" top="-2.000000" left="-2.000000" bottom="26.549999" right="301.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:RandomCrates"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="21" top="-2.000000" left="-2.000000" bottom="53.099998" right="271.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:InitialResources&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="22" top="-2.000000" left="-2.000000" bottom="53.099998" right="301.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:RandomCrates&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="23">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="17" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="2" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="226.000000" ty="166.050003">
+				<poname name="defaultRules"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushstr "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_labelPosition"
+					setstrvar "right align"
+					pushstr "m_label_x"
+					zerovar
+					pushstr "m_label_y"
+					zerovar
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_iconType"
+					setstrvar "default"
+					pushstr "m_extLabel"
+					setstrvar ""
+					pushstr "m_nTruncateType"
+					zerovar
+					pushstr "m_label"
+					setstrvar "$Defaults"
+					pushstr "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "buttonContentSymbol"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="4" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="47.049999" ty="227.000000">
+				<poname name="commentaryCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="6" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="26.000000" ty="227.050003">
+				<poname name="enableVoipCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="8" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="30.000000" ty="120.000000">
+				<poname name="cratesCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="10" character="19" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="17.400000" ty="47.299999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="11" character="20" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="56.450001" ty="114.400002">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="12" character="21" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="14.450000" ty="43.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="13" character="22" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="53.500000" ty="110.150002">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="14" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="196.000000" ty="45.000000">
+				<poname name="resourcesDropdown"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 5
+					ActionSetVariable
+					pushstr "m_width"
+					pushshort 190
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "TextDropdownMenuContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryTextElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="24" top="0.000000" left="0.000000" bottom="50.000000" right="50.000000" geometry="fe_m_assetsGameSetup_geometry\24.ru">
+		<ru>
+			c
+			s s:0:0:0:255
+			t 0:50:0:0:50:0
+			t 50:0:50:50:0:50
+		</ru>
+	</shape>
+	<empty id="25"/>
+	<empty id="26"/>
+	<shape id="27" top="0.000000" left="0.000000" bottom="100.000000" right="100.000000" geometry="fe_m_assetsGameSetup_geometry\27.ru">
+		<ru>
+			c
+			s s:0:255:0:255
+			t 0:100:0:0:100:0
+			t 100:0:100:100:0:100
+		</ru>
+	</shape>
+	<sprite id="28">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<edittext id="29" top="-2.000000" left="-2.000000" bottom="28.350000" right="156.000000" font="7" alignment="2" red="99" green="177" blue="246" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;MP_SelectMap"/>
+		<etvar variable=""/>
+	</edittext>
+	<shape id="30" top="0.000000" left="0.000000" bottom="244.000000" right="1.800000" geometry="fe_m_assetsGameSetup_geometry\30.ru">
+		<ru>
+			c
+			s s:246:177:99:255
+			t 0:244:0:0:1.8:0
+			t 1.8:0:1.8:244:0:244
+		</ru>
+	</shape>
+	<sprite id="31">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="24" rotm00="10.880005" rotm01="0.000000" rotm10="0.000000" rotm11="4.880005" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="2" character="25" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="4.000000">
+				<poname name="mapList"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_numEntries"
+					pushbyte 9
+					ActionSetVariable
+					pushconst "m_vPadding"
+					zerovar
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_scrollbarOffset"
+					EAPushZero
+					ActionInitArray
+					ActionSetVariable
+					pushvar "m_scrollbarOffset"
+					EAPushZero
+					pushbyte 10
+					ActionSetMember
+					pushvar "m_scrollbarOffset"
+					EAPushOne
+					EAPushZero
+					ActionSetMember
+					pushconst "m_BgVisible"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_renderWidth"
+					pushshort 345
+					ActionSetVariable
+					pushconst "m_renderHeight"
+					pushshort 238
+					ActionSetVariable
+					pushconst "m_backgroundMargin"
+					pushbyte 2
+					ActionSetVariable
+					pushconst "m_useHighlights"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_alternateBackgroundColors"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_backgroundColor1"
+					pushlong 2622983
+					ActionSetVariable
+					pushconst "m_backgroundColor2"
+					zerovar
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="10" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="333.000000" ty="3.000000">
+				<poname name="mapListScrollbar"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_nLength"
+					pushbyte 100
+					ActionSetVariable
+					pushstr "m_nMax"
+					pushbyte 10
+					ActionSetVariable
+					pushstr "m_nMin"
+					zerovar
+					pushstr "m_nValue"
+					zerovar
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="24" character="28" rotm00="1.840012" rotm01="0.000000" rotm10="0.000000" rotm11="1.840012" tx="355.000000" ty="43.000000">
+				<poname name="mapPreview"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "_type"
+					setstrvar "MapPreview"
+					pushstr "_indexMap"
+					pushbyte -1
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="26" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="394.000000" ty="43.349998">
+				<poname name="startPosition0"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="28" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="394.950012" ty="60.950001">
+				<poname name="startPosition1"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="30" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="393.000000" ty="77.949997">
+				<poname name="startPosition2"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="32" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="393.000000" ty="94.949997">
+				<poname name="startPosition3"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="34" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="392.000000" ty="112.949997">
+				<poname name="startPosition4"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="36" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="392.000000" ty="132.949997">
+				<poname name="startPosition5"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="42" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="392.000000" ty="132.949997">
+				<poname name="startPosition7"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="40" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="392.000000" ty="132.949997">
+				<poname name="startPosition6"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "startPositionButtonContent"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="38" character="29" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="375.000000" ty="17.650000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="39" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.004105" tx="348.600006" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="32">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="547.000000" ty="56.000000">
+				<poname name="rulesPanel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="16" character="31" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="56.000000">
+				<poname name="mapPanel"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="33" top="0.000000" left="0.000000" bottom="244.000000" right="544.000000" geometry="fe_m_assetsGameSetup_geometry\33.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fe_m_assetsGameSetup_1.tga:1:0:0:1:1:1
+			t 0:244:0:0:544:0
+			t 544:0:544:244:0:244
+		</ru>
+	</shape>
+	<edittext id="34" top="-2.000000" left="-2.000000" bottom="26.549999" right="271.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:InitialResources"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="35" top="-2.000000" left="-2.000000" bottom="26.549999" right="301.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:RandomCrates"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="36" top="-2.000000" left="-2.000000" bottom="26.549999" right="301.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:EnableVoip"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="37" top="-2.000000" left="-2.000000" bottom="26.549999" right="301.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:AllowCommentary"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="38" top="-2.000000" left="-2.000000" bottom="26.549999" right="301.500000" font="7" alignment="0" red="0" green="0" blue="0" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:BROADCASTGAME"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="39" top="-2.000000" left="-2.000000" bottom="53.099998" right="271.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:InitialResources&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="40" top="-2.000000" left="-2.000000" bottom="53.099998" right="301.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:RandomCrates&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="41" top="-2.000000" left="-2.000000" bottom="26.549999" right="301.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:EnableVoip&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="42" top="-2.000000" left="-2.000000" bottom="53.099998" right="301.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:AllowCommentary&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="43" top="-2.000000" left="-2.000000" bottom="53.099998" right="301.500000" font="7" alignment="0" red="86" green="168" blue="243" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RULE:BROADCASTGAME&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="44">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="33" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="2" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="365.049988" ty="178.050003">
+				<poname name="defaultRules"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushstr "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_labelPosition"
+					setstrvar "right align"
+					pushstr "m_label_x"
+					zerovar
+					pushstr "m_label_y"
+					zerovar
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_iconType"
+					setstrvar "default"
+					pushstr "m_extLabel"
+					setstrvar ""
+					pushstr "m_nTruncateType"
+					zerovar
+					pushstr "m_label"
+					setstrvar "$Defaults"
+					pushstr "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "buttonContentSymbol"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="4" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="42.000000" ty="209.949997">
+				<poname name="broadcastCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="6" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="42.000000" ty="168.000000">
+				<poname name="commentaryCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="8" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="42.000000" ty="125.000000">
+				<poname name="enableVoipCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="10" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="42.000000" ty="85.000000">
+				<poname name="cratesCheckbox"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "checkBoxContentClipSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="12" character="34" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="34.450001" ty="31.299999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="13" character="35" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="80.449997" ty="79.400002">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="14" character="36" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="79.250000" ty="119.449997">
+				<poname name="broadcastShadowLabel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="15" character="37" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="78.750000" ty="160.949997">
+				<poname name="broadcastShadowLabel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="16" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="79.250000" ty="202.699997">
+				<poname name="broadcastCheckboxShadowLabel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="17" character="39" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="31.500000" ty="27.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="18" character="40" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="77.500000" ty="75.150002">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="19" character="41" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="77.250000" ty="115.449997">
+				<poname name="broadcastLabel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="20" character="42" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="76.750000" ty="156.949997">
+				<poname name="broadcastLabel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="21" character="43" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="77.250000" ty="198.850006">
+				<poname name="broadcastCheckboxLabel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="22" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="293.000000" ty="26.000000">
+				<poname name="resourcesDropdown"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_visibleEntryCount"
+					pushbyte 5
+					ActionSetVariable
+					pushstr "m_width"
+					pushshort 170
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "TextDropdownMenuContentSymbol"
+					pushstr "m_entrySymbol"
+					setstrvar "std_mouseListboxEntryTextElementSymbol"
+					pushstr "m_ButtonWidth"
+					pushbyte 27
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="45">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="44" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="56.000000">
+				<poname name="rulesPanel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="24" character="31" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="56.000000">
+				<poname name="mapPanel"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="64" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-5.000000" ty="1.000000">
+				<poname name="mapTabButton"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushstr "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_labelPosition"
+					setstrvar "right align"
+					pushstr "m_label_x"
+					zerovar
+					pushstr "m_label_y"
+					zerovar
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_iconType"
+					setstrvar "default"
+					pushstr "m_extLabel"
+					setstrvar ""
+					pushstr "m_nTruncateType"
+					zerovar
+					pushstr "m_label"
+					setstrvar "$TabMap"
+					pushstr "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "MPtabButtonContentClip"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="66" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="170.000000" ty="1.000000">
+				<poname name="rulesTabButton"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushstr "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_labelPosition"
+					setstrvar "right align"
+					pushstr "m_label_x"
+					zerovar
+					pushstr "m_label_y"
+					zerovar
+					pushstr "m_focusDirs"
+					setstrvar "Up/Down"
+					pushstr "m_iconType"
+					setstrvar "default"
+					pushstr "m_extLabel"
+					setstrvar ""
+					pushstr "m_nTruncateType"
+					zerovar
+					pushstr "m_label"
+					setstrvar "$TabRules"
+					pushstr "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_refFM"
+					setstrvar "_root.gFM"
+					pushstr "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushstr "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushstr "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushstr "m_contentSymbol"
+					setstrvar "MPtabButtonContentClip"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="46" top="-15.000000" left="-15.000000" bottom="15.000000" right="15.000000" geometry="fe_m_assetsGameSetup_geometry\46.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fe_m_assetsGameSetup_1.tga:1:0:0:1:942:16
+			t -15:15:-15:-15:15:-15
+			t 15:-15:15:15:-15:15
+		</ru>
+	</shape>
+	<shape id="47" top="-14.000000" left="-14.000000" bottom="14.000000" right="14.000000" geometry="fe_m_assetsGameSetup_geometry\47.ru">
+		<ru>
+			c
+			s s:0:0:0:0
+			t 0:0:0:0:0:0
+		</ru>
+	</shape>
+	<button id="48" top="-14.000000" left="-14.000000" bottom="14.000000" right="14.000000">
+		<vertexes>
+			<vertex x="-14.000000" y="14.000000"/>
+			<vertex x="-14.000000" y="-14.000000"/>
+			<vertex x="14.000000" y="-14.000000"/>
+			<vertex x="14.000000" y="14.000000"/>
+		</vertexes>
+		<triangles>
+			<triangle v1="0" v2="1" v3="2"/>
+			<triangle v1="2" v2="3" v3="0"/>
+		</triangles>
+		<buttonrecords>
+			<buttonrecord flags="StateHit" character="47" depth="1" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000"/>
+		</buttonrecords>
+	</button>
+	<font id="49" name="Lucida Sans">
+	</font>
+	<edittext id="50" top="-2.000000" left="-2.000000" bottom="24.650000" right="16.850000" font="49" alignment="2" red="255" green="255" blue="255" alpha="255" height="20.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="8"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="51">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="50" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000015" tx="-7.450000" ty="-11.300000">
+				<poname name="labelTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="52">
+	<frames>
+		<frame id="0">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="46" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="48" rotm00="0.961533" rotm01="0.000000" rotm10="0.000000" rotm11="0.925919" tx="0.000000" ty="0.000000">
+				<poname name="hitRegion"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="51" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				<poname name="labelMC"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="53">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="54" top="0.000000" left="0.000000" bottom="52.000000" right="346.000000" geometry="fe_m_assetsGameSetup_geometry\54.ru">
+		<ru>
+			c
+			s s:57:8:9:255
+			t 0:52:0:26:346:26
+			t 346:26:346:52:0:52
+			s s:0:0:0:255
+			t 0:26:0:0:346:0
+			t 346:0:346:26:0:26
+		</ru>
+	</shape>
+	<sprite id="55">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="54" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+</aptdata>

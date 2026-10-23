@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<AptAptData id="feg_m_disconnect_apt" File="feg_m_disconnect.apt" />
+<AptConstData id="feg_m_disconnect_const" File="feg_m_disconnect.const" />
+<AptDatData id="feg_m_disconnect_dat" File="feg_m_disconnect.dat" />
+<AptGeometryData id="feg_m_disconnect_1" File="feg_m_disconnect_geometry\1.ru" AptID="1"/>
+<AptGeometryData id="feg_m_disconnect_4" File="feg_m_disconnect_geometry\4.ru" AptID="4"/>
+<AptGeometryData id="feg_m_disconnect_6" File="feg_m_disconnect_geometry\6.ru" AptID="6"/>
+<AptGeometryData id="feg_m_disconnect_8" File="feg_m_disconnect_geometry\8.ru" AptID="8"/>
+<AptGeometryData id="feg_m_disconnect_10" File="feg_m_disconnect_geometry\10.ru" AptID="10"/>
+<AptGeometryData id="feg_m_disconnect_12" File="feg_m_disconnect_geometry\12.ru" AptID="12"/>
+<AptGeometryData id="feg_m_disconnect_14" File="feg_m_disconnect_geometry\14.ru" AptID="14"/>
+<Texture id="apt_feg_m_disconnect_1" File="art\Textures\apt_feg_m_disconnect_1.tga" OutputFormat="A8R8G8B8" GenerateMipMaps="false" AllowAutomaticResize="false"/>
+</AssetDeclaration>

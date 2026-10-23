@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptdata>
+	<movieclip screensizex="1365" screensizey="768" unknown="33">
+		<imports>
+			<import name="lowerScreenBar Symbol" movie=".\Components\fe_m_generalScreenComponents" character="38"/>
+			<import name="ScreenTitleBarSymbol" movie=".\Components\fe_m_generalScreenComponents" character="47"/>
+		</imports>
+		<exports>
+			<export character="19" name="UnrankedMultiplayerLoadingBox"/>
+			<export character="34" name="RankedMultiplayerLoadingBox"/>
+			<export character="34" name="RankedMultiplayerLoadingBox"/>
+			<export character="19" name="UnrankedMultiplayerLoadingBox"/>
+			<export character="55" name="__Packages.Cafe2_BaseUIScreen"/>
+			<export character="56" name="__Packages.fem_m_load"/>
+		</exports>
+		<frames>
+			<frame id="0">
+				<background color="-10066330"/>
+				<action><![CDATA[
+					stop
+					pushstr "screen"
+					pushthis
+					EAPushOne
+					pushstr "fem_m_load"
+					ActionNew
+					ActionDefineLocal
+					actionEnd
+				]]></action>
+				<placeobject flags="HasCharacter|HasMatrix" depth="1" character="37" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="3" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="687.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="5" character="46" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="682.000000" ty="717.849976">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="9" character="34" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="632.500000" ty="471.899994">
+					<poname name="rankedMultiplayerLoadingBox"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="60" character="19" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="682.500000" ty="471.850006">
+					<poname name="unrankedMultiplayerLoadingBox"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasClipAction" depth="105" character="47" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="20.000000">
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_title"
+						setstrvar "$MP_LOADING_SCREEN_TITLE"
+						pushstr "m_DropShadow"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_Outline"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_visible"
+						pushtrue
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="109" character="54" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="562.500000" ty="90.000000">
+				</placeobject>
+				<initaction sprite="55"><![CDATA[
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx0
+					pushglobal
+					pushconst "Cafe2_BaseUIScreen"
+					function (reg3:screen)(regs:4, reg1:this, reg2:_global)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushreg 3
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushreg 1
+						getnamedmember "frameDelayedInitCallback"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						ActionSetMember
+					end
+					setreg 1
+					ActionSetMember
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:2)
+						pushconst "\n\nCafe2_BaseUIScreen::frameDelayedInitCallback() :"
+						ActionTrace
+						pushconst "\nscreens and move the call to initGUI() to frameDelayedInit().\n"
+						pushconst "N.B. You *must* override frameDelayedInit() in your"
+						pushbyte 2
+						pushconst "Array"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushreg 1
+						EAPushZero
+						ActionGetMember
+						pushreg 1
+						EAPushOne
+						ActionGetMember
+						ActionNewAdd
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "frameDelayedInitCallback"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushnull
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "frameDelayedInit"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroComplete"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx3:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx1
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx2
+						jump lxnx1
+					lxnx2:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx3
+					lxnx1:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						pushnull
+						ActionNewEquals
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						EAPushOne
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "changeMainScreen"
+					end
+					lxnx4:
+					ActionSetMember
+					pushreg 2
+					pushconst "introComplete"
+					function (reg1:theComponent)(regs:2)
+						pushconst "Cafe2_BaseUIScreen::introComplete()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "restoreVisualState"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						pushconst "m_introCount"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						ActionDecrement
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx5
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "onIntrosComplete"
+					end
+					lxnx5:
+					ActionSetMember
+					pushreg 2
+					pushconst "onIntrosComplete"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "Cafe2_BaseUIScreen::onIntrosComplete()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "localEventHandler"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "setLocalEventHandler"
+						EAPushZero
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "enableCurrentLocalEventHandler"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "registerIntroOuttroComponents"
+					function (reg3:components)(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::registerIntroOuttroComponents()"
+						ActionTrace
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushreg 3
+						ActionSetMember
+						pushreg 1
+						pushconst "m_introCount"
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionSetMember
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx7:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_introCount"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx6
+						pushreg 1
+						getnamedmember "introComplete"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "setIntroCallback"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx7
+					end
+					lxnx6:
+					ActionSetMember
+					pushreg 2
+					pushconst "executeBackFunction"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::executeBackFunction"
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx10:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx8
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx9
+						jump lxnx8
+					lxnx9:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx10
+					lxnx8:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx11
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx11:
+					ActionSetMember
+					pushreg 2
+					pushconst "startIntro"
+					function ()(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startIntro()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx13:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx12
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "intro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx13
+					end
+					lxnx12:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttro"
+					function (reg4:newScreen)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx14
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx16:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx15
+						pushreg 1
+						getnamedmember "outtroComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx16
+					lxnx15:
+						jump lxnx17
+					lxnx14:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroComplete"
+					end
+					lxnx17:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttroAndCallBack"
+					function (reg4:doAfterOuttroComplete)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_executeOuttroCallBack"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx18
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx20:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx19
+						pushreg 1
+						getnamedmember "outtroAndCallBackComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx20
+					lxnx19:
+						jump lxnx21
+					lxnx18:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroAndCallBackComplete"
+					end
+					lxnx21:
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroAndCallBackComplete"
+					function (reg2:theComponent)(regs:3)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 1
+						ActionPop
+					lxnx24:
+						pushreg 1
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx22
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 1
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx23
+						jump lxnx22
+					lxnx23:
+						pushreg 1
+						ActionIncrement
+						setreg 1
+						ActionPop
+						jump lxnx24
+					lxnx22:
+						EAPushOne
+						pushreg 1
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx25
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "m_executeOuttroCallBack"
+					end
+					lxnx25:
+					ActionSetMember
+					pushreg 2
+					pushconst "backButtonClicked"
+					function ()(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::backButtonClicked()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx26
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx28:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx27
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "executeBackFunction"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx28
+					lxnx27:
+						jump lxnx29
+					lxnx26:
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx29:
+					ActionSetMember
+					pushreg 2
+					pushconst "localEventHandler"
+					function (reg2:keyCode, reg0:controller)(regs:3, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::localEventHandler() keyCode == "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						getnamedmember "gFM"
+						callnamedmethodpop "handleDefaultInputs"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "clearData"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushnull
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushnull
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "bind0"
+					function (obj, func)
+						function ()
+							pushvar "obj"
+							EAPushOne
+							pushvar "func"
+							callnamedmethodpop "call"
+						end
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "m_changeToScreen"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_executeOuttroCallBack"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_uiComponentArray"
+					EAPushZero
+					pushconst "Array"
+					ActionNew
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx0:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="56"><![CDATA[
+					pushglobal
+					getnamedmember "fem_m_load"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx30
+					pushglobal
+					pushconst "fem_m_load"
+					function (reg5:screen)(regs:7, reg1:this, reg2:super, reg3:_global)
+						pushreg 5
+						EAPushOne
+						pushreg 2
+						pushundefined
+						callmethodpop
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushreg 1
+						ActionSetMember
+						pushreg 1
+						pushconst "m_localMessageHandlerFunc"
+						pushreg 1
+						getnamedmember "localMessageHandler"
+						pushreg 1
+						pushbyte 2
+						pushreg 3
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						ActionSetMember
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 6
+						ActionPop
+						pushconst "QueryGameEngine?IS_RANKED_GAME"
+						pushreg 6
+						geturl2
+						pushreg 1
+						pushconst "m_isRankedGame"
+						pushreg 6
+						getnamedmember "IS_RANKED_GAME"
+						pushconst "1"
+						ActionNewEquals
+						ActionSetMember
+						pushundefined
+						setreg 4
+						ActionPop
+						pushreg 1
+						getnamedmember "m_isRankedGame"
+						jumptrue lxnx31
+						pushreg 5
+						getnamedmember "unrankedMultiplayerLoadingBox"
+						jump lxnx32
+					lxnx31:
+						pushreg 5
+						getnamedmember "rankedMultiplayerLoadingBox"
+					lxnx32:
+						setreg 4
+						ActionPop
+						pushreg 5
+						getnamedmember "unrankedMultiplayerLoadingBox"
+						pushconst "_visible"
+						pushreg 1
+						getnamedmember "m_isRankedGame"
+						ActionLogicalNot
+						ActionSetMember
+						pushreg 5
+						getnamedmember "rankedMultiplayerLoadingBox"
+						pushconst "_visible"
+						pushreg 1
+						getnamedmember "m_isRankedGame"
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerClips"
+						pushreg 4
+						getstrmember "entry7"
+						pushreg 4
+						getstrmember "entry6"
+						pushreg 4
+						getnamedmember "entry5"
+						pushreg 4
+						getnamedmember "entry4"
+						pushreg 4
+						getnamedmember "entry3"
+						pushreg 4
+						getnamedmember "entry2"
+						pushreg 4
+						getnamedmember "entry1"
+						pushreg 4
+						getnamedmember "entry0"
+						pushbyte 8
+						ActionInitArray
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "updateLoadProgress"
+					end
+					setreg 1
+					ActionSetMember
+					pushglobal
+					getnamedmember "fem_m_load"
+					pushvar "Cafe2_BaseUIScreen"
+					extends
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushreg 1
+						getnamedmember "m_localMessageHandlerFunc"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gMH"
+						callnamedmethodpop "addMessageHandler"
+						pushreg 1
+						getnamedmember "onScreenExit"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						getnamedmember "gSM"
+						callnamedmethodpop "setOnExitScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onScreenExit"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushreg 1
+						getnamedmember "m_localMessageHandlerFunc"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gMH"
+						callnamedmethodpop "removeMessageHandler"
+						pushreg 1
+						pushconst "m_localMessageHandlerFunc"
+						ActionDelete
+						ActionPop
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "clearData"
+						pushreg 2
+						pushconst "fem_m_load"
+						ActionDelete
+						ActionPop
+						pushreg 2
+						pushconst "Cafe2_BaseUIScreen"
+						ActionDelete
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "localMessageHandler"
+					function (reg4:messageCode)(regs:5, reg1:this, reg2:_global)
+						pushtrue
+						setreg 3
+						ActionPop
+						pushreg 4
+						setreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_UPDATE_LOADSCREEN"
+						stricteq
+						jumptrue lxnx33
+						pushreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_LOADING_COMPLETE"
+						stricteq
+						jumptrue lxnx34
+						jump lxnx35
+					lxnx33:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "updateLoadProgress"
+						jump lxnx36
+					lxnx34:
+						pushconst "_outtro"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						callnamedmethodpop "gotoAndPlay"
+						jump lxnx36
+					lxnx35:
+						pushfalse
+						setreg 3
+						ActionPop
+						jump lxnx36
+					lxnx36:
+						pushreg 3
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "updateLoadProgress"
+					function ()(regs:11, reg1:this)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?LOAD_INFO"
+						pushreg 3
+						geturl2
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_PRESENT"
+						pushconst "split"
+						ActionCallMethod
+						setreg 7
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_NAMES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 8
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_TEAMS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 6
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_FACTIONS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_PROGRESS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 10
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_PROGRESS_STR"
+						pushconst "split"
+						ActionCallMethod
+						setreg 5
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "LOAD_INFO_RANKS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 9
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx41:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerClips"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx37
+						pushreg 2
+						pushreg 7
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx38
+						pushreg 7
+						pushreg 2
+						ActionGetMember
+						ActionToNumber
+						EAPushZero
+						ActionNewEquals
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx38
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "playerTF"
+						pushconst "text"
+						pushreg 8
+						pushreg 2
+						ActionGetMember
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "teamTF"
+						pushconst "text"
+						pushreg 6
+						pushreg 2
+						ActionGetMember
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "factionTF"
+						pushconst "text"
+						pushreg 4
+						pushreg 2
+						ActionGetMember
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "progressTF"
+						pushconst "text"
+						pushreg 5
+						pushreg 2
+						ActionGetMember
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_isRankedGame"
+						ActionLogicalNot
+						jumptrue lxnx39
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "rankTF"
+						pushconst "text"
+						pushreg 9
+						pushreg 2
+						ActionGetMember
+						ActionSetMember
+					lxnx39:
+						pushreg 10
+						pushreg 2
+						ActionGetMember
+						ActionToNumber
+						EAPushOne
+						ActionNewAdd
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "loadingbar"
+						callnamedmethodpop "gotoAndStop"
+						jump lxnx40
+					lxnx38:
+						pushreg 1
+						getnamedmember "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+					lxnx40:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx41
+					end
+					lxnx37:
+					ActionSetMember
+					pushreg 2
+					pushconst "m_playerClips"
+					EAPushZero
+					pushconst "Array"
+					ActionNew
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "fem_m_load"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx30:
+					ActionPop
+					actionEnd
+				]]></initaction>
+			</frame>
+		</frames>
+	</movieclip>
+	<image id="1" image="art\Textures\apt_fem_m_load_2.tga"/>
+	<shape id="2" top="-143.500000" left="-453.500000" bottom="143.500000" right="453.500000" geometry="fem_m_load_geometry\2.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.000000:454.500000:433.500000
+			t -453.500000:-68.500000:-453.500000:-143.500000:453.500000:-68.500000
+			t 453.500000:-143.500000:453.500000:-68.500000:-453.500000:-143.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:452.680000
+			t -453.500000:-43.500000:-453.500000:-68.500000:453.500000:-43.500000
+			t 453.500000:-68.500000:453.500000:-43.500000:-453.500000:-68.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:455.420000
+			t -453.500000:-18.500000:-453.500000:-43.500000:453.500000:-18.500000
+			t 453.500000:-43.500000:453.500000:-18.500000:-453.500000:-43.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:388.680000
+			t -453.500000:6.500000:-453.500000:-18.500000:453.500000:6.500000
+			t 453.500000:-18.500000:453.500000:6.500000:-453.500000:-18.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:389.420000
+			t -453.500000:31.500000:-453.500000:6.500000:453.500000:31.500000
+			t 453.500000:6.500000:453.500000:31.500000:-453.500000:6.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:324.680000
+			t -453.500000:56.500000:-453.500000:31.500000:453.500000:56.500000
+			t 453.500000:31.500000:453.500000:56.500000:-453.500000:31.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:323.420000
+			t -453.500000:81.500000:-453.500000:56.500000:453.500000:81.500000
+			t 453.500000:56.500000:453.500000:81.500000:-453.500000:56.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:260.680000
+			t -453.500000:106.500000:-453.500000:81.500000:453.500000:106.500000
+			t 453.500000:81.500000:453.500000:106.500000:-453.500000:81.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:257.420000
+			t -453.500000:131.500000:-453.500000:106.500000:453.500000:131.500000
+			t 453.500000:106.500000:453.500000:131.500000:-453.500000:106.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.000000:454.500000:433.500000
+			t -453.500000:143.500000:-453.500000:131.500000:453.500000:143.500000
+			t 453.500000:131.500000:453.500000:143.500000:-453.500000:131.500000
+		</ru>
+	</shape>
+	<font id="3" name="Lucida Sans">
+	</font>
+	<edittext id="4" top="-1.777778" left="-2.000000" bottom="21.777779" right="317.049988" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="5" top="-1.777778" left="-2.000000" bottom="21.777779" right="62.500000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="6" top="-1.777778" left="-2.000000" bottom="21.777779" right="189.500000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="7" top="-1.777778" left="-2.000000" bottom="21.777779" right="79.250000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<shape id="8" top="4.000000" left="601.000000" bottom="23.900000" right="800.900024" geometry="fem_m_load_geometry\8.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 601:4:603.55:6.05:603.55:21.8
+			t 603.55:6.05:601:4:800.9:4
+			t 601:23.9:603.55:21.8:800.9:23.9
+			t 603.55:21.8:601:23.9:601:4
+			t 798.6:6.05:800.9:4:798.6:21.8
+			t 800.9:4:798.6:6.05:603.55:6.05
+			t 798.6:21.8:800.9:23.9:603.55:21.8
+			t 800.9:23.9:798.6:21.8:800.9:4
+			s s:0:0:0:255
+			t 603.55:6.05:798.6:6.05:603.55:21.8
+			t 798.6:6.05:798.6:21.8:603.55:21.8
+		</ru>
+	</shape>
+	<shape id="9" top="-0.100000" left="-0.300000" bottom="19.750000" right="200.399994" geometry="fem_m_load_geometry\9.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t -0.3:-0.1:1.65:1.5:1.65:17.8
+			t 1.65:1.5:-0.3:-0.1:200.4:-0.1
+			t -0.3:19.75:1.65:17.8:200.4:19.75
+			t 1.65:17.8:-0.3:19.75:-0.3:-0.1
+			t 199.1:1.5:200.4:-0.1:199.1:17.8
+			t 200.4:-0.1:199.1:1.5:1.65:1.5
+			t 199.1:17.8:200.4:19.75:1.65:17.8
+			t 200.4:19.75:199.1:17.8:200.4:-0.1
+			s s:0:0:0:255
+			t 1.65:1.5:199.1:1.5:1.65:17.8
+			t 199.1:1.5:199.1:17.8:1.65:17.8
+		</ru>
+	</shape>
+	<shape id="10" top="0.000000" left="0.000000" bottom="12.000000" right="3.850000" geometry="fem_m_load_geometry\10.ru">
+		<ru>
+			c
+			s s:255:204:0:255
+			t 0:12:0:0:3.85:0
+			t 3.85:0:3.85:12:0:12
+		</ru>
+	</shape>
+	<sprite id="11">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="9" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="1">
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="10" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.950000" ty="3.950000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="10" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="9.500000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+			<placeobject flags="Move|HasMatrix" depth="3" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="9.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="4" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="14.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="19.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+		</frame>
+		<frame id="10">
+		</frame>
+		<frame id="11">
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="24.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="7" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="29.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+			<placeobject flags="HasCharacter|HasMatrix" depth="8" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="34.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="9" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="39.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+		</frame>
+		<frame id="19">
+		</frame>
+		<frame id="20">
+		</frame>
+		<frame id="21">
+			<placeobject flags="HasCharacter|HasMatrix" depth="10" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="44.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="11" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="49.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+			<placeobject flags="HasCharacter|HasMatrix" depth="12" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="54.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="13" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="59.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+		</frame>
+		<frame id="30">
+		</frame>
+		<frame id="31">
+			<placeobject flags="HasCharacter|HasMatrix" depth="14" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="64.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="15" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="69.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="32">
+		</frame>
+		<frame id="33">
+		</frame>
+		<frame id="34">
+		</frame>
+		<frame id="35">
+		</frame>
+		<frame id="36">
+			<placeobject flags="HasCharacter|HasMatrix" depth="16" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="74.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="17" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="79.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="37">
+		</frame>
+		<frame id="38">
+		</frame>
+		<frame id="39">
+		</frame>
+		<frame id="40">
+		</frame>
+		<frame id="41">
+			<placeobject flags="HasCharacter|HasMatrix" depth="18" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="84.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="42">
+		</frame>
+		<frame id="43">
+		</frame>
+		<frame id="44">
+		</frame>
+		<frame id="45">
+		</frame>
+		<frame id="46">
+			<placeobject flags="HasCharacter|HasMatrix" depth="19" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="89.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="20" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="94.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="47">
+		</frame>
+		<frame id="48">
+		</frame>
+		<frame id="49">
+		</frame>
+		<frame id="50">
+		</frame>
+		<frame id="51">
+			<placeobject flags="HasCharacter|HasMatrix" depth="21" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="98.949997" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="22" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="104.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="52">
+		</frame>
+		<frame id="53">
+		</frame>
+		<frame id="54">
+		</frame>
+		<frame id="55">
+		</frame>
+		<frame id="56">
+			<placeobject flags="HasCharacter|HasMatrix" depth="23" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="109.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="24" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="114.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="57">
+		</frame>
+		<frame id="58">
+		</frame>
+		<frame id="59">
+		</frame>
+		<frame id="60">
+		</frame>
+		<frame id="61">
+			<placeobject flags="HasCharacter|HasMatrix" depth="25" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="119.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="26" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="123.949997" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="62">
+		</frame>
+		<frame id="63">
+		</frame>
+		<frame id="64">
+		</frame>
+		<frame id="65">
+		</frame>
+		<frame id="66">
+			<placeobject flags="HasCharacter|HasMatrix" depth="27" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="129.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="28" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="134.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="67">
+		</frame>
+		<frame id="68">
+		</frame>
+		<frame id="69">
+		</frame>
+		<frame id="70">
+		</frame>
+		<frame id="71">
+			<placeobject flags="HasCharacter|HasMatrix" depth="29" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="139.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="30" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="144.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="72">
+		</frame>
+		<frame id="73">
+		</frame>
+		<frame id="74">
+		</frame>
+		<frame id="75">
+		</frame>
+		<frame id="76">
+			<placeobject flags="HasCharacter|HasMatrix" depth="31" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="149.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="32" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="154.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="77">
+		</frame>
+		<frame id="78">
+		</frame>
+		<frame id="79">
+		</frame>
+		<frame id="80">
+		</frame>
+		<frame id="81">
+			<placeobject flags="HasCharacter|HasMatrix" depth="33" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="159.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="34" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="164.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="82">
+		</frame>
+		<frame id="83">
+		</frame>
+		<frame id="84">
+		</frame>
+		<frame id="85">
+		</frame>
+		<frame id="86">
+			<placeobject flags="HasCharacter|HasMatrix" depth="35" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="169.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="36" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="174.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="87">
+		</frame>
+		<frame id="88">
+		</frame>
+		<frame id="89">
+		</frame>
+		<frame id="90">
+		</frame>
+		<frame id="91">
+			<placeobject flags="HasCharacter|HasMatrix" depth="37" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="179.000000" ty="4.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="38" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="184.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="92">
+		</frame>
+		<frame id="93">
+		</frame>
+		<frame id="94">
+		</frame>
+		<frame id="95">
+		</frame>
+		<frame id="96">
+			<placeobject flags="HasCharacter|HasMatrix" depth="39" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="189.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+		<frame id="97">
+		</frame>
+		<frame id="98">
+		</frame>
+		<frame id="99">
+		</frame>
+		<frame id="100">
+			<placeobject flags="HasCharacter|HasMatrix" depth="40" character="10" rotm00="1.012985" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="194.000000" ty="4.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="12">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="-2.222222">
+				<poname name="playerTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="5" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="331.000000" ty="-2.222222">
+				<poname name="teamTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="6" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="404.000000" ty="-2.222222">
+				<poname name="factionTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="7" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="807.250000" ty="-2.222222">
+				<poname name="progressTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="-2.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="11" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="601.250000" ty="1.400000">
+				<poname name="loadingbar"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="13" name="Red Alert Extended">
+	</font>
+	<edittext id="14" top="-2.000000" left="-2.000000" bottom="26.000000" right="304.149994" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;PLAYER"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="15" top="-2.000000" left="-2.000000" bottom="26.000000" right="62.500000" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;TEAM"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="16" top="-2.000000" left="-2.000000" bottom="26.000000" right="189.149994" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;SIDE"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="17" top="-2.000000" left="-2.000000" bottom="26.000000" right="271.350006" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;GUI:PROGRESS"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="18">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="14" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="2.000000">
+				<poname name="playerTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="15" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="330.000000" ty="2.000000">
+				<poname name="teamTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="16" rotm00="1.000092" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="404.000000" ty="2.000000">
+				<poname name="factionTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="17" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="603.000000" ty="2.000000">
+				<poname name="progressTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="19">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="2" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="-65.849998">
+				<poname name="entry0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="9" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="-40.849998">
+				<poname name="entry1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="16" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="-15.850000">
+				<poname name="entry2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="23" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="9.150000">
+				<poname name="entry3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="30" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="34.150002">
+				<poname name="entry4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="37" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="59.150002">
+				<poname name="entry5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="66" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="84.150002">
+				<poname name="entry6"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="67" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="109.150002">
+				<poname name="entry7"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="44" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-443.000000" ty="-104.250000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="20" image="art\Textures\apt_fem_m_load_2.tga"/>
+	<shape id="21" top="-143.500000" left="-453.500000" bottom="143.500000" right="553.500000" geometry="fem_m_load_geometry\21.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.000000:454.500000:144.500000
+			t -453.500000:-68.500000:-453.500000:-143.500000:553.500000:-68.500000
+			t 553.500000:-143.500000:553.500000:-68.500000:-453.500000:-143.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:163.680000
+			t -453.500000:-43.500000:-453.500000:-68.500000:553.500000:-43.500000
+			t 553.500000:-68.500000:553.500000:-43.500000:-453.500000:-68.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:166.420000
+			t -453.500000:-18.500000:-453.500000:-43.500000:553.500000:-18.500000
+			t 553.500000:-43.500000:553.500000:-18.500000:-453.500000:-43.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:99.680000
+			t -453.500000:6.500000:-453.500000:-18.500000:553.500000:6.500000
+			t 553.500000:-18.500000:553.500000:6.500000:-453.500000:-18.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:100.420000
+			t -453.500000:31.500000:-453.500000:6.500000:553.500000:31.500000
+			t 553.500000:6.500000:553.500000:31.500000:-453.500000:6.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:35.680000
+			t -453.500000:56.500000:-453.500000:31.500000:553.500000:56.500000
+			t 553.500000:31.500000:553.500000:56.500000:-453.500000:31.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:34.420000
+			t -453.500000:81.500000:-453.500000:56.500000:553.500000:81.500000
+			t 553.500000:56.500000:553.500000:81.500000:-453.500000:56.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.280000:454.500000:-28.320000
+			t -453.500000:106.500000:-453.500000:81.500000:553.500000:106.500000
+			t 553.500000:81.500000:553.500000:106.500000:-453.500000:81.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.320000:454.500000:-31.580000
+			t -453.500000:131.500000:-453.500000:106.500000:553.500000:131.500000
+			t 553.500000:106.500000:553.500000:131.500000:-453.500000:106.500000
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_2.tga:1:0:0:1.000000:454.500000:144.500000
+			t -453.500000:143.500000:-453.500000:131.500000:553.500000:143.500000
+			t 553.500000:131.500000:553.500000:143.500000:-453.500000:131.500000
+		</ru>
+	</shape>
+	<edittext id="22" top="-1.777778" left="-2.000000" bottom="21.777779" right="317.049988" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="23" top="-1.777778" left="-2.000000" bottom="21.777779" right="62.500000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="24" top="-1.777778" left="-2.000000" bottom="21.777779" right="189.500000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="25" top="-1.777778" left="-2.000000" bottom="21.777779" right="79.250000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="26" top="-1.777778" left="-2.000000" bottom="21.777779" right="93.750000" font="3" alignment="0" red="255" green="255" blue="255" alpha="255" height="16.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="27">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="22" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="-2.222222">
+				<poname name="playerTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="328.000000" ty="-2.222222">
+				<poname name="teamTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="24" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="401.000000" ty="-2.222222">
+				<poname name="factionTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="25" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="805.000000" ty="-2.222222">
+				<poname name="progressTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="5" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-101.000000" ty="-2.222222">
+				<poname name="rankTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="-2.250000" ty="-2.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="7" character="11" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="599.000000" ty="1.400000">
+				<poname name="loadingbar"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<edittext id="28" top="-2.000000" left="-2.000000" bottom="26.000000" right="304.149994" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;PLAYER"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="29" top="-2.000000" left="-2.000000" bottom="26.000000" right="62.500000" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;TEAM"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="30" top="-2.000000" left="-2.000000" bottom="26.000000" right="189.149994" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;SIDE"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="31" top="-2.000000" left="-2.000000" bottom="26.000000" right="271.350006" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;GUI:PROGRESS"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="32" top="-2.000000" left="-2.000000" bottom="26.000000" right="62.500000" font="13" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;RANK"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="33">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="28" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="2.000000">
+				<poname name="playerTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="29" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="328.000000" ty="2.000000">
+				<poname name="teamTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="30" rotm00="1.000092" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="401.000000" ty="2.000000">
+				<poname name="factionTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="31" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.000000" ty="2.000000">
+				<poname name="progressTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="5" character="32" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-101.000000" ty="2.000000">
+				<poname name="teamTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="34">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="21" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="-65.849998">
+				<poname name="entry0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="10" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="-40.849998">
+				<poname name="entry1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="18" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="-15.850000">
+				<poname name="entry2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="26" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="9.150000">
+				<poname name="entry3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="34" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="34.150002">
+				<poname name="entry4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="42" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="59.150002">
+				<poname name="entry5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="66" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="84.150002">
+				<poname name="entry6"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="67" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="109.150002">
+				<poname name="entry7"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="50" character="33" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-341.000000" ty="-104.250000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="35" image="art\Textures\apt_fem_m_load_1.tga"/>
+	<shape id="36" top="0.000000" left="0.000000" bottom="768.000000" right="1365.000000" geometry="fem_m_load_geometry\36.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_1.tga:1:0:0:1:1:1
+			t 0:768:0:0:1365:0
+			t 1365:0:1365:768:0:768
+		</ru>
+	</shape>
+	<sprite id="37">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="36" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<empty id="38"/>
+	<image id="39" image="art\Textures\apt_fem_m_load_1.tga"/>
+	<shape id="40" top="-129.000000" left="-129.000000" bottom="129.000000" right="129.000000" geometry="fem_m_load_geometry\40.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_1.tga:1:0:0:1:1497:130
+			t -129:129:-129:-129:129:-129
+			t 129:-129:129:129:-129:129
+		</ru>
+	</shape>
+	<sprite id="41">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="40" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="42">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="41" rotm00="0.999985" rotm01="-0.000015" rotm10="0.000015" rotm11="0.999985" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="1">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.999878" rotm01="0.009705" rotm10="-0.009705" rotm11="0.999878" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="2">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.999634" rotm01="0.022690" rotm10="-0.022690" rotm11="0.999634" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="3">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.999207" rotm01="0.035675" rotm10="-0.035675" rotm11="0.999207" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="4">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.998627" rotm01="0.048645" rotm10="-0.048645" rotm11="0.998627" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="5">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.997864" rotm01="0.061615" rotm10="-0.061615" rotm11="0.997864" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="6">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.996933" rotm01="0.074554" rotm10="-0.074554" rotm11="0.996933" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="7">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.995834" rotm01="0.087509" rotm10="-0.087509" rotm11="0.995834" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="8">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.994583" rotm01="0.100433" rotm10="-0.100433" rotm11="0.994583" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="9">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.993149" rotm01="0.113342" rotm10="-0.113342" rotm11="0.993149" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="10">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.991547" rotm01="0.126221" rotm10="-0.126221" rotm11="0.991547" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="11">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.990250" rotm01="0.135864" rotm10="-0.135864" rotm11="0.990250" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="12">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.988358" rotm01="0.148712" rotm10="-0.148712" rotm11="0.988358" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="13">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.986298" rotm01="0.161530" rotm10="-0.161530" rotm11="0.986298" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="14">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.984085" rotm01="0.174332" rotm10="-0.174332" rotm11="0.984085" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="15">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.981689" rotm01="0.187103" rotm10="-0.187103" rotm11="0.981689" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="16">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.979141" rotm01="0.199844" rotm10="-0.199844" rotm11="0.979141" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="17">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.976410" rotm01="0.212555" rotm10="-0.212555" rotm11="0.976410" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="18">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.973541" rotm01="0.225220" rotm10="-0.225220" rotm11="0.973541" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="19">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.970490" rotm01="0.237854" rotm10="-0.237854" rotm11="0.970490" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="20">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.967270" rotm01="0.250443" rotm10="-0.250443" rotm11="0.967270" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="21">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.964767" rotm01="0.259827" rotm10="-0.259827" rotm11="0.964767" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="22">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.961273" rotm01="0.272339" rotm10="-0.272339" rotm11="0.961273" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="23">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.957611" rotm01="0.284821" rotm10="-0.284821" rotm11="0.957611" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="24">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.953796" rotm01="0.297241" rotm10="-0.297241" rotm11="0.953796" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="25">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.949814" rotm01="0.309616" rotm10="-0.309616" rotm11="0.949814" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="26">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.945679" rotm01="0.321930" rotm10="-0.321930" rotm11="0.945679" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="27">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.941376" rotm01="0.334198" rotm10="-0.334198" rotm11="0.941376" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="28">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.936920" rotm01="0.346405" rotm10="-0.346405" rotm11="0.936920" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="29">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.932297" rotm01="0.358551" rotm10="-0.358551" rotm11="0.932297" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="30">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.927521" rotm01="0.370651" rotm10="-0.370651" rotm11="0.927521" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="31">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.923859" rotm01="0.379654" rotm10="-0.379654" rotm11="0.923859" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="32">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.918808" rotm01="0.391632" rotm10="-0.391632" rotm11="0.918808" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="33">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.913605" rotm01="0.403549" rotm10="-0.403549" rotm11="0.913605" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="34">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.908249" rotm01="0.415390" rotm10="-0.415390" rotm11="0.908249" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="35">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.902740" rotm01="0.427170" rotm10="-0.427170" rotm11="0.902740" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="36">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.897079" rotm01="0.438873" rotm10="-0.438873" rotm11="0.897079" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="37">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.891266" rotm01="0.450500" rotm10="-0.450500" rotm11="0.891266" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="38">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.885300" rotm01="0.462051" rotm10="-0.462051" rotm11="0.885300" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="39">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.879196" rotm01="0.473526" rotm10="-0.473526" rotm11="0.879196" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="40">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.872925" rotm01="0.484924" rotm10="-0.484924" rotm11="0.872925" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="41">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.866531" rotm01="0.496231" rotm10="-0.496231" rotm11="0.866531" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="42">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.861633" rotm01="0.504623" rotm10="-0.504623" rotm11="0.861633" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="43">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.854980" rotm01="0.515778" rotm10="-0.515778" rotm11="0.854980" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="44">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.848175" rotm01="0.526871" rotm10="-0.526871" rotm11="0.848175" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="45">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.841217" rotm01="0.537857" rotm10="-0.537857" rotm11="0.841217" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="46">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.834137" rotm01="0.548752" rotm10="-0.548752" rotm11="0.834137" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="47">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.826904" rotm01="0.559555" rotm10="-0.559555" rotm11="0.826904" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="48">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.819534" rotm01="0.570282" rotm10="-0.570282" rotm11="0.819534" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="49">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.812027" rotm01="0.580887" rotm10="-0.580887" rotm11="0.812027" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="50">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.804382" rotm01="0.591415" rotm10="-0.591415" rotm11="0.804382" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="51">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.796600" rotm01="0.601837" rotm10="-0.601837" rotm11="0.796600" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="52">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.790680" rotm01="0.609558" rotm10="-0.609558" rotm11="0.790680" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="53">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.782669" rotm01="0.619797" rotm10="-0.619797" rotm11="0.782669" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="54">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.774521" rotm01="0.629944" rotm10="-0.629944" rotm11="0.774521" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="55">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.766251" rotm01="0.639969" rotm10="-0.639969" rotm11="0.766251" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="56">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.757843" rotm01="0.649887" rotm10="-0.649887" rotm11="0.757843" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="57">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.749313" rotm01="0.659698" rotm10="-0.659698" rotm11="0.749313" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="58">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.740646" rotm01="0.669403" rotm10="-0.669403" rotm11="0.740646" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="59">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.731857" rotm01="0.678986" rotm10="-0.678986" rotm11="0.731857" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="60">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.722946" rotm01="0.688461" rotm10="-0.688461" rotm11="0.722946" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="61">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.713913" rotm01="0.697830" rotm10="-0.697830" rotm11="0.713913" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="62">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.707108" rotm01="0.704758" rotm10="-0.704758" rotm11="0.707108" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="63">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.697861" rotm01="0.713913" rotm10="-0.713913" rotm11="0.697861" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="64">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.688507" rotm01="0.722946" rotm10="-0.722946" rotm11="0.688507" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="65">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.679031" rotm01="0.731857" rotm10="-0.731857" rotm11="0.679031" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="66">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.669434" rotm01="0.740646" rotm10="-0.740646" rotm11="0.669434" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="67">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.659729" rotm01="0.749298" rotm10="-0.749298" rotm11="0.659729" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="68">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.649918" rotm01="0.757843" rotm10="-0.757843" rotm11="0.649918" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="69">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.639999" rotm01="0.766251" rotm10="-0.766251" rotm11="0.639999" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="70">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.629974" rotm01="0.774521" rotm10="-0.774521" rotm11="0.629974" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="71">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.619827" rotm01="0.782669" rotm10="-0.782669" rotm11="0.619827" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="72">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.609589" rotm01="0.790680" rotm10="-0.790680" rotm11="0.609589" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="73">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.601868" rotm01="0.796600" rotm10="-0.796600" rotm11="0.601868" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="74">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.591446" rotm01="0.804367" rotm10="-0.804367" rotm11="0.591446" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="75">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.580933" rotm01="0.812027" rotm10="-0.812027" rotm11="0.580933" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="76">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.570312" rotm01="0.819534" rotm10="-0.819534" rotm11="0.570312" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="77">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.559601" rotm01="0.826904" rotm10="-0.826904" rotm11="0.559601" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="78">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.548798" rotm01="0.834137" rotm10="-0.834137" rotm11="0.548798" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="79">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.537888" rotm01="0.841217" rotm10="-0.841217" rotm11="0.537888" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="80">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.526901" rotm01="0.848175" rotm10="-0.848175" rotm11="0.526901" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="81">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.515823" rotm01="0.854980" rotm10="-0.854980" rotm11="0.515823" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="82">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.504654" rotm01="0.861633" rotm10="-0.861633" rotm11="0.504654" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="83">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.496262" rotm01="0.866531" rotm10="-0.866531" rotm11="0.496262" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="84">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.484955" rotm01="0.872940" rotm10="-0.872940" rotm11="0.484955" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="85">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.473557" rotm01="0.879196" rotm10="-0.879196" rotm11="0.473557" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="86">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.462082" rotm01="0.885300" rotm10="-0.885300" rotm11="0.462082" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="87">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.450516" rotm01="0.891266" rotm10="-0.891266" rotm11="0.450516" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="88">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.438889" rotm01="0.897079" rotm10="-0.897079" rotm11="0.438889" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="89">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.427185" rotm01="0.902740" rotm10="-0.902740" rotm11="0.427185" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="90">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.415421" rotm01="0.908249" rotm10="-0.908249" rotm11="0.415421" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="91">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.403564" rotm01="0.913605" rotm10="-0.913605" rotm11="0.403564" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="92">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.391663" rotm01="0.918808" rotm10="-0.918808" rotm11="0.391663" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="93">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.382706" rotm01="0.922592" rotm10="-0.922592" rotm11="0.382706" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="94">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.370667" rotm01="0.927536" rotm10="-0.927536" rotm11="0.370667" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="95">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.358582" rotm01="0.932297" rotm10="-0.932297" rotm11="0.358582" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="96">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.346436" rotm01="0.936920" rotm10="-0.936920" rotm11="0.346436" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="97">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.334229" rotm01="0.941376" rotm10="-0.941376" rotm11="0.334229" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="98">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.321960" rotm01="0.945679" rotm10="-0.945679" rotm11="0.321960" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="99">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.309631" rotm01="0.949814" rotm10="-0.949814" rotm11="0.309631" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="100">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.297256" rotm01="0.953796" rotm10="-0.953796" rotm11="0.297256" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="101">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.284851" rotm01="0.957626" rotm10="-0.957626" rotm11="0.284851" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="102">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.272369" rotm01="0.961273" rotm10="-0.961273" rotm11="0.272369" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="103">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.259857" rotm01="0.964783" rotm10="-0.964783" rotm11="0.259857" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="104">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.250473" rotm01="0.967285" rotm10="-0.967285" rotm11="0.250473" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="105">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.237885" rotm01="0.970490" rotm10="-0.970490" rotm11="0.237885" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="106">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.225250" rotm01="0.973541" rotm10="-0.973541" rotm11="0.225250" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="107">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.212570" rotm01="0.976425" rotm10="-0.976425" rotm11="0.212570" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="108">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.199875" rotm01="0.979141" rotm10="-0.979141" rotm11="0.199875" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="109">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.187134" rotm01="0.981705" rotm10="-0.981705" rotm11="0.187134" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="110">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.174362" rotm01="0.984085" rotm10="-0.984085" rotm11="0.174362" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="111">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.161560" rotm01="0.986313" rotm10="-0.986313" rotm11="0.161560" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="112">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.148727" rotm01="0.988373" rotm10="-0.988373" rotm11="0.148727" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="113">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.135880" rotm01="0.990265" rotm10="-0.990265" rotm11="0.135880" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="114">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.126251" rotm01="0.991562" rotm10="-0.991562" rotm11="0.126251" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="115">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.113373" rotm01="0.993164" rotm10="-0.993164" rotm11="0.113373" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="116">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.100449" rotm01="0.994598" rotm10="-0.994598" rotm11="0.100449" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="117">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.087524" rotm01="0.995850" rotm10="-0.995850" rotm11="0.087524" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="118">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.074585" rotm01="0.996948" rotm10="-0.996948" rotm11="0.074585" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="119">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.061630" rotm01="0.997879" rotm10="-0.997879" rotm11="0.061630" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="120">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.048660" rotm01="0.998642" rotm10="-0.998642" rotm11="0.048660" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="121">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.035706" rotm01="0.999222" rotm10="-0.999222" rotm11="0.035706" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="122">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.022720" rotm01="0.999649" rotm10="-0.999649" rotm11="0.022720" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="123">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.009735" rotm01="0.999893" rotm10="-0.999893" rotm11="0.009735" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="124">
+			<placeobject flags="Move|HasMatrix" depth="1" rotm00="0.000092" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000092" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="43" image="art\Textures\apt_fem_m_load_1.tga"/>
+	<shape id="44" top="-90.000000" left="-90.000000" bottom="90.000000" right="90.000000" geometry="fem_m_load_geometry\44.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_1.tga:1:0:0:1:1885:91
+			t -90:90:-90:-90:90:-90
+			t 90:-90:90:90:-90:90
+		</ru>
+	</shape>
+	<sprite id="45">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="44" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="46">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="42" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<empty id="47"/>
+	<image id="48" image="art\Textures\apt_fem_m_load_1.tga"/>
+	<shape id="49" top="0.000000" left="0.000000" bottom="240.000000" right="165.000000" geometry="fem_m_load_geometry\49.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_load_1.tga:1:0:0:1:1628:1
+			t 0:240:0:0:165:0
+			t 165:0:165:240:0:240
+		</ru>
+	</shape>
+	<shape id="50" top="0.050000" left="0.050000" bottom="100.050003" right="100.050003" geometry="fem_m_load_geometry\50.ru">
+		<ru>
+			c
+			s s:255:255:255:255
+			t 0.05:100.05:0.05:0.05:100.05:0.05
+			t 100.05:0.05:100.05:100.05:0.05:100.05
+		</ru>
+	</shape>
+	<sprite id="51">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="50" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="52" top="0.150000" left="0.000000" bottom="200.149994" right="200.000000" geometry="fem_m_load_geometry\52.ru">
+		<ru>
+			c
+			s s:255:0:0:255
+			t 0:200.15:0:0.15:200:0.15
+			t 200:0.15:200:200.15:0:200.15
+		</ru>
+	</shape>
+	<sprite id="53">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="52" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="54">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="49" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.987503" tx="405.000000" ty="1.500000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="49" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.987503" tx="-165.000000" ty="1.500000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform" depth="3" character="51" rotm00="2.399994" rotm01="0.000000" rotm10="0.000000" rotm11="2.399994" tx="-0.100000" ty="-0.100000" red="0" green="0" blue="0" alpha="255" unknown="0">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform" depth="5" character="51" rotm00="2.320007" rotm01="0.000000" rotm10="0.000000" rotm11="2.320007" tx="3.900000" ty="3.900000" red="0" green="0" blue="0" alpha="255" unknown="12323840">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform" depth="7" character="51" rotm00="2.240005" rotm01="0.000000" rotm10="0.000000" rotm11="2.240005" tx="7.900000" ty="7.900000" red="0" green="0" blue="0" alpha="255" unknown="0">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform" depth="9" character="51" rotm00="2.160004" rotm01="0.000000" rotm10="0.000000" rotm11="2.160004" tx="11.900000" ty="11.900000" red="0" green="0" blue="0" alpha="255" unknown="12323840">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform" depth="11" character="51" rotm00="2.080002" rotm01="0.000000" rotm10="0.000000" rotm11="2.080002" tx="15.900000" ty="15.900000" red="0" green="0" blue="0" alpha="255" unknown="15970401">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasClipAction" depth="13" character="53" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="20.000000" ty="19.850000">
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "_type"
+					setstrvar "MapPreview"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="55">
+	</sprite>
+	<sprite id="56">
+	</sprite>
+</aptdata>
