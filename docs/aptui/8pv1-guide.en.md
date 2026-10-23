@@ -2,43 +2,31 @@
 
 [简体中文](8pv1-guide.md) | English
 
-This guide is for players and modders who want to adjust the interface, keep their mod's visual style, or ask an AI agent to help with the adaptation. You can start with the eight-player pages in this repository without first learning the entire game engine.
+If you have already made a six-player interface in your mod's own style, but see RA3BattleNet's default interface when using RA3BattleNet, this guide explains why and helps you create an eight-player edition from your existing UI. You can also use the example requests to ask an AI agent for help.
 
-This repository provides an eight-player interface in the original game's style. Its resource files use the **`.8pv1`** suffix. RA3BattleNet provides eight-player multiplayer support. Replacing interface files alone does not enable this support.
+**Keep your original six-player edition and add the eight-player edition as a separate set of resources in the same mod.** Without RA3BattleNet, the game continues to use your original interface. With RA3BattleNet, it selects your eight-player edition. Players do not need to swap files each time they launch the game.
 
-## 1. How the game selects these pages
+If you already have a custom six-player UI, read the explanation below and then start with section 5. If you want to edit RA3BattleNet's default eight-player UI, start with section 4.
 
-In RA3, a `.version` file is a short text file that selects which set of interface files to load. For example:
+## 1. Why has my original interface stopped appearing?
 
-```text
-data/aptui/igm_pausemenu.version       contains .12
-                  ↓
-data/aptui/igm_pausemenu.12.manifest
-data/aptui/igm_pausemenu.12.bin
-data/aptui/igm_pausemenu.12.imp
-data/aptui/igm_pausemenu.12.relo
-```
+RA3 uses a short `.version` text file for each page to select which set of interface files to load. For example, when its contents are `.12`, the game looks for that page's `.12` files. Your mod may use `.11`, `.12`, or another suffix.
 
-These four files together form a compiled page. Changing the version file's contents to `.8pv1` makes the game request `igm_pausemenu.8pv1.*`. The leading dot is part of the contents.
+With RA3BattleNet enabled, the seven pages listed in section 2 use **`.8pv1`** instead. If your mod only provides its original `.11` or `.12` files and has no matching `.8pv1` files, the game uses RA3BattleNet's default eight-player interface. Using default resources when custom ones are missing is called **fallback** loading.
 
-RA3BattleNet already selects `.8pv1` for the seven pages listed below. Players and modders do not need to edit their version files. Once a version is selected, the game searches for the page files in this order:
+The change in appearance comes from selecting a different set of files. Your six-player resources can stay in the mod; selecting `.8pv1` does not delete or rewrite them.
 
-```text
-The game's existing resource paths (including loaded mod BIGs) → RA3BattleNet's default eight-player interface
-```
+| How the game is launched | Selected interface version | What appears |
+| --- | --- | --- |
+| Without RA3BattleNet | The version selected by your mod's original `.version`, such as `.12` | Your original custom six-player interface |
+| With RA3BattleNet, before your mod provides `.8pv1` | `.8pv1` | RA3BattleNet's default eight-player interface |
+| With RA3BattleNet, after your mod provides its own `.8pv1` | `.8pv1` | Your mod's own eight-player interface |
 
-The default interface provided by RA3BattleNet is used only when no custom page is found. This is called fallback loading. BIG is RA3's resource archive format; you can put your modified interface files in your mod's BIG.
+To adapt your UI, **keep the original six-player resources and `.version` file, and create a separate `.8pv1` edition in the same style**. Include both sets in your mod. RA3BattleNet selects `.8pv1` for you, so you do not need to change your mod's original `.version` permanently or ask players to swap files manually.
 
-Therefore, **a `.8pv1` page in a mod BIG can override the default eight-player UI if its path and filename match**. The BIG must actually be loaded by the running game; placing files in an unloaded BIG has no effect. RA3BattleNet preserves the game's existing resource search order and does not rearrange the priority of different mods.
+`.8pv1` is the filename convention for these pages. Renaming the old files alone does not add room or controls for two more players. The steps below help you make the necessary layout and logic changes.
 
-Files are looked up individually; the game does not automatically treat the four files as a single set. When overriding a page, include the `manifest/bin/imp/relo` files from the same build, together with any additional resources they need. Avoid mixing files from different builds.
-
-- `priority` is the directory from which RA3BattleNet reads version selection files first. Do not put compiled interface files there, as doing so would prevent mod BIGs from taking priority over them.
-- A `.version` file in a BIG cannot change the version RA3BattleNet selects for these seven pages. Modders should provide their own `.8pv1` pages instead of trying to use a version file to switch back to `.12`.
-- You can keep your mod's original default pages, such as `.12`, and their `.version` files for use without RA3BattleNet's eight-player functionality.
-- Both version selections and pages are cached. Restart the game after making changes; do not expect them to reload immediately.
-
-**The Content repository does not contain or generate these `.version` files.** They are supplied with RA3BattleNet's resources. Content has its own build and distribution process; placing files in this repository does not automatically package them into a BIG. The BIG instructions above are for custom mods.
+RA3BattleNet provides eight-player game support; the interface files provide the display and controls. Replacing interface files alone does not enable eight-player multiplayer.
 
 ## 2. What the repository contains
 
@@ -72,8 +60,6 @@ Data/aptui/
 Use `edit.xml` to edit the interface. `igm_pauseMenu.xml` tells the compiler which files it needs, while the parent-level `igm_pausemenu.8pv1.xml` determines the final output filename. Do not confuse these three kinds of XML. After editing `edit.xml`, use AptXmlAI to generate the APT and its companion files, then compile them through Content's build process or the SDK's BinaryAssetBuilder. The repository stores these source inputs, not the final four interface files.
 
 [`baseline/`](baseline/) contains the original, unmodified editing XML for the seven pages, so you or an agent can compare what changed for the eight-player interface.
-
-Six-player compatibility mode uses the same `.8pv1` pages; there is no need to swap files. The existing pages adjust the displayed rows according to the game mode and actual player list. Preserve these checks when editing: **an eight-player game with only two players is still in eight-player mode**. The number of players currently present must not be the only factor that determines the page's capacity.
 
 ## 3. Prepare the tools
 
@@ -123,19 +109,26 @@ After a successful build:
 
 **When contributing to Content**, copy the checked contents of `cli/` (excluding `export.xml`) into the original page subdirectory, keeping your edited `edit.xml`. Confirm that the asset declaration contains no absolute paths to your computer, and remove old generated files only after confirming that they are no longer referenced. Keep the corresponding `Data/aptui/<page>.8pv1.xml` entry and use Content's own build process. Do not commit `package/`, caches, or the temporary working directory.
 
-**When creating an override for your own mod**, put the `data/` tree from `package/` into a BIG that the game will load. Paths such as `data/aptui/igm_pausemenu.8pv1.manifest` must appear directly inside the BIG, without an extra `package/`, `Additional/`, or mod-name folder. If your SDK project copies files from `Additional`, you can place the `data/` tree in your mod's `Additional/` directory and package it normally. Follow your project's build rules.
+Content has its own build and distribution process. It does not automatically package files into a BIG, and it does not contain or generate `.version` files. The version selection files needed by RA3BattleNet are supplied with RA3BattleNet's resources.
+
+**When creating an eight-player edition for your own mod**, add the `data/` tree from `package/` to your mod's BIG, keeping the original six-player files and `.version` file. BIG is RA3's resource archive format, and the running game must actually load the archive. Paths such as `data/aptui/igm_pausemenu.8pv1.manifest` must appear directly inside the BIG, without an extra `package/`, `Additional/`, or mod-name folder. If your SDK project copies files from `Additional`, you can place the `data/` tree in your mod's `Additional/` directory and package it normally. Follow your project's build rules.
+
+A compiled page consists of four files: `manifest/bin/imp/relo`. Include all four from the same build, along with any required `.cdata` files. Providing only some of them may mix your files with files from the default interface. RA3BattleNet preserves the game's existing resource search order: matching `.8pv1` paths and filenames in loaded BIGs take priority over the default interface. Editing your mod's own `.version` cannot change RA3BattleNet's selection for these seven pages.
+
+Put these interface files in your mod's BIG. RA3BattleNet's `priority` directory is used to give version selection files priority; it is not an installation directory for custom interfaces. Placing interface files there would prevent BIGs from overriding them.
 
 The script checks that the re-expanded layout and actions match the editing source, that the referenced assets are present, and that the four output files belong together. This build-and-re-expand comparison is also called a round-trip check. If the page depends on another resource package's manifest, the script stops and reports that it needs separate handling. A successful build still needs in-game checks for appearance and interaction.
 
-## 5. Preserve your own UI's style
+## 5. Create an eight-player edition of your six-player UI
 
-Do not replace your mod's background and faction icons with the entire original-style eight-player page. Start with your own page's complete inputs and bring across the logic and layout changes needed for eight players.
+The aim is to add eight-player support to your own interface while keeping your mod's style and its original six-player edition. Save a working copy of your mod, then copy the page inputs to a separate working directory and use that copy to create `.8pv1`. This repository's eight-player pages and original baselines help you or an agent identify the controls and logic to add.
 
-1. Gather the page's matching APT, CONST, DAT, asset declaration XML, RU files, and textures. If you only have a BIG, or the `manifest/bin/imp/relo` files extracted from one, use a resource extraction tool to recover these source inputs first. `ra3apt-cli expand` reads APT files; it cannot read BIGs or the four compiled files directly.
+1. Keep the original `.version` file and the six-player resources it selects, such as `.11` or `.12`. Prepare a copy of the page's matching APT, CONST, DAT, asset declaration XML, RU files, and textures. If you only have a BIG, or the `manifest/bin/imp/relo` files extracted from one, use a resource extraction tool to recover these source inputs first. `ra3apt-cli expand` reads APT files; it cannot read BIGs or the four compiled files directly.
 2. Re-expand the original page with the current CLI. Keep the original inputs and unmodified XML for comparison.
 3. Compare the original XML with the eight-player `edit.xml`. Identify the changes to player row counts, related controls, positions, and logic that hides unused rows, then apply them to your own page.
 4. Preserve your page's canvas, artwork, faction labels, and logic for reading the game's player list. The pause menu should continue to display the actual list; do not simply add two visible empty rows.
-5. Build, re-expand, and compare the differences, then generate the final interface files. Pay particular attention to DAT-to-texture bindings, references to RU geometry files, and whether assets you did not intend to change remain unchanged.
+5. Build, re-expand, and compare the differences, then generate the `.8pv1` interface files. Pay particular attention to DAT-to-texture bindings, references to RU geometry files, and whether assets you did not intend to change remain unchanged.
+6. Follow section 4 to add the eight-player edition to your mod BIG, keeping the original six-player edition and its `.version` file. Then check the result both without and with RA3BattleNet. You can adapt each page separately; pages for which you have not supplied `.8pv1` will still use RA3BattleNet's default interface. To keep your style throughout, check all seven pages in the table.
 
 For example, you can run the CLI directly:
 
@@ -155,9 +148,9 @@ The CLI's output APT must keep the original page name, such as `igm_pauseMenu.ap
 
 ## 6. Example requests for an agent
 
-Fill in the paths and the result you want, then send the following request to your agent:
+If you already have a custom six-player interface, fill in the paths and the page you want to adapt, then send the following request to your agent:
 
-> Please adapt my pause menu for the RA3BattleNet `.8pv1` eight-player UI. Content is at `<path>`, my original page's complete inputs are at `<path>`, AptXmlAI is at `<path>`, and the RA3 Mod SDK is at `<path>`. First read Content's `docs/aptui/8pv1-guide.en.md`, along with AptXmlAI's `AGENTS.md`, `APT修改指南.md`, and CLI README. Compare the original XML in Content with the eight-player editing XML, then expand my original APT. Preserve my mod's canvas, background, faction icons, textures, geometry, and existing queries. Add only the rows needed to accommodate eight players, adjust the layout, and preserve the logic that hides unused rows. Do not replace all occurrences of the number 6 or copy control IDs blindly. In a separate directory, complete the CLI build→expand comparison and SDK compilation, and check all asset references and that the four output files belong together. Give me the edited source, matching build inputs, `.8pv1` output, and brief test steps. Keep the original `.version` and default-suffix resources, and do not put compiled interface files in priority. Complete the offline work first without automatically starting or deploying to my game. Clearly report what has passed build checks and what has not yet been tested in the game.
+> My mod already has a custom six-player UI. I want to keep its style and create a separate eight-player edition for use with RA3BattleNet. Start with `<page, for example the pause menu>`. Content is at `<path>`, my original page's complete inputs are at `<path>`, AptXmlAI is at `<path>`, and the RA3 Mod SDK is at `<path>`. First read Content's `docs/aptui/8pv1-guide.en.md`, along with AptXmlAI's `AGENTS.md`, `APT修改指南.md`, and CLI README. Work on a copy in a separate directory. Keep the original `.version` file and the six-player resources it selects, such as `.11` or `.12`, and add only a separate `.8pv1` edition. Compare the original XML in Content with the eight-player editing XML, then expand my original APT. Preserve my mod's canvas, background, faction icons, textures, geometry, and existing queries. Add the controls and logic needed for eight players, adjust the layout, and preserve the logic that hides unused rows. Do not replace all occurrences of the number 6 or copy control IDs blindly. Complete the CLI build→expand comparison and SDK compilation, checking asset references and that the four output files belong together. Give me the edited source, matching build inputs, `.8pv1` output, and a list of paths to add to the BIG. Do not put interface files in priority. The test instructions should cover the original six-player interface without RA3BattleNet, my custom eight-player interface with RA3BattleNet, and RA3BattleNet's six-player compatibility mode. Complete the offline work first without automatically starting or deploying to my game. Clearly report what has passed build checks and what has not yet been tested in the game.
 
 For a small change to an existing UI, you can use this shorter request:
 
@@ -167,7 +160,17 @@ Asking the agent to locate the control you want, make one small change, and expl
 
 ## 7. What to check in the game
 
-After restarting the game, check at least a game with few players, a full eight-player game, six-player compatibility mode, and leaving and reopening the same page. In the pause menu, check names, colors, factions, defeated status, and row counts. In the lobby, check interactions with the two extra slots and map starting positions. On the loading and postgame screens, check the extra slots, empty rows, and statistics.
+Restart the game after changing resources or switching how you launch it. The game caches version selections and pages, so do not expect them to reload immediately. For a mod with an existing six-player interface, check at least these three cases:
+
+| Test case | Expected result |
+| --- | --- |
+| Launch the mod normally without RA3BattleNet | The six-player interface selected by the original `.version` still works |
+| Use eight-player mode with RA3BattleNet | Your own `.8pv1` interface displays and works correctly; check both a few players and a full eight-player game |
+| Use six-player compatibility mode with RA3BattleNet | Your own `.8pv1` is still used and displays correctly for that mode; it does not switch back to the original `.11` or `.12` |
+
+RA3BattleNet's six-player compatibility mode is different from running without RA3BattleNet. Keep the page logic that adjusts rows according to the game mode and actual player list. An eight-player game with only two players must still have capacity for eight; do not determine capacity solely from the number currently present.
+
+Also check leaving and reopening the same page. In the pause menu, check names, colors, factions, defeated status, and row counts. In the lobby, check interactions with the two extra slots and map starting positions. On the loading and postgame screens, check the extra slots, empty rows, and statistics.
 
 When editing multiplayer or replay interfaces, test those actual scenarios. A page opening in skirmish does not prove that multiplayer, replays, or the full loading sequence work correctly. If an override has no effect, first check that the BIG is loaded, its internal paths are correct, and the requested version is `.8pv1`. Then check whether you replaced only some of the four matching files.
 
