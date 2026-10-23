@@ -2,7 +2,7 @@
 
 ## 八人 UI（8pv1）
 
-七个页面的编辑源码和编译所需文件位于 [Data/aptui](Data/aptui)。[玩家与 modder 修改指南](docs/aptui/8pv1-guide.md) 介绍 version 选择、默认界面的加载顺序、Mod BIG 覆盖、AptXmlAI 工具及 Agent 操作示例。这些页面通过 Content 现有流程编译，仓库中不包含 version 或编译后的 manifest/bin/imp/relo 文件。
+七个页面的编辑源码和编译所需文件位于 [Data/aptui](Data/aptui)。[玩家与 modder 修改指南](docs/aptui/8pv1-guide.md)（[English](docs/aptui/8pv1-guide.en.md)） 介绍 version 选择、默认界面的加载顺序、Mod BIG 覆盖、AptXmlAI 工具及 Agent 操作示例。这些页面通过 Content 现有流程编译，仓库中不包含 version 或编译后的 manifest/bin/imp/relo 文件。
 
 ## 地图要求
 - 假如往地图内添加了脚本、队伍、命名单位，则它们的名称需要是英文，不能是中文
