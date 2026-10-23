@@ -1,0 +1,5193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptdata>
+	<movieclip screensizex="1365" screensizey="768" unknown="33">
+		<imports>
+			<import name="lowerScreenBar Symbol" movie=".\Components\fe_m_generalScreenComponents" character="3"/>
+			<import name="std_MousebuttonSymbol" movie="../cafe/mouseComponents/std_MouseButton" character="4"/>
+			<import name="gameSettings" movie="screens/fe_m_assetsGameSetup" character="5"/>
+			<import name="chatComponentSymbol" movie="../mouse/Components/chatComponent" character="13"/>
+			<import name="playerSlotMC" movie="screens/fe_m_assetsGameSetup" character="28"/>
+			<import name="ScreenTitleBarSymbol" movie=".\Components\fe_m_generalScreenComponents" character="29"/>
+		</imports>
+		<exports>
+			<export character="30" name="__Packages.Cafe2_BaseUIScreen"/>
+			<export character="31" name="__Packages.IListboxEventListener"/>
+			<export character="32" name="__Packages.GameSetupBase"/>
+			<export character="33" name="__Packages.fem_m_gameSetup"/>
+		</exports>
+		<frames>
+			<frame id="0">
+				<background color="-6710887"/>
+				<action><![CDATA[
+					pushstr "screen"
+					pushthis
+					EAPushOne
+					pushstr "fem_m_gameSetup"
+					ActionNew
+					ActionDefineLocal
+					stop
+					actionEnd
+				]]></action>
+				<placeobject flags="HasCharacter|HasMatrix" depth="1" character="2" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="2" character="3" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="687.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="4" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.000000" ty="712.000000">
+					<poname name="randomMap"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Up/Down"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte -1
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$GUI:RandomMap"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="5" rotm00="1.000092" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.800003" ty="101.099998">
+					<poname name="gameSettings"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="58" character="7" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="191.100006" ty="84.699997">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="59" character="9" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="225.100006" ty="94.349998">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="62" character="11" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="760.299988" ty="84.150002">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="63" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="795.299988" ty="93.349998">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="64" character="13" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="766.000000" ty="117.699997">
+					<poname name="chatComponent"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_numLines"
+						zerovar
+						pushstr "m_width"
+						pushshort 399
+						ActionSetVariable
+						pushstr "m_chatMode"
+						EAPushOne
+						ActionSetVariable
+						pushstr "m_preservePlacement"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_height"
+						pushshort 259
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="82" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="344.549988" ty="712.000000">
+					<poname name="backButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_width"
+						pushbyte 75
+						ActionSetVariable
+						pushstr "m_textAlign"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_labelPosition"
+						setstrvar "right align"
+						pushstr "m_label_x"
+						zerovar
+						pushstr "m_label_y"
+						zerovar
+						pushstr "m_focusDirs"
+						setstrvar "Up/Down"
+						pushstr "m_iconType"
+						setstrvar "default"
+						pushstr "m_extLabel"
+						setstrvar ""
+						pushstr "m_nTruncateType"
+						zerovar
+						pushstr "m_label"
+						setstrvar "$Back"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_global.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte 10
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="84" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="855.450012" ty="712.000000">
+					<poname name="playButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_width"
+						pushbyte 75
+						ActionSetVariable
+						pushstr "m_textAlign"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_labelPosition"
+						setstrvar "right align"
+						pushstr "m_label_x"
+						zerovar
+						pushstr "m_label_y"
+						zerovar
+						pushstr "m_focusDirs"
+						setstrvar "Up/Down"
+						pushstr "m_iconType"
+						setstrvar "default"
+						pushstr "m_extLabel"
+						setstrvar ""
+						pushstr "m_nTruncateType"
+						zerovar
+						pushstr "m_label"
+						setstrvar "$StartGame"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_global.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte 9
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="86" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000229" tx="191.500000" ty="414.100006">
+					<poname name="playerSlotBg"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="112" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="604.000000">
+					<poname name="slotMC_6"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="96" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="656.000000">
+					<poname name="slotMC_8"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="104" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="630.000000">
+					<poname name="slotMC_7"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="128" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="578.000000">
+					<poname name="slotMC_5"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="144" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="552.000000">
+					<poname name="slotMC_4"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="160" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="526.000000">
+					<poname name="slotMC_3"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="176" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="500.000000">
+					<poname name="slotMC_2"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="192" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.500000" ty="474.000000">
+					<poname name="slotMC_1"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasClipAction" depth="208" character="29" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="19.400000">
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_title"
+						setstrvar "$MULTIPLAYER_LOBBY_SCREEN_TITLE"
+						pushstr "m_DropShadow"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_Outline"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_visible"
+						pushtrue
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<initaction sprite="30"><![CDATA[
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx0
+					pushglobal
+					pushconst "Cafe2_BaseUIScreen"
+					function (reg3:screen)(regs:4, reg1:this, reg2:_global)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushreg 3
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushreg 1
+						getnamedmember "frameDelayedInitCallback"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						ActionSetMember
+					end
+					setreg 1
+					ActionSetMember
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:2)
+						pushconst "\n\nCafe2_BaseUIScreen::frameDelayedInitCallback() :"
+						ActionTrace
+						pushconst "\nscreens and move the call to initGUI() to frameDelayedInit().\n"
+						pushconst "N.B. You *must* override frameDelayedInit() in your"
+						pushbyte 2
+						pushconst "Array"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushreg 1
+						EAPushZero
+						ActionGetMember
+						pushreg 1
+						EAPushOne
+						ActionGetMember
+						ActionNewAdd
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "frameDelayedInitCallback"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushnull
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "frameDelayedInit"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroComplete"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx3:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx1
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx2
+						jump lxnx1
+					lxnx2:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx3
+					lxnx1:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						pushnull
+						ActionNewEquals
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						EAPushOne
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "changeMainScreen"
+					end
+					lxnx4:
+					ActionSetMember
+					pushreg 2
+					pushconst "introComplete"
+					function (reg1:theComponent)(regs:2)
+						pushconst "Cafe2_BaseUIScreen::introComplete()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "restoreVisualState"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						pushconst "m_introCount"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						ActionDecrement
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx5
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "onIntrosComplete"
+					end
+					lxnx5:
+					ActionSetMember
+					pushreg 2
+					pushconst "onIntrosComplete"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "Cafe2_BaseUIScreen::onIntrosComplete()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "localEventHandler"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "setLocalEventHandler"
+						EAPushZero
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "enableCurrentLocalEventHandler"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "registerIntroOuttroComponents"
+					function (reg3:components)(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::registerIntroOuttroComponents()"
+						ActionTrace
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushreg 3
+						ActionSetMember
+						pushreg 1
+						pushconst "m_introCount"
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionSetMember
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx7:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_introCount"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx6
+						pushreg 1
+						getnamedmember "introComplete"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "setIntroCallback"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx7
+					end
+					lxnx6:
+					ActionSetMember
+					pushreg 2
+					pushconst "executeBackFunction"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::executeBackFunction"
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx10:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx8
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx9
+						jump lxnx8
+					lxnx9:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx10
+					lxnx8:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx11
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx11:
+					ActionSetMember
+					pushreg 2
+					pushconst "startIntro"
+					function ()(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startIntro()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx13:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx12
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "intro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx13
+					end
+					lxnx12:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttro"
+					function (reg4:newScreen)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx14
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx16:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx15
+						pushreg 1
+						getnamedmember "outtroComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx16
+					lxnx15:
+						jump lxnx17
+					lxnx14:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroComplete"
+					end
+					lxnx17:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttroAndCallBack"
+					function (reg4:doAfterOuttroComplete)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_executeOuttroCallBack"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx18
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx20:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx19
+						pushreg 1
+						getnamedmember "outtroAndCallBackComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx20
+					lxnx19:
+						jump lxnx21
+					lxnx18:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroAndCallBackComplete"
+					end
+					lxnx21:
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroAndCallBackComplete"
+					function (reg2:theComponent)(regs:3)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 1
+						ActionPop
+					lxnx24:
+						pushreg 1
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx22
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 1
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx23
+						jump lxnx22
+					lxnx23:
+						pushreg 1
+						ActionIncrement
+						setreg 1
+						ActionPop
+						jump lxnx24
+					lxnx22:
+						EAPushOne
+						pushreg 1
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx25
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "m_executeOuttroCallBack"
+					end
+					lxnx25:
+					ActionSetMember
+					pushreg 2
+					pushconst "backButtonClicked"
+					function ()(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::backButtonClicked()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx26
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx28:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx27
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "executeBackFunction"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx28
+					lxnx27:
+						jump lxnx29
+					lxnx26:
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx29:
+					ActionSetMember
+					pushreg 2
+					pushconst "localEventHandler"
+					function (reg2:keyCode, reg0:controller)(regs:3, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::localEventHandler() keyCode == "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						getnamedmember "gFM"
+						callnamedmethodpop "handleDefaultInputs"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "clearData"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushnull
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushnull
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "bind0"
+					function (obj, func)
+						function ()
+							pushvar "obj"
+							EAPushOne
+							pushvar "func"
+							callnamedmethodpop "call"
+						end
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "m_changeToScreen"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_executeOuttroCallBack"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_uiComponentArray"
+					EAPushZero
+					pushconst "Array"
+					ActionNew
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx0:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="31"><![CDATA[
+					pushglobal
+					getnamedmember "IListboxEventListener"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx30
+					pushglobal
+					pushconst "IListboxEventListener"
+					function ()
+					end
+					ActionSetMember
+					lxnx30:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="32"><![CDATA[
+					pushglobal
+					getnamedmember "GameSetupBase"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx31
+					pushglobal
+					pushconst "GameSetupBase"
+					function (reg4:screen)(regs:5, reg1:this, reg2:super, reg3:_global)
+						pushreg 4
+						EAPushOne
+						pushreg 2
+						pushundefined
+						callmethodpop
+						pushconst "GameSetupBase::GameSetupBase()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushreg 1
+						ActionSetMember
+						pushreg 1
+						pushconst "m_localMessageDispatcher"
+						pushreg 1
+						getnamedmember "localMessageHandler"
+						pushreg 1
+						pushbyte 2
+						pushreg 3
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						ActionSetMember
+						pushreg 1
+						pushconst "m_mapIds"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_screenButtons"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						getnamedmember "onScreenExit"
+						pushreg 1
+						pushbyte 2
+						pushreg 3
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						getnamedmember "gSM"
+						callnamedmethodpop "setOnExitScreen"
+					end
+					setreg 1
+					ActionSetMember
+					pushglobal
+					getnamedmember "GameSetupBase"
+					pushvar "Cafe2_BaseUIScreen"
+					extends
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushglobal
+					getnamedmember "IListboxEventListener"
+					EAPushOne
+					pushglobal
+					getnamedmember "GameSetupBase"
+					ActionImplementsOp
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:4, reg1:this, reg2:_global)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?IsPcGameHost"
+						pushreg 3
+						geturl2
+						pushreg 1
+						pushconst "m_isHost"
+						pushreg 3
+						getnamedmember "IsPcGameHost"
+						pushconst "1"
+						ActionNewEquals
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initGUI"
+						pushreg 1
+						getnamedmember "m_localMessageDispatcher"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gMH"
+						callnamedmethodpop "addMessageHandler"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "OnListboxIndexMouseClick"
+					function (reg2:index, reg0:previouslySelectedIndex)(regs:3, reg1:this)
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "OnMapListSelectionChanged"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "OnListboxIndexElementMouseClick"
+					function (reg2:index, reg0:element, reg0:previouslySelectedIndex)(regs:3, reg1:this)
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "OnMapListSelectionChanged"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initGUI"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushwconst "ra3bnLogicalRows"
+						pushbyte 6
+						ActionSetMember
+						pushwconst "Ra3BN_UI8Mode"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						geturl2
+						pushreg 1
+						pushwconst "m_logicalRows"
+						pushbyte 6
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushwconst "ra3bnLogicalRows"
+						ActionGetMember
+						ActionToNumber
+						pushbyte 8
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue s8_logical_rows_ready
+						pushreg 1
+						pushwconst "m_logicalRows"
+						pushbyte 8
+						ActionSetMember
+					s8_logical_rows_ready:
+						pushconst "GameSetupBase::initGUI() "
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_screenButtons"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "initNavigationButtons"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initMapPanel"
+						pushreg 1
+						getnamedmember "m_screenButtons"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "initRulesPanel"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initPlayerSlots"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initNavigationButtons"
+					function (reg3:navButtons)(regs:4, reg1:this, reg2:_global)
+						pushconst "GameSetupBase::initNavigationButtons() "
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx32
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "playGame"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "push"
+					lxnx32:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "backButton"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "backButton"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "backButtonClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "backButton"
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "backButton"
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "push"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initMapPanel"
+					function ()(regs:5, reg1:this, reg2:_global)
+						pushconst "GameSetupBase::initMapPanel() Map panel movieclip: "
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						ActionNewAdd
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						setreg 4
+						ActionPop
+						pushreg 1
+						pushconst "m_playerStartPosMCArray"
+						pushreg 4
+						getnamedmember "startPosition5"
+						pushreg 4
+						getnamedmember "startPosition4"
+						pushreg 4
+						getnamedmember "startPosition3"
+						pushreg 4
+						getnamedmember "startPosition2"
+						pushreg 4
+						getnamedmember "startPosition1"
+						pushreg 4
+						getnamedmember "startPosition0"
+						pushbyte 6
+						ActionInitArray
+						ActionSetMember
+						EAPushZero
+						pushreg 4
+						pushwconst "startPosition6"
+						ActionGetMember
+						callnamedmethodpop "hide"
+						EAPushZero
+						pushreg 4
+						pushwconst "startPosition6"
+						ActionGetMember
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 4
+						getnamedmember "startPosition7"
+						callnamedmethodpop "hide"
+						EAPushZero
+						pushreg 4
+						getnamedmember "startPosition7"
+						callnamedmethodpop "disable"
+						pushreg 1
+						pushwconst "m_logicalRows"
+						ActionGetMember
+						pushbyte 8
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue s8_start_rows_ready
+						pushreg 4
+						pushwconst "startPosition6"
+						ActionGetMember
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						callnamedmethodpop "push"
+						pushreg 4
+						getnamedmember "startPosition7"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						callnamedmethodpop "push"
+					s8_start_rows_ready:
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx34:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx33
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 3
+						ActionGetMember
+						callnamedmethodpop "hide"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 3
+						ActionGetMember
+						callnamedmethodpop "disable"
+						pushreg 3
+						pushreg 1
+						getnamedmember "onStartPositionClicked"
+						pushreg 1
+						pushbyte 3
+						pushreg 2
+						pushconst "bind1"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 3
+						ActionGetMember
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx34
+					lxnx33:
+						EAPushZero
+						pushreg 4
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 4
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onMapTypeChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 4
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "setOnMouseDownFunction"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "createMapSelectionScrollList"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initRulesPanel"
+					function (reg5:buttons)(regs:6, reg1:this, reg2:_global)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						setreg 3
+						ActionPop
+						pushconst "GameSetupBase::initRulesPanel() Rules panel movieclip: "
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						ActionNewAdd
+						ActionTrace
+						pushvar "extern"
+						getnamedmember "RA3PublicBeta"
+						pushconst "1"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx35
+						pushreg 3
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						jump lxnx36
+					lxnx35:
+						EAPushZero
+						pushreg 3
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 3
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 3
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 3
+						getnamedmember "commentaryCheckbox"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 3
+						getnamedmember "enableVoipCheckbox"
+						callnamedmethodpop "show"
+						pushfalse
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setBroadcastCheckboxVisibility"
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx37
+						EAPushZero
+						pushreg 3
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "commentaryCheckbox"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "enableVoipCheckbox"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onGameSpeedChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind2DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "setOnChange"
+						pushreg 1
+						getnamedmember "onResourcesChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "setOnChange"
+						pushreg 1
+						getnamedmember "onCratesChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 1
+						getnamedmember "onCommentaryChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						getnamedmember "commentaryCheckbox"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 1
+						getnamedmember "onVoipChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						getnamedmember "enableVoipCheckbox"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 3
+						getnamedmember "defaultRules"
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onResetRules"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushreg 4
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "push"
+						jump lxnx36
+					lxnx37:
+						EAPushZero
+						pushreg 3
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "commentaryCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "enableVoipCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 3
+						getnamedmember "defaultRules"
+						callnamedmethodpop "hide"
+						EAPushZero
+						pushreg 3
+						getnamedmember "defaultRules"
+						callnamedmethodpop "disable"
+					end
+					lxnx36:
+					ActionSetMember
+					pushreg 2
+					pushconst "initPlayerSlots"
+					function ()(regs:4, reg1:this, reg2:_global)
+						pushconst "GameSetupBase::initPlayerSlots() "
+						ActionTrace
+						pushreg 1
+						pushconst "m_playerSlots"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "slotMC_6"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "slotMC_5"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "slotMC_4"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "slotMC_3"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "slotMC_2"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "slotMC_1"
+						pushbyte 6
+						ActionInitArray
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushwconst "slotMC_7"
+						ActionGetMember
+						pushconst "_visible"
+						pushreg 1
+						pushwconst "m_logicalRows"
+						ActionGetMember
+						pushbyte 8
+						ActionNewEquals
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushwconst "slotMC_8"
+						ActionGetMember
+						pushconst "_visible"
+						pushreg 1
+						pushwconst "m_logicalRows"
+						ActionGetMember
+						pushbyte 8
+						ActionNewEquals
+						ActionSetMember
+						pushreg 1
+						pushwconst "m_logicalRows"
+						ActionGetMember
+						pushbyte 8
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue s8_player_rows_ready
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushwconst "slotMC_7"
+						ActionGetMember
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						callnamedmethodpop "push"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushwconst "slotMC_8"
+						ActionGetMember
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						callnamedmethodpop "push"
+					s8_player_rows_ready:
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx39:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx38
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						pushconst "slotId"
+						pushreg 3
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "disable"
+						pushreg 1
+						getnamedmember "onPlayerStatusChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "setOnChange"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "factionOptions"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "onFactionChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "factionOptions"
+						callnamedmethodpop "setOnChange"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "onAIPersonalityChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "setOnChange"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "teamOptions"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "onTeamChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "teamOptions"
+						callnamedmethodpop "setOnChange"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "colorOptions"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "onColorChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "colorOptions"
+						callnamedmethodpop "setOnChange"
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						EAPushOne
+						pushreg 1
+						pushwconst "s8_installRoomPopup"
+						ActionCallMethod
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "factionOptions"
+						EAPushOne
+						pushreg 1
+						pushwconst "s8_installRoomPopup"
+						ActionCallMethod
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						EAPushOne
+						pushreg 1
+						pushwconst "s8_installRoomPopup"
+						ActionCallMethod
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "teamOptions"
+						EAPushOne
+						pushreg 1
+						pushwconst "s8_installRoomPopup"
+						ActionCallMethod
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "colorOptions"
+						EAPushOne
+						pushreg 1
+						pushwconst "s8_installRoomPopup"
+						ActionCallMethod
+						ActionPop
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx39
+					end
+					lxnx38:
+					ActionSetMember
+										pushreg 2
+					pushwconst "s8_installRoomPopup"
+					function (reg2:control)(regs:3, reg1:this)
+					pushreg 2
+					pushwconst "__s8_originalShow"
+					ActionGetMember
+					pushundefined
+					ActionNewEquals
+					jumptrue s8_install_new
+					pushundefined
+					ActionReturn
+					s8_install_new:
+					pushreg 2
+					pushwconst "__s8_originalShow"
+					pushreg 2
+					pushwconst "showListbox"
+					ActionGetMember
+					ActionSetMember
+					pushreg 2
+					pushwconst "__s8_originalHide"
+					pushreg 2
+					pushwconst "hideListbox"
+					ActionGetMember
+					ActionSetMember
+					pushreg 2
+					pushwconst "__s8_listY"
+					pushreg 2
+					pushwconst "m_contentClip"
+					ActionGetMember
+					pushwconst "listbox"
+					ActionGetMember
+					getnamedmember "_y"
+					ActionSetMember
+					pushreg 2
+					pushwconst "__s8_scrollY"
+					pushreg 2
+					pushwconst "m_contentClip"
+					ActionGetMember
+					pushwconst "scrollbar"
+					ActionGetMember
+					getnamedmember "_y"
+					ActionSetMember
+					pushreg 2
+					pushwconst "__s8_topDepth"
+					EAPushZero
+					pushvar "Cafe2_BaseUIScreen"
+					getnamedmember "m_screen"
+					getnamedmember "slotMC_1"
+					pushwconst "getDepth"
+					ActionCallMethod
+					EAPushOne
+					ActionNewAdd
+					ActionSetMember
+					pushreg 2
+					pushwconst "showListbox"
+					pushreg 1
+					pushwconst "s8_showRoomPopup"
+					ActionGetMember
+					ActionSetMember
+					pushreg 2
+					pushwconst "hideListbox"
+					pushreg 1
+					pushwconst "s8_hideRoomPopup"
+					ActionGetMember
+					ActionSetMember
+					EAPushZero
+					pushreg 2
+					pushwconst "hideListbox"
+					ActionCallMethod
+					ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushwconst "s8_showRoomPopup"
+					function ()(regs:7, reg1:this)
+					pushreg 1
+					getnamedmember "_parent"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushwconst "__s8_activePopup"
+					ActionGetMember
+					pushundefined
+					ActionNewEquals
+					jumptrue s8_show_old_closed
+					pushreg 2
+					pushwconst "__s8_activePopup"
+					ActionGetMember
+					pushreg 1
+					ActionNewEquals
+					jumptrue s8_show_old_closed
+					EAPushZero
+					pushreg 2
+					pushwconst "__s8_activePopup"
+					ActionGetMember
+					pushwconst "hideListbox"
+					ActionCallMethod
+					ActionPop
+					s8_show_old_closed:
+					EAPushZero
+					pushreg 1
+					pushwconst "__s8_originalShow"
+					ActionCallMethod
+					ActionPop
+					pushreg 1
+					pushwconst "m_contentClip"
+					ActionGetMember
+					setreg 3
+					ActionPop
+					pushreg 3
+					pushwconst "listbox"
+					ActionGetMember
+					setreg 4
+					ActionPop
+					EAPushZero
+					pushreg 4
+					pushwconst "getHeight"
+					ActionCallMethod
+					setreg 5
+					ActionPop
+					pushreg 1
+					pushwconst "__s8_listY"
+					ActionGetMember
+					setreg 6
+					ActionPop
+					pushvar "Cafe2_BaseUIScreen"
+					getnamedmember "m_screen"
+					getnamedmember "backButton"
+					getnamedmember "_y"
+					pushbyte 6
+					ActionSubtract
+					pushreg 2
+					getnamedmember "_y"
+					pushreg 1
+					getnamedmember "_y"
+					ActionNewAdd
+					pushreg 3
+					getnamedmember "_y"
+					ActionNewAdd
+					pushreg 6
+					ActionNewAdd
+					pushreg 5
+					ActionNewAdd
+					ActionNewLessThan
+					ActionLogicalNot
+					jumptrue s8_show_position
+					EAPushZero
+					pushreg 5
+					ActionSubtract
+					pushbyte 4
+					ActionSubtract
+					setreg 6
+					ActionPop
+					s8_show_position:
+					pushreg 4
+					pushconst "_y"
+					pushreg 6
+					ActionSetMember
+					pushreg 3
+					pushwconst "scrollbar"
+					ActionGetMember
+					pushconst "_y"
+					pushreg 1
+					pushwconst "__s8_scrollY"
+					ActionGetMember
+					pushreg 6
+					ActionNewAdd
+					pushreg 1
+					pushwconst "__s8_listY"
+					ActionGetMember
+					ActionSubtract
+					ActionSetMember
+					pushreg 2
+					pushwconst "__s8_savedDepth"
+					ActionGetMember
+					pushundefined
+					ActionNewEquals
+					ActionLogicalNot
+					jumptrue s8_show_depth_ready
+					pushreg 2
+					pushwconst "__s8_savedDepth"
+					EAPushZero
+					pushreg 2
+					pushwconst "getDepth"
+					ActionCallMethod
+					ActionSetMember
+					pushreg 1
+					pushwconst "__s8_topDepth"
+					ActionGetMember
+					EAPushOne
+					pushreg 2
+					pushwconst "swapDepths"
+					ActionCallMethod
+					ActionPop
+					s8_show_depth_ready:
+					pushreg 2
+					pushwconst "__s8_activePopup"
+					pushreg 1
+					ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushwconst "s8_hideRoomPopup"
+					function ()(regs:3, reg1:this)
+					EAPushZero
+					pushreg 1
+					pushwconst "__s8_originalHide"
+					ActionCallMethod
+					ActionPop
+					pushreg 1
+					getnamedmember "_parent"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushwconst "__s8_activePopup"
+					ActionGetMember
+					pushreg 1
+					ActionNewEquals
+					ActionLogicalNot
+					jumptrue s8_hide_done
+					pushreg 2
+					pushwconst "__s8_savedDepth"
+					ActionGetMember
+					EAPushOne
+					pushreg 2
+					pushwconst "swapDepths"
+					ActionCallMethod
+					ActionPop
+					pushreg 2
+					pushwconst "__s8_savedDepth"
+					pushundefined
+					ActionSetMember
+					pushreg 2
+					pushwconst "__s8_activePopup"
+					pushundefined
+					ActionSetMember
+					pushreg 1
+					pushwconst "m_contentClip"
+					ActionGetMember
+					pushwconst "listbox"
+					ActionGetMember
+					pushconst "_y"
+					pushreg 1
+					pushwconst "__s8_listY"
+					ActionGetMember
+					ActionSetMember
+					pushreg 1
+					pushwconst "m_contentClip"
+					ActionGetMember
+					pushwconst "scrollbar"
+					ActionGetMember
+					pushconst "_y"
+					pushreg 1
+					pushwconst "__s8_scrollY"
+					ActionGetMember
+					ActionSetMember
+					end
+					s8_hide_done:
+					ActionSetMember
+					pushreg 2
+					pushconst "initReadyControls"
+					function ()(regs:5, reg1:this, reg2:_global)
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx41:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx40
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "readyCheckBox"
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "disable"
+						pushreg 1
+						getnamedmember "onReadyStatusChanged"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx41
+					end
+					lxnx40:
+					ActionSetMember
+					pushreg 2
+					pushconst "initPlayButton"
+					function ()(regs:2, reg1:this)
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx42
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "enable"
+						jump lxnx43
+					lxnx42:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "hide"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "disable"
+					end
+					lxnx43:
+					ActionSetMember
+					pushreg 2
+					pushconst "setBroadcastCheckboxVisibility"
+					function (reg2:isVisible)(regs:3)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						setreg 1
+						ActionPop
+						pushreg 2
+						ActionLogicalNot
+						jumptrue lxnx44
+						EAPushZero
+						pushreg 1
+						getnamedmember "broadcastCheckbox"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "broadcastCheckboxLabel"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 1
+						getnamedmember "broadcastCheckboxShadowLabel"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						jump lxnx45
+					lxnx44:
+						EAPushZero
+						pushreg 1
+						getnamedmember "broadcastCheckbox"
+						callnamedmethodpop "hide"
+						pushreg 1
+						getnamedmember "broadcastCheckboxLabel"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 1
+						getnamedmember "broadcastCheckboxShadowLabel"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+					end
+					lxnx45:
+					ActionSetMember
+					pushreg 2
+					pushconst "createMapSelectionScrollList"
+					function ()(regs:5, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapListScrollbar"
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "enable"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapList"
+						setreg 2
+						ActionPop
+						pushreg 1
+						EAPushOne
+						pushreg 2
+						callnamedmethodpop "addListener"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushshort 270
+						pushconst "leftMargin"
+						EAPushZero
+						pushconst "rightMargin"
+						EAPushZero
+						pushbyte 4
+						ActionInitObject
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 75
+						pushconst "leftMargin"
+						pushbyte 26
+						pushconst "rightMargin"
+						EAPushZero
+						pushbyte 4
+						ActionInitObject
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "push"
+						pushbyte 26
+						pushreg 3
+						pushbyte 2
+						pushreg 2
+						callnamedmethodpop "init"
+						pushreg 4
+						EAPushOne
+						pushreg 2
+						callnamedmethodpop "attachScrollbarController"
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "moveViewToFirst"
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "refreshDisplay"
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "refreshScrollbar"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "localMessageHandler"
+					function (reg4:messageCode)(regs:5, reg1:this, reg2:_global)
+						pushfalse
+						setreg 3
+						ActionPop
+						pushreg 4
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_MP_UPDATE_GAME_SETTINGS"
+						stricteq
+						jumptrue lxnx46
+						jump lxnx47
+					lxnx46:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshComponents"
+						pushtrue
+						setreg 3
+						ActionPop
+						jump lxnx48
+					lxnx47:
+						jump lxnx48
+					lxnx48:
+						pushreg 3
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onScreenExit"
+					function ()(regs:4, reg1:this, reg2:_global)
+						pushconst "GameSetupBase::onScreenExit()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%SetGameSetupMode?Mode=None"
+						pushreg 1
+						getnamedmember "m_localMessageDispatcher"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gMH"
+						callnamedmethodpop "removeMessageHandler"
+						pushreg 1
+						pushconst "m_localMessageDispatcher"
+						ActionDelete
+						ActionPop
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapList"
+						setreg 3
+						ActionPop
+						pushreg 1
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "removeListener"
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "shutdown"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "clearData"
+						pushreg 2
+						pushconst "GameSetupBase"
+						ActionDelete
+						ActionPop
+						pushreg 2
+						pushconst "Cafe2_BaseUIScreen"
+						ActionDelete
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "playGame"
+					function ()
+						pushconst "GameSetupBase::playGame()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%StartGame"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onMapTypeChanged"
+					function ()(regs:3, reg1:_global)
+						pushconst "GameSetupBase::onMapTypeChanged() "
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "campaignCheckbox"
+						pushconst "isChecked"
+						ActionCallMethod
+						jumptrue lxnx49
+						pushconst "0"
+						jump lxnx50
+					lxnx49:
+						pushconst "1"
+					lxnx50:
+						setreg 2
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetMapType?MapType="
+						pushreg 2
+						ActionNewAdd
+						geturl2
+						pushreg 2
+						ActionLogicalNot
+						jumptrue lxnx51
+						pushreg 1
+						getnamedmember "GAME"
+						pushconst "MODE"
+						pushreg 1
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_CAMPAIGN"
+						ActionSetMember
+						pushconst "GameSetupBase::onMapTypeChanged()- Game mode set to GAME_MODE_CAMPAIGN."
+						ActionTrace
+						jump lxnx52
+					lxnx51:
+						pushreg 1
+						getnamedmember "GAME"
+						pushconst "MODE"
+						pushreg 1
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_SKIRMISH"
+						ActionSetMember
+						pushconst "GameSetupBase::onMapTypeChanged()- Game mode set to GAME_MODE_SKIRMISH."
+						ActionTrace
+					end
+					lxnx52:
+					ActionSetMember
+					pushreg 2
+					pushconst "OnMapListSelectionChanged"
+					function (reg2:index)(regs:3, reg1:this)
+						pushconst "GameSetupBase::OnMapListSelectionChanged(), index is "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetMap?Map="
+						pushreg 1
+						getnamedmember "m_mapIds"
+						pushreg 2
+						ActionGetMember
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onShowMapPanel"
+					function ()
+						pushconst "GameSetupBase::onShowMapPanel()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onShowRulesPanel"
+					function ()
+						pushconst "GameSetupBase::onShowRulesPanel()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onPlayerStatusChanged"
+					function (reg3:playerStatusMC)(regs:4)
+						EAPushZero
+						pushreg 3
+						pushconst "getCurrentIndex"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						pushconst "getValueAtIndex"
+						ActionCallMethod
+						ActionToString
+						setreg 2
+						ActionPop
+						pushreg 3
+						getnamedmember "_parent"
+						getnamedmember "slotId"
+						ActionToString
+						setreg 1
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetPlayerStatus?Slot="
+						pushreg 1
+						ActionNewAdd
+						pushconst "|Status="
+						ActionNewAdd
+						pushreg 2
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onFactionChanged"
+					function (reg1:factionsMC)(regs:4)
+						EAPushZero
+						pushreg 1
+						pushconst "getCurrentIndex"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						pushconst "getValueAtIndex"
+						ActionCallMethod
+						ActionToString
+						setreg 3
+						ActionPop
+						pushreg 1
+						getnamedmember "_parent"
+						getnamedmember "slotId"
+						ActionToString
+						setreg 2
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetPlayerTemplate?Slot="
+						pushreg 2
+						ActionNewAdd
+						pushconst "|Template="
+						ActionNewAdd
+						pushreg 3
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onTeamChanged"
+					function (reg2:teamsMC)(regs:4)
+						EAPushZero
+						pushreg 2
+						pushconst "getCurrentIndex"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						pushconst "getValueAtIndex"
+						ActionCallMethod
+						ActionToString
+						setreg 3
+						ActionPop
+						pushreg 2
+						getnamedmember "_parent"
+						getnamedmember "slotId"
+						ActionToString
+						setreg 1
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetTeam?Slot="
+						pushreg 1
+						ActionNewAdd
+						pushconst "|Team="
+						ActionNewAdd
+						pushreg 3
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onColorChanged"
+					function (reg3:colorsMC)(regs:4)
+						EAPushZero
+						pushreg 3
+						pushconst "getCurrentIndex"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						pushconst "getValueAtIndex"
+						ActionCallMethod
+						ActionToString
+						setreg 2
+						ActionPop
+						pushreg 3
+						getnamedmember "_parent"
+						getnamedmember "slotId"
+						ActionToString
+						setreg 1
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetColor?Slot="
+						pushreg 1
+						ActionNewAdd
+						pushconst "|Color="
+						ActionNewAdd
+						pushreg 2
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onAIPersonalityChanged"
+					function (reg2:personalitiesMC)(regs:4)
+						EAPushZero
+						pushreg 2
+						pushconst "getCurrentIndex"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						pushconst "getValueAtIndex"
+						ActionCallMethod
+						ActionToString
+						setreg 3
+						ActionPop
+						pushreg 2
+						getnamedmember "_parent"
+						getnamedmember "slotId"
+						ActionToString
+						setreg 1
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetAIPersonality?Slot="
+						pushreg 1
+						ActionNewAdd
+						pushconst "|Personality="
+						ActionNewAdd
+						pushreg 3
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onReadyStatusChanged"
+					function ()
+						pushconst "GameSetupBase::onReadyStatusChanged()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%ToggleReadyStatus"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onStartPositionClicked"
+					function (reg1:startPosition)(regs:2)
+						pushconst "GameSetupBase::onStartPositionClicked() Position: "
+						pushreg 1
+						ActionNewAdd
+						ActionTrace
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%CycleStartPositionOwner?Position="
+						pushreg 1
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onGameSpeedChanged"
+					function (reg0:component, reg1:newSpeed)(regs:2)
+						pushconst "GameSetupBase::onGameSpeedChanged()"
+						ActionTrace
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetGameSpeed?GameSpeed="
+						pushreg 1
+						ActionToString
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onResourcesChanged"
+					function (reg2:resourcesMC)(regs:3)
+						pushconst "GameSetupBase::onResourcesChanged()"
+						ActionTrace
+						EAPushZero
+						pushreg 2
+						pushconst "getCurrentIndex"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						pushconst "getValueAtIndex"
+						ActionCallMethod
+						ActionToString
+						setreg 1
+						ActionPop
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%SetInitialResources?Resources="
+						pushreg 1
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onVoipChanged"
+					function ()
+						pushconst "GameSetupBase::onVoipChanged()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%ToggleVoipRule"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onCratesChanged"
+					function ()
+						pushconst "GameSetupBase::onCratesChanged()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%ToggleRandomCrates"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onCommentaryChanged"
+					function ()
+						pushconst "GameSetupBase::onCommentaryChanged()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%ToggleCommentary"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onResetRules"
+					function ()
+						pushconst "GameSetupBase::onResetRules()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%ResetRules"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshComponents"
+					function ()(regs:2, reg1:this)
+						pushconst "GameSetupBase::refreshComponents()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshMapList"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshSlotStatusControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshCampaignMapControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshResourcesControl"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						getnamedmember "cratesCheckbox"
+						pushconst "RANDOM_CRATES"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "refreshRulesCheckbox"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						getnamedmember "enableVoipCheckbox"
+						pushconst "ENABLE_VOIP"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "refreshRulesCheckbox"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						getnamedmember "commentaryCheckbox"
+						pushconst "ALLOW_COMMENTARY"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "refreshRulesCheckbox"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshGameSpeedControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshTeamControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshFactionControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshAIPersonalityControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshStartPositionControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshColorControls"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshMapList"
+					function ()(regs:8, reg1:this)
+						pushconst "GameSetupBase::refreshMapList()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapList"
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 6
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?MP_MAP_LIST"
+						pushreg 6
+						geturl2
+						pushreg 1
+						pushconst "m_mapIds"
+						pushconst ","
+						EAPushOne
+						pushreg 6
+						getnamedmember "MP_MAP_LIST"
+						pushconst "split"
+						ActionCallMethod
+						ActionSetMember
+						pushreg 6
+						getnamedmember "MP_MAP_LIST_SELECTED_INDEX"
+						ActionToNumber
+						setreg 7
+						ActionPop
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx53
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx55:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_mapIds"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx54
+						pushreg 4
+						pushreg 2
+						pushconst "$MP_MAP_LIST_"
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						ActionSetMember
+						pushreg 3
+						pushreg 2
+						pushconst "$MP_MAP_SIZE_"
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						ActionSetMember
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx55
+					lxnx54:
+						jump lxnx56
+					lxnx53:
+						pushreg 4
+						EAPushZero
+						pushconst "$MP_MAP_LIST_0"
+						ActionSetMember
+						pushreg 3
+						EAPushZero
+						pushconst "$MP_MAP_SIZE_0"
+						ActionSetMember
+					lxnx56:
+						pushreg 4
+						EAPushZero
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 3
+						EAPushOne
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 7
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "setSelectedIndex"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "refreshDisplay"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "refreshScrollbar"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshSlotStatusControls"
+					function ()(regs:8, reg1:this)
+						pushconst "GameSetupBase::refreshSlotStatusControls()"
+						ActionTrace
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx60:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx57
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 6
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 4
+						ActionPop
+						EAPushZero
+						setreg 7
+						ActionPop
+						pushconst "QueryGameEngine?PLAYER_STATUS?Slot="
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushreg 5
+						geturl2
+						pushconst ","
+						EAPushOne
+						pushreg 5
+						getnamedmember "PLAYER_STATUS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						pushconst "shift"
+						ActionCallMethod
+						ActionToNumber
+						setreg 7
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx59:
+						pushreg 2
+						pushreg 4
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx58
+						pushreg 6
+						pushreg 2
+						pushconst "$PLAYER_STATUS_"
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushconst "_"
+						ActionNewAdd
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						ActionSetMember
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx59
+					lxnx58:
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						pushreg 4
+						getnamedmember "length"
+						EAPushOne
+						gt
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "enableControl"
+						pushreg 4
+						pushreg 6
+						pushbyte 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "setData"
+						pushreg 7
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "setSelectedIndex"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx60
+					end
+					lxnx57:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshTeamControls"
+					function ()(regs:8, reg1:this)
+						pushconst "GameSetupBase::refreshTeamControls()"
+						ActionTrace
+						EAPushZero
+						setreg 4
+						ActionPop
+					lxnx65:
+						pushreg 4
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx61
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 6
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 7
+						ActionPop
+						pushconst "QueryGameEngine?TEAM_OPTIONS?Slot="
+						pushreg 4
+						ActionToString
+						ActionNewAdd
+						pushreg 5
+						geturl2
+						pushconst ","
+						EAPushOne
+						pushreg 5
+						getnamedmember "TEAM_OPTIONS_VALUES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 3
+						ActionPop
+						EAPushZero
+						pushreg 3
+						pushconst "shift"
+						ActionCallMethod
+						ActionToNumber
+						setreg 7
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx63:
+						pushreg 2
+						pushreg 3
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx62
+						pushreg 6
+						pushreg 2
+						pushconst "$TEAM_"
+						pushreg 3
+						pushreg 2
+						ActionGetMember
+						ActionToString
+						ActionNewAdd
+						ActionSetMember
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx63
+					lxnx62:
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 4
+						ActionGetMember
+						getnamedmember "teamOptions"
+						pushreg 5
+						getnamedmember "TEAM_OPTIONS_ENABLE"
+						pushconst "1"
+						ActionNewEquals
+						ActionDup
+						ActionLogicalNot
+						jumptrue lxnx64
+						ActionPop
+						pushreg 3
+						getnamedmember "length"
+						EAPushOne
+						gt
+					lxnx64:
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "enableControl"
+						pushreg 3
+						pushreg 6
+						pushbyte 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 4
+						ActionGetMember
+						getnamedmember "teamOptions"
+						callnamedmethodpop "setData"
+						pushreg 7
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 4
+						ActionGetMember
+						getnamedmember "teamOptions"
+						callnamedmethodpop "setSelectedIndex"
+						pushreg 4
+						ActionIncrement
+						setreg 4
+						ActionPop
+						jump lxnx65
+					end
+					lxnx61:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshFactionControls"
+					function ()(regs:7, reg1:this)
+						pushconst "GameSetupBase::refreshFactionControls()"
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx67:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx66
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 4
+						ActionPop
+						pushconst "QueryGameEngine?PLAYER_TEMPLATE_OPTIONS?Slot="
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						pushreg 4
+						geturl2
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 4
+						getnamedmember "PLAYER_TEMPLATE_OPTIONS_VALUES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 3
+						ActionPop
+						EAPushZero
+						pushreg 3
+						pushconst "shift"
+						ActionCallMethod
+						ActionToNumber
+						setreg 6
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 4
+						getnamedmember "PLAYER_TEMPLATE_OPTIONS_IMAGES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 5
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "factionOptions"
+						pushreg 3
+						getnamedmember "length"
+						EAPushOne
+						gt
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "enableControl"
+						pushreg 3
+						pushreg 5
+						pushbyte 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "factionOptions"
+						callnamedmethodpop "setData"
+						pushreg 6
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "factionOptions"
+						callnamedmethodpop "setSelectedIndex"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx67
+					end
+					lxnx66:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshAIPersonalityControls"
+					function ()(regs:8, reg1:this)
+						pushconst "GameSetupBase::refreshAIPersonalityControls() : m_playerSlots.length = "
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx73:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx68
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?AI_PERSONALITY_OPTIONS?Slot="
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						pushreg 5
+						geturl2
+						pushreg 5
+						getnamedmember "AI_PERSONALITY_OPTIONS"
+						pushundefined
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx69
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "clear"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "disable"
+						jump lxnx70
+					lxnx69:
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 4
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 5
+						getnamedmember "AI_PERSONALITY_OPTIONS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						pushconst "shift"
+						ActionCallMethod
+						ActionToNumber
+						setreg 7
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 6
+						ActionPop
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx72:
+						pushreg 3
+						pushreg 4
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx71
+						pushreg 6
+						pushreg 3
+						pushconst "$APT:AI_PERSONALITY_"
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						pushconst "_"
+						ActionNewAdd
+						pushreg 4
+						pushreg 3
+						ActionGetMember
+						ActionToString
+						ActionNewAdd
+						ActionSetMember
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx72
+					lxnx71:
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						pushreg 4
+						getnamedmember "length"
+						EAPushOne
+						gt
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "enableControl"
+						pushreg 4
+						pushreg 6
+						pushbyte 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "setData"
+						pushreg 7
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "setSelectedIndex"
+					lxnx70:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx73
+					end
+					lxnx68:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshColorControls"
+					function ()(regs:7, reg1:this)
+						pushconst "GameSetupBase::refreshColorControls()"
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx77:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx74
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?PLAYER_COLOR?Slot="
+						pushreg 2
+						ActionNewAdd
+						pushreg 3
+						geturl2
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 3
+						getnamedmember "PLAYER_COLOR_VALUES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushreg 5
+						pushconst "shift"
+						ActionCallMethod
+						ActionToNumber
+						setreg 6
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "colorOptions"
+						setreg 4
+						ActionPop
+						pushreg 5
+						pushreg 5
+						pushbyte 2
+						pushreg 4
+						callnamedmethodpop "setData"
+						pushreg 6
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "setSelectedIndex"
+						pushreg 3
+						getnamedmember "PLAYER_COLOR_ENABLE"
+						pushconst "1"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx75
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "enable"
+						jump lxnx76
+					lxnx75:
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "disable"
+					lxnx76:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx77
+					end
+					lxnx74:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshStartPositionControls"
+					function ()(regs:8, reg1:this)
+						pushconst "GameSetupBase::refreshStartPositionControls()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapPreview"
+						setreg 4
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx81:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx78
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?START_POSITION?Position="
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						pushreg 3
+						geturl2
+						pushreg 3
+						getnamedmember "START_POSITION_VALID"
+						EAPushOne
+						pushconst "Boolean"
+						ActionCallFunction
+						setreg 7
+						ActionPop
+						pushconst "$START_POSITION_"
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "setText"
+						pushreg 7
+						ActionLogicalNot
+						jumptrue lxnx79
+						pushreg 3
+						getnamedmember "START_POSITION_X"
+						ActionToNumber
+						setreg 6
+						ActionPop
+						pushreg 3
+						getnamedmember "START_POSITION_Y"
+						ActionToNumber
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						pushconst "_x"
+						pushreg 6
+						pushreg 4
+						getnamedmember "_width"
+						ActionMultiply
+						pushreg 4
+						getnamedmember "_x"
+						ActionNewAdd
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						pushconst "_y"
+						pushreg 5
+						pushreg 4
+						getnamedmember "_height"
+						ActionMultiply
+						pushreg 4
+						getnamedmember "_y"
+						ActionNewAdd
+						ActionSetMember
+						jump lxnx80
+					lxnx79:
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "hide"
+					lxnx80:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx81
+					end
+					lxnx78:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshCampaignMapControls"
+					function ()(regs:3, reg1:this)
+						pushconst "GameSetupBase::refreshCampaignMapControls()"
+						ActionTrace
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 2
+						ActionPop
+						pushconst "QueryGameEngine?PLAY_AS_CAMPAIGN"
+						pushreg 2
+						geturl2
+						pushreg 2
+						getnamedmember "PLAY_AS_CAMPAIGN_VALUE"
+						pushconst "0"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx82
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "unCheck"
+						jump lxnx83
+					lxnx82:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "check"
+					lxnx83:
+						pushreg 2
+						getnamedmember "PLAY_AS_CAMPAIGN_ENABLE"
+						pushconst "0"
+						ActionNewEquals
+						ActionDup
+						jumptrue lxnx84
+						ActionPop
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+					lxnx84:
+						ActionLogicalNot
+						jumptrue lxnx85
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "disable"
+						jump lxnx86
+					lxnx85:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "campaignCheckbox"
+						callnamedmethodpop "enable"
+					end
+					lxnx86:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshResourcesControl"
+					function ()(regs:6)
+						pushconst "GameSetupBase::refreshResourcesControl()"
+						ActionTrace
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushconst "QueryGameEngine?RESOURCES_OPTIONS"
+						pushreg 1
+						geturl2
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 2
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 1
+						getnamedmember "RESOURCES_OPTIONS_VALUES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 2
+						ActionPop
+						EAPushZero
+						pushreg 2
+						pushconst "shift"
+						ActionCallMethod
+						ActionToNumber
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 1
+						getnamedmember "RESOURCES_OPTIONS_STRINGS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 3
+						ActionPop
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						getnamedmember "resourcesDropdown"
+						setreg 4
+						ActionPop
+						pushreg 2
+						pushreg 3
+						pushbyte 2
+						pushreg 4
+						callnamedmethodpop "setData"
+						pushreg 5
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "setSelectedIndex"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshRulesCheckbox"
+					function (reg2:ruleStr, reg3:checkbox)(regs:4)
+						pushconst "GameSetupBase::refreshRulesCheckbox() "
+						pushreg 2
+						ActionNewAdd
+						pushconst ":"
+						ActionNewAdd
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushconst "QueryGameEngine?"
+						pushreg 2
+						ActionNewAdd
+						pushreg 1
+						geturl2
+						pushconst "  "
+						pushreg 1
+						pushreg 2
+						pushconst "_VALUE"
+						ActionNewAdd
+						ActionGetMember
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						pushreg 2
+						pushconst "_VALUE"
+						ActionNewAdd
+						ActionGetMember
+						pushconst "0"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx87
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "unCheck"
+						jump lxnx88
+					lxnx87:
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "check"
+					lxnx88:
+						pushconst "  "
+						pushreg 1
+						pushreg 2
+						pushconst "_ENABLE"
+						ActionNewAdd
+						ActionGetMember
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						pushreg 2
+						pushconst "_ENABLE"
+						ActionNewAdd
+						ActionGetMember
+						pushconst "0"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx89
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "disable"
+						jump lxnx90
+					lxnx89:
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "enable"
+					end
+					lxnx90:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshGameSpeedControls"
+					function ()(regs:4, reg1:this)
+						pushconst "GameSetupBase::refreshGameSpeedControls()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						getnamedmember "gameSpeedSlider"
+						setreg 3
+						ActionPop
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 2
+						ActionPop
+						pushwconst "QueryGameEngine?GAMESPEED_OPTIONS"
+						pushreg 2
+						geturl2
+						pushreg 2
+						pushwconst "GAMESPEED_OPTIONS_CURRENT"
+						ActionGetMember
+						ActionToNumber
+						pushreg 2
+						pushwconst "GAMESPEED_OPTIONS_MAX"
+						ActionGetMember
+						ActionToNumber
+						pushreg 2
+						pushwconst "GAMESPEED_OPTIONS_MIN"
+						ActionGetMember
+						ActionToNumber
+						pushbyte 3
+						pushreg 3
+						pushwconst "setIndexRange"
+						callmethodpop
+						pushreg 2
+						pushwconst "GAMESPEED_OPTIONS_ENABLE"
+						ActionGetMember
+						pushconst "0"
+						ActionNewEquals
+						ActionDup
+						jumptrue lxnx91
+						ActionPop
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+					lxnx91:
+						ActionLogicalNot
+						jumptrue lxnx92
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "disable"
+						jump lxnx93
+					lxnx92:
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "enable"
+					end
+					lxnx93:
+					ActionSetMember
+					pushreg 2
+					pushwconst "refreshReadyControls"
+					function ()(regs:4, reg1:this)
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx95:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx94
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "readyCheckBox"
+						setreg 3
+						ActionPop
+						pushreg 2
+						pushreg 3
+						pushbyte 2
+						pushreg 1
+						pushwconst "refreshReadyCheckbox"
+						callmethodpop
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx95
+					end
+					lxnx94:
+					ActionSetMember
+					pushreg 2
+					pushwconst "refreshReadyCheckbox"
+					function (reg2:checkbox, reg3:slotId)(regs:4)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushwconst "QueryGameEngine?READY_STATUS?Slot="
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushreg 1
+						geturl2
+						pushreg 1
+						pushwconst "READY_STATUS_ENABLED"
+						ActionGetMember
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx96
+						EAPushZero
+						pushreg 2
+						pushconst "disable"
+						ActionCallMethod
+						jump lxnx97
+					lxnx96:
+						EAPushZero
+						pushreg 2
+						pushconst "enable"
+						ActionCallMethod
+					lxnx97:
+						ActionPop
+						pushreg 1
+						pushwconst "READY_STATUS_VALUE"
+						ActionGetMember
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx98
+						EAPushZero
+						pushreg 2
+						pushwconst "SetUnCheck"
+						ActionCallMethod
+						jump lxnx99
+					lxnx98:
+						EAPushZero
+						pushreg 2
+						pushwconst "SetCheck"
+						ActionCallMethod
+					lxnx99:
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "enableControl"
+					function (reg2:enable, reg1:control)(regs:3)
+						pushreg 2
+						ActionLogicalNot
+						jumptrue lxnx100
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "enable"
+						jump lxnx101
+					lxnx100:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "disable"
+					end
+					lxnx101:
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "GameSetupBase"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushwconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx31:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="33"><![CDATA[
+					pushglobal
+					getnamedmember "fem_m_gameSetup"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx102
+					pushglobal
+					pushconst "fem_m_gameSetup"
+					function (reg2:screen)(regs:3, reg1:super)
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						pushundefined
+						callmethodpop
+					end
+					setreg 1
+					ActionSetMember
+					pushglobal
+					getnamedmember "fem_m_gameSetup"
+					pushvar "GameSetupBase"
+					extends
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:6, reg1:this, reg2:super, reg3:_global)
+						geturl "FSCommand:CallGameFunction", "%SetGameSetupMode?Mode=Online"
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?IS_CLAN_GAME"
+						pushreg 5
+						geturl2
+						pushreg 1
+						pushconst "m_isClanGame"
+						pushreg 5
+						getnamedmember "IS_CLAN_GAME"
+						pushconst "1"
+						ActionNewEquals
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_isClanGame"
+						ActionLogicalNot
+						jumptrue lxnx103
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playerSlotBg"
+						getnamedmember "personality"
+						pushconst "text"
+						pushconst "$HeaderClanName"
+						ActionSetMember
+					lxnx103:
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "frameDelayedInit"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initVoiceIPControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initBroadcastOption"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initReadyControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initPlayButton"
+						pushreg 1
+						getnamedmember "m_isClanGame"
+						ActionLogicalNot
+						jumptrue lxnx104
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 4
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 4
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 4
+						getnamedmember "defaultRules"
+						callnamedmethodpop "disable"
+					lxnx104:
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx105
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onRandomMap"
+						pushreg 1
+						pushbyte 2
+						pushreg 3
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_screenButtons"
+						callnamedmethodpop "push"
+						jump lxnx106
+					lxnx105:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						callnamedmethodpop "hide"
+					lxnx106:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshComponents"
+						pushreg 1
+						getnamedmember "m_screenButtons"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "registerIntroOuttroComponents"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "startIntro"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initNavigationButtons"
+					function (reg4:navButtons)(regs:5, reg1:this, reg2:super, reg3:_global)
+						pushconst "fem_m_gameSetup::initNavigationButtons() "
+						ActionTrace
+						pushreg 4
+						EAPushOne
+						pushreg 2
+						callnamedmethodpop "initNavigationButtons"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapTabButton"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapTabButton"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "onShowMapPanel"
+						pushreg 1
+						pushbyte 2
+						pushreg 3
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapTabButton"
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapTabButton"
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "push"
+						pushvar "extern"
+						getnamedmember "RA3PublicBeta"
+						pushconst "1"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx107
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesTabButton"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesTabButton"
+						callnamedmethodpop "hide"
+						jump lxnx108
+					lxnx107:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesTabButton"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesTabButton"
+						callnamedmethodpop "show"
+						pushreg 1
+						getnamedmember "onShowRulesPanel"
+						pushreg 1
+						pushbyte 2
+						pushreg 3
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesTabButton"
+						callnamedmethodpop "setOnMouseUpFunction"
+					lxnx108:
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesTabButton"
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "push"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onScreenExit"
+					function ()(regs:3, reg1:super, reg2:_global)
+						pushconst "fem_m_gameSetup::onScreenExit()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "onScreenExit"
+						pushreg 2
+						pushconst "fem_m_gameSetup"
+						ActionDelete
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "localMessageHandler"
+					function (reg5:messageCode)(regs:6, reg1:this, reg2:super, reg3:_global)
+						pushfalse
+						setreg 4
+						ActionPop
+						pushreg 5
+						setreg 0
+						pushreg 3
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_MP_ONLINE_GAME_COUNTDOWN_START"
+						stricteq
+						jumptrue lxnx109
+						pushreg 0
+						pushreg 3
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_MP_ONLINE_GAME_COUNTDOWN_STOP"
+						stricteq
+						jumptrue lxnx110
+						pushreg 0
+						pushreg 3
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_MP_COUNTDOWN_PAST_POINT_OF_NO_RETURN"
+						stricteq
+						jumptrue lxnx111
+						jump lxnx112
+					lxnx109:
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx113
+						pushtrue
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "ConfigureClientForCountdown"
+					lxnx113:
+						jump lxnx114
+					lxnx110:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "enableGameSetupUI"
+						jump lxnx114
+					lxnx111:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "disableGameSetupUI"
+						jump lxnx114
+					lxnx112:
+						pushreg 5
+						EAPushOne
+						pushreg 2
+						pushconst "localMessageHandler"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						jump lxnx114
+					lxnx114:
+						pushreg 4
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "disableGameSetupUI"
+					function ()(regs:6, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushreg 5
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "defaultRules"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "commentaryCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "enableVoipCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "broadcastCheckbox"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapList"
+						callnamedmethodpop "disable"
+						EAPushZero
+						setreg 4
+						ActionPop
+					lxnx116:
+						pushreg 4
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx115
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 4
+						ActionGetMember
+						setreg 2
+						ActionPop
+						EAPushZero
+						pushreg 2
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "factionOptions"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "teamOptions"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "colorOptions"
+						callnamedmethodpop "disable"
+						pushreg 4
+						ActionIncrement
+						setreg 4
+						ActionPop
+						jump lxnx116
+					lxnx115:
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx118:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx117
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 3
+						ActionGetMember
+						callnamedmethodpop "disable"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx118
+					lxnx117:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "disable"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "enableGameSetupUI"
+					function ()(regs:6, reg1:this)
+						pushreg 1
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx119
+						pushreg 1
+						getnamedmember "m_isClanGame"
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx120
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushreg 5
+						getnamedmember "gameSpeedSlider"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "resourcesDropdown"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "cratesCheckbox"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "defaultRules"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "commentaryCheckbox"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "enableVoipCheckbox"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 5
+						getnamedmember "broadcastCheckbox"
+						callnamedmethodpop "enable"
+					lxnx120:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "randomMap"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "mapPanel"
+						getnamedmember "mapList"
+						callnamedmethodpop "enable"
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx122:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx121
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerStartPosMCArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "enable"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx122
+					lxnx121:
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						EAPushZero
+						ActionGetMember
+						getnamedmember "factionOptions"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						EAPushZero
+						ActionGetMember
+						getnamedmember "teamOptions"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						EAPushZero
+						ActionGetMember
+						getnamedmember "colorOptions"
+						callnamedmethodpop "enable"
+						EAPushOne
+						setreg 3
+						ActionPop
+					lxnx124:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx123
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						getnamedmember "playerSlotOptions"
+						callnamedmethodpop "enable"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx124
+					lxnx123:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "playButton"
+						callnamedmethodpop "enable"
+						jump lxnx125
+					lxnx119:
+						pushfalse
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "ConfigureClientForCountdown"
+					end
+					lxnx125:
+					ActionSetMember
+					pushreg 2
+					pushconst "initVoiceIPControls"
+					function ()(regs:6, reg1:this, reg2:_global)
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx127:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx126
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "voipCheckBox"
+						setreg 4
+						ActionPop
+						EAPushZero
+						pushreg 4
+						callnamedmethodpop "disable"
+						pushreg 3
+						pushreg 1
+						getnamedmember "onVoipSendToStatusChanged"
+						pushreg 1
+						pushbyte 3
+						pushreg 2
+						pushconst "bind1"
+						ActionCallMethod
+						EAPushOne
+						pushreg 4
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx127
+					lxnx126:
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx129:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx128
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "muteCheckBox"
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "disable"
+						pushreg 3
+						pushvar "onVoipMuteStatusChanged"
+						pushreg 1
+						pushbyte 3
+						pushreg 2
+						pushconst "bind1"
+						ActionCallMethod
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx129
+					end
+					lxnx128:
+					ActionSetMember
+					pushreg 2
+					pushconst "initBroadcastOption"
+					function ()(regs:6, reg1:this, reg2:_global)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "gameSettings"
+						getnamedmember "rulesPanel"
+						getnamedmember "broadcastCheckbox"
+						setreg 3
+						ActionPop
+						pushtrue
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setBroadcastCheckboxVisibility"
+						pushreg 1
+						getnamedmember "onToggleBroadcastStatus"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "setOnMouseDownFunction"
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 4
+						ActionPop
+						pushconst "QueryGameEngine?GAME_BROADCASTER"
+						pushreg 4
+						geturl2
+						pushreg 4
+						getnamedmember "GAME_BROADCASTER_ENABLE"
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx130
+						EAPushZero
+						pushreg 3
+						pushconst "disable"
+						ActionCallMethod
+						jump lxnx131
+					lxnx130:
+						EAPushZero
+						pushreg 3
+						pushconst "enable"
+						ActionCallMethod
+					lxnx131:
+						ActionPop
+						pushreg 4
+						getnamedmember "GAME_BROADCASTER_VALUE"
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx132
+						EAPushZero
+						pushreg 3
+						pushconst "unCheck"
+						ActionCallMethod
+						jump lxnx133
+					lxnx132:
+						EAPushZero
+						pushreg 3
+						pushconst "check"
+						ActionCallMethod
+					lxnx133:
+						ActionPop
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?DISABLE_BROADCAST_ON_MOD"
+						pushreg 5
+						geturl2
+						pushreg 5
+						getnamedmember "DISABLE_BROADCAST_ON_MOD"
+						EAPushOne
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx134
+						pushfalse
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setBroadcastCheckboxVisibility"
+					end
+					lxnx134:
+					ActionSetMember
+					pushreg 2
+					pushconst "onVoipSendToStatusChanged"
+					function (reg1:slotId)(regs:2)
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%ChangePlayerSendStatus?Slot="
+						pushreg 1
+						ActionToString
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onToggleBroadcastStatus"
+					function ()
+						geturl "FSCommand:CallGameFunction", "%ToggleBroadcastGame"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshComponents"
+					function ()(regs:3, reg1:this, reg2:super)
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "refreshComponents"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshReadyControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshVoiceIPControls"
+						EAPushZero
+						callnamedpop "ConfigForCountdown"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshAIPersonalityControls"
+					function ()(regs:7, reg1:this, reg2:super)
+						pushreg 1
+						getnamedmember "m_isClanGame"
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx135
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "refreshAIPersonalityControls"
+						pushundefined
+						ActionReturn
+					lxnx135:
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx139:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx136
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 4
+						ActionPop
+						pushconst "QueryGameEngine?GET_CLAN_NAME?Slot="
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushreg 4
+						geturl2
+						pushreg 4
+						getnamedmember "GET_CLAN_NAME"
+						pushundefined
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx137
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "clear"
+						jump lxnx138
+					lxnx137:
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 6
+						ActionPop
+						EAPushZero
+						EAPushOne
+						pushreg 6
+						callnamedmethodpop "push"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushreg 4
+						getnamedmember "GET_CLAN_NAME"
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "push"
+						pushreg 6
+						pushreg 5
+						pushbyte 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "setData"
+						EAPushZero
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "setSelectedIndex"
+					lxnx138:
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						ActionGetMember
+						getnamedmember "personalityOptions"
+						callnamedmethodpop "disable"
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx139
+					end
+					lxnx136:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshVoiceIPControls"
+					function ()(regs:4, reg1:this)
+						pushconst "fem_m_gameSetup::refreshVoipSendToCheckBox()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx141:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx140
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "voipCheckBox"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "refreshVoipSendToCheckBox"
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "muteCheckBox"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "refreshVoipMuteCheckBox"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx141
+					end
+					lxnx140:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshVoipSendToCheckBox"
+					function (reg2:checkBox, reg3:slotId)(regs:4)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushconst "QueryGameEngine?VOIP_SEND_TO?Slot="
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushreg 1
+						geturl2
+						pushreg 1
+						getnamedmember "VOIP_SEND_TO_ENABLED"
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx142
+						EAPushZero
+						pushreg 2
+						pushconst "disable"
+						ActionCallMethod
+						jump lxnx143
+					lxnx142:
+						EAPushZero
+						pushreg 2
+						pushconst "enable"
+						ActionCallMethod
+					lxnx143:
+						ActionPop
+						pushreg 1
+						getnamedmember "VOIP_SEND_TO_VALUE"
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx144
+						EAPushZero
+						pushreg 2
+						pushconst "unCheck"
+						ActionCallMethod
+						jump lxnx145
+					lxnx144:
+						EAPushZero
+						pushreg 2
+						pushconst "check"
+						ActionCallMethod
+					lxnx145:
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshVoipMuteCheckBox"
+					function (reg2:checkBox, reg3:slotId)(regs:4)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushconst "QueryGameEngine?VOIP_MUTE?Slot="
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushreg 1
+						geturl2
+						pushreg 1
+						getnamedmember "VOIP_MUTE_ENABLED"
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx146
+						EAPushZero
+						pushreg 2
+						pushconst "disable"
+						ActionCallMethod
+						jump lxnx147
+					lxnx146:
+						EAPushZero
+						pushreg 2
+						pushconst "enable"
+						ActionCallMethod
+					lxnx147:
+						ActionPop
+						pushreg 1
+						getnamedmember "VOIP_MUTE_VALUE"
+						pushconst "1"
+						ActionNewEquals
+						jumptrue lxnx148
+						EAPushZero
+						pushreg 2
+						pushconst "unCheck"
+						ActionCallMethod
+						jump lxnx149
+					lxnx148:
+						EAPushZero
+						pushreg 2
+						pushconst "check"
+						ActionCallMethod
+					lxnx149:
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "ConfigureClientForCountdown"
+					function (reg4:inCountdown)(regs:5, reg1:this)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?LOCAL_PLAYER_SLOT"
+						pushreg 3
+						geturl2
+						pushreg 1
+						getnamedmember "m_playerSlots"
+						pushreg 3
+						getnamedmember "LOCAL_PLAYER_SLOT"
+						ActionToNumber
+						ActionGetMember
+						setreg 2
+						ActionPop
+						pushreg 4
+						ActionLogicalNot
+						jumptrue lxnx150
+						EAPushZero
+						pushreg 2
+						getnamedmember "factionOptions"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "teamOptions"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "colorOptions"
+						callnamedmethodpop "disable"
+						jump lxnx151
+					lxnx150:
+						EAPushZero
+						pushreg 2
+						getnamedmember "factionOptions"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "teamOptions"
+						callnamedmethodpop "enable"
+						EAPushZero
+						pushreg 2
+						getnamedmember "colorOptions"
+						callnamedmethodpop "enable"
+					end
+					lxnx151:
+					ActionSetMember
+					pushreg 2
+					pushconst "onRandomMap"
+					function ()(regs:2, reg1:this)
+						geturl "FSCommand:CallGameFunction", "%SetRandomMap"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshStartPositionControls"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshMapList"
+					end
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "fem_m_gameSetup"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx102:
+					ActionPop
+					actionEnd
+				]]></initaction>
+			</frame>
+		</frames>
+	</movieclip>
+	<image id="1" image="art\Textures\apt_fem_m_gameSetup_1.tga"/>
+	<shape id="2" top="0.000000" left="0.000000" bottom="768.000000" right="1365.000000" geometry="fem_m_gameSetup_geometry\2.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_gameSetup_1.tga:1:0:0:1:1:1
+			t 0:768:0:0:1365:0
+			t 1365:0:1365:768:0:768
+		</ru>
+	</shape>
+	<empty id="3"/>
+	<empty id="4"/>
+	<empty id="5"/>
+	<image id="6" image="art\Textures\apt_fem_m_gameSetup_1.tga"/>
+	<shape id="7" top="0.000000" left="-0.100000" bottom="330.549988" right="567.000000" geometry="fem_m_gameSetup_geometry\7.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 3:34.05:3:33:6.9:33
+			t 6.9:323.55:3:326.95:3:34.05
+			t 3:326.95:6.9:323.55:563.95:326.95
+			t 3:34.05:6.9:33:6.9:323.55
+			t 560.05:31.05:563.95:31.05:560.05:323.55
+			t 560.05:323.55:563.95:326.95:6.9:323.55
+			t 563.95:31.05:563.95:326.95:560.05:323.55
+			s s:0:0:0:255
+			t -0.1:34.05:3:326.95:-0.1:330.55
+			t 3:326.95:-0.1:34.05:3:34.05
+			t 566.9:31.05:563.95:326.95:563.95:31.05
+			t 3:326.95:566.9:330.55:-0.1:330.55
+			t 566.9:330.55:563.95:326.95:566.9:31.05
+			t 3:326.95:563.95:326.95:566.9:330.55
+			c
+			s s:246:177:99:255
+			t 10.2:72.5:12:74.45:12:316.5
+			t 12:74.45:10.2:72.5:555.2:74.45
+			t 10.2:318.5:12:316.5:555.2:316.5
+			t 12:316.5:10.2:318.5:10.2:72.5
+			t 555.2:74.45:557.2:72.5:555.2:316.5
+			t 557.2:72.5:555.2:74.45:10.2:72.5
+			t 555.2:316.5:557.2:318.5:10.2:318.5
+			t 557.2:318.5:555.2:316.5:557.2:72.5
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_gameSetup_1.tga:1:0:0:1:1368:1
+			t 0:34:0:0:567:0
+			t 567:0:567:34:0:34
+		</ru>
+	</shape>
+	<font id="8" name="Red Alert">
+	</font>
+	<edittext id="9" top="-2.000000" left="-2.000000" bottom="33.000000" right="258.950012" font="8" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;MP_GAME_OPTIONS"/>
+		<etvar variable=""/>
+	</edittext>
+	<image id="10" image="art\Textures\apt_fem_m_gameSetup_1.tga"/>
+	<shape id="11" top="0.000000" left="0.000000" bottom="330.549988" right="413.000000" geometry="fem_m_gameSetup_geometry\11.ru">
+		<ru>
+			c
+			s s:0:0:0:128
+			t 4.9:322.95:4.9:31.85:407:31.85
+			t 407:31.85:407:322.95:4.9:322.95
+			c
+			s s:188:13:0:255
+			t 3.1:34.05:3.1:33:7:33
+			t 7:323.55:3.1:327.45:3.1:34.05
+			t 3.1:34.05:7:33:7:323.55
+			t 406.15:34.05:410.05:34.05:406.15:323.55
+			t 410.05:327.45:3.1:327.45:406.15:323.55
+			t 410.05:34.05:410.05:327.45:406.15:323.55
+			t 406.15:323.55:3.1:327.45:7:323.55
+			s s:0:0:0:255
+			t 0:34.05:3.1:327.45:0:330.55
+			t 3.1:327.45:0:34.05:3.1:34.05
+			t 0:330.55:3.1:327.45:413:330.55
+			t 413:34.05:410.05:327.45:410.05:34.05
+			t 413:330.55:3.1:327.45:410.05:327.45
+			t 413:330.55:410.05:327.45:413:34.05
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_gameSetup_1.tga:1:0:0:1:1368:37
+			t 0:34:0:0:413:0
+			t 413:0:413:34:0:34
+		</ru>
+	</shape>
+	<edittext id="12" top="-2.000000" left="-2.000000" bottom="26.000000" right="301.000000" font="8" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;MP_CHAT"/>
+		<etvar variable=""/>
+	</edittext>
+	<empty id="13"/>
+	<shape id="14" top="31.500000" left="-0.250000" bottom="233.550003" right="982.500000" geometry="fem_m_gameSetup_geometry\14.ru">
+		<ru>
+			c
+			s s:0:0:0:128
+			t 3.55:228:3.55:32:977.8:32
+			t 977.8:32:977.8:228:3.55:228
+			s l:1:189:9:0:204
+			l 977.8:228:3.55:228
+			l 3.55:228:3.55:32
+			l 3.55:32:977.8:32
+			l 977.8:32:977.8:228
+			c
+			s s:188:13:0:255
+			t 2.85:34.05:2.85:33:6.25:33
+			t 6.25:226.55:2.85:229.95:2.85:34.05
+			t 2.85:229.95:6.25:226.55:975.65:226.55
+			t 2.85:34.05:6.25:33:6.25:226.55
+			t 975.65:34.05:979.55:34.05:975.65:226.55
+			t 979.55:34.05:979.55:229.95:975.65:226.55
+			t 975.65:226.55:979.55:229.95:2.85:229.95
+			s s:0:0:0:255
+			t -0.25:34.05:2.85:229.95:-0.25:233.55
+			t 2.85:229.95:-0.25:34.05:2.85:34.05
+			t 982.5:34.05:979.55:229.95:979.55:34.05
+			t 982.5:233.55:-0.25:233.55:2.85:229.95
+			t 982.5:233.55:2.85:229.95:979.55:229.95
+			t 982.5:233.55:979.55:229.95:982.5:34.05
+		</ru>
+	</shape>
+	<shape id="15" top="0.000000" left="0.000000" bottom="3.400000" right="972.250000" geometry="fem_m_gameSetup_geometry\15.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:3.4:0:0:972.25:0
+			t 972.25:0:972.25:3.4:0:3.4
+		</ru>
+	</shape>
+	<image id="16" image="art\Textures\apt_fem_m_gameSetup_1.tga"/>
+	<shape id="17" top="0.000000" left="-0.400000" bottom="34.000000" right="982.599976" geometry="fem_m_gameSetup_geometry\17.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_gameSetup_1.tga:1:0:0:1:1.4:771
+			t -0.4:34:-0.4:0:982.6:0
+			t 982.6:0:982.6:34:-0.4:34
+		</ru>
+	</shape>
+	<edittext id="18" top="-2.000000" left="-2.000000" bottom="22.900000" right="79.300003" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;VoIP"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="19" top="-2.000000" left="-2.000000" bottom="25.299999" right="67.750000" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;Mute"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="20" top="-2.000000" left="-2.000000" bottom="26.299999" right="285.899994" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;Name"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="21" top="-2.000000" left="-2.000000" bottom="28.299999" right="89.849998" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;Faction"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="22" top="-2.000000" left="-2.000000" bottom="23.299999" right="193.699997" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;AIPersonality"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="23" top="-2.000000" left="-2.000000" bottom="21.900000" right="62.650002" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;Team"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="24" top="-2.000000" left="-2.000000" bottom="25.950001" right="82.550003" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;Color"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="25" top="-2.000000" left="-2.000000" bottom="26.900000" right="71.349998" font="8" alignment="2" red="0" green="14" blue="186" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;Ready"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="26" top="-2.000000" left="-2.000000" bottom="26.000000" right="300.049988" font="8" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;MP_PLAYER_OPTIONS"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="27">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.230000" tx="0.000000" ty="-7.245000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="4.600000" ty="59.549999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="4" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="7.300000" ty="85.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="5.300000" ty="111.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="4.850000" ty="137.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="7" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.850000" ty="163.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="8" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="4.600000" ty="189.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="27" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="4.600000" ty="241.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="26" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="4.600000" ty="215.550000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="9" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="87.300003" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="10" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="158.199997" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="11" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="449.299988" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="12" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="543.400024" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="13" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="744.400024" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="14" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="815.400024" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="15" character="15" rotm00="0.000000" rotm01="0.248929" rotm10="-1.000000" rotm11="0.000000" tx="903.400024" ty="32.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="16" character="17" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="17" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="5.750000" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="18" character="19" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="89.300003" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="19" character="20" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="160.199997" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="20" character="21" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="451.299988" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="21" character="22" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="547.500000" ty="40.049999">
+				<poname name="personality"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="22" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="748.549988" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="23" character="24" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="817.400024" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="24" character="25" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="904.599976" ty="40.049999">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="25" character="26" rotm00="1.000168" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="35.000000" ty="9.500000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<empty id="28"/>
+	<empty id="29"/>
+	<sprite id="30">
+	</sprite>
+	<sprite id="31">
+	</sprite>
+	<sprite id="32">
+	</sprite>
+	<sprite id="33">
+	</sprite>
+</aptdata>

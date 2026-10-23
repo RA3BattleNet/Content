@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptdata>
+	<movieclip screensizex="1365" screensizey="768" unknown="33">
+		<imports>
+			<import name="std_MousebuttonSymbol" movie="../cafe/mouseComponents/std_MouseButton" character="28"/>
+		</imports>
+		<exports>
+		</exports>
+		<frames>
+			<frame id="0">
+				<background color="-10066330"/>
+				<action><![CDATA[
+					function onLoad()(regs:3, reg1:this, reg2:_global)
+						pushconst "feg_m_disconnect::onLoad()"
+						ActionTrace
+						pushreg 1
+						pushconst "onEnterFrame"
+						pushvar "frameDelayedInit"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						ActionSetMember
+					end
+					function frameDelayedInit()(regs:4, reg1:this, reg2:_root)
+						pushreg 1
+						pushconst "onEnterFrame"
+						pushnull
+						ActionSetMember
+						pushconst "m_refGlobalEventHandler"
+						pushreg 2
+						getnamedmember "gEH"
+						ActionSetVariable
+						pushreg 1
+						getnamedmember "quitButtonClicked"
+						EAPushOne
+						pushreg 1
+						getnamedmember "disconnectMC"
+						getnamedmember "quitButton"
+						callnamedmethodpop "setOnMouseUpFunction"
+						pushvar "localMessageHandler"
+						EAPushOne
+						pushvar "gMH"
+						callnamedmethodpop "addMessageHandler"
+						EAPushZero
+						pushreg 1
+						getnamedmember "disconnectMC"
+						getnamedmember "quitButton"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "disconnectMC"
+						setreg 3
+						ActionPop
+						pushconst "m_playerClips"
+						pushreg 3
+						getnamedmember "entry5"
+						pushreg 3
+						getnamedmember "entry4"
+						pushreg 3
+						getnamedmember "entry3"
+						pushreg 3
+						getnamedmember "entry2"
+						pushreg 3
+						getnamedmember "entry1"
+						pushreg 3
+						getnamedmember "entry0"
+						pushbyte 6
+						ActionInitArray
+						ActionSetVariable
+						EAPushZero
+						callnamedpop "hideDisconnect"
+					end
+					function quitButtonClicked()
+						EAPushZero
+						callnamedpop "hideDisconnect"
+						geturl "FSCommand:CallGameFunction", "%DisconnectQuitGame"
+					end
+					function onUnload()(regs:2, reg1:_global)
+						pushconst "feg_m_disconnect::onUnload()"
+						ActionTrace
+						pushvar "localMessageHandler"
+						EAPushOne
+						pushvar "gMH"
+						callnamedmethodpop "removeMessageHandler"
+						pushreg 1
+						pushconst "feg_m_disconnect"
+						ActionDelete
+						ActionPop
+					end
+					function localMessageHandler(reg3:messageCode)(regs:4, reg1:_global)
+						pushconst "feg_m_disconnect::localMessageHandler() messageCode = '"
+						pushreg 3
+						ActionNewAdd
+						pushconst "'"
+						ActionNewAdd
+						ActionTrace
+						pushfalse
+						setreg 2
+						ActionPop
+						pushreg 3
+						setreg 0
+						pushreg 1
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_SHOW_MP_DISCONNECT"
+						stricteq
+						jumptrue lxnx0
+						pushreg 0
+						pushreg 1
+						getnamedmember "MSGCODE"
+						getnamedmember "FE_HIDE_MP_DISCONNECT"
+						stricteq
+						jumptrue lxnx1
+						jump lxnx2
+					lxnx0:
+						EAPushZero
+						callnamedpop "showDisconnect"
+						pushtrue
+						setreg 2
+						ActionPop
+						jump lxnx3
+					lxnx1:
+						EAPushZero
+						callnamedpop "hideDisconnect"
+						pushtrue
+						setreg 2
+						ActionPop
+						jump lxnx3
+					lxnx2:
+						jump lxnx3
+					lxnx3:
+						pushreg 2
+						ActionReturn
+					end
+					function showDisconnect()(regs:4, reg1:this, reg2:_global)
+						pushconst "feg_m_disconnect::showDisconnect()"
+						ActionTrace
+						EAPushZero
+						pushvar "m_refGlobalEventHandler"
+						pushconst "getCurrentLocalEventHandler"
+						ActionCallMethod
+						pushundefined
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushnull
+						EAPushOne
+						pushvar "m_refGlobalEventHandler"
+						callnamedmethodpop "setLocalEventHandler"
+					lxnx4:
+						pushconst "m_eventHandlerIndex"
+						pushvar "m_eventHandlerPriority"
+						pushvar "localEventHandler"
+						pushbyte 2
+						pushvar "m_refGlobalEventHandler"
+						callnamedmethodset "addPriorityLocalEventHandler"
+						pushreg 1
+						getnamedmember "disconnectMC"
+						getnamedmember "quitButton"
+						setreg 3
+						ActionPop
+						pushconst "$APT:DISCONNECTQUITGAME"
+						EAPushOne
+						pushreg 3
+						callnamedmethodpop "setText"
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "show"
+						EAPushZero
+						pushreg 3
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "shadeMC"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 1
+						getnamedmember "disconnectMC"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushconst "m_playAudio"
+						pushtrue
+						ActionSetVariable
+						EAPushZero
+						callnamedpop "updateScreen"
+						pushreg 1
+						pushconst "onEnterFrame"
+						pushvar "updateScreen"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						ActionSetMember
+					end
+					function hideDisconnect()(regs:2, reg1:this)
+						pushconst "feg_m_disconnect::hideDisconnect()"
+						ActionTrace
+						pushreg 1
+						pushconst "onEnterFrame"
+						pushnull
+						ActionSetMember
+						pushconst "m_playAudio"
+						pushfalse
+						ActionSetVariable
+						pushreg 1
+						getnamedmember "shadeMC"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 1
+						getnamedmember "disconnectMC"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushvar "m_eventHandlerIndex"
+						pushbyte -1
+						ActionNewEquals
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx5
+						pushvar "m_eventHandlerIndex"
+						EAPushOne
+						pushvar "m_refGlobalEventHandler"
+						callnamedmethodpop "removeLocalEventHandler"
+					lxnx5:
+						pushconst "m_eventHandlerIndex"
+						pushbyte -1
+						ActionSetVariable
+					end
+					function localEventHandler(reg1:keyCode, reg0:controller)(regs:2)
+						pushreg 1
+						EAPushOne
+						pushvar "m_FM"
+						callnamedmethodpop "handleDefaultInputs"
+					end
+					function updateScreen()(regs:6)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?DISCONNECT_INFO"
+						pushreg 5
+						geturl2
+						pushconst ","
+						EAPushOne
+						pushreg 5
+						getnamedmember "DISCONNECT_INFO_NAMES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 3
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 5
+						getnamedmember "DISCONNECT_INFO_TIMES"
+						pushconst "split"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+						EAPushZero
+						setreg 1
+						ActionPop
+					lxnx8:
+						pushreg 1
+						pushvar "m_playerClips"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx6
+						pushvar "m_playerClips"
+						pushreg 1
+						ActionGetMember
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 3
+						pushreg 1
+						ActionGetMember
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx7
+						pushvar "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushvar "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "playerTF"
+						pushconst "text"
+						pushreg 3
+						pushreg 1
+						ActionGetMember
+						ActionSetMember
+						pushvar "m_playerClips"
+						pushreg 2
+						ActionGetMember
+						getnamedmember "timeTF"
+						pushconst "text"
+						pushreg 4
+						pushreg 1
+						ActionGetMember
+						ActionSetMember
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+					lxnx7:
+						pushreg 1
+						ActionIncrement
+						setreg 1
+						ActionPop
+						jump lxnx8
+					end
+					lxnx6:
+					pushconst "feg_m_disconnect loading now"
+					ActionTrace
+					pushconst "PADDING"
+					pushbyte 5
+					ActionDefineLocal
+					pushconst "m_messageCallback"
+					ActionVar
+					pushconst "m_playAudio"
+					pushfalse
+					ActionDefineLocal
+					pushconst "m_eventHandlerIndex"
+					pushbyte -1
+					ActionDefineLocal
+					pushconst "m_eventHandlerPriority"
+					EAPushOne
+					ActionDefineLocal
+					pushconst "m_refGlobalEventHandler"
+					ActionVar
+					pushconst "m_playerClips"
+					ActionVar
+					pushconst "OVERLAP_OFFSET"
+					pushbyte 4
+					ActionDefineLocal
+					EAPushZero
+					callnamedpop "onLoad"
+					pushconst "feg_m_disconnect loaded"
+					ActionTrace
+					stop
+					actionEnd
+				]]></action>
+				<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="1" character="2" rotm00="1.066406" rotm01="0.000000" rotm10="0.000000" rotm11="1.066666" tx="0.000000" ty="0.000000" red="255" green="255" blue="255" alpha="178" unknown="0">
+					<poname name="shadeMC"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="29" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="346.000000" ty="155.000000">
+					<poname name="disconnectMC"/>
+				</placeobject>
+			</frame>
+		</frames>
+	</movieclip>
+	<shape id="1" top="0.000000" left="0.000000" bottom="720.000000" right="1280.000000" geometry="feg_m_disconnect_geometry\1.ru">
+		<ru>
+			c
+			s s:0:0:0:255
+			t 0:720:0:0:1280:0
+			t 1280:0:1280:720:0:720
+		</ru>
+	</shape>
+	<button id="2" top="0.000000" left="0.000000" bottom="720.000000" right="1280.000000">
+		<vertexes>
+			<vertex x="0.000000" y="720.000000"/>
+			<vertex x="0.000000" y="0.000000"/>
+			<vertex x="1280.000000" y="0.000000"/>
+			<vertex x="1280.000000" y="720.000000"/>
+		</vertexes>
+		<triangles>
+			<triangle v1="0" v2="1" v3="2"/>
+			<triangle v1="2" v2="3" v3="0"/>
+		</triangles>
+		<buttonrecords>
+			<buttonrecord flags="StateUp|StateOver|StateDown|StateHit" character="1" depth="1" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000"/>
+		</buttonrecords>
+	</button>
+	<image id="3" image="art\Textures\apt_feg_m_disconnect_1.tga"/>
+	<shape id="4" top="-38.150002" left="0.000000" bottom="29.850000" right="782.000000" geometry="feg_m_disconnect_geometry\4.ru">
+		<ru>
+			c
+			s s:249:190:106:255
+			t 16.35:20.2:20.35:24.2:16.35:27.85
+			t 20.35:27.85:16.35:27.85:20.35:24.2
+			t 766.05:20.2:762.05:24.2:20.35:24.2
+			t 762.05:24.2:766.05:20.2:766.05:27.85
+			t 766.05:27.85:762.05:27.85:762.05:24.2
+			t 20.35:24.2:16.35:20.2:766.05:20.2
+			s s:207:14:0:255
+			t 4.1:7.95:7.5:11.35:4.1:27.85
+			t 4.1:7.95:210.55:7.95:7.5:11.35
+			t 210.55:7.95:551.35:7.95:7.5:11.35
+			t 230.6:-16.2:531.3:-16.2:210.55:7.95
+			t 11.1:14.95:771.3:14.95:16.35:20.2
+			t 7.5:27.85:4.1:27.85:7.5:11.35
+			t 16.35:20.2:16.35:27.85:11.1:27.85
+			t 11.1:27.85:11.1:14.95:16.35:20.2
+			t 774.9:11.35:7.5:11.35:551.35:7.95
+			t 531.3:-16.2:551.35:7.95:210.55:7.95
+			t 774.9:27.85:774.9:11.35:778.3:27.85
+			t 774.9:11.35:551.35:7.95:778.3:7.95
+			t 766.05:20.2:771.3:27.85:766.05:27.85
+			t 771.3:27.85:766.05:20.2:771.3:14.95
+			t 778.3:7.95:778.3:27.85:774.9:11.35
+			t 766.05:20.2:16.35:20.2:771.3:14.95
+			s s:0:0:0:255
+			t 0:27.85:0:4.35:4.1:7.95
+			t 210.55:7.95:4.1:7.95:208.7:4.35
+			t 7.5:11.35:11.1:14.95:7.5:27.85
+			t 229.1:-20.2:230.6:-16.2:208.7:4.35
+			t 230.6:-16.2:229.1:-20.2:531.3:-16.2
+			t 210.55:7.95:208.7:4.35:230.6:-16.2
+			t 208.7:4.35:4.1:7.95:0:4.35
+			t 4.1:7.95:4.1:27.85:0:27.85
+			t 7.5:27.85:11.1:14.95:11.1:27.85
+			t 11.1:14.95:7.5:11.35:774.9:11.35
+			t 774.9:11.35:771.3:14.95:11.1:14.95
+			t 531.3:-16.2:534.8:-20.2:555.25:4.35
+			t 534.8:-20.2:531.3:-16.2:229.1:-20.2
+			t 555.25:4.35:778.3:7.95:551.35:7.95
+			t 555.25:4.35:551.35:7.95:531.3:-16.2
+			t 778.3:7.95:782:27.85:778.3:27.85
+			t 782:4.35:778.3:7.95:555.25:4.35
+			t 782:27.85:778.3:7.95:782:4.35
+			t 20.35:27.85:20.35:24.2:762.05:24.2
+			t 762.05:24.2:762.05:27.85:20.35:27.85
+			t 771.3:14.95:774.9:11.35:774.9:27.85
+			t 771.3:14.95:774.9:27.85:771.3:27.85
+			c
+			s tc:255:255:255:255:art\Textures\apt_feg_m_disconnect_1.tga:1:0:0:1:-214:39.15
+			t 215:29.85:215:-38.15:552:-38.15
+			t 552:-38.15:552:29.85:215:29.85
+		</ru>
+	</shape>
+	<sprite id="5">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="6" top="0.050000" left="0.100000" bottom="360.000000" right="781.549988" geometry="feg_m_disconnect_geometry\6.ru">
+		<ru>
+			c
+			s s:249:190:106:255
+			t 16.35:0.05:20.35:0.05:20.35:360
+			t 20.35:360:16.35:360:16.35:0.05
+			t 762.05:0.1:766.05:0.1:766.05:360
+			t 762.05:360:762.05:0.1:766.05:360
+			s s:32:0:0:255
+			t 20.35:0.05:762.05:0.1:20.35:360
+			t 766.05:0.1:762.05:0.1:778.3:0.05
+			t 771.3:0.1:766.05:0.1:778.3:0.05
+			t 774.9:0.1:778.3:0.05:778.3:0.1
+			t 778.3:0.05:774.9:0.1:771.3:0.1
+			t 762.05:0.1:20.35:0.05:778.3:0.05
+			t 771.3:0.1:774.9:0.1:774.9:360
+			t 774.9:360:771.3:360:771.3:0.1
+			t 762.05:0.1:762.05:360:20.35:360
+			s s:207:14:0:255
+			t 4.1:0.05:7.5:0.05:7.5:360
+			t 11.1:0.05:16.35:0.05:16.35:360
+			t 7.5:360:4.1:360:4.1:0.05
+			t 16.35:360:11.1:360:11.1:0.05
+			t 766.05:0.1:771.3:0.1:771.3:360
+			t 774.9:0.1:778.3:0.1:778.3:360
+			t 766.05:360:766.05:0.1:771.3:360
+			t 774.9:0.1:778.3:360:774.9:360
+			s s:0:0:0:255
+			t 0.1:0.05:4.1:0.05:4.1:360
+			t 7.5:0.05:11.1:0.05:11.1:360
+			t 4.1:360:0.1:360:0.1:0.05
+			t 7.5:360:7.5:0.05:11.1:360
+			t 781.55:360:778.3:360:781.55:0.1
+			t 778.3:0.1:781.55:0.1:778.3:360
+		</ru>
+	</shape>
+	<sprite id="7">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="6" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="8" top="-0.600000" left="0.000000" bottom="95.949997" right="782.000000" geometry="feg_m_disconnect_geometry\8.ru">
+		<ru>
+			c
+			s s:249:190:106:255
+			t 16.35:-0.6:20.35:0.45:20.35:76.1
+			t 20.35:0.45:16.35:-0.6:20.35:-0.6
+			t 762.05:76.1:762.05:0.45:766.05:0.65
+			t 20.35:76.1:762.05:76.1:766.05:80.1
+			t 766.05:80.1:762.05:76.1:766.05:0.65
+			t 766.05:80.1:16.35:80.1:20.35:76.1
+			t 16.35:80.1:16.35:-0.6:20.35:76.1
+			s s:32:0:0:255
+			t 762.05:76.1:20.35:0.45:762.05:0.45
+			t 762.05:76.1:20.35:76.1:20.35:0.45
+			s s:207:14:0:255
+			t 4.1:0.45:4.1:-0.6:7.5:-0.6
+			t 11.1:0.45:16.35:80.1:11.1:85.35
+			t 4.1:0.45:7.5:-0.6:7.5:0.45
+			t 11.1:0.45:11.1:-0.6:16.35:-0.6
+			t 7.5:88.95:4.1:0.45:7.5:0.45
+			t 16.35:80.1:11.1:0.45:16.35:-0.6
+			t 7.5:88.95:4.1:92.35:4.1:0.45
+			t 16.35:80.1:766.05:80.1:11.1:85.35
+			t 4.1:92.35:7.5:88.95:774.9:88.95
+			t 771.3:0.45:766.05:80.1:766.05:0.65
+			t 778.3:0.45:774.9:88.95:774.9:0.45
+			t 771.3:85.35:766.05:80.1:771.3:0.45
+			t 766.05:80.1:771.3:85.35:11.1:85.35
+			t 774.9:88.95:778.3:0.45:778.3:92.35
+			t 778.3:92.35:4.1:92.35:774.9:88.95
+			s s:0:0:0:255
+			t 0:0.45:4.1:92.35:0:95.95
+			t 7.5:0.45:11.1:85.35:7.5:88.95
+			t 4.1:0.45:4.1:92.35:0:0.45
+			t 0:95.95:4.1:92.35:782:95.95
+			t 7.5:88.95:11.1:85.35:771.3:85.35
+			t 7.5:0.45:11.1:0.45:11.1:85.35
+			t 771.3:0.45:774.9:0.45:771.3:85.35
+			t 782:0.45:778.3:92.35:778.3:0.45
+			t 774.9:88.95:7.5:88.95:771.3:85.35
+			t 782:95.95:4.1:92.35:778.3:92.35
+			t 774.9:0.45:774.9:88.95:771.3:85.35
+			t 782:0.45:782:95.95:778.3:92.35
+		</ru>
+	</shape>
+	<image id="9" image="art\Textures\apt_feg_m_disconnect_1.tga"/>
+	<shape id="10" top="48.500000" left="102.500000" bottom="63.500000" right="651.500000" geometry="feg_m_disconnect_geometry\10.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_feg_m_disconnect_1.tga:0.846992:0:0:1:-85.816672:22.5
+			t 102.5:63.5:102.5:48.5:651.5:48.5
+			t 651.5:48.5:651.5:63.5:102.5:63.5
+		</ru>
+	</shape>
+	<image id="11" image="art\Textures\apt_feg_m_disconnect_1.tga"/>
+	<shape id="12" top="0.000000" left="0.000000" bottom="23.000000" right="24.000000" geometry="feg_m_disconnect_geometry\12.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_feg_m_disconnect_1.tga:1:0:0:1:384:1
+			t 0:23:0:0:24:0
+			t 24:0:24:23:0:23
+		</ru>
+	</shape>
+	<image id="13" image="art\Textures\apt_feg_m_disconnect_1.tga"/>
+	<shape id="14" top="0.000000" left="0.000000" bottom="41.000000" right="42.000000" geometry="feg_m_disconnect_geometry\14.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_feg_m_disconnect_1.tga:1:0:0:1:340:1
+			t 0:41:0:0:42:0
+			t 42:0:42:41:0:41
+		</ru>
+	</shape>
+	<sprite id="15">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="10" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="299.000000" ty="42.200001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="4" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="334.100006" ty="42.200001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="369.200012" ty="42.200001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="404.299988" ty="42.200001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="7" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="439.399994" ty="42.200001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform" depth="8" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="290.600006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="1">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="36" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="2">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="72" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="3">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="109" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="4">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="145" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="5">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="182" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="6">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="218" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="7">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+		</frame>
+		<frame id="10">
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="325.600006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="16">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="31" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="17">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="63" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="18">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="95" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="19">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="127" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="20">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="159" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="21">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="191" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="22">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="223" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="23">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+		</frame>
+		<frame id="30">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="361.100006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="31">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="42" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="32">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="84" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="33">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="127" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="34">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="170" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="35">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="212" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="36">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="37">
+		</frame>
+		<frame id="38">
+		</frame>
+		<frame id="39">
+		</frame>
+		<frame id="40">
+		</frame>
+		<frame id="41">
+		</frame>
+		<frame id="42">
+		</frame>
+		<frame id="43">
+		</frame>
+		<frame id="44">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="395.850006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="45">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="31" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="46">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="63" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="47">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="95" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="48">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="127" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="49">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="159" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="50">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="191" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="51">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="223" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="52">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="53">
+		</frame>
+		<frame id="54">
+		</frame>
+		<frame id="55">
+		</frame>
+		<frame id="56">
+		</frame>
+		<frame id="57">
+		</frame>
+		<frame id="58">
+		</frame>
+		<frame id="59">
+		</frame>
+		<frame id="60">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="431.100006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="61">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="36" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="62">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="72" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="63">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="109" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="64">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="145" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="65">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="182" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="66">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="218" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="67">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="68">
+		</frame>
+		<frame id="69">
+		</frame>
+		<frame id="70">
+		</frame>
+		<frame id="71">
+		</frame>
+		<frame id="72">
+		</frame>
+		<frame id="73">
+		</frame>
+		<frame id="74">
+		</frame>
+		<frame id="75">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="395.850006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="76">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="36" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="77">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="72" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="78">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="109" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="79">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="145" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="80">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="182" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="81">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="218" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="82">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="83">
+		</frame>
+		<frame id="84">
+		</frame>
+		<frame id="85">
+		</frame>
+		<frame id="86">
+		</frame>
+		<frame id="87">
+		</frame>
+		<frame id="88">
+		</frame>
+		<frame id="89">
+		</frame>
+		<frame id="90">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="361.100006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="91">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="36" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="92">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="72" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="93">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="109" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="94">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="145" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="95">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="182" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="96">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="218" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="97">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="98">
+		</frame>
+		<frame id="99">
+		</frame>
+		<frame id="100">
+		</frame>
+		<frame id="101">
+		</frame>
+		<frame id="102">
+		</frame>
+		<frame id="103">
+		</frame>
+		<frame id="104">
+		</frame>
+		<frame id="105">
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="325.600006" ty="34.450001" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="106">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="36" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="107">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="72" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="108">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="109" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="109">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="145" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="110">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="182" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="111">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="218" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="112">
+			<placeobject flags="Move|HasColorTransform" depth="8" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="113">
+		</frame>
+		<frame id="114">
+		</frame>
+		<frame id="115">
+		</frame>
+		<frame id="116">
+		</frame>
+		<frame id="117">
+		</frame>
+		<frame id="118">
+		</frame>
+		<frame id="119">
+		</frame>
+	</frames>
+	</sprite>
+	<font id="16" name="Red Alert Extended">
+	</font>
+	<edittext id="17" top="-2.000000" left="-2.000000" bottom="26.000000" right="304.149994" font="16" alignment="0" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;PLAYER"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="18" top="-2.000000" left="-2.000000" bottom="26.000000" right="271.350006" font="16" alignment="1" red="0" green="13" blue="188" alpha="255" height="22.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;GUI:PROGRESS"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="19">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="17" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="44.000000" ty="2.000000">
+				<poname name="playerTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="18" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="420.799988" ty="2.000000">
+				<poname name="progressTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="20" name="Lucida Sans">
+	</font>
+	<edittext id="21" top="-2.000000" left="-2.000000" bottom="26.000000" right="317.000000" font="20" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="22" top="-2.000000" left="-2.000000" bottom="27.049999" right="79.000000" font="20" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="23">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="21" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="14.000000" ty="2.000000">
+				<poname name="playerTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="22" rotm00="0.999847" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="583.000000" ty="0.950000">
+				<poname name="timeTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="24" name="Red Alert">
+	</font>
+	<edittext id="25" top="-2.000000" left="-2.000000" bottom="26.000000" right="732.450012" font="24" alignment="2" red="255" green="255" blue="255" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;APT:DISCONNECTMENU&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<font id="26" name="Lucida Sans Unicode">
+	</font>
+	<edittext id="27" top="-2.000000" left="-2.000000" bottom="120.050003" right="721.250000" font="26" alignment="0" red="98" green="177" blue="244" alpha="255" height="16.000000" readonly="1" multiline="1" wordwrap="1">
+		<ettext text="&#x24;APT:DISCONNECTRULES&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<empty id="28"/>
+	<sprite id="29">
+	<frames>
+		<frame id="0">
+			<action><![CDATA[
+				pushstr "feg_m_MesaageBox start up"
+				ActionTrace
+				stop
+				actionEnd
+			]]></action>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="5" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-54.000000" ty="-42.950001">
+				<poname name="panelTopMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="7" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.242340" tx="-54.000000" ty="-16.350000">
+				<poname name="panelMiddleMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="15" rotm00="1.000061" rotm01="0.000000" rotm10="0.000000" rotm11="0.999481" tx="-54.000000" ty="423.950012">
+				<poname name="panelBottomMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="15" character="19" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-34.299999" ty="35.849998">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="18" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.300000" ty="65.900002">
+				<poname name="entry0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="21" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.300000" ty="98.900002">
+				<poname name="entry1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="24" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.300000" ty="131.899994">
+				<poname name="entry2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="27" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.300000" ty="164.899994">
+				<poname name="entry3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="30" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.300000" ty="197.899994">
+				<poname name="entry4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="33" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.300000" ty="230.899994">
+				<poname name="entry5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="36" character="25" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-28.299999" ty="-3.150000">
+				<poname name="titleTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="37" character="27" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-22.299999" ty="272.899994">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="38" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="247.000000" ty="403.000000">
+				<poname name="quitButton"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					zerovar
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "buttonContentSymbol"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+</aptdata>

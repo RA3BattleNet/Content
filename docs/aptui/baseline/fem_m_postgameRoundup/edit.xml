@@ -1,0 +1,4833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptdata>
+	<movieclip screensizex="1365" screensizey="768" unknown="33">
+		<imports>
+			<import name="std_mouseRadioButtonControllerSymbol" movie="../cafe/mouseComponents/std_mouseRadioButton" character="29"/>
+			<import name="std_mouseRadioButtonSymbol" movie="../cafe/mouseComponents/std_mouseRadioButton" character="30"/>
+			<import name="std_mouseScrollingListboxSymbol" movie="../cafe/mouseComponents/std_mouseScrollingListbox" character="68"/>
+			<import name="std_mouseScrollbarSymbol" movie="../cafe/mouseComponents/std_mouseScrollbar" character="69"/>
+			<import name="lowerScreenBar Symbol" movie=".\Components\fe_m_generalScreenComponents" character="77"/>
+			<import name="std_MousebuttonSymbol" movie="../cafe/mouseComponents/std_MouseButton" character="103"/>
+			<import name="ScreenTitleBarSymbol" movie=".\Components\fe_m_generalScreenComponents" character="104"/>
+		</imports>
+		<exports>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="12" name="top_radioButtonContentClip"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="19" name="player_radioButtonContentClip"/>
+			<export character="9" name="top_mouseRadioButton_label"/>
+			<export character="18" name="std_MouseradioButton_label"/>
+			<export character="7" name="top_radioButtonMC"/>
+			<export character="15" name="player_radioButtonMC"/>
+			<export character="20" name="radioButtonMC"/>
+			<export character="11" name="rbHitRegionButton"/>
+			<export character="22" name="statsGraph"/>
+			<export character="24" name="mcColor"/>
+			<export character="26" name="mcFactionIcon"/>
+			<export character="26" name="mcFactionIcon"/>
+			<export character="24" name="mcColor"/>
+			<export character="39" name="mcPlayersGrid"/>
+			<export character="41" name="mcGraphArea"/>
+			<export character="41" name="mcGraphArea"/>
+			<export character="66" name="mcStatsGraph"/>
+			<export character="71" name="mcStatsTable"/>
+			<export character="71" name="mcStatsTable"/>
+			<export character="66" name="mcStatsGraph"/>
+			<export character="39" name="mcPlayersGrid"/>
+			<export character="105" name="__Packages.Cafe2_BaseUIScreen"/>
+			<export character="106" name="__Packages.fem_m_postgameRoundup"/>
+		</exports>
+		<frames>
+			<frame id="0">
+				<background color="-10066330"/>
+				<action><![CDATA[
+					pushstr "screen"
+					pushthis
+					EAPushOne
+					pushstr "fem_m_postgameRoundup"
+					ActionNew
+					ActionDefineLocal
+					stop
+					actionEnd
+				]]></action>
+				<placeobject flags="HasCharacter|HasMatrix" depth="4" character="76" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="5" character="77" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="686.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="7" character="78" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="8" character="71" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="683.250000" ty="126.750000">
+					<poname name="mcStats"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="41" character="66" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="685.799988" ty="125.500000">
+					<poname name="mcGraph"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="124" character="82" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="125" character="83" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="748.000000" ty="482.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="126" character="84" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="748.000000" ty="554.500000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="127" character="85" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="748.000000" ty="627.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="128" character="39" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="209.949997" ty="432.350006">
+					<poname name="mcPlayers"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="195" character="102" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="490.950012" ty="139.800003">
+					<poname name="mcPlayerCircleNumber"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="220" character="103" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="344.299988" ty="691.099976">
+					<poname name="btnMainMenu"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Up/Down"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						EAPushOne
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$MAIN_MENU"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="222" character="103" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="854.700012" ty="691.099976">
+					<poname name="btnNext"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Up/Down"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte 3
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$NEXT"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="224" character="103" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="599.500000" ty="691.099976">
+					<poname name="btnSaveReplay"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Up/Down"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte -1
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$SAVE"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="226" character="29" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="1209.250000" ty="102.800003">
+					<poname name="rctlTop"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_name"
+						setstrvar "rctlTop"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="228" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="200.800003" ty="91.000000">
+					<poname name="radUnits"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushconst "m_width"
+						pushshort 200
+						ActionSetVariable
+						pushconst "m_textAlign"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_labelPosition"
+						pushconst "right align"
+						ActionSetVariable
+						pushconst "m_label_x"
+						zerovar
+						pushconst "m_label_y"
+						zerovar
+						pushconst "m_focusDirs"
+						pushconst "Up/Down"
+						ActionSetVariable
+						pushconst "m_iconType"
+						pushconst "default"
+						ActionSetVariable
+						pushconst "m_extLabel"
+						pushconst "$UNITS"
+						ActionSetVariable
+						pushconst "m_nTruncateType"
+						zerovar
+						pushconst "m_label"
+						pushconst "$UNITS"
+						ActionSetVariable
+						pushconst "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_refFM"
+						pushconst "_root.gFM"
+						ActionSetVariable
+						pushconst "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_tabIndex"
+						pushbyte -1
+						ActionSetVariable
+						pushconst "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_contentSymbol"
+						pushconst "top_radioButtonContentClip"
+						ActionSetVariable
+						pushconst "m_controller"
+						pushconst "rctlTop"
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="230" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="445.500000" ty="91.000000">
+					<poname name="radStructures"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushconst "m_width"
+						pushshort 200
+						ActionSetVariable
+						pushconst "m_textAlign"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_labelPosition"
+						pushconst "right align"
+						ActionSetVariable
+						pushconst "m_label_x"
+						zerovar
+						pushconst "m_label_y"
+						zerovar
+						pushconst "m_focusDirs"
+						pushconst "Up/Down"
+						ActionSetVariable
+						pushconst "m_iconType"
+						pushconst "default"
+						ActionSetVariable
+						pushconst "m_extLabel"
+						pushconst "$STRUCTURES"
+						ActionSetVariable
+						pushconst "m_nTruncateType"
+						zerovar
+						pushconst "m_label"
+						pushconst "$STRUCTURES"
+						ActionSetVariable
+						pushconst "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_refFM"
+						pushconst "_root.gFM"
+						ActionSetVariable
+						pushconst "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_tabIndex"
+						pushbyte -1
+						ActionSetVariable
+						pushconst "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_contentSymbol"
+						pushconst "top_radioButtonContentClip"
+						ActionSetVariable
+						pushconst "m_controller"
+						pushconst "rctlTop"
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="232" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="688.599976" ty="91.000000">
+					<poname name="radResources"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushconst "m_width"
+						pushshort 200
+						ActionSetVariable
+						pushconst "m_textAlign"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_labelPosition"
+						pushconst "right align"
+						ActionSetVariable
+						pushconst "m_label_x"
+						zerovar
+						pushconst "m_label_y"
+						zerovar
+						pushconst "m_focusDirs"
+						pushconst "Up/Down"
+						ActionSetVariable
+						pushconst "m_iconType"
+						pushconst "default"
+						ActionSetVariable
+						pushconst "m_extLabel"
+						pushconst "$RESOURCES"
+						ActionSetVariable
+						pushconst "m_nTruncateType"
+						zerovar
+						pushconst "m_label"
+						pushconst "$RESOURCES"
+						ActionSetVariable
+						pushconst "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_refFM"
+						pushconst "_root.gFM"
+						ActionSetVariable
+						pushconst "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_tabIndex"
+						pushbyte -1
+						ActionSetVariable
+						pushconst "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_contentSymbol"
+						pushconst "top_radioButtonContentClip"
+						ActionSetVariable
+						pushconst "m_controller"
+						pushconst "rctlTop"
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="234" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="931.500000" ty="91.000000">
+					<poname name="radStats"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushconst "m_width"
+						pushshort 200
+						ActionSetVariable
+						pushconst "m_textAlign"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_labelPosition"
+						pushconst "right align"
+						ActionSetVariable
+						pushconst "m_label_x"
+						zerovar
+						pushconst "m_label_y"
+						zerovar
+						pushconst "m_focusDirs"
+						pushconst "Up/Down"
+						ActionSetVariable
+						pushconst "m_iconType"
+						pushconst "default"
+						ActionSetVariable
+						pushconst "m_extLabel"
+						pushconst "$STATS"
+						ActionSetVariable
+						pushconst "m_nTruncateType"
+						zerovar
+						pushconst "m_label"
+						pushconst "$STATS"
+						ActionSetVariable
+						pushconst "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_refFM"
+						pushconst "_root.gFM"
+						ActionSetVariable
+						pushconst "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushconst "m_tabIndex"
+						pushbyte -1
+						ActionSetVariable
+						pushconst "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushconst "m_contentSymbol"
+						pushconst "top_radioButtonContentClip"
+						ActionSetVariable
+						pushconst "m_controller"
+						pushconst "rctlTop"
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasClipAction" depth="236" character="104" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="19.400000">
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_title"
+						setstrvar "$POSTGAME_ROUNDUP"
+						pushstr "m_DropShadow"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_Outline"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_visible"
+						pushtrue
+						ActionSetVariable
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<initaction sprite="105"><![CDATA[
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx0
+					pushglobal
+					pushconst "Cafe2_BaseUIScreen"
+					function (reg3:screen)(regs:4, reg1:this, reg2:_global)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushreg 3
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushreg 1
+						getnamedmember "frameDelayedInitCallback"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						ActionSetMember
+					end
+					setreg 1
+					ActionSetMember
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:2)
+						pushconst "\n\nCafe2_BaseUIScreen::frameDelayedInitCallback() :"
+						ActionTrace
+						pushconst "\nscreens and move the call to initGUI() to frameDelayedInit().\n"
+						pushconst "N.B. You *must* override frameDelayedInit() in your"
+						pushbyte 2
+						pushconst "Array"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushreg 1
+						EAPushZero
+						ActionGetMember
+						pushreg 1
+						EAPushOne
+						ActionGetMember
+						ActionNewAdd
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "frameDelayedInitCallback"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushnull
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "frameDelayedInit"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroComplete"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx3:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx1
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx2
+						jump lxnx1
+					lxnx2:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx3
+					lxnx1:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						pushnull
+						ActionNewEquals
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						EAPushOne
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "changeMainScreen"
+					end
+					lxnx4:
+					ActionSetMember
+					pushreg 2
+					pushconst "introComplete"
+					function (reg1:theComponent)(regs:2)
+						pushconst "Cafe2_BaseUIScreen::introComplete()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "restoreVisualState"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						pushconst "m_introCount"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						ActionDecrement
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx5
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "onIntrosComplete"
+					end
+					lxnx5:
+					ActionSetMember
+					pushreg 2
+					pushconst "onIntrosComplete"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "Cafe2_BaseUIScreen::onIntrosComplete()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "localEventHandler"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "setLocalEventHandler"
+						EAPushZero
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "enableCurrentLocalEventHandler"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "registerIntroOuttroComponents"
+					function (reg3:components)(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::registerIntroOuttroComponents()"
+						ActionTrace
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushreg 3
+						ActionSetMember
+						pushreg 1
+						pushconst "m_introCount"
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionSetMember
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx7:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_introCount"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx6
+						pushreg 1
+						getnamedmember "introComplete"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "setIntroCallback"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx7
+					end
+					lxnx6:
+					ActionSetMember
+					pushreg 2
+					pushconst "executeBackFunction"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::executeBackFunction"
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx10:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx8
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx9
+						jump lxnx8
+					lxnx9:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx10
+					lxnx8:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx11
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx11:
+					ActionSetMember
+					pushreg 2
+					pushconst "startIntro"
+					function ()(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startIntro()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx13:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx12
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "intro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx13
+					end
+					lxnx12:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttro"
+					function (reg4:newScreen)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx14
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx16:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx15
+						pushreg 1
+						getnamedmember "outtroComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx16
+					lxnx15:
+						jump lxnx17
+					lxnx14:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroComplete"
+					end
+					lxnx17:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttroAndCallBack"
+					function (reg4:doAfterOuttroComplete)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_executeOuttroCallBack"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx18
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx20:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx19
+						pushreg 1
+						getnamedmember "outtroAndCallBackComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx20
+					lxnx19:
+						jump lxnx21
+					lxnx18:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroAndCallBackComplete"
+					end
+					lxnx21:
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroAndCallBackComplete"
+					function (reg2:theComponent)(regs:3)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 1
+						ActionPop
+					lxnx24:
+						pushreg 1
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx22
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 1
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx23
+						jump lxnx22
+					lxnx23:
+						pushreg 1
+						ActionIncrement
+						setreg 1
+						ActionPop
+						jump lxnx24
+					lxnx22:
+						EAPushOne
+						pushreg 1
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx25
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "m_executeOuttroCallBack"
+					end
+					lxnx25:
+					ActionSetMember
+					pushreg 2
+					pushconst "backButtonClicked"
+					function ()(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::backButtonClicked()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx26
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx28:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx27
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "executeBackFunction"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx28
+					lxnx27:
+						jump lxnx29
+					lxnx26:
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx29:
+					ActionSetMember
+					pushreg 2
+					pushconst "localEventHandler"
+					function (reg2:keyCode, reg0:controller)(regs:3, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::localEventHandler() keyCode == "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						getnamedmember "gFM"
+						callnamedmethodpop "handleDefaultInputs"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "clearData"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushnull
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushnull
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "bind0"
+					function (obj, func)
+						function ()
+							pushvar "obj"
+							EAPushOne
+							pushvar "func"
+							callnamedmethodpop "call"
+						end
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "m_changeToScreen"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_executeOuttroCallBack"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_uiComponentArray"
+					EAPushZero
+					pushconst "Array"
+					ActionNew
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx0:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="106"><![CDATA[
+					pushglobal
+					getnamedmember "fem_m_postgameRoundup"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx30
+					pushglobal
+					pushconst "fem_m_postgameRoundup"
+					function (reg3:screen)(regs:4, reg1:this, reg2:super)
+						pushreg 3
+						EAPushOne
+						pushreg 2
+						pushundefined
+						callmethodpop
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushreg 1
+						ActionSetMember
+					end
+					setreg 1
+					ActionSetMember
+					pushglobal
+					getnamedmember "fem_m_postgameRoundup"
+					pushvar "Cafe2_BaseUIScreen"
+					extends
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushvar "extern"
+						getnamedmember "RA3PublicBeta"
+						pushconst "1"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx31
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnSaveReplay"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnSaveReplay"
+						callnamedmethodpop "hide"
+					lxnx31:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initGUI"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "startIntro"
+						pushreg 1
+						getnamedmember "onScreenExit"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						getnamedmember "gSM"
+						callnamedmethodpop "setOnExitScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initGUI"
+					function ()(regs:3, reg1:this)
+						pushconst "fem_m_postgameRoundup::initGUI()"
+						ActionTrace
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 2
+						ActionPop
+						pushconst "QueryGameEngine?IsPcGameHost&POSTGAME_PLAYER_COUNT&POSTGAME_PLAYERCOLORS"
+						pushreg 2
+						geturl2
+						pushreg 1
+						pushconst "m_isHost"
+						pushreg 2
+						getnamedmember "IsPcGameHost"
+						pushconst "1"
+						ActionNewEquals
+						ActionSetMember
+						pushreg 1
+						pushconst "m_numPlayers"
+						pushreg 2
+						getnamedmember "POSTGAME_PLAYER_COUNT"
+						ActionSetMember
+						pushconst "fem_m_postgameRoundup::initGUI() -    numPlayers: "
+						pushreg 1
+						getnamedmember "m_numPlayers"
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						pushconst "m_playerColors"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerColors"
+						pushconst ","
+						EAPushOne
+						pushreg 2
+						getnamedmember "POSTGAME_PLAYERCOLORS"
+						pushconst "split"
+						ActionCallMethod
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initStatsTable"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initStatsGraph"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initPlayers"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initButtons"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initTabs"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "playStatsMusic"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initTabs"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "fem_m_postgameRoundup::initTabs()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "radUnits"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "rctlTop"
+						callnamedmethodpop "SetSelectedRadioButton"
+						pushreg 1
+						getnamedmember "onUnitsClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "radUnits"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 1
+						getnamedmember "onStructuresClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "radStructures"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 1
+						getnamedmember "onResourcesClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "radResources"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushreg 1
+						getnamedmember "onStatsClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "radStats"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "TAB_UNITS"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setTab"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initStatsTable"
+					function ()(regs:9, reg1:this)
+						pushconst "fem_m_postgameRoundup::initStatsTable()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcStats"
+						getnamedmember "lbStats"
+						setreg 5
+						ActionPop
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 8
+						ActionPop
+						pushconst "QueryGameEngine?POSTGAME_STATS"
+						pushreg 8
+						geturl2
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 4
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 8
+						getnamedmember "POSTGAME_STATS"
+						pushconst "split"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						pushreg 4
+						getnamedmember "length"
+						setreg 6
+						ActionPop
+						pushconst "fem_m_postgameRoundup::initStatsTable() -    Loaded "
+						pushreg 6
+						ActionNewAdd
+						pushconst " rows from POSTGAME_STATS"
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcStats"
+						getnamedmember "scrollBar"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcStats"
+						getnamedmember "scrollBar"
+						callnamedmethodpop "enable"
+						pushreg 6
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "setNumEntries"
+						EAPushZero
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "setVerticalPadding"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						setreg 7
+						ActionPop
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushshort 230
+						pushconst "leftMargin"
+						EAPushZero
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 115
+						pushconst "leftMargin"
+						pushbyte 5
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 115
+						pushconst "leftMargin"
+						pushbyte 5
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 115
+						pushconst "leftMargin"
+						EAPushZero
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 115
+						pushconst "leftMargin"
+						pushbyte 5
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 115
+						pushconst "leftMargin"
+						pushbyte 5
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushconst "symbol"
+						pushconst "std_mouseListboxEntryTextElementSymbol"
+						pushconst "width"
+						pushbyte 115
+						pushconst "leftMargin"
+						pushbyte 5
+						pushconst "rightMargin"
+						EAPushZero
+						pushconst "fontSize"
+						pushbyte 14
+						pushbyte 5
+						ActionInitObject
+						EAPushOne
+						pushreg 7
+						callnamedmethodpop "push"
+						pushbyte 22
+						pushreg 7
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "init"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcStats"
+						getnamedmember "scrollBar"
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "attachScrollbarController"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "moveViewToFirst"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "refreshDisplay"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "refreshScrollbar"
+						pushreg 1
+						pushconst "m_playerStats0"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerStats1"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerStats2"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerStats3"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerStats4"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						pushreg 1
+						pushconst "m_playerStats5"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx37:
+						pushreg 3
+						pushreg 6
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx32
+						pushreg 4
+						pushreg 3
+						pushconst "$"
+						pushreg 4
+						pushreg 3
+						ActionGetMember
+						ActionNewAdd
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_playerStats0"
+						pushreg 3
+						pushreg 4
+						pushreg 3
+						ActionGetMember
+						pushconst "_0,0x"
+						ActionNewAdd
+						pushbyte 2
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerColors"
+						EAPushZero
+						ActionGetMember
+						pushconst "substr"
+						ActionCallMethod
+						ActionNewAdd
+						ActionSetMember
+						EAPushOne
+						setreg 2
+						ActionPop
+					lxnx36:
+						pushreg 2
+						pushbyte 6
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx33
+						pushreg 1
+						getnamedmember "m_numPlayers"
+						pushreg 2
+						EAPushOne
+						ActionNewAdd
+						ActionNewLessThan
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx34
+						pushreg 1
+						pushconst "m_playerStats"
+						pushreg 2
+						ActionNewAdd
+						ActionGetMember
+						pushreg 3
+						pushreg 4
+						pushreg 3
+						ActionGetMember
+						pushconst "_"
+						ActionNewAdd
+						pushreg 2
+						ActionNewAdd
+						pushconst ",0x"
+						ActionNewAdd
+						pushbyte 2
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_playerColors"
+						pushreg 2
+						ActionGetMember
+						pushconst "substr"
+						ActionCallMethod
+						ActionNewAdd
+						ActionSetMember
+						jump lxnx35
+					lxnx34:
+						pushreg 1
+						pushconst "m_playerStats"
+						pushreg 2
+						ActionNewAdd
+						ActionGetMember
+						pushreg 3
+						pushconst ""
+						ActionSetMember
+					lxnx35:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx36
+					lxnx33:
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx37
+					lxnx32:
+						pushreg 4
+						EAPushZero
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 1
+						getnamedmember "m_playerStats0"
+						EAPushOne
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 1
+						getnamedmember "m_playerStats1"
+						pushbyte 2
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 1
+						getnamedmember "m_playerStats2"
+						pushbyte 3
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 1
+						getnamedmember "m_playerStats3"
+						pushbyte 4
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 1
+						getnamedmember "m_playerStats4"
+						pushbyte 5
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						pushreg 1
+						getnamedmember "m_playerStats5"
+						pushbyte 6
+						pushbyte 2
+						pushreg 5
+						callnamedmethodpop "setColumnData"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "refreshDisplay"
+						EAPushZero
+						pushreg 5
+						callnamedmethodpop "refreshScrollbar"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initStatsGraph"
+					function ()
+						pushconst "fem_m_postgameRoundup::initStatsGraph()"
+						ActionTrace
+						pushconst "graph"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcGraph"
+						ActionDefineLocal
+						pushconst "i"
+						ActionVar
+						pushconst "i"
+						zerovar
+					lxnx41:
+						pushvar "i"
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "GRAPH_X_TICKS"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx38
+						pushconst "tick"
+						pushconst "mcGraph.tf_X"
+						pushvar "i"
+						ActionNewAdd
+						ActionGetVariable
+						ActionDefineLocal
+						pushvar "tick"
+						pushundefined
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx39
+						pushconst "WARNING: Cannot find tick, "
+						pushvar "tick"
+						ActionNewAdd
+						pushconst ", in fem_m_postgameRoundup::initStatsGraph()"
+						ActionNewAdd
+						ActionTrace
+						jump lxnx40
+					lxnx39:
+						pushvar "tick"
+						pushconst "text"
+						pushconst "$Timeline:XAxis:"
+						pushvar "i"
+						ActionNewAdd
+						ActionSetMember
+					lxnx40:
+						pushconst "i"
+						pushvar "i"
+						ActionIncrement
+						ActionSetVariable
+						jump lxnx41
+					lxnx38:
+						pushconst "i"
+						zerovar
+					lxnx45:
+						pushvar "i"
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "GRAPH_Y_TICKS"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx42
+						pushconst "tick"
+						pushconst "mcGraph.tf_Y"
+						pushvar "i"
+						ActionNewAdd
+						ActionGetVariable
+						ActionDefineLocal
+						pushvar "tick"
+						pushundefined
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx43
+						pushconst "WARNING: Cannot find the tick, tfY_"
+						pushvar "i"
+						ActionNewAdd
+						pushconst ", in fem_m_postgameRoundup::initStatsGraph()"
+						ActionNewAdd
+						ActionTrace
+						jump lxnx44
+					lxnx43:
+						pushvar "tick"
+						pushconst "text"
+						pushconst "$Timeline:YAxis:"
+						pushvar "i"
+						ActionNewAdd
+						ActionSetMember
+					lxnx44:
+						pushconst "i"
+						pushvar "i"
+						ActionIncrement
+						ActionSetVariable
+						jump lxnx45
+					end
+					lxnx42:
+					ActionSetMember
+					pushreg 2
+					pushconst "initPlayers"
+					function ()
+						pushconst "fem_m_postgameRoundup::initPlayers()"
+						ActionTrace
+						pushconst "players"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcPlayers"
+						ActionDefineLocal
+						pushconst "hostId"
+						EAPushZero
+						ActionDefineLocal
+						pushthis
+						getnamedmember "m_isHost"
+						ActionLogicalNot
+						jumptrue lxnx46
+						pushvar "players"
+						getnamedmember "Player0"
+						EAPushOne
+						pushvar "players"
+						getnamedmember "rctlTop"
+						callnamedmethodpop "SetSelectedRadioButton"
+						pushthis
+						getnamedmember "onPlayerClicked"
+						pushthis
+						pushbyte 2
+						pushglobal
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "players"
+						getnamedmember "radPlayer0"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushthis
+						getnamedmember "onPlayerClicked"
+						pushthis
+						pushbyte 2
+						pushglobal
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "players"
+						getnamedmember "radPlayer1"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushthis
+						getnamedmember "onPlayerClicked"
+						pushthis
+						pushbyte 2
+						pushglobal
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "players"
+						getnamedmember "radPlayer2"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushthis
+						getnamedmember "onPlayerClicked"
+						pushthis
+						pushbyte 2
+						pushglobal
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "players"
+						getnamedmember "radPlayer3"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushthis
+						getnamedmember "onPlayerClicked"
+						pushthis
+						pushbyte 2
+						pushglobal
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "players"
+						getnamedmember "radPlayer4"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushthis
+						getnamedmember "onPlayerClicked"
+						pushthis
+						pushbyte 2
+						pushglobal
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "players"
+						getnamedmember "radPlayer5"
+						callnamedmethodpop "setOnMouseDownFunction"
+						pushconst "radHost"
+						pushconst "m_screen.mcPlayers.radPlayer"
+						pushvar "hostId"
+						ActionNewAdd
+						ActionGetVariable
+						ActionDefineLocal
+						pushconst "fem_m_postgameRoundup::initPlayers() - Disabling Host id: "
+						pushvar "hostId"
+						ActionNewAdd
+						pushconst " radio: "
+						ActionNewAdd
+						pushvar "radHost"
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						pushvar "radHost"
+						callnamedmethodpop "disable"
+						jump lxnx47
+					lxnx46:
+						EAPushZero
+						pushvar "players"
+						getnamedmember "radPlayer0"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "players"
+						getnamedmember "radPlayer1"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "players"
+						getnamedmember "radPlayer2"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "players"
+						getnamedmember "radPlayer3"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "players"
+						getnamedmember "radPlayer4"
+						callnamedmethodpop "disable"
+						EAPushZero
+						pushvar "players"
+						getnamedmember "radPlayer5"
+						callnamedmethodpop "disable"
+					lxnx47:
+						pushconst "playerIndex"
+						EAPushZero
+						ActionDefineLocal
+					lxnx49:
+						pushvar "playerIndex"
+						pushthis
+						getnamedmember "m_numPlayers"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx48
+						pushconst "imageMap"
+						pushconst "PlayerFlag"
+						pushvar "playerIndex"
+						ActionNewAdd
+						ActionDefineLocal
+						pushconst "factionRenderImage"
+						pushvar "players"
+						pushconst ".mcPlayerInfo"
+						ActionNewAdd
+						pushvar "playerIndex"
+						ActionNewAdd
+						ActionGetVariable
+						getnamedmember "mcPlayerFlag"
+						ActionDefineLocal
+						pushvar "factionRenderImage"
+						pushconst "_imageMap"
+						pushvar "imageMap"
+						ActionSetMember
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%PostGame_SetPlayerFlag?|FlagImageName="
+						pushvar "imageMap"
+						ActionNewAdd
+						pushconst "|PlayerIndex="
+						ActionNewAdd
+						pushvar "playerIndex"
+						ActionNewAdd
+						geturl2
+						pushconst "playerIndex"
+						pushvar "playerIndex"
+						ActionIncrement
+						ActionSetVariable
+						jump lxnx49
+					lxnx48:
+						pushconst "dataObj"
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						ActionDefineLocal
+						pushconst "playNameList"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionDefineLocal
+						pushconst "playColorList"
+						EAPushZero
+						pushconst "Array"
+						ActionNew
+						ActionDefineLocal
+						pushconst "QueryGameEngine?POSTGAME_PLAYERNAMES&POSTGAME_PLAYERCOLORS"
+						pushvar "dataObj"
+						geturl2
+						pushconst "playNameList"
+						pushconst ","
+						EAPushOne
+						pushvar "dataObj"
+						getnamedmember "POSTGAME_PLAYERNAMES"
+						callnamedmethodset "split"
+						pushconst "playColorList"
+						pushconst ","
+						EAPushOne
+						pushvar "dataObj"
+						getnamedmember "POSTGAME_PLAYERCOLORS"
+						callnamedmethodset "split"
+						pushconst "playerIndex"
+						EAPushZero
+						ActionDefineLocal
+					lxnx53:
+						pushvar "playerIndex"
+						pushbyte 6
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx50
+						pushconst "mcPlayerInfo"
+						pushconst "mcPlayers.mcPlayerInfo"
+						pushvar "playerIndex"
+						ActionNewAdd
+						ActionGetVariable
+						ActionDefineLocal
+						pushconst "mcPlayerCircle"
+						pushconst "mcPlayerCircleNumber.mcPlayerCircle"
+						pushvar "playerIndex"
+						ActionNewAdd
+						ActionGetVariable
+						ActionDefineLocal
+						pushvar "playerIndex"
+						pushthis
+						getnamedmember "m_numPlayers"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx51
+						pushvar "mcPlayerInfo"
+						getnamedmember "tfPlayerName"
+						pushconst "text"
+						pushvar "playNameList"
+						pushvar "playerIndex"
+						ActionGetMember
+						ActionSetMember
+						pushvar "mcPlayerInfo"
+						getnamedmember "tfPlayerNumber"
+						pushconst "text"
+						pushvar "playerIndex"
+						EAPushOne
+						ActionNewAdd
+						pushconst "&Outline"
+						ActionNewAdd
+						ActionSetMember
+						pushconst "mcPlayerCircleNumber.tfPlayerNumber"
+						pushvar "playerIndex"
+						ActionNewAdd
+						ActionGetVariable
+						pushconst "text"
+						pushvar "playerIndex"
+						EAPushOne
+						ActionNewAdd
+						ActionToString
+						pushconst "&Outline"
+						ActionNewAdd
+						ActionSetMember
+						pushconst "playerColor"
+						pushconst "0x"
+						pushbyte 2
+						EAPushOne
+						pushvar "playColorList"
+						pushvar "playerIndex"
+						ActionGetMember
+						pushconst "substr"
+						ActionCallMethod
+						ActionNewAdd
+						ActionToNumber
+						ActionDefineLocal
+						pushconst "InfoColor"
+						pushvar "mcPlayerInfo"
+						getnamedmember "mcPlayerColor"
+						EAPushOne
+						pushconst "Color"
+						ActionNew
+						ActionDefineLocal
+						pushconst "CircleColor"
+						pushvar "mcPlayerCircle"
+						EAPushOne
+						pushconst "Color"
+						ActionNew
+						ActionDefineLocal
+						pushvar "playerColor"
+						EAPushOne
+						pushvar "InfoColor"
+						callnamedmethodpop "setRGB"
+						pushvar "playerColor"
+						EAPushOne
+						pushvar "CircleColor"
+						callnamedmethodpop "setRGB"
+						jump lxnx52
+					lxnx51:
+						pushvar "mcPlayerInfo"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushvar "mcPlayerCircle"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+					lxnx52:
+						pushconst "playerIndex"
+						pushvar "playerIndex"
+						ActionIncrement
+						ActionSetVariable
+						jump lxnx53
+					end
+					lxnx50:
+					ActionSetMember
+					pushreg 2
+					pushconst "initButtons"
+					function ()(regs:4, reg1:this, reg2:_global)
+						pushconst "fem_m_postgameRoundup::initButtons()"
+						ActionTrace
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnMainMenu"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnMainMenu"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onMainMenuClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnMainMenu"
+						callnamedmethodpop "setOnMouseUpFunction"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnNext"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnNext"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onNextClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnNext"
+						callnamedmethodpop "setOnMouseUpFunction"
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?CAN_SAVE_REPLAY"
+						pushreg 3
+						geturl2
+						pushreg 3
+						getnamedmember "CAN_SAVE_REPLAY"
+						EAPushOne
+						ActionToString
+						ActionNewEquals
+						ActionDup
+						ActionLogicalNot
+						jumptrue lxnx54
+						ActionPop
+						pushvar "extern"
+						getnamedmember "RA3PublicBeta"
+						pushconst "1"
+						ActionNewEquals
+						ActionLogicalNot
+					lxnx54:
+						ActionLogicalNot
+						jumptrue lxnx55
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnSaveReplay"
+						callnamedmethodpop "show"
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnSaveReplay"
+						callnamedmethodpop "enable"
+						pushreg 1
+						getnamedmember "onSaveReplayClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnSaveReplay"
+						callnamedmethodpop "setOnMouseUpFunction"
+						jump lxnx56
+					lxnx55:
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnSaveReplay"
+						callnamedmethodpop "disable"
+					lxnx56:
+						pushvar "btnSaveReplay"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnNext"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "btnMainMenu"
+						pushbyte 3
+						ActionInitArray
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "registerIntroOuttroComponents"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "playStatsMusic"
+					function ()(regs:3, reg1:_global)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 2
+						ActionPop
+						pushconst "QueryGameEngine?DID_LOCAL_PLAYER_WIN"
+						pushreg 2
+						geturl2
+						pushreg 2
+						getnamedmember "DID_LOCAL_PLAYER_WIN"
+						pushconst "1"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx57
+						pushreg 1
+						getnamedmember "SOUND"
+						getnamedmember "STATS_WIN"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "PlayShellMusic"
+						jump lxnx58
+					lxnx57:
+						pushreg 1
+						getnamedmember "SOUND"
+						getnamedmember "STATS_LOSE"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "PlayShellMusic"
+					end
+					lxnx58:
+					ActionSetMember
+					pushreg 2
+					pushconst "onScreenExit"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "fem_m_postgameRoundup::onScreenExit()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "clearData"
+						pushreg 2
+						pushconst "fem_m_postgameRoundup"
+						ActionDelete
+						ActionPop
+						pushreg 2
+						pushconst "Cafe2_BaseUIScreen"
+						ActionDelete
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "setTab"
+					function (reg1:tabId)(regs:2)
+						pushconst "fem_m_postgameRoundup::setTab() tabId: "
+						pushreg 1
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "TAB_STATS"
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx59
+						pushconst "fem_m_postgameRoundup::setStandingsTab() - Showing Stats Table"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcGraph"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcStats"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushvar "mcPlayerCircleNumber"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						jump lxnx60
+					lxnx59:
+						pushconst "fem_m_postgameRoundup::setStandingsTab() - Showing Stats Graph"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcGraph"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "mcStats"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushvar "mcPlayerCircleNumber"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%PostGame_SetGraphMode?GraphMode="
+						pushreg 1
+						ActionNewAdd
+						geturl2
+					end
+					lxnx60:
+					ActionSetMember
+					pushreg 2
+					pushconst "onUnitsClicked"
+					function ()(regs:2, reg1:this)
+						pushconst "fem_m_postgameRoundup::onUnitsClicked()"
+						ActionTrace
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "TAB_UNITS"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setTab"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onStructuresClicked"
+					function ()(regs:2, reg1:this)
+						pushconst "fem_m_postgameRoundup::onStructuresClicked()"
+						ActionTrace
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "TAB_STRUCTURES"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setTab"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onResourcesClicked"
+					function ()(regs:2, reg1:this)
+						pushconst "fem_m_postgameRoundup::onResourcesClicked()"
+						ActionTrace
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "TAB_RESOURCES"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setTab"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onStatsClicked"
+					function ()(regs:2, reg1:this)
+						pushconst "fem_m_postgameRoundup::onStatsClicked()"
+						ActionTrace
+						pushvar "fem_m_postgameRoundup"
+						getnamedmember "TAB_STATS"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setTab"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onPlayerClicked"
+					function ()(regs:2)
+						EAPushZero
+						pushvar "gFM"
+						pushconst "getSelectedIndex"
+						ActionCallMethod
+						pushbyte 10
+						ActionSubtract
+						setreg 1
+						ActionPop
+						pushconst "fem_m_postgameRoundup::onPlayerClicked() - selected: "
+						pushreg 1
+						ActionNewAdd
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onNextClicked"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "fem_m_postgameRoundup::onNextClicked()"
+						ActionTrace
+						pushreg 2
+						getnamedmember "GAME"
+						getnamedmember "MODE"
+						setreg 0
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_SKIRMISH"
+						stricteq
+						jumptrue lxnx61
+						pushreg 0
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_MULTIPLAYER"
+						stricteq
+						jumptrue lxnx62
+						pushreg 0
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_LAN_MP"
+						stricteq
+						jumptrue lxnx63
+						pushreg 0
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_SHELL"
+						stricteq
+						jumptrue lxnx64
+						pushreg 0
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "GAME_MODE_NONE"
+						stricteq
+						jumptrue lxnx64
+						jump lxnx65
+					lxnx61:
+						pushreg 1
+						getnamedmember "returnFromSkirmish"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttroAndCallBack"
+						jump lxnx66
+					lxnx62:
+						pushreg 1
+						getnamedmember "returnFromMultiplayerGame"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttroAndCallBack"
+						jump lxnx66
+					lxnx63:
+						pushreg 1
+						getnamedmember "returnFromLAN_MultiplayerGame"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttroAndCallBack"
+						jump lxnx66
+					lxnx64:
+						pushreg 2
+						getnamedmember "GAME"
+						pushconst "SAVELOADSCREEN_TYPE"
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "SAVELOADSCREEN_LOAD"
+						ActionSetMember
+						pushreg 1
+						getnamedmember "returnFromReplay"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttroAndCallBack"
+						jump lxnx66
+					lxnx65:
+						pushconst "ERROR: The game mode is not set to a skirmish or MP mode in fem_m_postgameRoundup::onNextClicked()"
+						ActionTrace
+						jump lxnx66
+					end
+					lxnx66:
+					ActionSetMember
+					pushreg 2
+					pushconst "onSaveReplayClicked"
+					function ()(regs:2, reg1:_global)
+						pushconst "fem_m_postgameRoundup::onSaveReplayClicked()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "GAME"
+						pushconst "SAVELOADSCREEN_TYPE"
+						pushreg 1
+						getnamedmember "ENUM"
+						getnamedmember "SAVELOADSCREEN_SAVE"
+						ActionSetMember
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_SAVELOAD"
+						EAPushOne
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "changeMainScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "returnFromSkirmish"
+					function ()(regs:2, reg1:_global)
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_MAIN_MENU"
+						EAPushOne
+						ActionInitArray
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FES_SKIRMISH_SETUP"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "gotoShellScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "returnFromMultiplayerGame"
+					function ()(regs:2, reg1:_global)
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_MAIN_MENU"
+						EAPushOne
+						ActionInitArray
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEM_MP_ONLINE_MULTIPLAYER"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "gotoShellScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "returnFromLAN_MultiplayerGame"
+					function ()(regs:2, reg1:_global)
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_MAIN_MENU"
+						EAPushOne
+						ActionInitArray
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEM_LAN_LOBBY"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "gotoShellScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "returnFromReplay"
+					function ()(regs:2, reg1:_global)
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_MAIN_MENU"
+						EAPushOne
+						ActionInitArray
+						pushreg 1
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_SAVELOAD"
+						pushbyte 2
+						pushreg 1
+						callnamedmethodpop "gotoShellScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onMainMenuClicked"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "fem_m_postgameRoundup::onMainMenuClicked()"
+						ActionTrace
+						pushreg 2
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_MAIN_MENU"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttro"
+					end
+					ActionSetMember
+					pushreg 1
+					pushconst "TAB_UNITS"
+					EAPushZero
+					ActionSetMember
+					pushreg 1
+					pushconst "TAB_STRUCTURES"
+					EAPushOne
+					ActionSetMember
+					pushreg 1
+					pushconst "TAB_RESOURCES"
+					pushbyte 2
+					ActionSetMember
+					pushreg 1
+					pushconst "TAB_STATS"
+					pushbyte 3
+					ActionSetMember
+					pushreg 1
+					pushconst "TAB_MAX"
+					pushbyte 4
+					ActionSetMember
+					pushreg 1
+					pushconst "GRAPH_X_TICKS"
+					pushbyte 8
+					ActionSetMember
+					pushreg 1
+					pushconst "GRAPH_Y_TICKS"
+					pushbyte 8
+					ActionSetMember
+					pushreg 1
+					pushconst "GRAPH_NUM_LABELS"
+					pushbyte 8
+					ActionSetMember
+					pushreg 2
+					pushconst "m_selectedPlayer"
+					pushbyte -1
+					ActionSetMember
+					pushreg 2
+					pushconst "m_isHost"
+					pushfalse
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "fem_m_postgameRoundup"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx30:
+					ActionPop
+					actionEnd
+				]]></initaction>
+			</frame>
+		</frames>
+	</movieclip>
+	<image id="1" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="2" top="0.000000" left="0.000000" bottom="31.000000" right="237.000000" geometry="fem_m_postgameRoundup_geometry\2.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:1734:37
+			t 0:31:0:0:237:0
+			t 237:0:237:31:0:31
+		</ru>
+	</shape>
+	<font id="3" name="Red Alert Extended">
+	</font>
+	<edittext id="4" top="-2.000000" left="-2.000000" bottom="28.950001" right="205.000000" font="3" alignment="2" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable="_parent.labelMC.Label"/>
+	</edittext>
+	<image id="5" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="6" top="-1.650000" left="-2.500000" bottom="32.349998" right="234.500000" geometry="fem_m_postgameRoundup_geometry\6.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:1736.5:2.65
+			t -2.5:32.35:-2.5:-1.65:234.5:-1.65
+			t 234.5:-1.65:234.5:32.35:-2.5:32.35
+		</ru>
+	</shape>
+	<sprite id="7">
+	<frames>
+		<frame id="0">
+			<action><![CDATA[
+				getstrvar "LabelTF"
+				pushstr "textColor"
+				EAPushZero
+				ActionSetMember
+				actionEnd
+			]]></action>
+			<framelabel label="_unChecked" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="2" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="8.500000" ty="5.000000">
+				<poname name="LabelTF"/>
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="9">
+			<action><![CDATA[
+				getstrvar "LabelTF"
+				pushstr "textColor"
+				pushlong 16777215
+				ActionSetMember
+				actionEnd
+			]]></action>
+			<framelabel label="_checked" frame="9"/>
+			<placeobject flags="Move|HasCharacter" depth="1" character="6">
+			</placeobject>
+		</frame>
+		<frame id="10">
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<edittext id="8" top="-2.000000" left="-2.000000" bottom="28.950001" right="204.500000" font="3" alignment="2" red="51" green="153" blue="255" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable="Label"/>
+	</edittext>
+	<sprite id="9">
+	<frames>
+		<frame id="0">
+			<action><![CDATA[
+				pushthis
+				pushstr "_visible"
+				pushfalse
+				ActionSetMember
+				actionEnd
+			]]></action>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.500000" ty="0.950000">
+				<poname name="labelTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="10" top="-1.000000" left="-1.000000" bottom="29.000000" right="85.000000" geometry="fem_m_postgameRoundup_geometry\10.ru">
+		<ru>
+			c
+			s s:0:0:0:0
+			t 0:0:0:0:0:0
+		</ru>
+	</shape>
+	<button id="11" top="-1.000000" left="-1.000000" bottom="29.000000" right="85.000000">
+		<vertexes>
+			<vertex x="-0.500000" y="28.500000"/>
+			<vertex x="-0.500000" y="-0.500000"/>
+			<vertex x="84.500000" y="-0.500000"/>
+			<vertex x="84.500000" y="28.500000"/>
+		</vertexes>
+		<triangles>
+			<triangle v1="0" v2="1" v3="2"/>
+			<triangle v1="2" v2="3" v3="0"/>
+		</triangles>
+		<buttonrecords>
+			<buttonrecord flags="StateHit" character="10" depth="1" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000"/>
+		</buttonrecords>
+	</button>
+	<sprite id="12">
+	<frames>
+		<frame id="0">
+			<framelabel label="_disable" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="1" character="7" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000" red="73" green="73" blue="73" alpha="255" unknown="2302755">
+				<poname name="checkBoxMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="4" character="9" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="4.000000" ty="-48.000000" red="0" green="0" blue="0" alpha="255" unknown="3289650">
+				<poname name="labelMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="11" rotm00="2.470551" rotm01="0.000000" rotm10="0.000000" rotm11="1.034485" tx="3.250000" ty="0.400000">
+				<poname name="hitRegion"/>
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="10">
+			<framelabel label="_selected" frame="10"/>
+			<placeobject flags="Move|HasColorTransform" depth="1" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+			<placeobject flags="Move|HasMatrix|HasColorTransform" depth="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-3.000000" ty="-39.049999" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+		</frame>
+		<frame id="19">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="20">
+			<framelabel label="_unselected" frame="20"/>
+		</frame>
+		<frame id="21">
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="30">
+			<framelabel label="_selectedRollover" frame="30"/>
+		</frame>
+		<frame id="31">
+		</frame>
+		<frame id="32">
+		</frame>
+		<frame id="33">
+		</frame>
+		<frame id="34">
+		</frame>
+		<frame id="35">
+		</frame>
+		<frame id="36">
+		</frame>
+		<frame id="37">
+		</frame>
+		<frame id="38">
+		</frame>
+		<frame id="39">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="40">
+			<framelabel label="_unselectedRollover" frame="40"/>
+		</frame>
+		<frame id="41">
+		</frame>
+		<frame id="42">
+		</frame>
+		<frame id="43">
+		</frame>
+		<frame id="44">
+		</frame>
+		<frame id="45">
+		</frame>
+		<frame id="46">
+		</frame>
+		<frame id="47">
+		</frame>
+		<frame id="48">
+		</frame>
+		<frame id="49">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="50">
+			<framelabel label="_intro" frame="50"/>
+		</frame>
+		<frame id="51">
+		</frame>
+		<frame id="52">
+		</frame>
+		<frame id="53">
+		</frame>
+		<frame id="54">
+		</frame>
+		<frame id="55">
+		</frame>
+		<frame id="56">
+		</frame>
+		<frame id="57">
+		</frame>
+		<frame id="58">
+		</frame>
+		<frame id="59">
+			<action><![CDATA[
+				EAPushZero
+				pushthis
+				getstrmember "_parent"
+				pushstr "introComplete"
+				callmethodpop
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="60">
+			<framelabel label="_outtro" frame="60"/>
+		</frame>
+		<frame id="61">
+		</frame>
+		<frame id="62">
+		</frame>
+		<frame id="63">
+		</frame>
+		<frame id="64">
+		</frame>
+		<frame id="65">
+		</frame>
+		<frame id="66">
+		</frame>
+		<frame id="67">
+		</frame>
+		<frame id="68">
+		</frame>
+		<frame id="69">
+			<action><![CDATA[
+				EAPushZero
+				pushthis
+				getstrmember "_parent"
+				pushstr "outtroComplete"
+				callmethodpop
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="13" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="14" top="0.000000" left="0.000000" bottom="78.000000" right="364.000000" geometry="fem_m_postgameRoundup_geometry\14.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:1368:1
+			t 0:78:0:0:364:0
+			t 364:0:364:78:0:78
+		</ru>
+	</shape>
+	<sprite id="15">
+	<frames>
+		<frame id="0">
+			<framelabel label="_unChecked" frame="0"/>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="9">
+			<framelabel label="_checked" frame="9"/>
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="14" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="10">
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="16" name="RussellSquare">
+	</font>
+	<edittext id="17" top="-2.000000" left="-2.000000" bottom="18.650000" right="135.000000" font="16" alignment="0" red="255" green="255" blue="255" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="18">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="17" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.020401" tx="2.000000" ty="2.050000">
+				<poname name="labelTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="19">
+	<frames>
+		<frame id="0">
+			<action><![CDATA[
+				actionEnd
+			]]></action>
+			<framelabel label="_disable" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="1" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000" red="255" green="255" blue="255" alpha="127" unknown="0">
+				<poname name="checkBoxMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="3" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="30.000000" ty="-10.000000" red="0" green="0" blue="0" alpha="255" unknown="4144959">
+				<poname name="labelMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="5" character="11" rotm00="4.282288" rotm01="0.000000" rotm10="0.000000" rotm11="2.689667" tx="2.150000" ty="1.350000">
+				<poname name="hitRegion"/>
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="10">
+			<framelabel label="_selected" frame="10"/>
+			<placeobject flags="Move|HasColorTransform" depth="1" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+			<placeobject flags="Move|HasColorTransform" depth="3" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+		</frame>
+		<frame id="19">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="20">
+			<framelabel label="_unselected" frame="20"/>
+		</frame>
+		<frame id="21">
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="30">
+			<framelabel label="_selectedRollover" frame="30"/>
+		</frame>
+		<frame id="31">
+		</frame>
+		<frame id="32">
+		</frame>
+		<frame id="33">
+		</frame>
+		<frame id="34">
+		</frame>
+		<frame id="35">
+		</frame>
+		<frame id="36">
+		</frame>
+		<frame id="37">
+		</frame>
+		<frame id="38">
+		</frame>
+		<frame id="39">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="40">
+			<framelabel label="_unselectedRollover" frame="40"/>
+		</frame>
+		<frame id="41">
+		</frame>
+		<frame id="42">
+		</frame>
+		<frame id="43">
+		</frame>
+		<frame id="44">
+		</frame>
+		<frame id="45">
+		</frame>
+		<frame id="46">
+		</frame>
+		<frame id="47">
+		</frame>
+		<frame id="48">
+		</frame>
+		<frame id="49">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="50">
+			<framelabel label="_intro" frame="50"/>
+		</frame>
+		<frame id="51">
+		</frame>
+		<frame id="52">
+		</frame>
+		<frame id="53">
+		</frame>
+		<frame id="54">
+		</frame>
+		<frame id="55">
+		</frame>
+		<frame id="56">
+		</frame>
+		<frame id="57">
+		</frame>
+		<frame id="58">
+		</frame>
+		<frame id="59">
+			<action><![CDATA[
+				EAPushZero
+				pushthis
+				getstrmember "_parent"
+				pushstr "introComplete"
+				callmethodpop
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="60">
+			<framelabel label="_outtro" frame="60"/>
+		</frame>
+		<frame id="61">
+		</frame>
+		<frame id="62">
+		</frame>
+		<frame id="63">
+		</frame>
+		<frame id="64">
+		</frame>
+		<frame id="65">
+		</frame>
+		<frame id="66">
+		</frame>
+		<frame id="67">
+		</frame>
+		<frame id="68">
+		</frame>
+		<frame id="69">
+			<action><![CDATA[
+				EAPushZero
+				pushthis
+				getstrmember "_parent"
+				pushstr "outtroComplete"
+				callmethodpop
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="20">
+	<frames>
+		<frame id="0">
+			<framelabel label="_unChecked" frame="0"/>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="9">
+			<framelabel label="_checked" frame="9"/>
+		</frame>
+		<frame id="10">
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="21" top="0.000000" left="0.000000" bottom="500.000000" right="460.000000" geometry="fem_m_postgameRoundup_geometry\21.ru">
+		<ru>
+			c
+			s s:0:102:204:255
+			t 0:500:0:0:460:0
+			t 460:0:460:500:0:500
+		</ru>
+	</shape>
+	<sprite id="22">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="21" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="23" top="0.000000" left="0.000000" bottom="2.000000" right="2.000000" geometry="fem_m_postgameRoundup_geometry\23.ru">
+		<ru>
+			c
+			s s:255:255:255:255
+			t 0:2:0:0:2:0
+			t 2:0:2:2:0:2
+		</ru>
+	</shape>
+	<sprite id="24">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="23" rotm00="26.999664" rotm01="0.000000" rotm10="0.000000" rotm11="9.999847" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="25" top="0.000000" left="0.000000" bottom="52.000000" right="52.000000" geometry="fem_m_postgameRoundup_geometry\25.ru">
+		<ru>
+			c
+			s s:255:153:51:255
+			t 0:52:0:0:52:0
+			t 52:0:52:52:0:52
+		</ru>
+	</shape>
+	<sprite id="26">
+	<frames>
+		<frame id="0">
+			<framelabel label="_update" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="25" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="1">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="27" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="28" top="0.350000" left="0.000000" bottom="230.350006" right="726.000000" geometry="fem_m_postgameRoundup_geometry\28.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:1:770.65
+			t 0:230.35:0:0.35:726:0.35
+			t 726:0.35:726:230.35:0:230.35
+		</ru>
+	</shape>
+	<empty id="29"/>
+	<empty id="30"/>
+	<image id="31" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="32" top="0.000000" left="0.000000" bottom="56.000000" right="337.000000" geometry="fem_m_postgameRoundup_geometry\32.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:1368:81
+			t 0:56:0:0:337:0
+			t 337:0:337:56:0:56
+		</ru>
+	</shape>
+	<font id="33" name="Lucida Sans Unicode">
+	</font>
+	<edittext id="34" top="-2.000000" left="-2.000000" bottom="23.500000" right="212.000000" font="33" alignment="0" red="255" green="255" blue="255" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="Default"/>
+		<etvar variable=""/>
+	</edittext>
+	<shape id="35" top="0.000000" left="0.000000" bottom="52.000000" right="52.000000" geometry="fem_m_postgameRoundup_geometry\35.ru">
+		<ru>
+			c
+			s s:255:204:0:255
+			t 0:52:0:0:52:0
+			t 52:0:52:52:0:52
+		</ru>
+	</shape>
+	<sprite id="36">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="35" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<edittext id="37" top="-2.000000" left="-2.000000" bottom="23.500000" right="12.350000" font="33" alignment="0" red="255" green="255" blue="255" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="38">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="32" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="2" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="61.950001" ty="1.650000">
+				<poname name="mcPlayerFlag"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "_type"
+					setstrvar "RenderImage"
+					pushstr "_imageMap"
+					setstrvar "PlayerFlag0"
+					pushstr "_Mode"
+					setstrvar "SOLID"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="4" character="24" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="123.099998" ty="3.150000">
+				<poname name="mcPlayerColor"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="34" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="128.100006" ty="32.150002">
+				<poname name="tfPlayerName"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="7" character="36" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="1.650000">
+				<poname name="mcPlayerIcon"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "_type"
+					setstrvar "RenderImage"
+					pushstr "_imageMap"
+					setstrvar "PlayerIcon0"
+					pushstr "_mode"
+					setstrvar "SOLID"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="9" character="37" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="145.250000" ty="3.150000">
+				<poname name="tfPlayerNumber"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="39">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="2" character="29" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="362.000000" ty="-41.000000">
+				<poname name="rctlPlayers"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_name"
+					setstrvar "rctlPlayers"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="4" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="1.000000">
+				<poname name="radPlayer0"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte 10
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "player_radioButtonContentClip"
+					ActionSetVariable
+					pushconst "m_controller"
+					pushconst "rctlPlayers"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="6" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="77.000000">
+				<poname name="radPlayer1"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte 11
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "player_radioButtonContentClip"
+					ActionSetVariable
+					pushconst "m_controller"
+					pushconst "rctlPlayers"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="8" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="153.000000">
+				<poname name="radPlayer2"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte 12
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "player_radioButtonContentClip"
+					ActionSetVariable
+					pushconst "m_controller"
+					pushconst "rctlPlayers"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="10" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="362.000000" ty="1.000000">
+				<poname name="radPlayer3"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte 13
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "player_radioButtonContentClip"
+					ActionSetVariable
+					pushconst "m_controller"
+					pushconst "rctlPlayers"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="12" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="362.000000" ty="77.000000">
+				<poname name="radPlayer4"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte 14
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "player_radioButtonContentClip"
+					ActionSetVariable
+					pushconst "m_controller"
+					pushconst "rctlPlayers"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="14" character="30" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="362.000000" ty="153.000000">
+				<poname name="radPlayer5"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_width"
+					pushshort 200
+					ActionSetVariable
+					pushconst "m_textAlign"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_labelPosition"
+					pushconst "right align"
+					ActionSetVariable
+					pushconst "m_label_x"
+					zerovar
+					pushconst "m_label_y"
+					zerovar
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_iconType"
+					pushconst "default"
+					ActionSetVariable
+					pushconst "m_extLabel"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_nTruncateType"
+					zerovar
+					pushconst "m_label"
+					pushconst ""
+					ActionSetVariable
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte 14
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_contentSymbol"
+					pushconst "player_radioButtonContentClip"
+					ActionSetVariable
+					pushconst "m_controller"
+					pushconst "rctlPlayers"
+					ActionSetVariable
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="16" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="12.500000" ty="10.000000">
+				<poname name="mcPlayerInfo0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="26" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="12.500000" ty="86.000000">
+				<poname name="mcPlayerInfo1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="36" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="12.500000" ty="160.949997">
+				<poname name="mcPlayerInfo2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="46" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="374.000000" ty="11.000000">
+				<poname name="mcPlayerInfo3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="56" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="374.000000" ty="87.000000">
+				<poname name="mcPlayerInfo4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="66" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="374.000000" ty="163.000000">
+				<poname name="mcPlayerInfo5"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="40" top="-1.500000" left="-1.500000" bottom="239.000000" right="899.000000" geometry="fem_m_postgameRoundup_geometry\40.ru">
+		<ru>
+			c
+			s s:255:153:51:255
+			t -1:91:-1:-1:173:-1
+			t -1:239:-1:91:173:-1
+			t 173:-1:899:-1:899:239
+			t 173:-1:899:239:-1:239
+			s l:1:0:0:0:255
+			l -1:91:-1:-1
+			l -1:-1:173:-1
+		</ru>
+	</shape>
+	<sprite id="41">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="40" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="42" top="7.900000" left="-476.000000" bottom="295.899994" right="475.200012" geometry="fem_m_postgameRoundup_geometry\42.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t -476:7.9:-473.6:9.8:-473.6:293.5
+			t -473.6:9.8:-476:7.9:475.2:7.9
+			t -476:295.9:-473.6:293.5:475.2:295.9
+			t -473.6:293.5:-476:295.9:-476:7.9
+			t 472.9:9.8:475.2:7.9:472.9:293.5
+			t 475.2:7.9:472.9:9.8:-473.6:9.8
+			t 472.9:293.5:475.2:295.9:-473.6:293.5
+			t 475.2:295.9:472.9:293.5:475.2:7.9
+			s s:0:0:0:255
+			t -473.6:9.8:472.9:9.8:-473.6:293.5
+			t 472.9:9.8:472.9:293.5:-473.6:293.5
+		</ru>
+	</shape>
+	<image id="43" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="44" top="0.000000" left="0.000000" bottom="31.000000" right="908.000000" geometry="fem_m_postgameRoundup_geometry\44.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:729:771
+			t 0:31:0:0:908:0
+			t 908:0:908:31:0:31
+		</ru>
+	</shape>
+	<shape id="45" top="0.000000" left="0.000000" bottom="244.000000" right="1.000000" geometry="fem_m_postgameRoundup_geometry\45.ru">
+		<ru>
+			c
+			s s:100:8:6:255
+			t 0:244:0:0:1:0
+			t 1:0:1:244:0:244
+		</ru>
+	</shape>
+	<image id="46" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="47" top="0.000000" left="0.000000" bottom="56.000000" right="11.000000" geometry="fem_m_postgameRoundup_geometry\47.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:2036:37
+			t 0:56:0:0:11:0
+			t 11:0:11:56:0:56
+		</ru>
+	</shape>
+	<shape id="48" top="258.250000" left="449.649994" bottom="264.100006" right="467.000000" geometry="fem_m_postgameRoundup_geometry\48.ru">
+		<ru>
+			c
+			s s:179:13:0:255
+			t 449.65:258.25:451.55:258.25:451.55:264.1
+			t 455.2:258.25:457.1:258.25:457.1:264.1
+			t 451.55:264.1:449.65:264.1:449.65:258.25
+			t 457.1:264.1:455.2:264.1:455.2:258.25
+			t 460.2:258.25:462.1:258.25:462.1:264.1
+			t 465.1:258.25:467:258.25:467:264.1
+			t 462.1:264.1:460.2:264.1:460.2:258.25
+			t 467:264.1:465.1:264.1:465.1:258.25
+		</ru>
+	</shape>
+	<font id="49" name="Lucida Sans">
+	</font>
+	<edittext id="50" top="-2.000000" left="12.900000" bottom="23.600000" right="44.599998" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="51" top="-2.000000" left="12.900000" bottom="23.650000" right="44.599998" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="52" top="-2.000000" left="12.900000" bottom="23.450001" right="44.599998" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="53" top="-2.000000" left="12.900000" bottom="23.750000" right="44.500000" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="54" top="-2.000000" left="12.900000" bottom="23.700001" right="44.750000" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="55" top="-2.000000" left="12.900000" bottom="22.950001" right="44.500000" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="56" top="-2.000000" left="12.900000" bottom="27.000000" right="44.250000" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="57" top="-2.000000" left="12.900000" bottom="27.950001" right="44.000000" font="49" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="58" top="-2.000000" left="12.900000" bottom="23.500000" right="66.750000" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="59" top="-2.000000" left="12.900000" bottom="23.500000" right="67.099998" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="60" top="-2.000000" left="12.900000" bottom="23.500000" right="69.199997" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="61" top="-2.000000" left="12.900000" bottom="23.500000" right="67.199997" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="62" top="-2.000000" left="12.900000" bottom="23.500000" right="67.250000" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="63" top="-2.000000" left="12.900000" bottom="23.500000" right="70.250000" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="64" top="-2.000000" left="12.900000" bottom="23.500000" right="70.250000" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="65" top="-2.000000" left="12.900000" bottom="23.500000" right="66.250000" font="33" alignment="0" red="0" green="13" blue="179" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="66">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="42" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="44" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="7.840515" tx="-436.799988" ty="12.050000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-435.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="4" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-406.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-377.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-348.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="7" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-319.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="8" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-290.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="9" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-261.799988" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="10" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-232.800003" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="11" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-203.800003" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="12" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-174.800003" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="13" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-145.800003" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="14" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-116.800003" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="15" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-87.800003" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="16" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-58.799999" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="17" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-29.799999" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="18" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-0.800000" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="19" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="28.200001" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="20" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="57.200001" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="21" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="86.199997" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="22" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="115.199997" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="23" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="144.199997" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="24" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="173.199997" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="25" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.199997" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="26" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="231.199997" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="27" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="260.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="28" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="289.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="29" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="318.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="30" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="347.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="31" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="376.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="32" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="405.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="33" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="434.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="34" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="463.200012" ty="10.350000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="35" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="20.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="36" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="49.200001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="37" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="78.400002">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="38" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="107.599998">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="39" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="136.800003">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="40" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="166.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="41" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="195.199997">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="42" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="224.399994">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="43" character="45" rotm00="0.000000" rotm01="1.000000" rotm10="-3.713120" rotm11="0.000000" tx="470.600006" ty="253.600006">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="44" character="47" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-448.950012" ty="17.650000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="45" character="47" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-448.950012" ty="76.699997">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="46" character="47" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-448.950012" ty="135.750000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="47" character="47" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-448.950012" ty="194.800003">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="48" character="48" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="49" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-203.399994" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="50" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-262.399994" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="51" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-321.399994" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="52" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-380.399994" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="53" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="32.599998" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="54" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-26.400000" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="55" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-85.400002" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="56" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="-144.399994" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="57" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="268.600006" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="58" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="209.600006" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="59" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="150.600006" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="60" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="91.599998" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="61" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="445.500000" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="62" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="386.600006" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="63" character="47" rotm00="0.000000" rotm01="-1.000000" rotm10="-1.000000" rotm11="0.000000" tx="327.600006" ty="269.250000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="64" character="50" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.299988" ty="229.149994">
+				<poname name="tf_Y0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="65" character="51" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.299988" ty="199.350006">
+				<poname name="tf_Y1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="66" character="52" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.299988" ty="169.550003">
+				<poname name="tf_Y2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="67" character="53" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.200012" ty="139.750000">
+				<poname name="tf_Y3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="68" character="54" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.200012" ty="112.050003">
+				<poname name="tf_Y4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="69" character="55" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.200012" ty="84.050003">
+				<poname name="tf_Y5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="70" character="56" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.200012" ty="54.250000">
+				<poname name="tf_Y6"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="71" character="57" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-481.200012" ty="24.049999">
+				<poname name="tf_Y7"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="72" character="58" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-465.700012" ty="271.950012">
+				<poname name="tf_X0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="73" character="59" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-349.100006" ty="271.950012">
+				<poname name="tf_X1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="74" character="60" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-232.199997" ty="271.950012">
+				<poname name="tf_X2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="75" character="61" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-115.199997" ty="271.950012">
+				<poname name="tf_X3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="76" character="62" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="1.750000" ty="271.950012">
+				<poname name="tf_X4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="77" character="63" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="116.750000" ty="271.950012">
+				<poname name="tf_X5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="78" character="64" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="233.750000" ty="271.950012">
+				<poname name="tf_X6"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="79" character="65" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="348.750000" ty="271.950012">
+				<poname name="tf_X7"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasClipAction" depth="80" character="41" rotm00="1.000031" rotm01="0.000000" rotm10="0.000000" rotm11="1.000015" tx="-432.649994" ty="12.100000">
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "_type"
+					setstrvar "PostGame_Graph"
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="67" top="0.000000" left="0.000000" bottom="50.000000" right="50.000000" geometry="fem_m_postgameRoundup_geometry\67.ru">
+		<ru>
+			c
+			s s:0:0:0:255
+			t 0:50:0:0:50:0
+			t 50:0:50:50:0:50
+		</ru>
+	</shape>
+	<empty id="68"/>
+	<empty id="69"/>
+	<shape id="70" top="0.000000" left="0.000000" bottom="286.399994" right="2.000000" geometry="fem_m_postgameRoundup_geometry\70.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:286.4:0:0:2:0
+			t 2:0:2:286.4:0:286.4
+		</ru>
+	</shape>
+	<sprite id="71">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="67" rotm00="18.927994" rotm01="0.000000" rotm10="0.000000" rotm11="1.371994" tx="-471.049988" ty="7.900000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="2" character="68" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="-470.000000" ty="49.000000">
+				<poname name="lbStats"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushconst "m_focusDirs"
+					pushconst "Up/Down"
+					ActionSetVariable
+					pushconst "m_numEntries"
+					pushbyte 11
+					ActionSetVariable
+					pushconst "m_vPadding"
+					zerovar
+					pushconst "m_bEnabled"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_refFM"
+					pushconst "_root.gFM"
+					ActionSetVariable
+					pushconst "m_initiallySelected"
+					pushfalse
+					ActionSetVariable
+					pushconst "m_tabIndex"
+					pushbyte -1
+					ActionSetVariable
+					pushconst "m_bVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_scrollbarOffset"
+					EAPushZero
+					ActionInitArray
+					ActionSetVariable
+					pushvar "m_scrollbarOffset"
+					EAPushZero
+					pushbyte 10
+					ActionSetMember
+					pushvar "m_scrollbarOffset"
+					EAPushOne
+					EAPushZero
+					ActionSetMember
+					pushconst "m_BgVisible"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_renderWidth"
+					pushshort 944
+					ActionSetVariable
+					pushconst "m_renderHeight"
+					pushshort 242
+					ActionSetVariable
+					pushconst "m_backgroundMargin"
+					pushbyte 2
+					ActionSetVariable
+					pushconst "m_useHighlights"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_alternateBackgroundColors"
+					pushtrue
+					ActionSetVariable
+					pushconst "m_backgroundColor1"
+					pushlong 2622983
+					ActionSetVariable
+					pushconst "m_backgroundColor2"
+					zerovar
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="10" character="69" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="452.000000" ty="21.350000">
+				<poname name="scrollBar"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_nLength"
+					pushbyte 100
+					ActionSetVariable
+					pushstr "m_nMax"
+					pushbyte 10
+					ActionSetVariable
+					pushstr "m_nMin"
+					zerovar
+					pushstr "m_nValue"
+					zerovar
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="24" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="-238.899994" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="25" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="-119.500000" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="26" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="-472.899994" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="27" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="-0.500000" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="28" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="118.500000" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="29" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="237.500000" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="30" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="355.500000" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="31" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.998596" tx="475.500000" ty="7.300000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="32" character="70" rotm00="0.000000" rotm01="1.000000" rotm10="-3.313553" rotm11="0.000000" tx="477.600006" ty="7.300000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="72" image="art\Textures\apt_fem_m_postgameRoundup_2.tga"/>
+	<image id="73" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<image id="74" image="art\Textures\apt_fem_m_postgameRoundup_3.tga"/>
+	<image id="75" image="art\Textures\apt_fem_m_postgameRoundup_3.tga"/>
+	<shape id="76" top="0.000000" left="-0.550000" bottom="768.000000" right="1365.000000" geometry="fem_m_postgameRoundup_geometry\76.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_3.tga:1:0:0:1:1.55:-685.8
+			t -0.55:757.8:-0.55:686.8:1364.45:686.8
+			t 1364.45:686.8:1364.45:757.8:-0.55:757.8
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_3.tga:1:0:0:1:1:54
+			t 0:88:0:20:1365:20
+			t 1365:20:1365:88:0:88
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:1:1
+			t 0:768:0:0:1365:0
+			t 1365:0:1365:768:0:768
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_2.tga:1:0:0:1:-183.15:-74
+			t 184.15:686:184.15:75:1183.15:75
+			t 1183.15:75:1183.15:686:184.15:686
+		</ru>
+	</shape>
+	<empty id="77"/>
+	<shape id="78" top="123.500000" left="199.800003" bottom="427.450012" right="1167.300049" geometry="fem_m_postgameRoundup_geometry\78.ru">
+		<ru>
+			c
+			s s:246:177:99:255
+			t 199.8:123.5:201.6:125.45:201.6:425.45
+			t 201.6:125.45:199.8:123.5:1165.3:125.45
+			t 199.8:427.45:201.6:425.45:1165.3:425.45
+			t 201.6:425.45:199.8:427.45:199.8:123.5
+			t 1165.3:125.45:1167.3:123.5:1165.3:425.45
+			t 1167.3:123.5:1165.3:125.45:199.8:123.5
+			t 1165.3:425.45:1167.3:427.45:199.8:427.45
+			t 1167.3:427.45:1165.3:425.45:1167.3:123.5
+		</ru>
+	</shape>
+	<image id="79" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<image id="80" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<image id="81" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="82" top="448.000000" left="1036.000000" bottom="627.000000" right="1070.000000" geometry="fem_m_postgameRoundup_geometry\82.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:937:-411
+			t 1036:482:1036:448:1070:448
+			t 1070:448:1070:482:1036:482
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:973:-519.5
+			t 1036:554.5:1036:520.5:1070:520.5
+			t 1070:520.5:1070:554.5:1036:554.5
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:937:-592
+			t 1036:627:1036:593:1070:593
+			t 1070:593:1070:627:1036:627
+		</ru>
+	</shape>
+	<edittext id="83" top="-2.000000" left="189.250000" bottom="22.250000" right="420.299988" font="3" alignment="2" red="51" green="153" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;APT:VICTORY"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="84" top="-2.000000" left="189.250000" bottom="22.250000" right="420.299988" font="3" alignment="2" red="51" green="153" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;GUI:DEFEAT"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="85" top="-2.000000" left="189.250000" bottom="22.250000" right="420.299988" font="3" alignment="2" red="51" green="153" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;APT:SUPERWEAPON"/>
+		<etvar variable=""/>
+	</edittext>
+	<image id="86" image="art\Textures\apt_fem_m_postgameRoundup_1.tga"/>
+	<shape id="87" top="0.250000" left="0.750000" bottom="26.250000" right="25.750000" geometry="fem_m_postgameRoundup_geometry\87.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_fem_m_postgameRoundup_1.tga:1:0:0:1:2008.25:36.75
+			t 0.75:26.25:0.75:0.25:25.75:0.25
+			t 25.75:0.25:25.75:26.25:0.75:26.25
+		</ru>
+	</shape>
+	<sprite id="88">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="87" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="89" name="Red Alert Extended">
+	</font>
+	<edittext id="90" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="91" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="92" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="93" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="94" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="95" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="255" green="255" blue="255" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="96" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="3" alignment="0" red="0" green="0" blue="0" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="97" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="3" alignment="0" red="0" green="0" blue="0" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="98" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="0" green="0" blue="0" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="99" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="0" green="0" blue="0" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="100" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="0" green="0" blue="0" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="101" top="-2.000000" left="-2.000000" bottom="25.000000" right="8.200000" font="89" alignment="0" red="0" green="0" blue="0" alpha="255" height="18.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="102">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="88" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				<poname name="mcPlayerCircle0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="88" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="118.000000" ty="0.000000">
+				<poname name="mcPlayerCircle1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="5" character="88" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="237.000000" ty="0.000000">
+				<poname name="mcPlayerCircle2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="7" character="88" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="357.000000" ty="0.000000">
+				<poname name="mcPlayerCircle3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="9" character="88" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="478.000000" ty="0.000000">
+				<poname name="mcPlayerCircle4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="11" character="88" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="590.950012" ty="0.000000">
+				<poname name="mcPlayerCircle5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="13" character="90" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="9.850000" ty="7.000000">
+				<poname name="tfPlayerNumber0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="14" character="91" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="127.849998" ty="7.000000">
+				<poname name="tfPlayerNumber1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="15" character="92" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="246.850006" ty="7.000000">
+				<poname name="tfPlayerNumber2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="16" character="93" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="366.850006" ty="7.000000">
+				<poname name="tfPlayerNumber3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="17" character="94" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="487.850006" ty="7.000000">
+				<poname name="tfPlayerNumber4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="18" character="95" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.799988" ty="7.000000">
+				<poname name="tfPlayerNumber5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="19" character="96" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="9.850000" ty="7.000000">
+				<poname name="tfPlayerNumber0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="20" character="97" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="127.849998" ty="7.000000">
+				<poname name="tfPlayerNumber1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="21" character="98" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="246.850006" ty="7.000000">
+				<poname name="tfPlayerNumber2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="22" character="99" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="366.850006" ty="7.000000">
+				<poname name="tfPlayerNumber3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="23" character="100" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="487.850006" ty="7.000000">
+				<poname name="tfPlayerNumber4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="24" character="101" rotm00="1.176468" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.799988" ty="7.000000">
+				<poname name="tfPlayerNumber5"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<empty id="103"/>
+	<empty id="104"/>
+	<sprite id="105">
+	</sprite>
+	<sprite id="106">
+	</sprite>
+</aptdata>

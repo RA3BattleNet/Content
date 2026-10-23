@@ -1,0 +1,3646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptdata>
+	<movieclip screensizex="1365" screensizey="768" unknown="33">
+		<imports>
+			<import name="std_MousebuttonSymbol" movie="../cafe/mouseComponents/std_MouseButton" character="26"/>
+			<import name="std_mouseScrollbarSymbol" movie="../cafe/mouseComponents/std_mouseScrollbar" character="33"/>
+		</imports>
+		<exports>
+			<export character="17" name="ObjectiveLine"/>
+			<export character="83" name="__Packages.Cafe2_BaseUIScreen"/>
+			<export character="84" name="__Packages.IScrollbarEventListener"/>
+			<export character="85" name="__Packages.igm_pauseMenu"/>
+		</exports>
+		<frames>
+			<frame id="0">
+				<background color="-16777114"/>
+				<action><![CDATA[
+					pushstr "screen"
+					pushthis
+					EAPushOne
+					pushstr "igm_pauseMenu"
+					ActionNew
+					ActionDefineLocal
+					stop
+					actionEnd
+				]]></action>
+				<placeobject flags="HasCharacter|HasMatrix" depth="1" character="18" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="2" character="20" rotm00="2.005997" rotm01="0.000000" rotm10="0.000000" rotm11="72.570007" tx="190.050003" ty="90.800003">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="5" character="23" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="6" character="25" rotm00="2.000000" rotm01="0.000000" rotm10="0.000000" rotm11="2.000000" tx="189.100006" ty="641.150024">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="7" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="240.000000" ty="691.500000">
+					<poname name="resumeButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Left/Right"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte 4
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$GUI:TacticalPauseDialogResumeButton"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="9" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="420.000000" ty="691.500000">
+					<poname name="settingsButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Left/Right"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte 3
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$GUI:TacticalPauseDialogOptionsButton"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="11" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.000000" ty="691.500000">
+					<poname name="loadButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Left/Right"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						pushbyte 2
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$GUI:TacticalPauseDialogLoadButton"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="13" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="780.000000" ty="691.500000">
+					<poname name="saveButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Left/Right"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						EAPushOne
+						ActionSetVariable
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$GUI:TacticalPauseDialogSaveButton"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="15" character="26" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="960.000000" ty="691.500000">
+					<poname name="exitButton"/>
+					<clipactions>
+					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+						pushstr "m_focusDirs"
+						setstrvar "Left/Right"
+						pushstr "m_bEnabled"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_refFM"
+						setstrvar "_root.gFM"
+						pushstr "m_initiallySelected"
+						pushfalse
+						ActionSetVariable
+						pushstr "m_tabIndex"
+						zerovar
+						pushstr "m_bVisible"
+						pushtrue
+						ActionSetVariable
+						pushstr "m_label"
+						setstrvar "$GUI:TacticalPauseDialogExitMissionButton"
+						pushstr "m_contentSymbol"
+						setstrvar "buttonContentSymbol"
+						actionEnd
+					]]></clipaction>
+					</clipactions>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="17" character="37" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="688.099976" ty="108.099998">
+					<poname name="campaignMC"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="48" character="73" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="688.099976" ty="108.099998">
+					<poname name="skirmishMC"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix|HasName" depth="54" character="34" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="224.000000" ty="154.000000">
+					<poname name="missionMap"/>
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="56" character="75" rotm00="2.000000" rotm01="0.000000" rotm10="0.000000" rotm11="2.000000" tx="222.050003" ty="150.050003">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="57" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="153.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="58" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="212.600006">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="59" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="272.200012">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="60" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="331.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="61" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="391.399994">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="62" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="451.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="63" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="510.600006">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="64" character="77" rotm00="-1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="235.149994" ty="570.200012">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="65" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="293.000000" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="66" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="353.649994" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="67" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="331.950012" ty="615.700012">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="68" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="414.299988" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="69" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="474.950012" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="70" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="535.599976" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="71" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="596.250000" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="72" character="77" rotm00="0.000000" rotm01="1.000000" rotm10="-1.000000" rotm11="0.000000" tx="656.900024" ty="602.799988">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="74" character="79" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="75" character="80" rotm00="1.000107" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="245.000000" ty="112.500000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="76" character="81" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="192.850006" ty="31.400000">
+				</placeobject>
+				<placeobject flags="HasCharacter|HasMatrix" depth="77" character="82" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="188.850006" ty="27.400000">
+				</placeobject>
+				<initaction sprite="83"><![CDATA[
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx0
+					pushglobal
+					pushconst "Cafe2_BaseUIScreen"
+					function (reg3:screen)(regs:4, reg1:this, reg2:_global)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushreg 3
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushreg 1
+						getnamedmember "frameDelayedInitCallback"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						ActionSetMember
+					end
+					setreg 1
+					ActionSetMember
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushreg 2
+					pushconst "frameDelayedInit"
+					function ()(regs:2)
+						pushconst "\n\nCafe2_BaseUIScreen::frameDelayedInitCallback() :"
+						ActionTrace
+						pushconst "\nscreens and move the call to initGUI() to frameDelayedInit().\n"
+						pushconst "N.B. You *must* override frameDelayedInit() in your"
+						pushbyte 2
+						pushconst "Array"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushreg 1
+						EAPushZero
+						ActionGetMember
+						pushreg 1
+						EAPushOne
+						ActionGetMember
+						ActionNewAdd
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "frameDelayedInitCallback"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						pushconst "onEnterFrame"
+						pushnull
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "frameDelayedInit"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroComplete"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx3:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx1
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx2
+						jump lxnx1
+					lxnx2:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx3
+					lxnx1:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						pushnull
+						ActionNewEquals
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_changeToScreen"
+						EAPushOne
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "changeMainScreen"
+					end
+					lxnx4:
+					ActionSetMember
+					pushreg 2
+					pushconst "introComplete"
+					function (reg1:theComponent)(regs:2)
+						pushconst "Cafe2_BaseUIScreen::introComplete()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "restoreVisualState"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						pushconst "m_introCount"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						ActionDecrement
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_introCount"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx5
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "onIntrosComplete"
+					end
+					lxnx5:
+					ActionSetMember
+					pushreg 2
+					pushconst "onIntrosComplete"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "Cafe2_BaseUIScreen::onIntrosComplete()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "localEventHandler"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "setLocalEventHandler"
+						EAPushZero
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "enableCurrentLocalEventHandler"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "registerIntroOuttroComponents"
+					function (reg3:components)(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::registerIntroOuttroComponents()"
+						ActionTrace
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushreg 3
+						ActionSetMember
+						pushreg 1
+						pushconst "m_introCount"
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionSetMember
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx7:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_introCount"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx6
+						pushreg 1
+						getnamedmember "introComplete"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "setIntroCallback"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx7
+					end
+					lxnx6:
+					ActionSetMember
+					pushreg 2
+					pushconst "executeBackFunction"
+					function (reg3:theComponent)(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::executeBackFunction"
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx10:
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx8
+						pushreg 3
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx9
+						jump lxnx8
+					lxnx9:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx10
+					lxnx8:
+						EAPushOne
+						pushreg 2
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx11
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx11:
+					ActionSetMember
+					pushreg 2
+					pushconst "startIntro"
+					function ()(regs:4, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startIntro()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx13:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx12
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "intro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx13
+					end
+					lxnx12:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttro"
+					function (reg4:newScreen)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx14
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx16:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx15
+						pushreg 1
+						getnamedmember "outtroComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx16
+					lxnx15:
+						jump lxnx17
+					lxnx14:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroComplete"
+					end
+					lxnx17:
+					ActionSetMember
+					pushreg 2
+					pushconst "startOuttroAndCallBack"
+					function (reg4:doAfterOuttroComplete)(regs:5, reg1:this)
+						pushconst "Cafe2_BaseUIScreen::startOuttro"
+						ActionTrace
+						pushreg 1
+						pushconst "m_executeOuttroCallBack"
+						pushreg 4
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx18
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx20:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx19
+						pushreg 1
+						getnamedmember "outtroAndCallBackComplete"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx20
+					lxnx19:
+						jump lxnx21
+					lxnx18:
+						pushnull
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "outtroAndCallBackComplete"
+					end
+					lxnx21:
+					ActionSetMember
+					pushreg 2
+					pushconst "outtroAndCallBackComplete"
+					function (reg2:theComponent)(regs:3)
+						pushconst "Cafe2_BaseUIScreen::outtroComplete() "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						setreg 1
+						ActionPop
+					lxnx24:
+						pushreg 1
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx22
+						pushreg 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 1
+						ActionGetMember
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx23
+						jump lxnx22
+					lxnx23:
+						pushreg 1
+						ActionIncrement
+						setreg 1
+						ActionPop
+						jump lxnx24
+					lxnx22:
+						EAPushOne
+						pushreg 1
+						pushbyte 2
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						callnamedmethodpop "splice"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx25
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						callnamedmethodpop "m_executeOuttroCallBack"
+					end
+					lxnx25:
+					ActionSetMember
+					pushreg 2
+					pushconst "backButtonClicked"
+					function ()(regs:4, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::backButtonClicked()"
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						pushreg 3
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx26
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx28:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx27
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "executeBackFunction"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_thisClass"
+						getnamedmember "m_uiComponentArray"
+						pushreg 2
+						ActionGetMember
+						callnamedmethodpop "outtro"
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx28
+					lxnx27:
+						jump lxnx29
+					lxnx26:
+						EAPushZero
+						pushreg 1
+						getnamedmember "gSM"
+						callnamedmethodpop "goBackScreen"
+					end
+					lxnx29:
+					ActionSetMember
+					pushreg 2
+					pushconst "localEventHandler"
+					function (reg2:keyCode, reg0:controller)(regs:3, reg1:_global)
+						pushconst "Cafe2_BaseUIScreen::localEventHandler() keyCode == "
+						pushreg 2
+						ActionNewAdd
+						ActionTrace
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						getnamedmember "gFM"
+						callnamedmethodpop "handleDefaultInputs"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "clearData"
+					function ()(regs:2, reg1:this)
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushnull
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_changeToScreen"
+						pushnull
+						ActionSetMember
+						pushreg 1
+						pushconst "m_uiComponentArray"
+						pushnull
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "bind0"
+					function (obj, func)
+						function ()
+							pushvar "obj"
+							EAPushOne
+							pushvar "func"
+							callnamedmethodpop "call"
+						end
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "m_changeToScreen"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_executeOuttroCallBack"
+					pushnull
+					ActionSetMember
+					pushreg 2
+					pushconst "m_uiComponentArray"
+					EAPushZero
+					pushconst "Array"
+					ActionNew
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "Cafe2_BaseUIScreen"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx0:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="84"><![CDATA[
+					pushglobal
+					getnamedmember "IScrollbarEventListener"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx30
+					pushglobal
+					pushconst "IScrollbarEventListener"
+					function ()
+					end
+					ActionSetMember
+					lxnx30:
+					ActionPop
+					actionEnd
+				]]></initaction>
+				<initaction sprite="85"><![CDATA[
+					pushglobal
+					getnamedmember "igm_pauseMenu"
+					ActionLogicalNot
+					ActionLogicalNot
+					jumptrue lxnx31
+					pushglobal
+					pushconst "igm_pauseMenu"
+					function (reg3:screen)(regs:4, reg1:this, reg2:super)
+						EAPushZero
+						pushreg 2
+						pushundefined
+						callmethodpop
+						pushconst "igm_pauseMenu::igm_pauseMenu() screen = "
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushreg 3
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushreg 1
+						ActionSetMember
+						pushreg 1
+						pushconst "m_objectiveListVisibleHeight"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "maskMC"
+						getnamedmember "_height"
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initGUI"
+					end
+					setreg 1
+					ActionSetMember
+					pushglobal
+					getnamedmember "igm_pauseMenu"
+					pushvar "Cafe2_BaseUIScreen"
+					extends
+					pushreg 1
+					getnamedmember "prototype"
+					setreg 2
+					ActionPop
+					pushglobal
+					getnamedmember "IScrollbarEventListener"
+					EAPushOne
+					pushglobal
+					getnamedmember "igm_pauseMenu"
+					ActionImplementsOp
+					pushreg 2
+					pushconst "OnScrollbarDelta"
+					function (reg1:dir)(regs:2)
+						pushconst "igm_pauseMenu::OnScrollbarDelta( "
+						pushreg 1
+						ActionToString
+						ActionNewAdd
+						pushconst " )"
+						ActionNewAdd
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "OnScrollbarThumbUpdate"
+					function (reg3:percentage)(regs:4, reg1:this)
+						pushconst "igm_pauseMenu::OnScrollbarThumbUpdate( "
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushconst " )"
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "linesMC"
+						getnamedmember "_height"
+						setreg 2
+						ActionPop
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						gt
+						ActionLogicalNot
+						jumptrue lxnx32
+						pushreg 3
+						pushfloat 0.010000
+						ActionMultiply
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						ActionSubtract
+						ActionMultiply
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "scrollObjectiveListBox"
+					end
+					lxnx32:
+					ActionSetMember
+					pushreg 2
+					pushconst "OnScrollbarMouseEnter"
+					function ()
+						pushconst "igm_pauseMenu::OnScrollbarMouseEnter()"
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "OnScrollbarMouseExit"
+					function ()
+						pushconst "igm_pauseMenu::OnScrollbarMouseExit()"
+						ActionTrace
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initMode"
+					function ()(regs:3, reg1:this)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 2
+						ActionPop
+						pushconst "QueryGameEngine?PauseMenu_mode"
+						pushreg 2
+						geturl2
+						pushconst "igm_pauseMenu: data.PauseMenu_mode = \""
+						pushreg 2
+						getnamedmember "PauseMenu_mode"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						pushconst "m_mode"
+						pushreg 2
+						getnamedmember "PauseMenu_mode"
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initButton"
+					function (reg1:bttn, reg3:enable, reg2:onClickFn)(regs:4)
+						pushreg 1
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 3
+						ActionLogicalNot
+						jumptrue lxnx33
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "enable"
+						jump lxnx34
+					lxnx33:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "disable"
+					lxnx34:
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setOnMouseUpFunction"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "initButtons"
+					function ()(regs:6, reg1:this, reg2:_global)
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 3
+						ActionPop
+						pushconst "QueryGameEngine?igm_pauseMenu_enableSave"
+						pushreg 3
+						geturl2
+						pushreg 3
+						getnamedmember "igm_pauseMenu_enableSave"
+						pushconst "0"
+						ActionNewEquals
+						ActionLogicalNot
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?igm_pauseMenu_enableLoad"
+						pushreg 3
+						geturl2
+						pushreg 3
+						getnamedmember "igm_pauseMenu_enableLoad"
+						pushconst "0"
+						ActionNewEquals
+						ActionLogicalNot
+						setreg 4
+						ActionPop
+						pushreg 1
+						getnamedmember "onExitButtonClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						pushtrue
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "exitButton"
+						pushbyte 3
+						pushreg 1
+						callnamedmethodpop "initButton"
+						pushreg 1
+						getnamedmember "onSettingsButtonClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						pushtrue
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "settingsButton"
+						pushbyte 3
+						pushreg 1
+						callnamedmethodpop "initButton"
+						pushreg 1
+						getnamedmember "onLoadButtonClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						pushreg 4
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "loadButton"
+						pushbyte 3
+						pushreg 1
+						callnamedmethodpop "initButton"
+						pushreg 1
+						getnamedmember "onSaveButtonClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						pushreg 5
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "saveButton"
+						pushbyte 3
+						pushreg 1
+						callnamedmethodpop "initButton"
+						pushreg 1
+						getnamedmember "backButtonClicked"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						pushtrue
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "resumeButton"
+						pushbyte 3
+						pushreg 1
+						callnamedmethodpop "initButton"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "getObjectiveLineColor"
+					function (reg1:isBonus)(regs:2)
+						pushreg 1
+						jumptrue lxnx35
+						pushlong 65280
+						jump lxnx36
+					lxnx35:
+						pushlong 16763904
+					lxnx36:
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "clearObjectiveListBox"
+					function ()(regs:3, reg1:this)
+						pushconst "igm_pauseMenu::clearObjectiveListBox()"
+						ActionTrace
+					lxnx38:
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						getnamedmember "length"
+						EAPushZero
+						gt
+						ActionLogicalNot
+						jumptrue lxnx37
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						pushconst "pop"
+						ActionCallMethod
+						setreg 2
+						ActionPop
+						pushreg 2
+						getnamedmember "hitRegionMC"
+						getnamedmember "bttn"
+						pushconst "onRelease"
+						ActionDelete
+						ActionPop
+						EAPushZero
+						pushreg 2
+						callnamedmethodpop "removeMovieClip"
+						jump lxnx38
+					lxnx37:
+						pushreg 1
+						pushconst "m_selectedObjectiveLineIndex"
+						pushbyte -1
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveDescTF"
+						pushconst "text"
+						pushconst ""
+						ActionSetMember
+					end
+					ActionSetMember
+					pushreg 1
+					pushconst "colorizeMovieClip"
+					function (reg2:clip, reg3:clr)(regs:4)
+						pushreg 2
+						EAPushOne
+						pushconst "Color"
+						ActionNew
+						setreg 1
+						ActionPop
+						pushreg 3
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "setRGB"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "populateObjectiveListBox"
+					function ()(regs:19, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::populateObjectiveListBox()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "clearObjectiveListBox"
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 13
+						ActionPop
+						pushconst "QueryGameEngine?PauseMenu_missionObjectiveId&PauseMenu_missionObjectiveStatus&PauseMenu_missionObjectiveBonusness"
+						pushreg 13
+						geturl2
+						pushconst "igm_pauseMenu: PauseMenu_missionObjectiveId = \""
+						pushreg 13
+						getnamedmember "PauseMenu_missionObjectiveId"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst "igm_pauseMenu: PauseMenu_missionObjectiveStatus = \""
+						pushreg 13
+						getnamedmember "PauseMenu_missionObjectiveStatus"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst "igm_pauseMenu: PauseMenu_missionObjectiveBonusness = \""
+						pushreg 13
+						getnamedmember "PauseMenu_missionObjectiveBonusness"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst ","
+						EAPushOne
+						pushreg 13
+						getnamedmember "PauseMenu_missionObjectiveId"
+						pushconst "split"
+						ActionCallMethod
+						setreg 14
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 13
+						getnamedmember "PauseMenu_missionObjectiveStatus"
+						pushconst "split"
+						ActionCallMethod
+						setreg 16
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 13
+						getnamedmember "PauseMenu_missionObjectiveBonusness"
+						pushconst "split"
+						ActionCallMethod
+						setreg 15
+						ActionPop
+						EAPushZero
+						setreg 12
+						ActionPop
+						pushreg 14
+						getnamedmember "length"
+						setreg 17
+						ActionPop
+						EAPushZero
+						setreg 4
+						ActionPop
+					lxnx42:
+						pushreg 4
+						pushreg 17
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx39
+						pushreg 14
+						pushreg 4
+						ActionGetMember
+						ActionToNumber
+						setreg 9
+						ActionPop
+						pushreg 16
+						pushreg 4
+						ActionGetMember
+						setreg 10
+						ActionPop
+						pushreg 15
+						pushreg 4
+						ActionGetMember
+						ActionToNumber
+						EAPushZero
+						ActionNewEquals
+						ActionLogicalNot
+						setreg 11
+						ActionPop
+						pushreg 4
+						pushreg 4
+						ActionToString
+						pushconst "ObjectiveLine"
+						pushbyte 3
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "linesMC"
+						pushconst "attachMovie"
+						ActionCallMethod
+						setreg 3
+						ActionPop
+						pushreg 3
+						pushconst "objectiveId"
+						pushreg 9
+						ActionSetMember
+						pushreg 3
+						getnamedmember "textTF"
+						getnamedmember "_height"
+						setreg 5
+						ActionPop
+						pushreg 3
+						getnamedmember "textTF"
+						pushconst "text"
+						pushconst "$PauseMenu_objectiveTitle"
+						pushreg 9
+						ActionNewAdd
+						pushconst "&outline"
+						ActionNewAdd
+						ActionSetMember
+						pushreg 3
+						getnamedmember "textTF"
+						pushconst "autoSize"
+						pushconst "left"
+						ActionSetMember
+						pushreg 3
+						getnamedmember "textTF"
+						getnamedmember "_height"
+						setreg 8
+						ActionPop
+						pushreg 8
+						pushreg 5
+						ActionNewLessThan
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx40
+						pushreg 8
+						pushreg 5
+						ActionSubtract
+						setreg 6
+						ActionPop
+						pushreg 3
+						getnamedmember "spacerMC"
+						pushconst "_height"
+						pushreg 3
+						getnamedmember "spacerMC"
+						getnamedmember "_height"
+						pushreg 6
+						ActionNewAdd
+						ActionSetMember
+						pushreg 3
+						getnamedmember "selectionMC"
+						pushconst "_height"
+						pushreg 3
+						getnamedmember "selectionMC"
+						getnamedmember "_height"
+						pushreg 6
+						ActionNewAdd
+						ActionSetMember
+						pushreg 3
+						getnamedmember "hitRegionMC"
+						pushconst "_height"
+						pushreg 3
+						getnamedmember "hitRegionMC"
+						getnamedmember "_height"
+						pushreg 6
+						ActionNewAdd
+						ActionSetMember
+						jump lxnx41
+					lxnx40:
+						pushreg 3
+						getnamedmember "textTF"
+						pushconst "_y"
+						pushreg 3
+						getnamedmember "textTF"
+						getnamedmember "_y"
+						pushreg 5
+						pushreg 8
+						ActionSubtract
+						pushfloat 0.500000
+						ActionMultiply
+						ActionNewAdd
+						ActionSetMember
+					lxnx41:
+						pushreg 11
+						EAPushOne
+						pushreg 1
+						pushconst "getObjectiveLineColor"
+						ActionCallMethod
+						setreg 7
+						ActionPop
+						pushreg 3
+						getnamedmember "textTF"
+						pushconst "textColor"
+						pushreg 7
+						ActionSetMember
+						pushreg 10
+						EAPushOne
+						pushreg 3
+						getnamedmember "checkboxMC"
+						callnamedmethodpop "gotoAndPlay"
+						pushreg 7
+						pushreg 3
+						getnamedmember "checkboxMC"
+						getnamedmember "frameMC"
+						pushbyte 2
+						pushvar "igm_pauseMenu"
+						callnamedmethodpop "colorizeMovieClip"
+						pushreg 7
+						pushreg 3
+						getnamedmember "checkboxMC"
+						getnamedmember "checkMC"
+						pushbyte 2
+						pushvar "igm_pauseMenu"
+						callnamedmethodpop "colorizeMovieClip"
+						pushreg 3
+						getnamedmember "selectionMC"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 3
+						getnamedmember "hitRegionMC"
+						getnamedmember "bttn"
+						pushconst "onRelease"
+						pushreg 9
+						pushreg 1
+						getnamedmember "onObjectiveLineClicked"
+						pushreg 1
+						pushbyte 3
+						pushreg 2
+						pushconst "bind1"
+						ActionCallMethod
+						ActionSetMember
+						pushreg 3
+						pushconst "_y"
+						pushreg 12
+						ActionSetMember
+						pushreg 12
+						pushreg 3
+						getnamedmember "_height"
+						ActionNewAdd
+						setreg 12
+						ActionPop
+						pushreg 3
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						callnamedmethodpop "push"
+						pushreg 4
+						ActionIncrement
+						setreg 4
+						ActionPop
+						jump lxnx42
+					lxnx39:
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "linesMC"
+						getnamedmember "_height"
+						setreg 18
+						ActionPop
+						pushreg 18
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						gt
+						ActionLogicalNot
+						jumptrue lxnx43
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListScrollBarMC"
+						callnamedmethodpop "enable"
+						jump lxnx44
+					lxnx43:
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListScrollBarMC"
+						callnamedmethodpop "disable"
+					lxnx44:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "selectObjectiveListBoxEntry"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "scrollObjectiveListBox"
+					function (reg4:minVisibleY)(regs:8, reg1:this)
+						pushconst "igm_pauseMenu::scrollObjectiveListBox( "
+						pushreg 4
+						ActionToString
+						ActionNewAdd
+						pushconst " )"
+						ActionNewAdd
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "linesMC"
+						getnamedmember "_height"
+						setreg 7
+						ActionPop
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "linesMC"
+						pushconst "_y"
+						EAPushZero
+						pushreg 4
+						ActionSubtract
+						ActionSetMember
+						pushreg 4
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						ActionNewAdd
+						setreg 5
+						ActionPop
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						getnamedmember "length"
+						setreg 6
+						ActionPop
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx47:
+						pushreg 3
+						pushreg 6
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx45
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						pushreg 3
+						ActionGetMember
+						setreg 2
+						ActionPop
+						pushreg 2
+						pushconst "_visible"
+						pushreg 2
+						getnamedmember "_y"
+						pushreg 5
+						ActionNewLessThan
+						ActionDup
+						ActionLogicalNot
+						jumptrue lxnx46
+						ActionPop
+						pushreg 2
+						getnamedmember "_y"
+						pushreg 2
+						getnamedmember "_height"
+						ActionNewAdd
+						pushreg 4
+						gt
+					lxnx46:
+						ActionSetMember
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx47
+					lxnx45:
+						pushreg 7
+						pushvar "visibleHeight"
+						gt
+						ActionLogicalNot
+						jumptrue lxnx48
+						pushreg 4
+						pushreg 7
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						ActionSubtract
+						EAPushZero
+						pushbyte 3
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListScrollBarMC"
+						callnamedmethodpop "setInfo"
+					end
+					lxnx48:
+					ActionSetMember
+					pushreg 2
+					pushconst "ensureObjectiveLineVisibility"
+					function (reg6:lineIndex)(regs:7, reg1:this)
+						pushconst "igm_pauseMenu::ensureObjectiveLineVisibility( "
+						pushreg 6
+						ActionToString
+						ActionNewAdd
+						pushconst " )"
+						ActionNewAdd
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListMC"
+						getnamedmember "linesMC"
+						getnamedmember "_y"
+						ActionSubtract
+						setreg 3
+						ActionPop
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						ActionNewAdd
+						setreg 4
+						ActionPop
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						pushreg 6
+						ActionGetMember
+						setreg 2
+						ActionPop
+						pushreg 2
+						getnamedmember "_y"
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx49
+						pushreg 2
+						getnamedmember "_y"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "scrollObjectiveListBox"
+						jump lxnx50
+					lxnx49:
+						pushreg 2
+						getnamedmember "_y"
+						pushreg 2
+						getnamedmember "_height"
+						ActionNewAdd
+						setreg 5
+						ActionPop
+						pushreg 5
+						pushreg 4
+						gt
+						ActionLogicalNot
+						jumptrue lxnx50
+						pushreg 3
+						pushreg 5
+						pushreg 4
+						ActionSubtract
+						ActionNewAdd
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "scrollObjectiveListBox"
+					end
+					lxnx50:
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshPlayerStatus"
+					function ()(regs:4, reg1:this)
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx52:
+						pushreg 2
+						pushvar "igm_pauseMenu"
+						getnamedmember "MAX_PLAYERS"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx51
+						pushvar "MovieClip"
+						pushreg 1
+						getnamedmember "m_playerLineMCs"
+						pushreg 2
+						ActionGetMember
+						ActionCastOp
+						setreg 3
+						ActionPop
+						pushreg 3
+						getnamedmember "statusMC"
+						getnamedmember "statusTF"
+						pushconst "text"
+						pushconst "$PauseMenu_playerStatus"
+						pushreg 2
+						ActionToString
+						ActionNewAdd
+						pushconst "&outline"
+						ActionNewAdd
+						ActionSetMember
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx52
+					end
+					lxnx51:
+					ActionSetMember
+					pushreg 2
+					pushconst "selectObjectiveListBoxEntry"
+					function ()(regs:7, reg1:this)
+						pushconst "igm_pauseMenu::selectObjectiveListBoxEntry()"
+						ActionTrace
+						pushreg 1
+						getnamedmember "m_selectedObjectiveLineIndex"
+						EAPushZero
+						ActionNewLessThan
+						ActionLogicalNot
+						ActionLogicalNot
+						jumptrue lxnx53
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						pushreg 1
+						getnamedmember "m_selectedObjectiveLineIndex"
+						ActionGetMember
+						setreg 6
+						ActionPop
+						pushreg 6
+						getnamedmember "selectionMC"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 1
+						pushconst "m_selectedObjectiveLineIndex"
+						pushbyte -1
+						ActionSetMember
+					lxnx53:
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?PauseMenu_selectedMissionObjectiveId"
+						pushreg 5
+						geturl2
+						pushconst "igm_pauseMenu: PauseMenu_selectedMissionObjectiveId = \""
+						pushreg 5
+						getnamedmember "PauseMenu_selectedMissionObjectiveId"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushreg 5
+						getnamedmember "PauseMenu_selectedMissionObjectiveId"
+						ActionToNumber
+						setreg 4
+						ActionPop
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						getnamedmember "length"
+						setreg 3
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx56:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx54
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						pushreg 2
+						ActionGetMember
+						setreg 6
+						ActionPop
+						pushreg 6
+						getnamedmember "objectiveId"
+						pushreg 4
+						ActionNewEquals
+						ActionLogicalNot
+						jumptrue lxnx55
+						jump lxnx54
+					lxnx55:
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx56
+					lxnx54:
+						pushreg 2
+						pushreg 3
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx57
+						pushreg 2
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "ensureObjectiveLineVisibility"
+						pushreg 1
+						getnamedmember "m_objectiveLines"
+						pushreg 2
+						ActionGetMember
+						setreg 6
+						ActionPop
+						pushreg 6
+						getnamedmember "selectionMC"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveDescTF"
+						pushconst "text"
+						pushconst "$PauseMenu_objectiveDesc"
+						pushreg 4
+						ActionNewAdd
+						pushconst "&outline"
+						ActionNewAdd
+						ActionSetMember
+						pushreg 1
+						pushconst "m_selectedObjectiveLineIndex"
+						pushreg 2
+						ActionSetMember
+						jump lxnx58
+					lxnx57:
+						EAPushZero
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "scrollObjectiveListBox"
+					end
+					lxnx58:
+					ActionSetMember
+					pushreg 2
+					pushconst "submitMissionMap"
+					function ()
+						pushconst "igm_pauseMenu::submitMissionMap()"
+						ActionTrace
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%PauseMenu_receiveMissionMap?missionMap="
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "missionMap"
+						EAPushOne
+						pushvar "Pointer"
+						pushconst "encode"
+						ActionCallMethod
+						ActionNewAdd
+						geturl2
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "missionMap"
+						callnamedmethodpop "OnBound"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "refreshPlayerMuted"
+					function ()(regs:6, reg1:this)
+						pushconst "igm_pauseMenu::refreshPlayerMuted()"
+						ActionTrace
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushconst "QueryGameEngine?PauseMenu_playerMuted"
+						pushreg 5
+						geturl2
+						pushconst "igm_pauseMenu: PauseMenu_playerMuted = \""
+						pushreg 5
+						getnamedmember "PauseMenu_playerMuted"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst ","
+						EAPushOne
+						pushreg 5
+						getnamedmember "PauseMenu_playerMuted"
+						pushconst "split"
+						ActionCallMethod
+						setreg 4
+						ActionPop
+						EAPushZero
+						setreg 2
+						ActionPop
+					lxnx60:
+						pushreg 2
+						pushreg 1
+						getnamedmember "m_playerCount"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx59
+						pushvar "MovieClip"
+						pushreg 1
+						getnamedmember "m_playerLineMCs"
+						pushreg 2
+						ActionGetMember
+						ActionCastOp
+						setreg 3
+						ActionPop
+						pushreg 3
+						getnamedmember "muteButtonMC"
+						getnamedmember "muteMC"
+						pushconst "_visible"
+						pushreg 4
+						pushreg 2
+						ActionGetMember
+						ActionToNumber
+						EAPushZero
+						ActionNewEquals
+						ActionLogicalNot
+						ActionSetMember
+						pushreg 2
+						ActionIncrement
+						setreg 2
+						ActionPop
+						jump lxnx60
+					end
+					lxnx59:
+					ActionSetMember
+					pushreg 2
+					pushconst "initPlayerList"
+					function ()(regs:12, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::initPlayerList()"
+						ActionTrace
+						pushreg 1
+						pushconst "m_playerLineMCs"
+						pushvar "igm_pauseMenu"
+						getnamedmember "MAX_PLAYERS"
+						EAPushOne
+						pushconst "Array"
+						ActionNew
+						ActionSetMember
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx62:
+						pushreg 3
+						pushvar "igm_pauseMenu"
+						getnamedmember "MAX_PLAYERS"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx61
+						pushvar "MovieClip"
+						pushreg 1
+						getnamedmember "m_skirmishMC"
+						getnamedmember "playerListMC"
+						pushreg 3
+						ActionToString
+						ActionGetMember
+						ActionCastOp
+						setreg 4
+						ActionPop
+						pushreg 1
+						getnamedmember "m_playerLineMCs"
+						pushreg 3
+						pushreg 4
+						ActionSetMember
+						pushreg 4
+						getnamedmember "nameMC"
+						getnamedmember "nameTF"
+						pushconst "text"
+						pushconst "$PauseMenu_playerName"
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushconst "&outline"
+						ActionNewAdd
+						ActionSetMember
+						pushreg 4
+						getnamedmember "statusMC"
+						getnamedmember "statusTF"
+						pushconst "text"
+						pushconst "$PauseMenu_playerStatus"
+						pushreg 3
+						ActionToString
+						ActionNewAdd
+						pushconst "&outline"
+						ActionNewAdd
+						ActionSetMember
+						pushreg 4
+						getnamedmember "muteButtonMC"
+						pushconst "onClicked"
+						pushreg 3
+						pushreg 1
+						getnamedmember "onPlayerMuteButtonClicked"
+						pushreg 1
+						pushbyte 3
+						pushreg 2
+						pushconst "bind1"
+						ActionCallMethod
+						ActionSetMember
+						pushreg 4
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx62
+					lxnx61:
+						EAPushZero
+						pushconst "Object"
+						ActionNew
+						setreg 7
+						ActionPop
+						pushconst "QueryGameEngine?PauseMenu_playerFaction&PauseMenu_playerColor&PauseMenu_playerIsNonLocalHuman&PauseMenu_playerMuted"
+						pushreg 7
+						geturl2
+						pushconst "igm_pauseMenu: PauseMenu_playerFaction = \""
+						pushreg 7
+						getnamedmember "PauseMenu_playerFaction"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst "igm_pauseMenu: PauseMenu_playerColor = \""
+						pushreg 7
+						getnamedmember "PauseMenu_playerColor"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst "igm_pauseMenu: PauseMenu_playerIsNonLocalHuman = \""
+						pushreg 7
+						getnamedmember "PauseMenu_playerIsNonLocalHuman"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst "igm_pauseMenu: PauseMenu_playerMuted = \""
+						pushreg 7
+						getnamedmember "PauseMenu_playerMuted"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						pushconst ","
+						EAPushOne
+						pushreg 7
+						getnamedmember "PauseMenu_playerFaction"
+						pushconst "split"
+						ActionCallMethod
+						setreg 8
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 7
+						getnamedmember "PauseMenu_playerColor"
+						pushconst "split"
+						ActionCallMethod
+						setreg 9
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 7
+						getnamedmember "PauseMenu_playerIsNonLocalHuman"
+						pushconst "split"
+						ActionCallMethod
+						setreg 11
+						ActionPop
+						pushconst ","
+						EAPushOne
+						pushreg 7
+						getnamedmember "PauseMenu_playerMuted"
+						pushconst "split"
+						ActionCallMethod
+						setreg 10
+						ActionPop
+						pushreg 1
+						pushconst "m_playerCount"
+						pushvar "igm_pauseMenu"
+						getnamedmember "MAX_PLAYERS"
+						pushreg 8
+						getnamedmember "length"
+						pushbyte 2
+						pushvar "Math"
+						pushconst "min"
+						ActionCallMethod
+						ActionSetMember
+						EAPushZero
+						setreg 3
+						ActionPop
+					lxnx66:
+						pushreg 3
+						pushreg 1
+						getnamedmember "m_playerCount"
+						ActionNewLessThan
+						ActionLogicalNot
+						jumptrue lxnx63
+						pushvar "MovieClip"
+						pushreg 1
+						getnamedmember "m_playerLineMCs"
+						pushreg 3
+						ActionGetMember
+						ActionCastOp
+						setreg 4
+						ActionPop
+						pushreg 4
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 8
+						pushreg 3
+						ActionGetMember
+						EAPushOne
+						pushreg 4
+						getnamedmember "factionMC"
+						callnamedmethodpop "gotoAndPlay"
+						pushreg 4
+						getnamedmember "colorMC"
+						getnamedmember "colorMC"
+						EAPushOne
+						pushconst "Color"
+						ActionNew
+						setreg 5
+						ActionPop
+						pushreg 9
+						pushreg 3
+						ActionGetMember
+						ActionToNumber
+						EAPushOne
+						pushreg 5
+						callnamedmethodpop "setRGB"
+						pushreg 11
+						pushreg 3
+						ActionGetMember
+						ActionToNumber
+						EAPushZero
+						ActionNewEquals
+						ActionLogicalNot
+						setreg 6
+						ActionPop
+						pushreg 6
+						jumptrue lxnx64
+						pushconst "_disabled"
+						jump lxnx65
+					lxnx64:
+						pushconst "_up"
+					lxnx65:
+						EAPushOne
+						pushreg 4
+						getnamedmember "muteButtonMC"
+						callnamedmethodpop "gotoAndPlay"
+						pushreg 4
+						getnamedmember "muteButtonMC"
+						getnamedmember "muteMC"
+						pushconst "_visible"
+						pushreg 10
+						pushreg 3
+						ActionGetMember
+						ActionToNumber
+						EAPushZero
+						ActionNewEquals
+						ActionLogicalNot
+						ActionSetMember
+						pushreg 3
+						ActionIncrement
+						setreg 3
+						ActionPop
+						jump lxnx66
+					end
+					lxnx63:
+					ActionSetMember
+					pushreg 2
+					pushconst "initGUI"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::initGUI()"
+						ActionTrace
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initMode"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initButtons"
+						pushconst "../../common/ig_missionMap.swf"
+						EAPushOne
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "missionMap"
+						callnamedmethodpop "loadMovie"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "submitMissionMap"
+						pushreg 1
+						pushconst "m_campaignMC"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "campaignMC"
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 1
+						pushconst "m_skirmishMC"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "skirmishMC"
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_skirmishMC"
+						pushconst "_visible"
+						pushfalse
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_mode"
+						setreg 0
+						pushconst "Campaign"
+						stricteq
+						jumptrue lxnx67
+						pushreg 0
+						pushconst "Skirmish"
+						stricteq
+						jumptrue lxnx68
+						jump lxnx69
+					lxnx67:
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						pushreg 1
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListScrollBarMC"
+						callnamedmethodpop "addListener"
+						pushreg 1
+						getnamedmember "m_objectiveListVisibleHeight"
+						EAPushOne
+						pushreg 1
+						getnamedmember "m_campaignMC"
+						getnamedmember "objectiveListScrollBarMC"
+						callnamedmethodpop "setSize"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "populateObjectiveListBox"
+						jump lxnx70
+					lxnx68:
+						pushreg 1
+						getnamedmember "m_skirmishMC"
+						pushconst "_visible"
+						pushtrue
+						ActionSetMember
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "initPlayerList"
+						jump lxnx70
+					lxnx69:
+						pushconst "igm_pauseMenu: unrecognized mode \""
+						pushreg 1
+						getnamedmember "m_mode"
+						ActionNewAdd
+						pushconst "\""
+						ActionNewAdd
+						ActionTrace
+						jump lxnx70
+					lxnx70:
+						pushreg 1
+						pushconst "m_localMessageHandlerFunc"
+						pushreg 1
+						getnamedmember "localMessageHandler"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind1DynamicParams"
+						ActionCallMethod
+						ActionSetMember
+						pushreg 1
+						getnamedmember "m_localMessageHandlerFunc"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gMH"
+						callnamedmethodpop "addMessageHandler"
+						pushreg 1
+						pushconst "m_localEventHandlerIndex"
+						pushreg 1
+						getnamedmember "localEventHandler"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind2DynamicParams"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						getnamedmember "gEH"
+						pushconst "addLocalEventHandler"
+						ActionCallMethod
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "resumeButton"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "saveButton"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "loadButton"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "settingsButton"
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "exitButton"
+						pushbyte 5
+						ActionInitArray
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "registerIntroOuttroComponents"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "startIntro"
+						pushreg 1
+						getnamedmember "onScreenExit"
+						pushreg 1
+						pushbyte 2
+						pushreg 2
+						pushconst "bind0"
+						ActionCallMethod
+						EAPushOne
+						pushreg 2
+						getnamedmember "gSM"
+						callnamedmethodpop "setOnExitScreen"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onScreenExit"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::onScreenExit()"
+						ActionTrace
+						EAPushZero
+						pushvar "Cafe2_BaseUIScreen"
+						getnamedmember "m_screen"
+						getnamedmember "missionMap"
+						callnamedmethodpop "OnDestroying"
+						pushreg 1
+						getnamedmember "m_localEventHandlerIndex"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gEH"
+						callnamedmethodpop "removeLocalEventHandler"
+						pushreg 1
+						getnamedmember "m_localMessageHandlerFunc"
+						EAPushOne
+						pushreg 2
+						getnamedmember "gMH"
+						callnamedmethodpop "removeMessageHandler"
+						pushreg 1
+						pushconst "m_localMessageHandlerFunc"
+						ActionDelete
+						ActionPop
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "clearObjectiveListBox"
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "clearData"
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_screen"
+						pushnull
+						ActionSetMember
+						pushvar "Cafe2_BaseUIScreen"
+						pushconst "m_thisClass"
+						pushnull
+						ActionSetMember
+						pushreg 2
+						pushconst "igm_pauseMenu"
+						ActionDelete
+						ActionPop
+						pushreg 2
+						pushconst "Cafe2_BaseUIScreen"
+						ActionDelete
+						ActionPop
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "localMessageHandler"
+					function (reg3:messageCode)(regs:4, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::localMessageHandler() messageCode = '"
+						pushreg 3
+						ActionNewAdd
+						pushconst "'"
+						ActionNewAdd
+						ActionTrace
+						pushreg 3
+						setreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "IGM_CLOSE_PAUSE_MENU"
+						stricteq
+						jumptrue lxnx71
+						pushreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "IG_PAUSE_MENU_REFRESH_OBJECTIVES"
+						stricteq
+						jumptrue lxnx72
+						pushreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "IG_PAUSE_MENU_SUBMIT_MISSION_MAP"
+						stricteq
+						jumptrue lxnx73
+						pushreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "IG_PAUSE_MENU_SELECT_OBJECTIVE"
+						stricteq
+						jumptrue lxnx74
+						pushreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "IG_PAUSE_MENU_REFRESH_PLAYER_MUTED"
+						stricteq
+						jumptrue lxnx75
+						pushreg 0
+						pushreg 2
+						getnamedmember "MSGCODE"
+						getnamedmember "IG_PAUSE_MENU_REFRESH_PLAYER_STATUS"
+						stricteq
+						jumptrue lxnx76
+						jump lxnx77
+					lxnx71:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "backButtonClicked"
+						pushtrue
+						ActionReturn
+					lxnx72:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "populateObjectiveListBox"
+						pushtrue
+						ActionReturn
+					lxnx73:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "submitMissionMap"
+						pushtrue
+						ActionReturn
+					lxnx74:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "selectObjectiveListBoxEntry"
+						pushtrue
+						ActionReturn
+					lxnx75:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshPlayerMuted"
+						pushtrue
+						ActionReturn
+					lxnx76:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "refreshPlayerStatus"
+						pushtrue
+						ActionReturn
+					lxnx77:
+						pushfalse
+						ActionReturn
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "localEventHandler"
+					function (reg3:keyCode, reg0:controller)(regs:4, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::localEventHandler() keyCode == "
+						pushreg 3
+						ActionNewAdd
+						ActionTrace
+						pushreg 3
+						pushvar "INPUTCODE"
+						getnamedmember "ESCAPE"
+						stricteq
+						jumptrue lxnx78
+						jump lxnx79
+					lxnx78:
+						EAPushZero
+						pushreg 1
+						callnamedmethodpop "backButtonClicked"
+						jump lxnx80
+					lxnx79:
+						pushreg 3
+						EAPushOne
+						pushreg 2
+						getnamedmember "gFM"
+						callnamedmethodpop "handleDefaultInputs"
+						jump lxnx80
+					end
+					lxnx80:
+					ActionSetMember
+					pushreg 2
+					pushconst "onExitButtonClicked"
+					function ()
+						pushconst "igm_pauseMenu::onExitButtonClicked()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%igm_pauseMenu_onExitClicked"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onSettingsButtonClicked"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::onSettingsButtonClicked()"
+						ActionTrace
+						pushreg 2
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_OPTIONS"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttro"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onLoadButtonClicked"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::onLoadButtonClicked()"
+						ActionTrace
+						pushreg 2
+						getnamedmember "GAME"
+						pushconst "SAVELOADSCREEN_TYPE"
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "SAVELOADSCREEN_LOAD"
+						ActionSetMember
+						pushreg 2
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_SAVELOAD"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttro"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onSaveButtonClicked"
+					function ()(regs:3, reg1:this, reg2:_global)
+						pushconst "igm_pauseMenu::onSaveButtonClicked()"
+						ActionTrace
+						geturl "FSCommand:CallGameFunction", "%igm_pauseMenu.OnSaveClicked"
+						pushreg 2
+						getnamedmember "GAME"
+						pushconst "SAVELOADSCREEN_TYPE"
+						pushreg 2
+						getnamedmember "ENUM"
+						getnamedmember "SAVELOADSCREEN_SAVE"
+						ActionSetMember
+						pushreg 2
+						getnamedmember "SCREEN"
+						getnamedmember "FEG_SAVELOAD"
+						EAPushOne
+						pushreg 1
+						callnamedmethodpop "startOuttro"
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onObjectiveLineClicked"
+					function (reg1:objectiveId)(regs:2)
+						pushconst "igm_pauseMenu::onObjectiveLineClicked( "
+						pushreg 1
+						ActionToString
+						ActionNewAdd
+						pushconst " )"
+						ActionNewAdd
+						ActionTrace
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%PauseMenu_onMissionObjectiveClicked?objectiveId="
+						pushreg 1
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "onPlayerMuteButtonClicked"
+					function (reg1:playerNum)(regs:2)
+						pushconst "igm_pauseMenu::onPlayerMuteButtonClicked( "
+						pushreg 1
+						ActionToString
+						ActionNewAdd
+						pushconst " )"
+						ActionNewAdd
+						ActionTrace
+						pushconst "FSCommand:CallGameFunction"
+						pushconst "%PauseMenu_onPlayerMuteClicked?playerNum="
+						pushreg 1
+						ActionToString
+						ActionNewAdd
+						geturl2
+					end
+					ActionSetMember
+					pushreg 2
+					pushconst "m_objectiveLines"
+					EAPushZero
+					pushconst "Array"
+					ActionNew
+					ActionSetMember
+					pushreg 2
+					pushconst "m_selectedObjectiveLineIndex"
+					pushbyte -1
+					ActionSetMember
+					pushreg 2
+					pushconst "m_playerCount"
+					EAPushZero
+					ActionSetMember
+					pushreg 1
+					pushconst "MAX_PLAYERS"
+					pushbyte 8
+					ActionSetMember
+					EAPushOne
+					pushnull
+					pushglobal
+					getnamedmember "igm_pauseMenu"
+					getnamedmember "prototype"
+					pushbyte 3
+					pushconst "ASSetPropFlags"
+					ActionCallFunction
+					lxnx31:
+					ActionPop
+					actionEnd
+				]]></initaction>
+			</frame>
+		</frames>
+	</movieclip>
+	<shape id="1" top="0.000000" left="0.000000" bottom="100.000000" right="100.000000" geometry="igm_pauseMenu_geometry\1.ru">
+		<ru>
+			c
+			s s:0:0:0:0
+			t 0:0:0:0:0:0
+		</ru>
+	</shape>
+	<button id="2" top="0.000000" left="0.000000" bottom="100.000000" right="100.000000">
+		<vertexes>
+			<vertex x="0.000000" y="100.000000"/>
+			<vertex x="0.000000" y="0.000000"/>
+			<vertex x="100.000000" y="0.000000"/>
+			<vertex x="100.000000" y="100.000000"/>
+		</vertexes>
+		<triangles>
+			<triangle v1="0" v2="1" v3="2"/>
+			<triangle v1="2" v2="3" v3="0"/>
+		</triangles>
+		<buttonrecords>
+			<buttonrecord flags="StateHit" character="1" depth="1" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000"/>
+		</buttonrecords>
+	</button>
+	<sprite id="3">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="2" rotm00="4.330002" rotm01="0.000000" rotm10="0.000000" rotm11="0.279999" tx="0.000000" ty="0.000000">
+				<poname name="bttn"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="4" top="0.000000" left="0.000000" bottom="2.000000" right="2.000000" geometry="igm_pauseMenu_geometry\4.ru">
+		<ru>
+			c
+			s s:255:255:255:255
+			t 0:2:0:0:2:0
+			t 2:0:2:2:0:2
+		</ru>
+	</shape>
+	<sprite id="5">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="4" rotm00="50.000000" rotm01="0.000000" rotm10="0.000000" rotm11="49.974823" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<font id="6" name="Lucida Sans">
+	</font>
+	<edittext id="7" top="-2.000000" left="-2.000000" bottom="20.250000" right="401.000000" font="6" alignment="0" red="0" green="204" blue="255" alpha="255" height="16.000000" readonly="1" multiline="1" wordwrap="1">
+		<ettext text="Kill Everybody"/>
+		<etvar variable=""/>
+	</edittext>
+	<shape id="8" top="-1.300000" left="-1.200000" bottom="21.150000" right="21.250000" geometry="igm_pauseMenu_geometry\8.ru">
+		<ru>
+			c
+			s s:0:0:0:255
+			t -1.2:21.15:-1.2:-1.3:21.25:-1.3
+			t 21.25:-1.3:21.25:21.15:-1.2:21.15
+		</ru>
+	</shape>
+	<shape id="9" top="0.000000" left="0.000000" bottom="20.000000" right="20.000000" geometry="igm_pauseMenu_geometry\9.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:0:1:1:1:19
+			t 1:1:0:0:20:0
+			t 0:20:1:19:19:19
+			t 1:19:0:20:0:0
+			t 19:1:20:0:20:20
+			t 20:0:19:1:1:1
+			t 19:19:20:20:0:20
+			t 20:20:19:19:19:1
+		</ru>
+	</shape>
+	<sprite id="10">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="9" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="11" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="12" top="-6.750000" left="-4.250000" bottom="18.250000" right="19.750000" geometry="igm_pauseMenu_geometry\12.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:2023.25:7.75
+			t -4.25:18.25:-4.25:-6.75:19.75:-6.75
+			t 19.75:-6.75:19.75:18.25:-4.25:18.25
+		</ru>
+	</shape>
+	<sprite id="13">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="12" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="14" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="15" top="2.500000" left="2.000000" bottom="17.500000" right="18.000000" geometry="igm_pauseMenu_geometry\15.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:2017:25.5
+			t 2:17.5:2:2.5:18:2.5
+			t 18:2.5:18:17.5:2:17.5
+		</ru>
+	</shape>
+	<sprite id="16">
+	<frames>
+		<frame id="0">
+			<framelabel label="Active" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="8" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="2" character="10" rotm00="1.120682" rotm01="0.000000" rotm10="0.000000" rotm11="1.120682" tx="-1.200000" ty="-1.300000">
+				<poname name="frameMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName" depth="4" character="13" rotm00="0.996658" rotm01="0.000000" rotm10="0.000000" rotm11="1.003174" tx="2.500000" ty="2.000000" red="255" green="255" blue="255" alpha="0" unknown="0">
+				<poname name="checkMC"/>
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="10">
+			<framelabel label="Completed" frame="10"/>
+			<placeobject flags="Move|HasColorTransform" depth="4" red="255" green="255" blue="255" alpha="255" unknown="0">
+			</placeobject>
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+		</frame>
+		<frame id="19">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="20">
+			<framelabel label="Failed" frame="20"/>
+			<placeobject flags="Move|HasColorTransform" depth="4" red="255" green="255" blue="255" alpha="0" unknown="0">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="15" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="21">
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="17">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="3" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				<poname name="hitRegionMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasColorTransform|HasName|HasClipAction" depth="3" character="5" rotm00="4.329971" rotm01="0.000000" rotm10="0.000000" rotm11="0.280136" tx="0.000000" ty="0.000000" red="255" green="255" blue="255" alpha="0" unknown="0">
+				<poname name="spacerMC"/>
+				<clipactions>
+				<clipaction flags="Load" flags2="0" keycode="0"><![CDATA[
+					pushstr ""
+					pushbyte 7
+					pushfalse
+					ActionSetProperty
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="5" character="7" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="29.000000" ty="5.000000">
+				<poname name="textTF"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="16" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.000000" ty="4.000000">
+				<poname name="checkboxMC"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="18" top="0.000000" left="0.000000" bottom="768.000000" right="1365.000000" geometry="igm_pauseMenu_geometry\18.ru">
+		<ru>
+			c
+			s s:0:0:0:192
+			t 0:768:0:0:1365:0
+			t 1365:0:1365:768:0:768
+		</ru>
+	</shape>
+	<image id="19" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="20" top="0.000000" left="0.000000" bottom="8.000000" right="495.000000" geometry="igm_pauseMenu_geometry\20.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:499:165
+			t 0:8:0:0:495:0
+			t 495:0:495:8:0:8
+		</ru>
+	</shape>
+	<image id="21" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<image id="22" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="23" top="20.850000" left="0.000000" bottom="758.500000" right="1365.500000" geometry="igm_pauseMenu_geometry\23.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 184.05:85:189.55:90:189.55:672.15
+			t 189.55:90:184.05:85:1185.3:85
+			t 184.05:677.15:189.55:672.15:1179.8:672.15
+			t 189.55:672.15:184.05:677.15:184.05:85
+			t 1179.8:90:1185.3:85:1185.3:677.15
+			t 1185.3:85:1179.8:90:189.55:90
+			t 1179.8:672.15:1185.3:677.15:184.05:677.15
+			t 1185.3:677.15:1179.8:672.15:1179.8:90
+			s l:2:0:0:0:255
+			l 1179.8:672.15:189.55:672.15
+			l 189.55:672.15:189.55:90
+			l 189.55:90:1179.8:90
+			l 1179.8:90:1179.8:672.15
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:0.5:-686.5
+			t 0.5:758.5:0.5:687.5:1365.5:687.5
+			t 1365.5:687.5:1365.5:758.5:0.5:758.5
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1:53.15
+			t 0:76.85:0:20.85:913:20.85
+			t 913:20.85:913:76.85:0:76.85
+		</ru>
+	</shape>
+	<image id="24" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="25" top="0.000000" left="0.000000" bottom="15.000000" right="496.000000" geometry="igm_pauseMenu_geometry\25.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1:165
+			t 0:15:0:0:496:0
+			t 496:0:496:15:0:15
+		</ru>
+	</shape>
+	<empty id="26"/>
+	<image id="27" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="28" top="0.000000" left="0.000000" bottom="241.500000" right="472.649994" geometry="igm_pauseMenu_geometry\28.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0.05:26.95:4.55:31.95:4.55:236.5
+			t 4.55:31.95:0.05:26.95:466.65:31.95
+			t 0.05:241.5:4.55:236.5:466.65:236.5
+			t 4.55:236.5:0.05:241.5:0.05:26.95
+			t 466.65:31.95:472.65:26.95:472.65:241.5
+			t 472.65:26.95:466.65:31.95:0.05:26.95
+			t 466.65:236.5:472.65:241.5:0.05:241.5
+			t 472.65:241.5:466.65:236.5:466.65:31.95
+			s l:2:0:0:0:255
+			l 4.55:31.95:466.65:31.95
+			l 466.65:31.95:466.65:236.5
+			l 466.65:236.5:4.55:236.5
+			c
+			s l:2:0:0:0:255
+			l 4.55:236.5:4.55:31.95
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1.000092:1:132
+			t 0:31:0:0:472:0
+			t 472:0:472:31:0:31
+		</ru>
+	</shape>
+	<font id="29" name="Red Alert">
+	</font>
+	<edittext id="30" top="-2.000000" left="-2.000000" bottom="26.000000" right="456.450012" font="29" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;InGamePause_MISSION_OBJECTIVES"/>
+		<etvar variable=""/>
+	</edittext>
+	<shape id="31" top="248.449997" left="0.000000" bottom="516.500000" right="472.649994" geometry="igm_pauseMenu_geometry\31.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0.05:275.4:4.55:280.4:4.55:511.5
+			t 4.55:280.4:0.05:275.4:466.65:280.4
+			t 0.05:516.5:4.55:511.5:466.65:511.5
+			t 4.55:511.5:0.05:516.5:0.05:275.4
+			t 466.65:280.4:472.65:275.4:472.65:516.5
+			t 472.65:275.4:466.65:280.4:0.05:275.4
+			t 466.65:511.5:472.65:516.5:0.05:516.5
+			t 472.65:516.5:466.65:511.5:466.65:280.4
+			s l:2:0:0:0:255
+			l 466.65:511.5:4.55:511.5
+			l 4.55:511.5:4.55:280.4
+			l 4.55:280.4:466.65:280.4
+			l 466.65:280.4:466.65:511.5
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1.000092:1:-116.472748
+			t 0:279.45:0:248.45:472:248.45
+			t 472:248.45:472:279.45:0:279.45
+		</ru>
+	</shape>
+	<edittext id="32" top="-2.000000" left="-2.000000" bottom="26.000000" right="456.450012" font="29" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;InGamePause_OBJECTIVE_DESCRIPTION"/>
+		<etvar variable=""/>
+	</edittext>
+	<empty id="33"/>
+	<sprite id="34">
+	<frames>
+		<frame id="0">
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="35">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipDepth" depth="1" character="5" rotm00="4.339951" rotm01="0.000000" rotm10="0.000000" rotm11="2.001190" tx="0.000000" ty="0.000000" clipdepth="5">
+				<poname name="maskMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="34" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				<poname name="linesMC"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<edittext id="36" top="-2.000000" left="-2.000000" bottom="220.949997" right="451.149994" font="6" alignment="0" red="255" green="255" blue="255" alpha="255" height="14.000000" readonly="1" multiline="1" wordwrap="1">
+		<ettext text="Kill all enemies"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="37">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="20" rotm00="0.943436" rotm01="0.000000" rotm10="0.000000" rotm11="25.871231" tx="4.700000" ty="33.700001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="4" character="28" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="30" rotm00="1.000107" rotm01="0.000000" rotm10="0.000000" rotm11="0.999908" tx="31.900000" ty="4.950000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="6" character="20" rotm00="0.943436" rotm01="0.000000" rotm10="0.000000" rotm11="29.246094" tx="4.700000" ty="282.200012">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="8" character="31" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="9" character="32" rotm00="1.000107" rotm01="0.000000" rotm10="0.000000" rotm11="0.999908" tx="31.900000" ty="253.449997">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="10" character="33" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.999908" tx="442.950012" ty="34.799999">
+				<poname name="objectiveListScrollBarMC"/>
+				<clipactions>
+				<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
+					pushstr "m_nLength"
+					pushbyte 100
+					ActionSetVariable
+					pushstr "m_nMax"
+					pushbyte 19
+					ActionSetVariable
+					pushstr "m_nMin"
+					zerovar
+					pushstr "m_nValue"
+					zerovar
+					actionEnd
+				]]></clipaction>
+				</clipactions>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="24" character="35" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.999908" tx="5.700000" ty="34.000000">
+				<poname name="objectiveListMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="30" character="36" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.999908" tx="11.700000" ty="287.899994">
+				<poname name="objectiveDescTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="38" top="0.000000" left="0.000000" bottom="516.400024" right="472.700012" geometry="igm_pauseMenu_geometry\38.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0.05:26.95:4.5:31.9:0.05:47
+			t 4.55:31.95:4.5:31.9:5.9:31.95
+			t 4.5:31.9:4.55:44.5:4.5:47
+			t 0.1:47:4.5:31.9:4.5:47
+			t 4.55:31.95:4.55:44.5:4.5:31.9
+			t 4.5:31.9:0.05:26.95:5.9:31.95
+			t 4.55:47:4.55:44.5:4.65:44.5
+			t 0.05:47:4.5:31.9:0.1:47
+			t 4.5:511.5:0.1:47:4.5:47
+			t 0.1:47:4.5:511.5:0.1:516.4
+			t 4.65:511.4:4.55:47:4.65:44.5
+			t 4.5:511.5:4.55:511.5:0.1:516.4
+			t 4.55:511.499994589916:4.65:511.4:47.9:511.4
+			t 4.55:511.5:4.55:511.499994589916:466.6:511.45
+			t 4.55:47:4.65:511.4:4.55:511.499994589916
+			t 4.5:47:4.55:44.5:4.55:47
+			t 49.55:511.45:4.55:511.499994589916:47.9:511.4
+			t 5.9:31.95:0.05:26.95:466.6:31.95
+			t 466.65:31.95:466.6:31.95:472.65:26.95
+			t 466.65:31.95:466.7:47:466.65:47
+			t 472.65:26.95:472.65:44.5:466.65:31.95
+			t 466.7:47:472.65:44.5:472.7:44.5
+			t 466.65:31.95:472.65:44.5:466.7:47
+			t 0.05:26.95:472.65:26.95:466.6:31.95
+			t 49.55:511.45:466.6:511.4:466.6:511.45
+			t 4.55:511.499994589916:49.55:511.45:466.6:511.45
+			t 466.7:511.4:466.6:511.45:466.6:511.4
+			t 466.7:47:472.7:44.5:466.7:511.4
+			t 472.7:516.4:0.1:516.4:466.6:511.45
+			t 472.7:516.4:466.6:511.45:466.7:511.4
+			t 472.7:44.5:472.7:516.4:466.7:511.4
+			t 4.55:511.5:466.6:511.45:0.1:516.4
+			s l:2:0:0:0:255
+			l 466.6:511.4:466.6:511.45
+			l 466.6:511.45:4.5:511.5
+			l 4.5:511.5:4.5:47
+			l 4.5:47:4.5:31.9
+			l 4.5:31.9:5.9:31.95
+			l 5.9:31.95:466.6:31.95
+			l 466.6:31.95:466.6:511.4
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1.000092:1:132
+			t 0:31:0:0:472:0
+			t 472:0:472:31:0:31
+		</ru>
+	</shape>
+	<edittext id="39" top="-2.000000" left="-2.000000" bottom="26.000000" right="456.450012" font="29" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;InGamePause_PLAYERS"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="40" top="-2.000000" left="-2.000000" bottom="23.000000" right="188.000000" font="6" alignment="0" red="255" green="255" blue="255" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text=""/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="41">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="40" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="3.000000" ty="3.000000">
+				<poname name="statusTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="42" top="0.000000" left="0.000000" bottom="26.000000" right="257.000000" geometry="igm_pauseMenu_geometry\42.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:26:0:0:257:0
+			t 257:0:257:26:0:26
+			c
+			s s:0:0:0:255
+			t 2:24:2:2:255:2
+			t 255:2:255:24:2:24
+		</ru>
+	</shape>
+	<edittext id="43" top="-2.000000" left="-2.000000" bottom="17.950001" right="251.000000" font="6" alignment="0" red="255" green="255" blue="255" alpha="255" height="14.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="Player Name"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="44">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="42" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="43" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="0.997498" tx="3.900000" ty="5.000000">
+				<poname name="nameTF"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="45" top="0.000000" left="0.000000" bottom="26.000000" right="60.000000" geometry="igm_pauseMenu_geometry\45.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:26:0:0:60:0
+			t 60:0:60:26:0:26
+			c
+			s s:0:0:0:255
+			t 2:24:2:2:58:2
+			t 58:2:58:24:2:24
+		</ru>
+	</shape>
+	<sprite id="46">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="45" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="5" rotm00="0.539993" rotm01="0.000000" rotm10="0.000000" rotm11="0.200104" tx="3.000000" ty="3.000000">
+				<poname name="colorMC"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="47" top="0.000000" left="0.000000" bottom="56.000000" right="56.000000" geometry="igm_pauseMenu_geometry\47.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:56:0:0:56:0
+			t 56:0:56:56:0:56
+		</ru>
+	</shape>
+	<image id="48" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="49" top="2.000000" left="2.000000" bottom="54.000000" right="54.000000" geometry="igm_pauseMenu_geometry\49.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1590:-1
+			t 2:54:2:2:54:2
+			t 54:2:54:54:2:54
+		</ru>
+	</shape>
+	<image id="50" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="51" top="2.000000" left="2.000000" bottom="54.000000" right="54.000000" geometry="igm_pauseMenu_geometry\51.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1644:-1
+			t 2:54:2:2:54:2
+			t 54:2:54:54:2:54
+		</ru>
+	</shape>
+	<image id="52" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="53" top="2.000000" left="2.000000" bottom="54.000000" right="54.000000" geometry="igm_pauseMenu_geometry\53.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1698:-1
+			t 2:54:2:2:54:2
+			t 54:2:54:54:2:54
+		</ru>
+	</shape>
+	<image id="54" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="55" top="2.000000" left="2.000000" bottom="54.000000" right="54.000000" geometry="igm_pauseMenu_geometry\55.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1752:-1
+			t 2:54:2:2:54:2
+			t 54:2:54:54:2:54
+		</ru>
+	</shape>
+	<sprite id="56">
+	<frames>
+		<frame id="0">
+			<framelabel label="Allies" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="47" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="49" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="10">
+			<framelabel label="Soviet" frame="10"/>
+			<placeobject flags="Move|HasCharacter" depth="2" character="51">
+			</placeobject>
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+		</frame>
+		<frame id="19">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="20">
+			<framelabel label="Japan" frame="20"/>
+			<placeobject flags="Move|HasCharacter" depth="2" character="53">
+			</placeobject>
+		</frame>
+		<frame id="21">
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="30">
+			<framelabel label="Random" frame="30"/>
+			<placeobject flags="Move|HasCharacter" depth="2" character="55">
+			</placeobject>
+		</frame>
+		<frame id="31">
+		</frame>
+		<frame id="32">
+		</frame>
+		<frame id="33">
+		</frame>
+		<frame id="34">
+		</frame>
+		<frame id="35">
+		</frame>
+		<frame id="36">
+		</frame>
+		<frame id="37">
+		</frame>
+		<frame id="38">
+		</frame>
+		<frame id="39">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<shape id="57" top="0.000000" left="0.000000" bottom="56.000000" right="56.000000" geometry="igm_pauseMenu_geometry\57.ru">
+		<ru>
+			c
+			s s:188:13:0:255
+			t 0:56:0:0:56:0
+			t 56:0:56:56:0:56
+			c
+			s s:0:0:0:255
+			t 2:54:2:2:54:2
+			t 54:2:54:54:2:54
+		</ru>
+	</shape>
+	<image id="58" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="59" top="5.000000" left="5.000000" bottom="51.000000" right="51.000000" geometry="igm_pauseMenu_geometry\59.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1857:44
+			t 5:51:5:5:51:5
+			t 51:5:51:51:5:51
+		</ru>
+	</shape>
+	<image id="60" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="61" top="0.000000" left="0.000000" bottom="52.000000" right="52.000000" geometry="igm_pauseMenu_geometry\61.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1808:1
+			t 0:52:0:0:52:0
+			t 52:0:52:52:0:52
+		</ru>
+	</shape>
+	<sprite id="62">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="61" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<button id="63" top="0.000000" left="0.000000" bottom="100.000000" right="100.000000">
+		<vertexes>
+			<vertex x="0.000000" y="100.000000"/>
+			<vertex x="0.000000" y="0.000000"/>
+			<vertex x="100.000000" y="0.000000"/>
+			<vertex x="100.000000" y="100.000000"/>
+		</vertexes>
+		<triangles>
+			<triangle v1="0" v2="1" v3="2"/>
+			<triangle v1="2" v2="3" v3="0"/>
+		</triangles>
+		<buttonrecords>
+			<buttonrecord flags="StateHit" character="1" depth="1" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000"/>
+		</buttonrecords>
+		<buttonactions>
+			<buttonaction flags="OverUpToOverDown"><![CDATA[
+				gotolabel "_down"
+				play
+				actionEnd
+			]]></buttonaction>
+			<buttonaction flags="OverDownToOverUp"><![CDATA[
+				gotolabel "_over"
+				play
+				EAPushZero
+				pushstr "onClicked"
+				EACallFunctionPop
+				actionEnd
+			]]></buttonaction>
+			<buttonaction flags="IdleToOverUp"><![CDATA[
+				gotolabel "_over"
+				play
+				actionEnd
+			]]></buttonaction>
+			<buttonaction flags="OverUpToIdle"><![CDATA[
+				gotolabel "_up"
+				play
+				actionEnd
+			]]></buttonaction>
+		</buttonactions>
+	</button>
+	<image id="64" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="65" top="5.000000" left="5.000000" bottom="51.000000" right="51.000000" geometry="igm_pauseMenu_geometry\65.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1857:-4
+			t 5:51:5:5:51:5
+			t 51:5:51:51:5:51
+		</ru>
+	</shape>
+	<image id="66" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="67" top="5.000000" left="5.000000" bottom="51.000000" right="51.000000" geometry="igm_pauseMenu_geometry\67.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1905:-4
+			t 5:51:5:5:51:5
+			t 51:5:51:51:5:51
+		</ru>
+	</shape>
+	<image id="68" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="69" top="5.000000" left="5.000000" bottom="51.000000" right="51.000000" geometry="igm_pauseMenu_geometry\69.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1953:-4
+			t 5:51:5:5:51:5
+			t 51:5:51:51:5:51
+		</ru>
+	</shape>
+	<sprite id="70">
+	<frames>
+		<frame id="0">
+			<framelabel label="_disabled" frame="0"/>
+			<placeobject flags="HasCharacter|HasMatrix" depth="2" character="57" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="59" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="6" character="62" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="2.000000" ty="2.000000">
+				<poname name="muteMC"/>
+			</placeobject>
+		</frame>
+		<frame id="1">
+		</frame>
+		<frame id="2">
+		</frame>
+		<frame id="3">
+		</frame>
+		<frame id="4">
+		</frame>
+		<frame id="5">
+		</frame>
+		<frame id="6">
+		</frame>
+		<frame id="7">
+		</frame>
+		<frame id="8">
+		</frame>
+		<frame id="9">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="10">
+			<removeobject depth="3"/>
+			<framelabel label="_up" frame="10"/>
+			<placeobject flags="HasCharacter|HasMatrix|HasRatio" depth="3" character="63" rotm00="0.520111" rotm01="0.000000" rotm10="0.000000" rotm11="0.520004" tx="2.000000" ty="2.000000" ratio="0.000153">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="5" character="65" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+		</frame>
+		<frame id="11">
+		</frame>
+		<frame id="12">
+		</frame>
+		<frame id="13">
+		</frame>
+		<frame id="14">
+		</frame>
+		<frame id="15">
+		</frame>
+		<frame id="16">
+		</frame>
+		<frame id="17">
+		</frame>
+		<frame id="18">
+		</frame>
+		<frame id="19">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="20">
+			<framelabel label="_over" frame="20"/>
+			<placeobject flags="Move|HasCharacter" depth="5" character="67">
+			</placeobject>
+		</frame>
+		<frame id="21">
+		</frame>
+		<frame id="22">
+		</frame>
+		<frame id="23">
+		</frame>
+		<frame id="24">
+		</frame>
+		<frame id="25">
+		</frame>
+		<frame id="26">
+		</frame>
+		<frame id="27">
+		</frame>
+		<frame id="28">
+		</frame>
+		<frame id="29">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+		<frame id="30">
+			<framelabel label="_down" frame="30"/>
+			<placeobject flags="Move|HasCharacter" depth="5" character="69">
+			</placeobject>
+		</frame>
+		<frame id="31">
+		</frame>
+		<frame id="32">
+		</frame>
+		<frame id="33">
+		</frame>
+		<frame id="34">
+		</frame>
+		<frame id="35">
+		</frame>
+		<frame id="36">
+		</frame>
+		<frame id="37">
+		</frame>
+		<frame id="38">
+		</frame>
+		<frame id="39">
+			<action><![CDATA[
+				stop
+				actionEnd
+			]]></action>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="71">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="41" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="202.000000" ty="-1.000000">
+				<poname name="statusMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="3" character="44" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="139.000000" ty="30.000000">
+				<poname name="nameMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="7" character="46" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="139.000000" ty="0.000000">
+				<poname name="colorMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="11" character="56" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="79.000000" ty="0.000000">
+				<poname name="factionMC"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="14" character="70" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+				<poname name="muteButtonMC"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="72">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="1" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="282.500000">
+				<poname name="5"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="16" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="226.000000">
+				<poname name="4"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="31" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="169.500000">
+				<poname name="3"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="46" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="113.000000">
+				<poname name="2"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="61" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="56.500000">
+				<poname name="1"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="76" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="0.000000">
+				<poname name="0"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="91" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="339.000000">
+				<poname name="6"/>
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="106" character="71" rotm00="0.850000" rotm01="0.000000" rotm10="0.000000" rotm11="0.850000" tx="0.000000" ty="395.500000">
+				<poname name="7"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<sprite id="73">
+	<frames>
+		<frame id="0">
+			<placeobject flags="HasCharacter|HasMatrix" depth="1" character="20" rotm00="0.943436" rotm01="0.000000" rotm10="0.000000" rotm11="60.237167" tx="4.700000" ty="33.700001">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="3" character="38" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="0.000000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix" depth="4" character="39" rotm00="1.000107" rotm01="0.000000" rotm10="0.000000" rotm11="0.999908" tx="31.900000" ty="4.950000">
+			</placeobject>
+			<placeobject flags="HasCharacter|HasMatrix|HasName" depth="5" character="72" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="22.000000" ty="53.000000">
+				<poname name="playerListMC"/>
+			</placeobject>
+		</frame>
+	</frames>
+	</sprite>
+	<image id="74" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="75" top="0.000000" left="0.000000" bottom="232.000000" right="222.000000" geometry="igm_pauseMenu_geometry\75.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:1368:1
+			t 0:232:0:0:222:0
+			t 222:0:222:232:0:232
+		</ru>
+	</shape>
+	<image id="76" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="77" top="0.000000" left="0.000000" bottom="56.000000" right="11.000000" geometry="igm_pauseMenu_geometry\77.ru">
+		<ru>
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:2006:1
+			t 0:56:0:0:11:0
+			t 11:0:11:56:0:56
+		</ru>
+	</shape>
+	<image id="78" image="art\Textures\apt_igm_pauseMenu_1.tga"/>
+	<shape id="79" top="104.000000" left="207.300003" bottom="630.150024" right="681.700012" geometry="igm_pauseMenu_geometry\79.ru">
+		<ru>
+			c
+			s s:244:177:98:255
+			t 217.05:146.5:222.55:151:222.55:615.1
+			t 672.2:619.65:217.05:619.65:222.55:615.1
+			t 222.55:615.1:217.05:619.65:217.05:146.5
+			t 666.7:151:672.2:146.5:666.7:615.1
+			t 666.7:151:222.55:151:217.05:146.5
+			t 666.7:151:217.05:146.5:672.2:146.5
+			t 672.2:619.65:666.7:615.1:672.2:146.5
+			t 222.55:615.1:666.7:615.1:672.2:619.65
+			s s:188:13:0:255
+			t 211.8:142:676.95:142:217.05:146.5
+			t 211.8:142:217.05:146.5:217.05:619.65
+			t 211.8:624.15:217.05:619.65:676.95:624.15
+			t 211.8:624.15:211.8:142:217.05:619.65
+			t 217.05:146.5:676.95:142:672.2:146.5
+			t 672.2:146.5:676.95:142:676.95:624.15
+			t 217.05:619.65:672.2:619.65:676.95:624.15
+			t 672.2:619.65:672.2:146.5:676.95:624.15
+			s s:0:0:0:255
+			t 207.3:104:211.8:142:207.3:630.15
+			t 676.95:142:207.3:104:681.7:104
+			t 676.95:142:211.8:142:207.3:104
+			t 211.8:624.15:207.3:630.15:211.8:142
+			t 207.3:630.15:211.8:624.15:676.95:624.15
+			t 676.95:142:681.7:104:681.7:630.15
+			t 676.95:624.15:681.7:630.15:207.3:630.15
+			t 681.7:630.15:676.95:624.15:676.95:142
+			c
+			s tc:255:255:255:255:art\Textures\apt_igm_pauseMenu_1.tga:1:0:0:1:262.9:24.95
+			t 212.1:138.05:212.1:107.05:677.1:107.05
+			t 677.1:107.05:677.1:138.05:212.1:138.05
+		</ru>
+	</shape>
+	<edittext id="80" top="-2.000000" left="-2.000000" bottom="26.000000" right="411.200012" font="29" alignment="0" red="0" green="0" blue="0" alpha="255" height="24.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;MAP_NAME"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="81" top="-2.000000" left="-2.000000" bottom="46.000000" right="499.100006" font="29" alignment="0" red="0" green="0" blue="0" alpha="255" height="44.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;APT:InGamePause&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<edittext id="82" top="-2.000000" left="-2.000000" bottom="46.000000" right="497.299988" font="29" alignment="0" red="86" green="168" blue="243" alpha="255" height="44.000000" readonly="1" multiline="0" wordwrap="0">
+		<ettext text="&#x24;APT:InGamePause&amp;Outline"/>
+		<etvar variable=""/>
+	</edittext>
+	<sprite id="83">
+	</sprite>
+	<sprite id="84">
+	</sprite>
+	<sprite id="85">
+	</sprite>
+</aptdata>
