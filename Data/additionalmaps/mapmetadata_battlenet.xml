@@ -11,7 +11,7 @@
         <!--1v1 Map-->
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="4100240288"
             Description="Map:RA3BN_Aquae_Caerulea/Desc"
             DisplayName="RA3BN_Aquae_Caerulea"
             FileName="data\maps\official\ra3bn_aquae_caerulea\ra3bn_aquae_caerulea.map"
@@ -44,7 +44,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="50"
-            CRC="0"
+            CRC="202291672"
             Description="Map:RA3BN_Chrysoberyl_Garden/Desc"
             DisplayName="RA3BN_Chrysoberyl_Garden"
             FileName="data\maps\official\ra3bn_chrysoberyl_garden\ra3bn_chrysoberyl_garden.map"
@@ -77,7 +77,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="36983807"
             Description="Map:RA3BN_Temple_Legend_1_3/Desc"
             DisplayName="RA3BN_Temple_Legend_1_3"
             FileName="data\maps\official\ra3bn_temple_legend_1_3\ra3bn_temple_legend_1_3.map"
@@ -110,7 +110,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="15"
-            CRC="0"
+            CRC="2303179501"
             Description="Map:RA3BN_Lake_Of_Albatross_1_1/Desc"
             DisplayName="RA3BN_Lake_Of_Albatross_1_1"
             FileName="data\maps\official\ra3bn_lake_of_albatross_1_1\ra3bn_lake_of_albatross_1_1.map"
@@ -143,7 +143,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="3031246332"
             Description="Map:RA3BN_Emperor_Wreckage/Desc"
             DisplayName="RA3BN_Emperor_Wreckage"
             FileName="data\maps\official\ra3bn_emperor_wreckage\ra3bn_emperor_wreckage.map"
@@ -176,7 +176,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="2276732957"
             Description="Map:RA3BN_Snow_Town/Desc"
             DisplayName="RA3BN_Snow_Town"
             FileName="data\maps\official\ra3bn_snow_town\ra3bn_snow_town.map"
@@ -209,7 +209,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="875948155"
             Description="Map:RA3BN_Cabana_Republic_1_1/Desc"
             DisplayName="RA3BN_Cabana_Republic_1_1"
             FileName="data\maps\official\ra3bn_cabana_republic_1_1\ra3bn_cabana_republic_1_1.map"
@@ -242,7 +242,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="1583193973"
             Description="Map:RA3BN_Spring_Walker/Desc"
             DisplayName="RA3BN_Spring_Walker"
             FileName="data\maps\official\ra3bn_spring_walker\ra3bn_spring_walker.map"
@@ -275,7 +275,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="468341723"
             Description="Map:RA3BN_Redemption_Base_1_3/Desc"
             DisplayName="RA3BN_Redemption_Base_1_3"
             FileName="data\maps\official\ra3bn_redemption_base_1_3\ra3bn_redemption_base_1_3.map"
@@ -308,7 +308,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="593759986"
             Description="Map:RA3BN_Escape_Fortress_1_2/Desc"
             DisplayName="RA3BN_Escape_Fortress_1_2"
             FileName="data\maps\official\ra3bn_escape_fortress_1_2\ra3bn_escape_fortress_1_2.map"
@@ -341,7 +341,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="3256578376"
             Description="Map:RA3BN_Emerald_Shoal/Desc"
             DisplayName="RA3BN_Emerald_Shoal"
             FileName="data\maps\official\ra3bn_emerald_shoal\ra3bn_emerald_shoal.map"
@@ -374,7 +374,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="3401949302"
             Description="Map:RA3BN_Secret_Island_1_3/Desc"
             DisplayName="RA3BN_Secret_Island_1_3"
             FileName="data\maps\official\ra3bn_secret_island_1_3\ra3bn_secret_island_1_3.map"
@@ -407,7 +407,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="2328729915"
             Description="Map:RA3BN_Chronal_Vestige/Desc"
             DisplayName="RA3BN_Chronal_Vestige"
             FileName="data\maps\official\ra3bn_chronal_vestige\ra3bn_chronal_vestige.map"
@@ -440,7 +440,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="40"
-            CRC="0"
+            CRC="1585437572"
             Description="Map:RA3BN_Mechanical_Force/Desc"
             DisplayName="RA3BN_Mechanical_Force"
             FileName="data\maps\official\ra3bn_mechanical_force\ra3bn_mechanical_force.map"
@@ -473,7 +473,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="40"
-            CRC="0"
+            CRC="3330611245"
             Description="Map:RA3BN_Pilgrimages_End/Desc"
             DisplayName="RA3BN_Pilgrimages_End"
             FileName="data\maps\official\ra3bn_pilgrimages_end\ra3bn_pilgrimages_end.map"
@@ -507,7 +507,7 @@
         <!--2v2 Map-->
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="1382509487"
             Description="Map:RA3BN_Snowstorm_Valley_1_0/Desc"
             DisplayName="RA3BN_Snowstorm_Valley_1_0"
             FileName="data\maps\official\ra3bn_snowstorm_valley_1_0\ra3bn_snowstorm_valley_1_0.map"
@@ -554,7 +554,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="2062345984"
             Description="Map:RA3BN_Sand_Fiery_Today/Desc"
             DisplayName="RA3BN_Sand_Fiery_Today"
             FileName="data\maps\official\ra3bn_sand_fiery_today\ra3bn_sand_fiery_today.map"
@@ -601,7 +601,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="3076130498"
             Description="Map:RA3BN_Imperial_Dynasty_1_0/Desc"
             DisplayName="RA3BN_Imperial_Dynasty_1_0"
             FileName="data\maps\official\ra3bn_imperial_dynasty_1_0\ra3bn_imperial_dynasty_1_0.map"
@@ -649,7 +649,7 @@
         <!--3v3 Map-->
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="1024546160"
             Description="Map:RA3BN_Stick_To_The_Territory/Desc"
             DisplayName="RA3BN_Stick_To_The_Territory"
             FileName="data\maps\official\ra3bn_stick_to_the_territory\ra3bn_stick_to_the_territory.map"
@@ -710,7 +710,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="199167529"
             Description="Map:RA3BN_Hot_Conflict_1_1/Desc"
             DisplayName="RA3BN_Hot_Conflict_1_1"
             FileName="data\maps\official\ra3bn_hot_conflict_1_1\ra3bn_hot_conflict_1_1.map"
@@ -771,7 +771,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="43194310"
             Description="Map:RA3BN_Pool_March/Desc"
             DisplayName="RA3BN_Pool_March"
             FileName="data\maps\official\ra3bn_pool_march\ra3bn_pool_march.map"
@@ -832,7 +832,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="1353598212"
             Description="Map:RA3BN_Snowtop_Conqueror_1_1/Desc"
             DisplayName="RA3BN_Snowtop_Conqueror_1_1"
             FileName="data\maps\official\ra3bn_snowtop_conqueror_1_1\ra3bn_snowtop_conqueror_1_1.map"
@@ -893,7 +893,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="3672899838"
             Description="Map:RA3BN_Spring_Showdown_1_1/Desc"
             DisplayName="RA3BN_Spring_Showdown_1_1"
             FileName="data\maps\official\ra3bn_spring_showdown_1_1\ra3bn_spring_showdown_1_1.map"
@@ -954,7 +954,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="50"
-            CRC="0"
+            CRC="2160722814"
             Description="Map:RA3BN_Paradise_Valley/Desc"
             DisplayName="RA3BN_Paradise_Valley"
             FileName="data\maps\official\ra3bn_paradise_valley\ra3bn_paradise_valley.map"
@@ -1015,7 +1015,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="1039672361"
             Description="Map:RA3BN_Vestige_Assault/Desc"
             DisplayName="RA3BN_Vestige_Assault"
             FileName="data\maps\official\ra3bn_vestige_assault\ra3bn_vestige_assault.map"
@@ -1076,7 +1076,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="2768061352"
             Description="Map:RA3BN_Isle_of_Outcasts/Desc"
             DisplayName="RA3BN_Isle_of_Outcasts"
             FileName="data\maps\official\ra3bn_isle_of_outcasts\ra3bn_isle_of_outcasts.map"
@@ -1137,7 +1137,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="10"
-            CRC="0"
+            CRC="4121871366"
             Description="Map:RA3BN_Summoners_Rift_Fortress/Desc"
             DisplayName="RA3BN_Summoners_Rift_Fortress"
             FileName="data\maps\official\ra3bn_summoners_rift_fortress\ra3bn_summoners_rift_fortress.map"
@@ -1199,7 +1199,7 @@
         <!--PVE Map-->
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="2063582609"
             Description="Map:RA3BN_SMAI4v4_Easter_Island_1_0/Desc"
             DisplayName="RA3BN_SMAI4v4_Easter_Island_1_0"
             FileName="data\maps\official\ra3bn_smai4v4_easter_island_1_0\ra3bn_smai4v4_easter_island_1_0.map"
@@ -1246,7 +1246,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="381088636"
             Description="Map:RA3BN_SMAI4v4_Hidden_Fortress_1_0/Desc"
             DisplayName="RA3BN_SMAI4v4_Hidden_Fortress_1_0"
             FileName="data\maps\official\ra3bn_smai4v4_hidden_fortress_1_0\ra3bn_smai4v4_hidden_fortress_1_0.map"
@@ -1293,7 +1293,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="2604604509"
             Description="Map:RA3BN_SMAI4v4_Mykonos_1_0/Desc"
             DisplayName="RA3BN_SMAI4v4_Mykonos_1_0"
             FileName="data\maps\official\ra3bn_smai4v4_mykonos_1_0\ra3bn_smai4v4_mykonos_1_0.map"
@@ -1341,7 +1341,7 @@
         <!--Bang Map-->
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="4071878944"
             Description="Map:RA3BN_Bang_Xubeng_Campaign_1_1/Desc"
             DisplayName="RA3BN_Bang_Xubeng_Campaign_1_1"
             FileName="data\maps\official\ra3bn_bang_xubeng_campaign_1_1\ra3bn_bang_xubeng_campaign_1_1.map"
@@ -1396,7 +1396,7 @@
         <!-- 22442 -->
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="1151153016"
             Description="Map:RA3BN_22442_Classic_1_3/Desc"
             DisplayName="RA3BN_22442_Classic_1_3"
             FileName="data\maps\official\ra3bn_22442_classic_1_3\ra3bn_22442_classic_1_3.map"
@@ -1457,7 +1457,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="10"
-            CRC="0"
+            CRC="234218054"
             Description="Map:RA3BN_22442_Sea/Desc"
             DisplayName="RA3BN_22442_Sea"
             FileName="data\maps\official\ra3bn_22442_sea\ra3bn_22442_sea.map"
@@ -1519,7 +1519,7 @@
         <!-- Pub Maps -->
         <MapMetaData
             BorderSize="50"
-            CRC="0"
+            CRC="922270418"
             Description="Map:RA3BN_Pub_2_4/Desc"
             DisplayName="RA3BN_Pub_2_4"
             FileName="data\maps\official\ra3bn_pub_2_4\ra3bn_pub_2_4.map"
