@@ -30,6 +30,7 @@ END
       - 例子：`FileName="data\maps\official\ra3bn_smai4v4_hidden_fortress_1_0\ra3bn_smai4v4_hidden_fortress_1_0.map"`
     - `MapMetaData.IsMultiplayer` 和 `MapMetaData.IsOfficial` 需要手动修改，请把它们的值改为 `true`
 4. 把修改过的 `MapMetaData` 添加到 [mapmetadata_battlenet.xml](Data/additionalmaps/mapmetadata_battlenet.xml)
+    - 新增或修改 `.map` 后必须运行 `python tools/maps/update_crc.py --write`，根据最终地图文件更新所有对应登记的 CRC；提交前运行 `python tools/maps/update_crc.py --check`，不得使用 0 或旧值作占位。算法与用法见[地图 CRC](docs/maps/crc.md)。
 5. 在此之后，map.xml 已经没有其他作用，为了节省空间的目的，可以把它删除。游戏只需要以下文件：
     - `地图名.map`（必须得有）
     - `地图名_art.tga`（必须得有）
