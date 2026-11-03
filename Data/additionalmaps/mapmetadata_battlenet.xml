@@ -2028,5 +2028,80 @@
                     z="0" />
             </StartPosition>
         </MapMetaData>
+        <MapMetaData
+            BorderSize="30"
+            CRC="2817779158"
+            Description="Map:RA3BN_22442_8p_1_0/Desc"
+            DisplayName="RA3BN_22442_8p_1_0"
+            FileName="data\maps\official\RA3BN_22442_8p_1_0\RA3BN_22442_8p_1_0.map"
+            Height="1010"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="8"
+            Width="1010">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="3098.074242"
+                    y="6525.261642"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="5928.424428"
+                    y="7246.534407"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="8799.254409"
+                    y="6503.699206"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="8540.000006"
+                    y="1540.000001"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="5900.000007"
+                    y="1610"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="2523.473066"
+                    y="2542.221226"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="981.112583"
+                    y="1016.588186"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="845.684643"
+                    y="8691.544024"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
     </MapMetaData>
 </AssetDeclaration>
