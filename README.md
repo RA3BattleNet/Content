@@ -49,16 +49,12 @@ END
 
 7. 被取代或删除的旧版本地图，请放在 content 里，保留到老版本的 map metadata 里面 （_old后缀）
 
-## 8PTEST 地图
+## 注册八人地图注意事项
 
-- `8p` 分支新增 9 张原版测试地图，目录与文件 id 使用 `RA3BN_8PTEST_` 前缀，注册在 `Data/additionalmaps/mapmetadata_battlenet_vanilla.xml`。
-- 显示名前缀为 `[8PTEST]`；源地图未提供中文名称，中文名称条目暂使用相同英文名称。
-- 9 张地图均注册为 8 人；源 `MapMetaData` 遗漏的第七、第八出生点已从源 `map.xml` 的 `Player_7_Start`、`Player_8_Start` Waypoint 补入。
-- 小地图转换为不带透明通道的 PNG，保留 `_art.tga` 后缀；不安装 `map.xml` 与 `overrides.xml`。
-
-## 八人正式地图
-
-- `RA3BN_Winter_Showdown_1_0`：`Winter_Showdown[1.0]` / `冬日对决(Winter_Showdown)[1.0]`。
-- `RA3BN_Magmagma_1_0`：`Magmagma[1.0]` / `麦格马格马(Magmagma)[1.0]`。
-- 两张地图均注册在 `Data/additionalmaps/mapmetadata_battlenet_vanilla.xml`，使用通用 `RA3BN_` 前缀，不加 `8P` 显示名前缀。
-- 八个出生点均取自源 `map.xml` 的 `Player_1_Start` 至 `Player_8_Start` Waypoint，不沿用源 metadata 的六人限制；CRC 按最终 `.map` 原始字节计算。
+- 地图 ID 使用通用 `RA3BN_` 前缀，不额外添加 `8PTEST`；目录名、`.map` 文件名、metadata 引用与 `map.str` 名称键必须一致。
+- 原版与日冕共享的八人地图统一注册到 `Data/additionalmaps/mapmetadata_battlenet.xml`，不要在 `mapmetadata_battlenet_vanilla.xml` 或 `mapmetadata_battlenet_corona.xml` 中重复登记。
+- 登记时设置 `NumPlayers="8"`、`IsMultiplayer="true"` 和 `IsOfficial="true"`，并填写完整的 `Player_1_Start` 至 `Player_8_Start`。
+- 源 `map.xml` 的 `MapMetaData` 可能仅导出六个出生点；必须核对 Waypoint，从对应的 `Player_7_Start`、`Player_8_Start` 复制真实坐标，不得推算或遗漏。
+- 最终地图文件确定后运行 `python tools/maps/update_crc.py --write`，再运行 `--check`，确保登记的 CRC 与地图文件一致。
+- 小地图转为不带透明通道的 PNG，保留 `_art.tga` 后缀；仅安装游戏所需文件，不安装 `map.xml` 与 `overrides.xml`。
+- 同步 Web 的小地图、地图名称及 `GameMap.vue` 映射；仅注册八人地图不需要修改 1v1 自动匹配池或 Base/ValidMaps。
