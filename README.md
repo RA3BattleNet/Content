@@ -55,3 +55,10 @@ END
 - 显示名前缀为 `[8PTEST]`；源地图未提供中文名称，中文名称条目暂使用相同英文名称。
 - 9 张地图均注册为 8 人；源 `MapMetaData` 遗漏的第七、第八出生点已从源 `map.xml` 的 `Player_7_Start`、`Player_8_Start` Waypoint 补入。
 - 小地图转换为不带透明通道的 PNG，保留 `_art.tga` 后缀；不安装 `map.xml` 与 `overrides.xml`。
+
+## 八人正式地图
+
+- `RA3BN_Winter_Showdown_1_0`：`Winter_Showdown[1.0]` / `冬日对决(Winter_Showdown)[1.0]`。
+- `RA3BN_Magmagma_1_0`：`Magmagma[1.0]` / `麦格马格马(Magmagma)[1.0]`。
+- 两张地图均注册在 `Data/additionalmaps/mapmetadata_battlenet_vanilla.xml`，使用通用 `RA3BN_` 前缀，不加 `8P` 显示名前缀。
+- 八个出生点均取自源 `map.xml` 的 `Player_1_Start` 至 `Player_8_Start` Waypoint，不沿用源 metadata 的六人限制；CRC 按最终 `.map` 原始字节计算。
