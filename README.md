@@ -4,6 +4,14 @@
 
 七个页面的编辑源码和编译所需文件位于 [Data/aptui](Data/aptui)。[玩家与 modder 修改指南](docs/aptui/8pv1-guide.md)（[English](docs/aptui/8pv1-guide.en.md)）说明如何保留 Mod 原有的六人界面，制作同一画风的八人版，并让战网通过 `.8pv1` 选择它；也提供修改默认八人界面、使用 AptXmlAI 和请 Agent 协助的步骤。这些页面通过 Content 现有流程编译，仓库中不包含 version 或编译后的 manifest/bin/imp/relo 文件。
 
+### 发布前校验 APT
+
+批量编译前，用 `python tools/aptui/check_release.py inputs <本次要编译的 XML 文件...>` 检查每个 APT 入口及其 Include。BAB 在缺少 Include 时仍可能成功退出并生成空流，`1.9.9.25` 就因此在加载主菜单时崩溃。
+
+`Data/aptui/Ra3BattleNet*.xml` 的五个入口引用本地生成的 SWF 转换资源，Git 归档只有入口。修改这些流时先备齐生成输入。地图等其他资源变更时，允许从已验证且对应 APT 输入未改动的发布包继承这五组流，每组同时复制 `.manifest`、`.bin`、`.imp`、`.relo`。`1.9.9.26` 从公开的 `1.9.9.24` 包继承这五组。
+
+发布前运行 `python tools/aptui/check_release.py package <解包后的资源根目录>`，带开发模式切换按钮的包加上 `--development-button`。通过后，用该解包目录中的 DLL 和资源启动至实际主菜单，再激活新版本。
+
 ## 地图要求
 - 假如往地图内添加了脚本、队伍、命名单位，则它们的名称需要是英文，不能是中文
 - 地图文件名必须是英文、数字和下划线，不能有额外的小数点、方括号、中文等字符。
