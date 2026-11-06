@@ -19,6 +19,7 @@ import struct
 import subprocess
 import xml.etree.ElementTree as ET
 
+from check_release import STREAM_EXTENSIONS, check_inputs, check_stream
 
 ET.register_namespace("", "uri:ea.com:eala:asset")
 
@@ -27,7 +28,6 @@ FLOAT_ATTRS = {
     "rotm00", "rotm01", "rotm10", "rotm11", "tx", "ty",
 }
 ACTION_TAGS = {"action", "initaction", "clipaction", "buttonaction"}
-STREAM_EXTENSIONS = ("manifest", "bin", "imp", "relo")
 
 
 def require(condition, message):
@@ -177,25 +177,12 @@ def package_stream(output, name, package):
     require(len(manifests) == 1,
             f"Expected one {name}.manifest, found {len(manifests)} in {output}")
     manifest = manifests[0]
-    header_bytes = manifest.read_bytes()[:48]
-    require(len(header_bytes) == 48, "Truncated manifest header")
-    header = struct.unpack("<BBH11I", header_bytes)
-    require(header[:3] == (0, 1, 6), "Unsupported manifest format")
+    header = check_stream(manifest)
     require(header[11] == 0,
             "External manifest dependencies are outside this self-contained page builder's scope")
-    stream_tag = header_bytes[4:8]
-    companions = {}
+    package.mkdir(parents=True)
     for extension in STREAM_EXTENSIONS:
         source = manifest.with_suffix("." + extension)
-        require(source.is_file(), f"Missing stream companion: {source}")
-        if extension != "manifest":
-            with source.open("rb") as handle:
-                require(handle.read(4) == stream_tag,
-                        f"Stream checksum tag differs from the manifest: {source}")
-        companions[extension] = source
-
-    package.mkdir(parents=True)
-    for extension, source in companions.items():
         shutil.copyfile(source, package / (name.lower() + ".8pv1." + extension))
     for sidecar in sorted(output.rglob("*.cdata")):
         require(sidecar.resolve().is_relative_to(manifest.parent.resolve()),
@@ -261,6 +248,7 @@ def main():
     require(canonical_xml(source) == canonical_xml(exported),
             f"Ordered XML round trip differs; compare {source} and {exported}")
     asset_xml, assets = prepare_declaration(compiled, args.name, stage)
+    check_inputs(asset_xml)
     run_command([
         bab, asset_xml, "/od:" + str(output), "/iod:" + str(output),
         "/csc:false", "/ls:true", "/osh:false", "/pc:true", "/res:true",
