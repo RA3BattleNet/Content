@@ -1457,7 +1457,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="2305153640"
+            CRC="559733855"
             Description="Map:RA3BN_22442_8p_1_0/Desc"
             DisplayName="RA3BN_22442_8p_1_0"
             FileName="data\maps\official\RA3BN_22442_8p_1_0\RA3BN_22442_8p_1_0.map"
@@ -1654,16 +1654,16 @@
             </StartPosition>
         </MapMetaData>
         <MapMetaData
-            BorderSize="30"
-            CRC="851212741"
+            BorderSize="5"
+            CRC="4056408103"
             Description="Map:RA3BN_Battlebase_Sigma_v1/Desc"
             DisplayName="RA3BN_Battlebase_Sigma_v1"
             FileName="data\maps\official\RA3BN_Battlebase_Sigma_v1\RA3BN_Battlebase_Sigma_v1.map"
-            Height="770"
+            Height="862"
             IsMultiplayer="true"
             IsOfficial="true"
             NumPlayers="8"
-            Width="775">
+            Width="863">
             <StartPosition
                 Name="InitialCameraPosition">
                 <Position
@@ -1674,57 +1674,57 @@
             <StartPosition
                 Name="Player_1_Start">
                 <Position
-                    x="1350.575784"
-                    y="5352.65802"
+                    x="2040.5758"
+                    y="6062.6577"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_2_Start">
                 <Position
-                    x="2007.799622"
-                    y="2403.918407"
+                    x="2697.7996"
+                    y="3113.9185"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_3_Start">
                 <Position
-                    x="1754.435624"
-                    y="1344.141609"
+                    x="2444.4355"
+                    y="2054.1416"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_4_Start">
                 <Position
-                    x="1160.661602"
-                    y="3634.708043"
+                    x="1850.6616"
+                    y="4344.708"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_5_Start">
                 <Position
-                    x="5762.945287"
-                    y="1746.511203"
+                    x="6452.9453"
+                    y="2456.5112"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_6_Start">
                 <Position
-                    x="5369.046408"
-                    y="5761.376006"
+                    x="6059.0464"
+                    y="6471.3765"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_7_Start">
                 <Position
-                    x="5942.629226"
-                    y="3453.406082"
+                    x="6632.6294"
+                    y="4163.4062"
                     z="0" />
             </StartPosition>
             <StartPosition
                 Name="Player_8_Start">
                 <Position
-                    x="5125.804485"
-                    y="4716.423248"
+                    x="5815.8047"
+                    y="5426.4233"
                     z="0" />
             </StartPosition>
         </MapMetaData>
@@ -1955,7 +1955,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="3120412756"
+            CRC="1386055946"
             Description="Map:RA3BN_Winter_Showdown_1_0/Desc"
             DisplayName="RA3BN_Winter_Showdown_1_0"
             FileName="data\maps\official\RA3BN_Winter_Showdown_1_0\RA3BN_Winter_Showdown_1_0.map"
@@ -2030,7 +2030,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="25"
-            CRC="1859078785"
+            CRC="508666857"
             Description="Map:RA3BN_Magmagma_1_0/Desc"
             DisplayName="RA3BN_Magmagma_1_0"
             FileName="data\maps\official\RA3BN_Magmagma_1_0\RA3BN_Magmagma_1_0.map"

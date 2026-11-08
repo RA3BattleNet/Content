@@ -1,0 +1,2 @@
+# Keep map Lua sources byte-identical to their embedded payloads.
+/tools/maps/lua/*.lua text eol=lf
