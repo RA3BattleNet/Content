@@ -1827,24 +1827,20 @@
 					ActionPop
 					pushvar "Cafe2_BaseUIScreen"
 					getnamedmember "m_screen"
-					getnamedmember "backButton"
-					getnamedmember "_y"
-					pushbyte 6
-					ActionSubtract
-					pushreg 2
-					getnamedmember "_y"
-					pushreg 1
-					getnamedmember "_y"
-					ActionNewAdd
-					pushreg 3
-					getnamedmember "_y"
-					ActionNewAdd
-					pushreg 6
-					ActionNewAdd
-					pushreg 5
-					ActionNewAdd
-					ActionNewLessThan
+					pushwconst "screen"
+					ActionGetMember
+					pushwconst "m_playerSlots"
+					ActionGetMember
+					getnamedmember "length"
+					pushbyte 8
+					ActionNewEquals
 					ActionLogicalNot
+					jumptrue s8_show_position
+					pushreg 2
+					pushwconst "slotId"
+					ActionGetMember
+					pushbyte 5
+					ActionNewLessThan
 					jumptrue s8_show_position
 					EAPushZero
 					pushreg 5
