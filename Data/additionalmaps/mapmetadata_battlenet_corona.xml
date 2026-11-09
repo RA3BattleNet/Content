@@ -7,10 +7,6 @@
         <Include type="reference" source="DATA:global.xml" />
         <Include type="reference" source="DATA:audio.xml" />
     </Includes>
-    <!-- Refresh relocated bases without changing their geometry. -->
-    <AttributeModifier id="RA3BN_RandomTeamsRefreshBuildArea" Category="NONE" Duration="1s">
-        <Modifier Type="COLLISION_GEOMETRY_SIZE_MULT" Value="100%" />
-    </AttributeModifier>
     <MapMetaData id="TheBattleNetCoronaMapCache">
         <MapMetaData
             BorderSize="20"
@@ -1074,7 +1070,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="125572594"
+            CRC="1195359421"
             Description="Map:RA3BN_22442_8p_RandomTeams_1_0/Desc"
             DisplayName="RA3BN_22442_8p_RandomTeams_1_0"
             FileName="data\maps\official\RA3BN_22442_8p_RandomTeams_1_0\RA3BN_22442_8p_RandomTeams_1_0.map"
@@ -1149,7 +1145,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="2685048997"
+            CRC="3054904551"
             Description="Map:RA3BN_Winter_Showdown_RandomTeams_1_0/Desc"
             DisplayName="RA3BN_Winter_Showdown_RandomTeams_1_0"
             FileName="data\maps\official\RA3BN_Winter_Showdown_RandomTeams_1_0\RA3BN_Winter_Showdown_RandomTeams_1_0.map"
@@ -1224,7 +1220,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="25"
-            CRC="250446845"
+            CRC="1398712084"
             Description="Map:RA3BN_Magmagma_RandomTeams_1_0/Desc"
             DisplayName="RA3BN_Magmagma_RandomTeams_1_0"
             FileName="data\maps\official\RA3BN_Magmagma_RandomTeams_1_0\RA3BN_Magmagma_RandomTeams_1_0.map"
