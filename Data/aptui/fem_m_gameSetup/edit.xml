@@ -32,7 +32,7 @@
 				</placeobject>
 				<placeobject flags="HasCharacter|HasMatrix" depth="2" character="3" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="0.000000" ty="687.000000">
 				</placeobject>
-				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="4" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.000000" ty="712.000000">
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="4" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="600.000000" ty="699.000000">
 					<poname name="randomMap"/>
 					<clipactions>
 					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
@@ -93,7 +93,7 @@
 					]]></clipaction>
 					</clipactions>
 				</placeobject>
-				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="82" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="344.549988" ty="712.000000">
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="82" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="344.549988" ty="699.000000">
 					<poname name="backButton"/>
 					<clipactions>
 					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
@@ -139,7 +139,7 @@
 					]]></clipaction>
 					</clipactions>
 				</placeobject>
-				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="84" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="855.450012" ty="712.000000">
+				<placeobject flags="HasCharacter|HasMatrix|HasName|HasClipAction" depth="84" character="4" rotm00="1.000000" rotm01="0.000000" rotm10="0.000000" rotm11="1.000000" tx="855.450012" ty="699.000000">
 					<poname name="playButton"/>
 					<clipactions>
 					<clipaction flags="Construct" flags2="0" keycode="0"><![CDATA[
