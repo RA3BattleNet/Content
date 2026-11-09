@@ -59,6 +59,7 @@ END
 
 ## 注册八人地图注意事项
 
+- 所有八人模式地图的中英文显示名都用 `[8P]` 开头，与地图名称之间不加空格，例如 `[8P]Winter Showdown`；地图 ID 和本地化键保持不变。
 - 地图 ID 使用通用 `RA3BN_` 前缀，不额外添加 `8PTEST`；目录名、`.map` 文件名、metadata 引用与 `map.str` 名称键必须一致。
 - 原版与日冕共享的八人地图统一注册到 `Data/additionalmaps/mapmetadata_battlenet.xml`，不要在 `mapmetadata_battlenet_vanilla.xml` 或 `mapmetadata_battlenet_corona.xml` 中重复登记。
 - 亚欧非、冬日对决和 Magmagma 另有仅供日冕使用的随机分队版，独立登记到 `mapmetadata_battlenet_corona.xml`。普通版保留原队伍和出生点；随机版的 Lua 源码、规则和验证记录见 [随机分队说明](tools/maps/lua/README.md)。
