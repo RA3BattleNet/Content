@@ -61,8 +61,8 @@ END
 
 - 所有八人模式地图的中英文显示名都用 `[8P]` 开头，与地图名称之间不加空格，例如 `[8P]Winter Showdown`；地图 ID 和本地化键保持不变。
 - 地图 ID 使用通用 `RA3BN_` 前缀，不额外添加 `8PTEST`；目录名、`.map` 文件名、metadata 引用与 `map.str` 名称键必须一致。
-- 原版与日冕共享的八人地图统一注册到 `Data/additionalmaps/mapmetadata_battlenet.xml`，不要在 `mapmetadata_battlenet_vanilla.xml` 或 `mapmetadata_battlenet_corona.xml` 中重复登记。
-- 亚欧非、冬日对决和 Magmagma 另有仅供日冕使用的随机分队版，独立登记到 `mapmetadata_battlenet_corona.xml`。普通版保留原队伍和出生点；随机版的 Lua 源码、规则和验证记录见 [随机分队说明](tools/maps/lua/README.md)。
+- 需同时支持原版与日冕的八人地图统一注册到 `Data/additionalmaps/mapmetadata_battlenet.xml`，不要在其他池重复登记。亚欧非普通八人版和随机分队版均仅供日冕使用，统一登记到 `mapmetadata_battlenet_corona.xml`。
+- 亚欧非、冬日对决和 Magmagma 的随机分队版独立登记到 `mapmetadata_battlenet_corona.xml`。普通版保留原队伍和出生点；亚欧非各模式的出生点与坐标见 [亚欧非八人出生点](docs/maps/rome-starts.md)。
 - 登记时设置 `NumPlayers="8"`、`IsMultiplayer="true"` 和 `IsOfficial="true"`，并填写完整的 `Player_1_Start` 至 `Player_8_Start`。
 - 源 `map.xml` 的 `MapMetaData` 可能仅导出六个出生点；必须核对 Waypoint，从对应的 `Player_7_Start`、`Player_8_Start` 复制真实坐标，不得推算或遗漏。
 - 最终地图文件确定后运行 `python tools/maps/update_crc.py --write`，再运行 `--check`，确保登记的 CRC 与地图文件一致。
