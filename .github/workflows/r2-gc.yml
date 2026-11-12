@@ -1,0 +1,77 @@
+name: R2 GC
+
+# 开发组手动执行的 R2 垃圾回收，不参与自动发布（content 端：前缀走本仓库变量 R2_BASE_PATH，当前是 app/content）。
+#
+# 规则：清单（manifests/*.xml）是唯一事实来源 —— 客户端只会请求清单里列出的 files，
+# 以及清单与本地文件两端都能对上的 patches。所以：
+#   files/<md5>.bin            md5 不在任何清单里            -> 删
+#   patches/<old>_<new>.bin    new 不在任何清单里            -> 删
+#                              （old 侧不需要在清单里：客户端用本地文件 MD5 拼补丁名，
+#                                所以老版本 -> 最新版的补丁只要 new 可达就留着）
+# 只动 files/ 与 patches/；可删对象为 0 时是 no-op。
+#
+# 触发：只有 workflow_dispatch（Actions 页面点按钮），不响应 push / tag / schedule。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read          # 开跑前查询还有没有别的 CI 未完成
+
+concurrency:
+  group: r2-gc
+  cancel-in-progress: false
+
+jobs:
+  gc:
+    name: GC
+    runs-on: ubuntu-latest
+    env:
+      # 前缀/桶/凭据都走本仓库的 Variables 与 Secrets
+      R2_BASE_PATH: ${{ vars.R2_BASE_PATH }}
+      # 清单保留窗口：与发布 CI 同一个变量；按清单自带 <GenTime> 保留最新 WINDOW+1 份
+      WINDOW: ${{ vars.PATCH_WINDOW || '3' }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: 有其它 CI 在跑就退出
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # 发布中的 CI 刚上传、清单还没写，那些对象会被误判成垃圾；发现未完成就停下，让人自己重跑
+          for status in in_progress queued; do
+            runs="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs?status=${status}&per_page=100")"
+            others="$(printf '%s' "$runs" | jq -r --arg me "$GITHUB_RUN_ID" \
+              '.workflow_runs[] | select((.id|tostring) != $me) | "  \(.name) [\(.event)] \(.html_url)"')"
+            if [ -n "$others" ]; then
+              echo "::error::还有 ${status} 状态的 CI 未完成，等它们结束后再跑 GC"
+              echo "$others"
+              exit 1
+            fi
+          done
+          echo "没有其它 CI 在跑"
+
+      - uses: actions/checkout@v4
+
+      - name: 安装 rclone
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends rclone
+          rclone version | head -1
+
+      - name: 执行 GC
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${R2_BASE_PATH:-}" ]; then
+            echo "::error::仓库变量 R2_BASE_PATH 未配置（Settings → Secrets and variables → Actions → Variables）"
+            exit 1
+          fi
+          echo "目标前缀: ${R2_BASE_PATH}"
+          python3 scripts/r2_gc.py
