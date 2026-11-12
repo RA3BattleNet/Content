@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-23",
+  "source_release": "v6",
+  "status": "passed",
+  "pages": [
+    {
+      "name": "fe_m_assetsGameSetup",
+      "entry": "Data/aptui/fe_m_assetsgamesetup.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 14,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "fe_m_assetsgamesetup.8pv1.manifest": "0c61fcd36e593a999341d70205b5626bbe817457703c933ec7e0c33253732f0e",
+        "fe_m_assetsgamesetup.8pv1.bin": "fa66bbbcf24d3a35b4fb88d0786f9b1ce7838e738123835e49509cd9c9835558",
+        "fe_m_assetsgamesetup.8pv1.imp": "1e040c39dc1febbdbd3d4f6f66e460b43fb656f7f890b1e7117fbc8757ad5b83",
+        "fe_m_assetsgamesetup.8pv1.relo": "2e4eb3ebda464db66968ec4efb041be4ff10a4ad0b01bcd869be51c40425ca61"
+      }
+    },
+    {
+      "name": "fem_m_gameSetup",
+      "entry": "Data/aptui/fem_m_gamesetup.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 10,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "fem_m_gamesetup.8pv1.manifest": "b7e0fb65f0a3d01b1a860c50294a6d01be6c2f09425c4957827e383596852af7",
+        "fem_m_gamesetup.8pv1.bin": "2231613ba4e8297457877db960dfcbf0d0e94fa89f6da29711747dcaec1616c9",
+        "fem_m_gamesetup.8pv1.imp": "3173a445a9b396c8ccc62022732e136e34888e67497c5faaa77820f450e419a0",
+        "fem_m_gamesetup.8pv1.relo": "b348d267a5ff45c955f9cb7f9d348d7d90b11edde009e969019b892825b2cc90"
+      }
+    },
+    {
+      "name": "fes_m_skirmishGameSetup",
+      "entry": "Data/aptui/fes_m_skirmishgamesetup.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 9,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "fes_m_skirmishgamesetup.8pv1.manifest": "3d9173be70bb85c30cdb0bab9398f02d52f19fe6ff7e035f8829c741521126db",
+        "fes_m_skirmishgamesetup.8pv1.bin": "10ac563c0525bd3373df24605a797229d31b21f1040125a6b5fb1e653b627f91",
+        "fes_m_skirmishgamesetup.8pv1.imp": "bbe5b8f4cb37eb06a35724f84d26dacaf3445a148613b87daa3077845bbcc186",
+        "fes_m_skirmishgamesetup.8pv1.relo": "7da43a9abb5dd636609bde7770511cbbbbf7abf1b7943ebc3a4e5a39f5d1c16c"
+      }
+    },
+    {
+      "name": "feg_m_disconnect",
+      "entry": "Data/aptui/feg_m_disconnect.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 11,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "feg_m_disconnect.8pv1.manifest": "0472912f86ad406c282009fe3ccf7a07035b6ee7cf211292f82f172a435df2d7",
+        "feg_m_disconnect.8pv1.bin": "057092f6835ec111103f8f88322307cabe5edf00f7cb967c815a64441cd0eeca",
+        "feg_m_disconnect.8pv1.imp": "c0811cb11ef1b110b2d4592480939a9fb6d2b12c613e3e7093b0ab883d1f8130",
+        "feg_m_disconnect.8pv1.relo": "a526fe334f0a405313e616d0c7b4c76d4cdede106a8bd079bf70d29d5960a129"
+      }
+    },
+    {
+      "name": "fem_m_load",
+      "entry": "Data/aptui/fem_m_load.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 16,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "fem_m_load.8pv1.manifest": "187cd02714eb16957c2fb892d44c4d51c2e262b2ab5ba4e4000062542568dd5f",
+        "fem_m_load.8pv1.bin": "e8c77301cec0ef2cb084be3586d1ec4ec176d09fefb13e10b87f3ef321f98906",
+        "fem_m_load.8pv1.imp": "73d58e91d234c9e6fb337a9520d76061b7dca766efb98ac2d5799b65b34db897",
+        "fem_m_load.8pv1.relo": "bf3d753172d9ab7ea8321a55a51c15ce49db4be906a4bbda7b965346ff2c5805"
+      }
+    },
+    {
+      "name": "fem_m_postgameRoundup",
+      "entry": "Data/aptui/fem_m_postgameroundup.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 28,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "fem_m_postgameroundup.8pv1.manifest": "9abe6ea0fe61d4946a2b8dc3099b32e0e53b058a1c31b3233b95b864a8e59bb9",
+        "fem_m_postgameroundup.8pv1.bin": "1446785ff083293066af679d64235b546ded00138ad16ae0fd3300fe0f086b90",
+        "fem_m_postgameroundup.8pv1.imp": "d38a21befbacfa57d2c9234e1cc626f5c0d44690fc70ecb913b4ca9f4517e006",
+        "fem_m_postgameroundup.8pv1.relo": "8d0cb7bc31e616f4d9f11d0788d24032d38d7996c27c99ef8ac5ae0740de1b56"
+      }
+    },
+    {
+      "name": "igm_pauseMenu",
+      "entry": "Data/aptui/igm_pausemenu.8pv1.xml",
+      "ordered_xml_equal": true,
+      "closure_passed": true,
+      "asset_count": 33,
+      "all_asset_payloads_equal_v6": true,
+      "runtime_files": {
+        "igm_pausemenu.8pv1.manifest": "bff468c0facfd52bd8af742e3bcba7372fa82e12ac677f400a28473eedc2c177",
+        "igm_pausemenu.8pv1.bin": "71072899795c85df8212bd11bc084ec1eaabf13754e5731362348a9afd4eaa80",
+        "igm_pausemenu.8pv1.imp": "54514bd67fc4f90e277c94984723c90603dde6f0e98e112478200244db75b344",
+        "igm_pausemenu.8pv1.relo": "8d6e3995765a916e58ed1c3c87329dd70bbdc0132a9d2418cbbfef6d2958ca77"
+      }
+    }
+  ],
+  "game_started": false,
+  "deployed": false,
+  "scope": "Exact Content wrapper inputs compiled with SDK; full per-page closure checked and each runtime asset payload compared with the immutable v6 data.zip. Content custom distribution pipeline is not invoked.",
+  "asset_count": 121,
+  "content_resource_commit": "36b0e40a743b0ed931473d1ab3a30ed8da626dac",
+  "helper_sha256": "61969fe6827dfa1406bfd1247e8edd32d5d59605c230eb1c963537cca7be16bc",
+  "helper_checks": [
+    {
+      "case": "helper-stock",
+      "status": "passed",
+      "ordered_xml_equal": true,
+      "asset_count": 33,
+      "independent_closure_check": "passed",
+      "texture_inputs": {
+        "art/Textures/apt_igm_pauseMenu_1.tga": "04507a2e72380d394f57fe9c0c8d12771943aac75e5c023dbbbbb1436124850a"
+      }
+    },
+    {
+      "case": "helper-root-texture",
+      "status": "passed",
+      "ordered_xml_equal": true,
+      "asset_count": 33,
+      "independent_closure_check": "passed",
+      "texture_inputs": {
+        "apt_igm_pauseMenu_1.tga": "04507a2e72380d394f57fe9c0c8d12771943aac75e5c023dbbbbb1436124850a"
+      }
+    }
+  ],
+  "wrapper_compile_recipe": {
+    "cwd": "<Content>",
+    "command": [
+      "<SDK>/tools/BinaryAssetBuilder.exe",
+      "<Content>/Data/aptui/<stem>.8pv1.xml",
+      "/od:<private output>",
+      "/iod:<private output>",
+      "/csc:false",
+      "/ls:true",
+      "/osh:false",
+      "/pc:true",
+      "/res:true",
+      "/slowclean:true",
+      "/ss:true",
+      "/sp:<SDK>/Schemas/xsd/CnC3Types.xsd",
+      "/data:<Content>/Data;<SDK>/SageXml",
+      "/art:<SDK>/Art",
+      "/audio:<SDK>/Audio"
+    ],
+    "environment": "TEMP and TMP point to a per-page private output directory.",
+    "comparison": "Source workspace UI_Analysis/resources/stock_ui8/tools/verify.py verify_page and _manifest: compare every asset name and payload SHA-256 to releases/v6/data.zip; manifest build metadata is not required to be byte-identical."
+  },
+  "documentation_links": "passed (relative file links)"
+}

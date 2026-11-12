@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<AptAptData id="igm_pauseMenu_apt" File="igm_pauseMenu.apt" />
+<AptConstData id="igm_pauseMenu_const" File="igm_pauseMenu.const" />
+<AptDatData id="igm_pauseMenu_dat" File="igm_pauseMenu.dat" />
+<AptGeometryData id="igm_pauseMenu_1" File="igm_pauseMenu_geometry\1.ru" AptID="1"/>
+<AptGeometryData id="igm_pauseMenu_4" File="igm_pauseMenu_geometry\4.ru" AptID="4"/>
+<AptGeometryData id="igm_pauseMenu_8" File="igm_pauseMenu_geometry\8.ru" AptID="8"/>
+<AptGeometryData id="igm_pauseMenu_9" File="igm_pauseMenu_geometry\9.ru" AptID="9"/>
+<AptGeometryData id="igm_pauseMenu_12" File="igm_pauseMenu_geometry\12.ru" AptID="12"/>
+<AptGeometryData id="igm_pauseMenu_15" File="igm_pauseMenu_geometry\15.ru" AptID="15"/>
+<AptGeometryData id="igm_pauseMenu_18" File="igm_pauseMenu_geometry\18.ru" AptID="18"/>
+<AptGeometryData id="igm_pauseMenu_20" File="igm_pauseMenu_geometry\20.ru" AptID="20"/>
+<AptGeometryData id="igm_pauseMenu_23" File="igm_pauseMenu_geometry\23.ru" AptID="23"/>
+<AptGeometryData id="igm_pauseMenu_25" File="igm_pauseMenu_geometry\25.ru" AptID="25"/>
+<AptGeometryData id="igm_pauseMenu_28" File="igm_pauseMenu_geometry\28.ru" AptID="28"/>
+<AptGeometryData id="igm_pauseMenu_31" File="igm_pauseMenu_geometry\31.ru" AptID="31"/>
+<AptGeometryData id="igm_pauseMenu_38" File="igm_pauseMenu_geometry\38.ru" AptID="38"/>
+<AptGeometryData id="igm_pauseMenu_42" File="igm_pauseMenu_geometry\42.ru" AptID="42"/>
+<AptGeometryData id="igm_pauseMenu_45" File="igm_pauseMenu_geometry\45.ru" AptID="45"/>
+<AptGeometryData id="igm_pauseMenu_47" File="igm_pauseMenu_geometry\47.ru" AptID="47"/>
+<AptGeometryData id="igm_pauseMenu_49" File="igm_pauseMenu_geometry\49.ru" AptID="49"/>
+<AptGeometryData id="igm_pauseMenu_51" File="igm_pauseMenu_geometry\51.ru" AptID="51"/>
+<AptGeometryData id="igm_pauseMenu_53" File="igm_pauseMenu_geometry\53.ru" AptID="53"/>
+<AptGeometryData id="igm_pauseMenu_55" File="igm_pauseMenu_geometry\55.ru" AptID="55"/>
+<AptGeometryData id="igm_pauseMenu_57" File="igm_pauseMenu_geometry\57.ru" AptID="57"/>
+<AptGeometryData id="igm_pauseMenu_59" File="igm_pauseMenu_geometry\59.ru" AptID="59"/>
+<AptGeometryData id="igm_pauseMenu_61" File="igm_pauseMenu_geometry\61.ru" AptID="61"/>
+<AptGeometryData id="igm_pauseMenu_65" File="igm_pauseMenu_geometry\65.ru" AptID="65"/>
+<AptGeometryData id="igm_pauseMenu_67" File="igm_pauseMenu_geometry\67.ru" AptID="67"/>
+<AptGeometryData id="igm_pauseMenu_69" File="igm_pauseMenu_geometry\69.ru" AptID="69"/>
+<AptGeometryData id="igm_pauseMenu_75" File="igm_pauseMenu_geometry\75.ru" AptID="75"/>
+<AptGeometryData id="igm_pauseMenu_77" File="igm_pauseMenu_geometry\77.ru" AptID="77"/>
+<AptGeometryData id="igm_pauseMenu_79" File="igm_pauseMenu_geometry\79.ru" AptID="79"/>
+<Texture id="apt_igm_pauseMenu_1" File="art\Textures\apt_igm_pauseMenu_1.tga" OutputFormat="A8R8G8B8" GenerateMipMaps="false" AllowAutomaticResize="false"/>
+</AssetDeclaration>

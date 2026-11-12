@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<AptAptData id="fes_m_skirmishGameSetup_apt" File="fes_m_skirmishGameSetup.apt" />
+<AptConstData id="fes_m_skirmishGameSetup_const" File="fes_m_skirmishGameSetup.const" />
+<AptDatData id="fes_m_skirmishGameSetup_dat" File="fes_m_skirmishGameSetup.dat" />
+<AptGeometryData id="fes_m_skirmishGameSetup_2" File="fes_m_skirmishGameSetup_geometry\2.ru" AptID="2"/>
+<AptGeometryData id="fes_m_skirmishGameSetup_6" File="fes_m_skirmishGameSetup_geometry\6.ru" AptID="6"/>
+<AptGeometryData id="fes_m_skirmishGameSetup_7" File="fes_m_skirmishGameSetup_geometry\7.ru" AptID="7"/>
+<AptGeometryData id="fes_m_skirmishGameSetup_9" File="fes_m_skirmishGameSetup_geometry\9.ru" AptID="9"/>
+<AptGeometryData id="fes_m_skirmishGameSetup_16" File="fes_m_skirmishGameSetup_geometry\16.ru" AptID="16"/>
+<Texture id="apt_fes_m_skirmishGameSetup_1" File="art\Textures\apt_fes_m_skirmishGameSetup_1.tga" OutputFormat="A8R8G8B8" GenerateMipMaps="false" AllowAutomaticResize="false"/>
+</AssetDeclaration>

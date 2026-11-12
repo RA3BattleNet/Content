@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+  <Includes>
+    <Include type="all" source="igm_pauseMenu\igm_pauseMenu.xml" />
+  </Includes>
+</AssetDeclaration>

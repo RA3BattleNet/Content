@@ -10,7 +10,7 @@
     <MapMetaData id="TheBattleNetCoronaOldMapCache">
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="475568414"
             Description="Map:RA3BN_CARDPLAY_1_0/Desc"
             DisplayName="RA3BN_CARDPLAY_1_0"
             FileName="data\maps\official\ra3bn_cardplay_1_0\ra3bn_cardplay_1_0.map"
@@ -71,7 +71,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="80"
-            CRC="0"
+            CRC="1706411600"
             Description="Map:RA3BN_Dual_Arms_Combat_S_3_6/Desc"
             DisplayName="RA3BN_Dual_Arms_Combat_S_3_6"
             FileName="data\maps\official\ra3bn_dual_arms_combat_s_3_6\ra3bn_dual_arms_combat_s_3_6.map"
@@ -132,7 +132,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="80"
-            CRC="0"
+            CRC="183639432"
             Description="Map:RA3BN_Dual_Arms_Combat_L_3_6/Desc"
             DisplayName="RA3BN_Dual_Arms_Combat_L_3_6"
             FileName="data\maps\official\ra3bn_dual_arms_combat_l_3_6\ra3bn_dual_arms_combat_l_3_6.map"
@@ -193,7 +193,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="158973584"
             Description="Map:RA3BN_Volcanic_Citadel_1_2/Desc"
             DisplayName="RA3BN_Volcanic_Citadel_1_2"
             FileName="data\maps\official\ra3bn_volcanic_citadel_1_2\ra3bn_volcanic_citadel_1_2.map"
@@ -241,7 +241,7 @@
 
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="4211165214"
             Description="Map:RA3BN_Bang_Guandu_2_6/Desc"
             DisplayName="RA3BN_Bang_Guandu_2_6"
             FileName="data\maps\official\ra3bn_bang_guandu_2_6\ra3bn_bang_guandu_2_6.map"
@@ -295,7 +295,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="1491665252"
             Description="Map:RA3BN_Bang_Red_Cliffs_2_5/Desc"
             DisplayName="RA3BN_Bang_Red_Cliffs_2_5"
             FileName="data\maps\official\ra3bn_bang_red_cliffs_2_5\ra3bn_bang_red_cliffs_2_5.map"
@@ -349,7 +349,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="2919930547"
             Description="Map:RA3BN_Bang_Yellow_Turban_1_3/Desc"
             DisplayName="RA3BN_Bang_Yellow_Turban_1_3"
             FileName="data\maps\official\ra3bn_bang_yellow_turban_1_3\ra3bn_bang_yellow_turban_1_3.map"
@@ -403,7 +403,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="30"
-            CRC="0"
+            CRC="3306713475"
             Description="Map:RA3BN_Bang_Cangting_1_0/Desc"
             DisplayName="RA3BN_Bang_Cangting_1_0"
             FileName="data\maps\official\ra3bn_bang_cangting_1_0\ra3bn_bang_cangting_1_0.map"
@@ -457,7 +457,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="80"
-            CRC="0"
+            CRC="1355376090"
             Description="Map:RA3BN_Dual_Arms_Combat_S_3_9/Desc"
             DisplayName="RA3BN_Dual_Arms_Combat_S_3_9"
             FileName="data\maps\official\ra3bn_dual_arms_combat_s_3_9\ra3bn_dual_arms_combat_s_3_9.map"
@@ -518,7 +518,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="80"
-            CRC="0"
+            CRC="285321848"
             Description="Map:RA3BN_Dual_Arms_Combat_L_3_9/Desc"
             DisplayName="RA3BN_Dual_Arms_Combat_L_3_9"
             FileName="data\maps\official\ra3bn_dual_arms_combat_l_3_9\ra3bn_dual_arms_combat_l_3_9.map"
@@ -579,7 +579,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="913456808"
             Description="Map:RA3BN_Dual_Arms_Combat_Sea_1_0/Desc"
             DisplayName="RA3BN_Dual_Arms_Combat_Sea_1_0"
             FileName="data\maps\official\ra3bn_dual_arms_combat_sea_1_0\ra3bn_dual_arms_combat_sea_1_0.map"
@@ -640,7 +640,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="1767340887"
             Description="Map:RA3BN_Redemption_Base_Ore_1_2/Desc"
             DisplayName="RA3BN_Redemption_Base_Ore_1_2"
             FileName="data\maps\official\ra3bn_redemption_base_ore_1_2\ra3bn_redemption_base_ore_1_2.map"
@@ -673,7 +673,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="0"
-            CRC="0"
+            CRC="3286212387"
             Description="Map:RA3BN_Secret_Island_Ore_1_2/Desc"
             DisplayName="RA3BN_Secret_Island_Ore_1_2"
             FileName="data\maps\official\ra3bn_secret_island_ore_1_2\ra3bn_secret_island_ore_1_2.map"
@@ -706,7 +706,7 @@
         </MapMetaData>
         <MapMetaData
             BorderSize="20"
-            CRC="0"
+            CRC="2885651736"
             Description="Map:RA3BN_Bang_Jiange_1_0/Desc"
             DisplayName="RA3BN_Bang_Jiange_1_0"
             FileName="data\maps\official\ra3bn_bang_jiange_1_0\ra3bn_bang_jiange_1_0.map"

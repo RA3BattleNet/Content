@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<AptAptData id="fem_m_gameSetup_apt" File="fem_m_gameSetup.apt" />
+<AptConstData id="fem_m_gameSetup_const" File="fem_m_gameSetup.const" />
+<AptDatData id="fem_m_gameSetup_dat" File="fem_m_gameSetup.dat" />
+<AptGeometryData id="fem_m_gameSetup_2" File="fem_m_gameSetup_geometry\2.ru" AptID="2"/>
+<AptGeometryData id="fem_m_gameSetup_7" File="fem_m_gameSetup_geometry\7.ru" AptID="7"/>
+<AptGeometryData id="fem_m_gameSetup_11" File="fem_m_gameSetup_geometry\11.ru" AptID="11"/>
+<AptGeometryData id="fem_m_gameSetup_14" File="fem_m_gameSetup_geometry\14.ru" AptID="14"/>
+<AptGeometryData id="fem_m_gameSetup_15" File="fem_m_gameSetup_geometry\15.ru" AptID="15"/>
+<AptGeometryData id="fem_m_gameSetup_17" File="fem_m_gameSetup_geometry\17.ru" AptID="17"/>
+<Texture id="apt_fem_m_gameSetup_1" File="art\Textures\apt_fem_m_gameSetup_1.tga" OutputFormat="A8R8G8B8" GenerateMipMaps="false" AllowAutomaticResize="false"/>
+</AssetDeclaration>
