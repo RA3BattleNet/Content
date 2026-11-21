@@ -1368,5 +1368,230 @@
                     z="0" />
             </StartPosition>
         </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="419721758"
+            Description="Map:RA3BN_Twin_Cities_RandomTeams_1_0/Desc"
+            DisplayName="RA3BN_Twin_Cities_RandomTeams_1_0"
+            FileName="data\maps\official\RA3BN_Twin_Cities_RandomTeams_1_0\RA3BN_Twin_Cities_RandomTeams_1_0.map"
+            Height="900"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="8"
+            Width="900">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="5508.20117"
+                    y="1091.16479"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="1397.5105"
+                    y="1399.75586"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="548.18396"
+                    y="4951.23047"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="2425.05127"
+                    y="2413.65576"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="6790"
+                    y="8340"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="3900"
+                    y="8080"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5639.56494"
+                    y="6453.74707"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="8409.05762"
+                    y="5428.05176"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="3719666358"
+            Description="Map:RA3BN_Mondstadt_Liyue_0_60/Desc"
+            DisplayName="RA3BN_Mondstadt_Liyue_0_60"
+            FileName="data\maps\official\RA3BN_Mondstadt_Liyue_0_60\RA3BN_Mondstadt_Liyue_0_60.map"
+            Height="1000"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="8"
+            Width="1000">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="7824.75342"
+                    y="9205.4209"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="7837.57617"
+                    y="6210.36719"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="4239.5249"
+                    y="7564.76953"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="1457.71875"
+                    y="8394.73438"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="1550.93311"
+                    y="3634.91553"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="1222.60718"
+                    y="1492.18823"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5414.62207"
+                    y="1039.26587"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="8786.92188"
+                    y="1903.30994"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
+        <MapMetaData
+            BorderSize="0"
+            CRC="224903547"
+            Description="Map:RA3BN_Mondstadt_Liyue_RandomTeams_0_60/Desc"
+            DisplayName="RA3BN_Mondstadt_Liyue_RandomTeams_0_60"
+            FileName="data\maps\official\RA3BN_Mondstadt_Liyue_RandomTeams_0_60\RA3BN_Mondstadt_Liyue_RandomTeams_0_60.map"
+            Height="1000"
+            IsMultiplayer="true"
+            IsOfficial="true"
+            NumPlayers="8"
+            Width="1000">
+            <StartPosition
+                Name="InitialCameraPosition">
+                <Position
+                    x="0"
+                    y="0"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_1_Start">
+                <Position
+                    x="7824.75342"
+                    y="9205.4209"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_2_Start">
+                <Position
+                    x="7837.57617"
+                    y="6210.36719"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_3_Start">
+                <Position
+                    x="4239.5249"
+                    y="7564.76953"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_4_Start">
+                <Position
+                    x="1457.71875"
+                    y="8394.73438"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_5_Start">
+                <Position
+                    x="1550.93311"
+                    y="3634.91553"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_6_Start">
+                <Position
+                    x="1222.60718"
+                    y="1492.18823"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_7_Start">
+                <Position
+                    x="5414.62207"
+                    y="1039.26587"
+                    z="0" />
+            </StartPosition>
+            <StartPosition
+                Name="Player_8_Start">
+                <Position
+                    x="8786.92188"
+                    y="1903.30994"
+                    z="0" />
+            </StartPosition>
+        </MapMetaData>
     </MapMetaData>
 </AssetDeclaration>
